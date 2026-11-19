@@ -7,7 +7,7 @@
     python -m pipelines.run --allow-shift   publish a deliberate methodology change (skips drift gates)
 
 Exit codes: 0 = published or nothing to do, 1 = failed (previous snapshot left in place).
-Every run appends one line to state/pipeline_runs.jsonl.
+Published and failed runs append one line to state/pipeline_runs.jsonl.
 """
 from __future__ import annotations
 
@@ -201,7 +201,9 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     finally:
         rec["seconds"] = round(time.time() - started, 1)
-        c.append_jsonl(RUN_LOG, rec)
+        # Routine "nothing changed" checks are visible in the workflow history; only log real events.
+        if rec.get("result") in ("published", "failed"):
+            c.append_jsonl(RUN_LOG, rec)
 
 
 if __name__ == "__main__":
