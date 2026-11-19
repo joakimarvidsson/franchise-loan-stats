@@ -48,7 +48,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/published data/history data/changes state/pipeline_runs.jsonl
           if git diff --cached --quiet; then echo "nothing to commit"; else
-            git commit -m "data: refresh $(date -u +%F) (as of ${{ steps.run.outputs.asof }})"
+            git commit -m "data: refresh $(date -u +%F), SBA data as of ${{ steps.run.outputs.asof }}"
             git push
           fi
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
