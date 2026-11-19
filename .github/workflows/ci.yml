@@ -1,0 +1,28 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+  workflow_call:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -r pipelines/requirements.txt pytest
+      - name: Pipeline tests
+        run: python -m pytest tests -q
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, check-latest: true, cache: npm, cache-dependency-path: site/package-lock.json }
+      - name: Site tests, build and structural checks
+        working-directory: site
+        run: |
+          npm ci
+          npm test
+          npm run build
+          npm run check:dist

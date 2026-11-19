@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+import { summary, manifest, asof, seasonedFrom, seasonedTo, recentFrom, recentTo, activityFrom } from '../lib/data';
+import { SITE, url } from '../lib/site';
+import { fmtInt, fmtDate, fmtPct, fyRange } from '../lib/format';
+const c = summary.counts, t = summary.thresholds;
+---
+<Base title="Methodology and limits" description="Exactly how Franchise Loan Stats turns the SBA 7(a) loan file into charge-off rates by franchise brand: definitions, cohorts, confidence intervals, brand matching, and what the numbers cannot tell you." crumbs={[{ name: 'Methodology' }]}>
+  <div class="prose">
+    <h1>Methodology and limits</h1>
+    <p class="lede">Every figure on this site is computed by <a href={SITE.repo}>open-source code</a> from two public SBA files. This page says exactly how, and where the numbers stop being reliable.</p>
+
+    <h2>Sources</h2>
+    <ul>
+      <li><strong><a href={manifest.sources.loans_landing}>SBA 7(a) &amp; 504 FOIA loan data</a></strong>, the 7(a) files. One row per loan approved since fiscal year 1991, with the lender, amount, approval date, industry, franchise code and name, and current status. The SBA updates it quarterly. This build uses the files dated {fmtDate(asof)}: {fmtInt(c.loans_total)} loans, of which {fmtInt(c.loans_franchise)} carry a franchise name.</li>
+      <li><strong><a href={manifest.sources.directory_landing}>SBA Franchise Directory</a></strong> ({manifest.sources.directory.name.replace(/\.xlsx$/i, '')}): {fmtInt(c.directory_brands)} brands with an SBA franchise identifier code.</li>
+    </ul>
+    <p>Both are works of the U.S. Government and in the <a href={manifest.licence.url}>public domain</a>. This site is independent and is not affiliated with or endorsed by the SBA.</p>
+
+    <h2>Definitions</h2>
+    <ul>
+      <li><strong>Disbursed loan</strong>: status is paid in full (PIF), charged off (CHGOFF) or EXEMPT. EXEMPT is how the SBA marks loans that are still outstanding; it withholds their detail under FOIA Exemption 4. Cancelled loans and loans not yet disbursed are excluded from every rate.</li>
+      <li><strong>Charge-off rate</strong>: charged-off loans divided by disbursed loans, by number of loans. We also show the rate by dollars (charged-off amount divided by amount disbursed), which is lower because loans are partly repaid and collateral recovered before a charge-off.</li>
+      <li><strong>Seasoned cohort</strong>: loans approved in the ten fiscal years ending five years before the data date, currently {fyRange(seasonedFrom, seasonedTo)}. Headline rates use this cohort. Loans younger than five years have not had time to fail, so including them would flatter every brand.</li>
+      <li><strong>Recent cohort</strong>: loans approved in {fyRange(recentFrom, recentTo)}. Used only for volume, typical loan size, interest rate and term.</li>
+      <li><strong>Fiscal year</strong>: the federal fiscal year, October 1 to September 30. "Since FY{activityFrom}" on lender and state pages means the last ten fiscal years.</li>
+    </ul>
+
+    <h2>Sample size and uncertainty</h2>
+    <ul>
+      <li>Every rate carries a 95% Wilson score confidence interval. With 40 loans and no charge-offs the interval still reaches about 9%.</li>
+      <li><strong>Rated</strong> brands have at least {t.rated_min} seasoned disbursed loans and are ranked. <strong>Limited</strong> brands have {t.limited_min}–{t.rated_min - 1}: the rate is shown with a warning and not ranked. Below {t.limited_min}, no seasoned rate is shown.</li>
+      <li>We say a brand is higher or lower than a benchmark only when the two intervals do not overlap. Otherwise we say the difference is not clear.</li>
+      <li>A brand gets a page when it has at least {t.limited_min} seasoned loans, {t.limited_min} recent loans, or {t.brand_page_min_all_time} disbursed loans on file. Industries need {t.industry_page_min} seasoned loans; lenders need {t.lender_page_min} franchise loans in ten fiscal years.</li>
+    </ul>
+
+    <h2>Matching loans to brands</h2>
+    <p>The loan file uses two code systems: older numeric franchise codes, and the "S" codes of the current SBA Franchise Directory, which appear on loans from about FY2018. The same brand therefore shows up under several codes and spellings. We match conservatively:</p>
+    <ol>
+      <li>A loan with a directory code belongs to that directory brand.</li>
+      <li>An older code is merged into a directory brand only when its name, after removing punctuation and corporate suffixes, exactly equals a name the directory uses.</li>
+      <li>A short, hand-reviewed <a href={`${SITE.repo}/blob/main/pipelines/brand_aliases.csv`}>alias list</a> covers well-known spellings and renames, such as "Subway Sandwich Shop" and "Dunkin Donuts".</li>
+      <li>Everything else stays a separate legacy brand. Nothing is merged on similarity alone.</li>
+    </ol>
+    <p>Each brand page states how it was matched. If you see a brand split in two, or two systems wrongly joined, <a href={url('/contact/')}>tell us</a> and we will fix the alias list.</p>
+
+    <h2>Industries</h2>
+    <p>Industry pages cover every 7(a) loan, franchise or not, grouped by the NAICS industry title in the file. Where a NAICS revision changed a code but kept the title, the codes are combined.</p>
+
+    <h2>What the numbers cannot tell you</h2>
+    <ul>
+      <li><strong>Not all franchisees are here.</strong> Only franchisees who borrowed through the SBA 7(a) programme appear, and only when the lender filled in the franchise field. That field is completed by lenders, has changed format over the years, and is known to be incomplete. Brands whose owners tend to be well capitalised, or who borrow conventionally, will show few loans.</li>
+      <li><strong>A charge-off is not a closure.</strong> A location can close without a charge-off, and a loan can be charged off while the business carries on under a new owner.</li>
+      <li><strong>The brand is not the only cause.</strong> Outcomes depend on the borrower, location, lender underwriting and the economy. The seasoned cohort spans the pandemic. In 2020 and 2021 the SBA also made loan payments on borrowers' behalf under Section 1112 of the CARES Act, which probably delayed some defaults.</li>
+      <li><strong>Brands change.</strong> Systems are sold, renamed and restructured. A ten-year record may describe a franchisor that has since changed owners or terms.</li>
+      <li><strong>Lender names are current assignees.</strong> After a bank merger, earlier loans appear under the successor.</li>
+      <li><strong>Other sites report different figures</strong> because they choose different years, count cancelled loans, or match brands differently. Ours are reproducible from the public file with the published code.</li>
+    </ul>
+
+    <h2>What we do not publish</h2>
+    <p>The SBA file names individual borrowers. This site publishes aggregates only: no borrower names, addresses or single-loan records.</p>
+
+    <h2>Updates and checks</h2>
+    <p>An automated job checks the SBA sources every week and rebuilds when either file changes. A build is published only if it passes validation: row counts, status totals, rate bounds, and limits on how far totals may move from the previous release. If a check fails, the previous release stays up. Current build: {fmtDate(manifest.built_at)}; overall franchise charge-off rate {fmtPct(summary.franchise.seasoned.rate.pct)}.</p>
+    <p>Corrections: <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>.</p>
+  </div>
+</Base>

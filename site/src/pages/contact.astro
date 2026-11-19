@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE, url } from '../lib/site';
+---
+<Base title="Contact and corrections" description="Contact Franchise Loan Stats to report an error, request a brand-matching correction, ask about the data, or enquire about sponsorship." crumbs={[{ name: 'Contact' }]}>
+  <div class="prose">
+    <h1>Contact and corrections</h1>
+    <p class="lede">Email <a href={`mailto:${SITE.contactEmail}`} data-ev="contact_click">{SITE.contactEmail}</a>.</p>
+    <h2>Reporting an error</h2>
+    <p>Please include the page address and what you believe is wrong. The most useful reports are about brand matching: two names that are the same franchise system and should be combined, or loans grouped under the wrong brand. Matching fixes are made in the public <a href={`${SITE.repo}/blob/main/pipelines/brand_aliases.csv`}>alias list</a> and appear at the next rebuild.</p>
+    <p>We cannot change what the SBA file records about a loan. If the source itself is wrong, the SBA's Chief Data Officer team is the place to raise it; we will add a note to the brand page where that is documented.</p>
+    <h2>For franchisors</h2>
+    <p>If your system was sold, renamed or restructured during the period shown, send the dates and a public source and we will consider adding a factual note to your brand page. Statistics are not removed or altered on request.</p>
+    <h2>For lenders, brokers and advisers</h2>
+    <p>See <a href={url('/advertise/')}>advertise or partner</a>.</p>
+    <h2>Press and researchers</h2>
+    <p>The <a href={url('/data/')}>brand table is free to download and cite</a>. Questions about method are welcome.</p>
+  </div>
+</Base>

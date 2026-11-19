@@ -1,0 +1,40 @@
+---
+import Base from '../../layouts/Base.astro';
+import PartnerSlot from '../../components/PartnerSlot.astro';
+import { lenders, asof, stateByCode } from '../../lib/data';
+import { url } from '../../lib/site';
+import { fmtInt, fmtUsd, fmtDate, fyRange } from '../../lib/format';
+import { STATE_NAMES } from '../../lib/text';
+export function getStaticPaths() { return lenders.map((l) => ({ params: { slug: l.slug }, props: { l } })); }
+const { l } = Astro.props;
+const f = l.franchise, a = l.all;
+const win = fyRange(l.window_from_fy, l.window_to_fy);
+const desc = `${l.name} made ${fmtInt(f.loans)} SBA 7(a) franchise loans across ${fmtInt(f.brands)} brands in ${win}. See the franchise brands, states and industries it lends to and its typical loan size.`;
+---
+<Base title={`${l.name}: SBA franchise lending by brand`} description={desc} crumbs={[{ name: 'Lenders', href: '/lenders/' }, { name: l.name }]}>
+  <h1>{l.name}: SBA franchise lending</h1>
+  <p class="lede">In {win}, {l.name} made {fmtInt(f.loans)} SBA 7(a) loans coded to a franchise brand, worth {fmtUsd(f.gross)}, across {fmtInt(f.brands)} brands. That was {l.franchise_share_pct}% of its {fmtInt(a.loans)} SBA 7(a) loans in the period.</p>
+  <div class="cards">
+    <div class="card hero"><div class="k">Franchise loans, {win}</div><div class="v">{fmtInt(f.loans)}</div><div class="s">{fmtUsd(f.gross)} approved</div></div>
+    <div class="card"><div class="k">Brands financed</div><div class="v">{fmtInt(f.brands)}</div></div>
+    <div class="card"><div class="k">Median franchise loan</div><div class="v">{fmtUsd(f.median_loan)}</div></div>
+    <div class="card"><div class="k">Median initial rate</div><div class="v">{a.median_rate_recent ? a.median_rate_recent.toFixed(2) + '%' : '—'}</div><div class="s">all 7(a) loans, last 5 fiscal years</div></div>
+  </div>
+  <PartnerSlot placement="lender" />
+  <h2>Franchise brands {l.name} has financed most</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Brand</th><th>Loans</th><th>Total approved</th></tr></thead>
+    <tbody>{l.brands.map((b: any) => <tr><td><a href={url(`/brands/${b.slug}/`)}>{b.name}</a></td><td>{fmtInt(b.loans)}</td><td>{fmtUsd(b.gross)}</td></tr>)}</tbody>
+  </table></div>
+  <div class="cols">
+    <div>
+      <h2>States</h2>
+      <ul class="pill-list">{l.states.map((s: any) => <li>{stateByCode.has(s.state) ? <a href={url(`/states/${stateByCode.get(s.state).slug}/`)}>{STATE_NAMES[s.state] ?? s.state} · {fmtInt(s.loans)}</a> : <a>{s.state} · {fmtInt(s.loans)}</a>}</li>)}</ul>
+    </div>
+    <div>
+      <h2>Industries</h2>
+      <ul class="pill-list">{l.industries.map((i: any) => <li>{i.slug ? <a href={url(`/industries/${i.slug}/`)}>{i.name} · {fmtInt(i.loans)}</a> : <a>{i.name} · {fmtInt(i.loans)}</a>}</li>)}</ul>
+    </div>
+  </div>
+  <div class="note"><p class="small">Counts are franchise-coded SBA 7(a) loans approved in {win} and not cancelled, by project state and industry. The SBA file records the lender a loan is currently assigned to, so loans made by a bank that was later acquired appear under the acquirer. This page describes past lending; it is not an offer of credit and does not mean a lender will approve any application. Source: SBA 7(a) FOIA loan data as of {fmtDate(asof)}. <a href={url('/methodology/')}>Methodology</a>.</p></div>
+</Base>

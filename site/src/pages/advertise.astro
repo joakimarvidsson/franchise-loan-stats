@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE, url } from '../lib/site';
+import { brands, industries, lenders, states } from '../lib/data';
+import { fmtInt } from '../lib/format';
+---
+<Base title="Advertise or partner" description="Reach people researching a franchise purchase and its financing. Labelled sponsor placements and referral partnerships for SBA lenders, franchise attorneys, consultants and funding advisers." crumbs={[{ name: 'Advertise or partner' }]}>
+  <div class="prose">
+    <h1>Advertise or partner</h1>
+    <p class="lede">Readers here are checking a specific franchise brand's loan record, usually while deciding whether to buy and how to finance it.</p>
+    <h2>Who it suits</h2>
+    <ul>
+      <li>SBA lenders and loan brokers that finance franchise purchases</li>
+      <li>Franchise attorneys and FDD review services</li>
+      <li>Accountants, funding advisers and business-formation services for new franchisees</li>
+    </ul>
+    <h2>What is available</h2>
+    <ul>
+      <li><strong>Category sponsorship</strong>: one labelled placement across the pages of an industry or state ({fmtInt(industries.length)} industries, {states.length} states).</li>
+      <li><strong>Tool sponsorship</strong>: the loan calculator or the compare tool.</li>
+      <li><strong>Referral partnerships</strong>: a labelled link, paid per qualified lead or closed customer.</li>
+    </ul>
+    <p>The site covers {fmtInt(brands.length)} brands and {fmtInt(lenders.length)} lenders. Audience figures are shared on request and are measured, not estimated.</p>
+    <h2>What is not available</h2>
+    <p>Changes to statistics, rankings or brand pages; unlabelled placements; "featured franchise" listings that imply endorsement. See <a href={url('/disclosure/')}>how this site is funded</a>.</p>
+    <p><a class="btn" href={`mailto:${SITE.contactEmail}?subject=Sponsorship%20enquiry`} data-ev="sponsor_enquiry_click">Email {SITE.contactEmail}</a></p>
+  </div>
+</Base>

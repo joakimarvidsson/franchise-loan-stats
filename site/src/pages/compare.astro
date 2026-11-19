@@ -1,0 +1,82 @@
+---
+import Base from '../layouts/Base.astro';
+import { brands, seasonedFrom, seasonedTo, franchiseRate, asof } from '../lib/data';
+import { url } from '../lib/site';
+import { fmtDate, fyRange, fmtPct } from '../lib/format';
+const win = fyRange(seasonedFrom, seasonedTo);
+---
+<Base title="Compare franchise brands by SBA loan performance" description={`Compare up to four franchise brands side by side: SBA loan charge-off rate with confidence interval, loan counts, typical loan size and interest rate. Data as of ${fmtDate(asof)}.`} crumbs={[{ name: 'Compare' }]}>
+  <h1>Compare franchise brands</h1>
+  <p class="lede">Pick up to four brands. The link in your address bar updates so you can share the comparison.</p>
+  <div class="controls" id="cmp" data-index={url('/data/brands-index.json')} data-base={url('/brands/')} data-win={win} data-all={franchiseRate.pct}>
+    <label>Add a brand<input type="search" id="cmp-q" list="cmp-list" placeholder="Start typing a brand" autocomplete="off" /></label>
+    <datalist id="cmp-list">{brands.map((b) => <option value={b.name}></option>)}</datalist>
+    <button class="btn" id="cmp-add" type="button">Add</button>
+    <button class="btn ghost" id="cmp-clear" type="button">Clear</button>
+  </div>
+  <div id="cmp-out"><p class="muted">No brands selected yet. Try <a href="?b=subway,jimmy-johns,jersey-mikes-subs,firehouse-subs">four sandwich chains</a> or <a href="?b=anytime-fitness,club-pilates,orange-theory-fitness,planet-fitness">four fitness brands</a>.</p></div>
+  <p class="small muted">Rates are the share of disbursed SBA 7(a) loans approved in {win} that were later charged off; all franchise-coded loans: {fmtPct(franchiseRate.pct)}. Differences between brands whose intervals overlap are not reliable. <a href={url('/methodology/')}>Methodology</a>.</p>
+  <script is:inline>
+    (function () {
+      var box = document.getElementById('cmp'), out = document.getElementById('cmp-out'), q = document.getElementById('cmp-q');
+      var rows = [], bySlug = {}, byName = {}, picked = [];
+      function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+      function usd(n) { return n == null ? '—' : '$' + Math.round(n).toLocaleString('en-US'); }
+      function int(n) { return n == null ? '—' : Math.round(n).toLocaleString('en-US'); }
+      function rate(r) { return r ? r.pct.toFixed(1) + '%' : '—'; }
+      function ci(r) { return r ? r.lo.toFixed(1) + '–' + r.hi.toFixed(1) + '%' : '—'; }
+      function sync() {
+        var u = new URL(location.href);
+        if (picked.length) u.searchParams.set('b', picked.join(',')); else u.searchParams.delete('b');
+        history.replaceState(null, '', u);
+      }
+      function render() {
+        if (!picked.length) return;
+        var bs = picked.map(function (s) { return bySlug[s]; });
+        var max = Math.max.apply(null, bs.map(function (b) { return b.r ? b.r.hi : 0; }).concat([parseFloat(box.dataset.all), 10]));
+        function row(label, fn) { return '<tr><td>' + label + '</td>' + bs.map(function (b) { return '<td>' + fn(b) + '</td>'; }).join('') + '</tr>'; }
+        var h = '<div class="table-wrap"><table><thead><tr><th>&nbsp;</th>' + bs.map(function (b) {
+          return '<th><a href="' + box.dataset.base + b.s + '/">' + esc(b.n) + '</a> <button type="button" data-rm="' + b.s + '" aria-label="Remove ' + esc(b.n) + '" style="border:0;background:none;cursor:pointer;color:#6b7689">✕</button></th>';
+        }).join('') + '</tr></thead><tbody>';
+        h += row('Charge-off rate, ' + box.dataset.win, function (b) {
+          if (!b.r) return '<span class="muted">too few loans</span>';
+          return '<strong>' + rate(b.r) + '</strong><div class="bar-track" style="min-width:7rem;margin-top:4px"><div class="bar-fill me" style="width:' + (b.r.pct / max * 100).toFixed(1) + '%"></div></div>';
+        });
+        h += row('95% interval', function (b) { return ci(b.r); });
+        h += row('Loans in that period', function (b) { return int(b.sd) + (b.t === 'limited' ? ' <span class="tag">small sample</span>' : ''); });
+        h += row('Charged off (loans)', function (b) { return int(b.sc); });
+        h += row('Rate by dollars', function (b) { return b.rd == null ? '—' : b.rd.toFixed(1) + '%'; });
+        h += row('Rank among rated brands', function (b) { return b.k ? '#' + b.k : '—'; });
+        h += row('All loans on file', function (b) { return int(b.ad); });
+        h += row('All-time charge-off rate', function (b) { return rate(b.ar); });
+        h += row('Loans approved, last 5 fiscal years', function (b) { return int(b.ra); });
+        h += row('Median recent loan', function (b) { return b.ra >= 5 ? usd(b.ml) : '—'; });
+        h += row('Median initial interest rate', function (b) { return b.ra >= 5 && b.mr ? b.mr.toFixed(2) + '%' : '—'; });
+        h += row('Industry', function (b) { return b.i ? esc(b.i) : '—'; });
+        h += row('Industry charge-off rate', function (b) { return rate(b.ir); });
+        h += row('On SBA Franchise Directory', function (b) { return b.d ? 'Yes' : 'No'; });
+        out.innerHTML = h + '</tbody></table></div>';
+      }
+      function add(slug) {
+        if (!bySlug[slug] || picked.indexOf(slug) !== -1 || picked.length >= 4) return;
+        picked.push(slug); sync(); render();
+        if (window.posthog) posthog.capture('compare_used', { brands: picked.length });
+      }
+      function addFromInput() {
+        var v = q.value.trim().toLowerCase(); if (!v) return;
+        var hit = byName[v] || rows.filter(function (b) { return b.n.toLowerCase().indexOf(v) === 0; })[0];
+        if (hit) { add(hit.s); q.value = ''; }
+      }
+      fetch(box.dataset.index).then(function (r) { return r.json(); }).then(function (d) {
+        rows = d; d.forEach(function (b) { bySlug[b.s] = b; byName[b.n.toLowerCase()] = b; });
+        (new URLSearchParams(location.search).get('b') || '').split(',').filter(Boolean).slice(0, 4).forEach(function (s) { if (bySlug[s] && picked.indexOf(s) === -1) picked.push(s); });
+        render();
+      });
+      document.getElementById('cmp-add').addEventListener('click', addFromInput);
+      q.addEventListener('change', addFromInput);
+      q.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); addFromInput(); } });
+      document.getElementById('cmp-clear').addEventListener('click', function () { picked = []; sync(); location.reload(); });
+      out.addEventListener('click', function (e) { var s = e.target.dataset && e.target.dataset.rm; if (s) { picked = picked.filter(function (p) { return p !== s; }); sync(); picked.length ? render() : location.reload(); } });
+    })();
+  </script>
+</Base>

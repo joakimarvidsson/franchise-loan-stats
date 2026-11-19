@@ -1,0 +1,78 @@
+name: Deploy
+on:
+  push:
+    branches: [main]
+    paths: ['site/**', 'data/published/**', 'data/changes/**', 'partners.json', 'pipelines/**', 'tests/**', 'scripts/**', '.github/workflows/**']
+  workflow_dispatch:
+    inputs:
+      indexnow:
+        description: 'IndexNow submission: none, core (hub pages) or all'
+        default: core
+        type: choice
+        options: [none, core, all]
+  workflow_call:
+    inputs:
+      indexnow: { type: string, default: core }
+      ref: { type: string, default: '' }
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: "${{ inputs.ref || github.ref }}" }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -r pipelines/requirements.txt pytest
+      - name: Pipeline tests
+        run: python -m pytest tests -q
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, check-latest: true, cache: npm, cache-dependency-path: site/package-lock.json }
+      - name: Test, build, check
+        working-directory: site
+        run: |
+          npm ci
+          npm test
+          npm run build
+          npm run check:dist
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: site/dist }
+      - name: Keep the sitemap for the notify job
+        uses: actions/upload-artifact@v4
+        with: { name: sitemap, path: site/dist/sitemap-0.xml, retention-days: 3 }
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+  verify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: "${{ inputs.ref || github.ref }}" }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, check-latest: true }
+      - name: Production smoke test
+        run: |
+          sleep 20
+          node scripts/smoke.mjs
+      - uses: actions/download-artifact@v4
+        with: { name: sitemap, path: site/dist }
+      - name: Notify search engines (IndexNow)
+        if: ${{ (inputs.indexnow || 'none') != 'none' }}
+        run: node scripts/indexnow.mjs "${{ inputs.indexnow }}"

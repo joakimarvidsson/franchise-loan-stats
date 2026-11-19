@@ -1,0 +1,81 @@
+---
+import Base from '../layouts/Base.astro';
+import PartnerSlot from '../components/PartnerSlot.astro';
+import { brands, asof, recentFrom, recentTo } from '../lib/data';
+import { url } from '../lib/site';
+import { fmtDate, fyRange } from '../lib/format';
+const withData = brands.filter((b) => b.recent.approved >= 5 && b.recent.median_loan).sort((a, b) => a.name.localeCompare(b.name));
+---
+<Base title="SBA 7(a) loan payment calculator for franchise buyers" description={`Estimate the monthly payment, total interest and debt-service coverage on an SBA 7(a) loan. Pre-fill with the typical loan size, rate and term for ${withData.length} franchise brands from SBA data as of ${fmtDate(asof)}.`} crumbs={[{ name: 'Calculator' }]}>
+  <h1>SBA loan payment calculator</h1>
+  <p class="lede">Work out what a franchise loan costs each month, and whether the business's cash flow would cover it. Choose a brand to start from its typical SBA loan.</p>
+  <form id="calc" class="controls" data-index={url('/data/brands-index.json')} onsubmit="return false">
+    <label>Start from a brand (optional)
+      <select id="c-brand"><option value="">Enter my own numbers</option>{withData.map((b) => <option value={b.slug}>{b.name}</option>)}</select>
+    </label>
+    <label>Loan amount ($)<input type="number" id="c-amt" min="1000" step="1000" value="350000" inputmode="numeric" /></label>
+    <label>Interest rate (% a year)<input type="number" id="c-rate" min="0" max="30" step="0.05" value="10.5" inputmode="decimal" /></label>
+    <label>Term (years)<input type="number" id="c-term" min="1" max="30" step="0.5" value="10" inputmode="decimal" /></label>
+    <label>Yearly cash flow before debt payments ($, optional)<input type="number" id="c-cf" min="0" step="1000" placeholder="e.g. 95000" inputmode="numeric" /></label>
+  </form>
+  <p class="small muted" id="c-note"></p>
+  <div class="cards out" aria-live="polite">
+    <div class="card hero"><div class="k">Monthly payment</div><div class="v"><output id="o-pay">—</output></div></div>
+    <div class="card"><div class="k">Yearly debt payments</div><div class="v"><output id="o-year">—</output></div></div>
+    <div class="card"><div class="k">Total interest</div><div class="v"><output id="o-int">—</output></div><div class="s">over the full term</div></div>
+    <div class="card"><div class="k">Debt-service coverage</div><div class="v"><output id="o-dscr">—</output></div><div class="s" id="o-dscr-note">enter cash flow to calculate</div></div>
+  </div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>If the rate were</th><th>Monthly payment</th><th>Yearly payments</th><th>Coverage</th></tr></thead>
+    <tbody id="o-sens"></tbody>
+  </table></div>
+  <PartnerSlot placement="calculator" />
+  <div class="prose">
+    <h2>What the calculator assumes</h2>
+    <ul>
+      <li>A fully amortising loan with level monthly payments at a fixed rate. Most SBA 7(a) loans have variable rates, so the table above shows the payment if the rate moves by one or two points.</li>
+      <li>SBA guaranty fees, lender packaging fees and closing costs are not included. Ask the lender for these in writing.</li>
+      <li><strong>Debt-service coverage</strong> is yearly cash flow available for debt payments divided by yearly debt payments. Above 1.0 means the cash flow covers the payments; lenders set their own minimum and usually want a margin above 1.0.</li>
+      <li>Brand defaults are medians of SBA 7(a) loans approved in {fyRange(recentFrom, recentTo)} and coded to that brand: half of loans were larger and half smaller. Your project may differ a lot.</li>
+    </ul>
+    <p class="small">This is arithmetic, not advice or an offer of credit. Data as of {fmtDate(asof)}.</p>
+  </div>
+  <script is:inline>
+    (function () {
+      var $ = function (id) { return document.getElementById(id); };
+      var idx = null, sent = false;
+      function pay(P, r, n) { if (!(P > 0) || !(n > 0)) return 0; var m = r / 100 / 12; return m === 0 ? P / n : P * m / (1 - Math.pow(1 + m, -n)); }
+      function usd(v) { return '$' + Math.round(v).toLocaleString('en-US'); }
+      function calc() {
+        var P = parseFloat($('c-amt').value), r = parseFloat($('c-rate').value), n = Math.round(parseFloat($('c-term').value) * 12), cf = parseFloat($('c-cf').value);
+        if (!(P > 0) || !(r >= 0) || !(n > 0)) { ['o-pay', 'o-year', 'o-int', 'o-dscr'].forEach(function (i) { $(i).textContent = '—'; }); return; }
+        var p = pay(P, r, n);
+        $('o-pay').textContent = usd(p); $('o-year').textContent = usd(p * 12); $('o-int').textContent = usd(p * n - P);
+        if (cf > 0) { var d = cf / (p * 12); $('o-dscr').textContent = d.toFixed(2) + 'x'; $('o-dscr-note').textContent = d >= 1 ? 'cash flow covers the payments' : 'cash flow does not cover the payments'; }
+        else { $('o-dscr').textContent = '—'; $('o-dscr-note').textContent = 'enter cash flow to calculate'; }
+        $('o-sens').innerHTML = [-2, -1, 0, 1, 2].map(function (dlt) {
+          var rr = Math.max(0, r + dlt), pp = pay(P, rr, n);
+          return '<tr' + (dlt === 0 ? ' style="font-weight:650"' : '') + '><td>' + rr.toFixed(2) + '%</td><td>' + usd(pp) + '</td><td>' + usd(pp * 12) + '</td><td>' + (cf > 0 ? (cf / (pp * 12)).toFixed(2) + 'x' : '—') + '</td></tr>';
+        }).join('');
+        if (!sent && window.posthog) { sent = true; posthog.capture('calculator_used'); }
+      }
+      function prefill(slug) {
+        if (!slug) { $('c-note').textContent = ''; return; }
+        function go() {
+          var b = idx[slug]; if (!b) return;
+          if (b.ml) $('c-amt').value = Math.round(b.ml);
+          if (b.mr) $('c-rate').value = b.mr;
+          if (b.mt) $('c-term').value = Math.round(b.mt / 12 * 2) / 2;
+          $('c-note').textContent = 'Pre-filled with the median SBA loan for ' + b.n + ': ' + usd(b.ml) + (b.mr ? ' at ' + b.mr.toFixed(2) + '%' : '') + (b.mt ? ' over ' + b.mt + ' months' : '') + ' (' + b.ra + ' recent loans).';
+          $('c-brand').value = slug; calc();
+        }
+        if (idx) return go();
+        fetch($('calc').dataset.index).then(function (r) { return r.json(); }).then(function (d) { idx = {}; d.forEach(function (b) { idx[b.s] = b; }); go(); });
+      }
+      $('calc').addEventListener('input', function (e) { if (e.target.id !== 'c-brand') { sent = sent; calc(); } });
+      $('c-brand').addEventListener('change', function () { prefill(this.value); });
+      var q = new URLSearchParams(location.search).get('brand');
+      if (q) prefill(q); else calc();
+    })();
+  </script>
+</Base>

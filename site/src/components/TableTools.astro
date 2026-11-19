@@ -1,0 +1,56 @@
+---
+// Progressive enhancement for any <table data-table>: column sort and row filters.
+// Rows carry data-* attributes; controls inside [data-controls-for="<table id>"] filter them.
+---
+<script is:inline>
+  (function () {
+    document.querySelectorAll('table[data-table]').forEach(function (table) {
+      var tbody = table.tBodies[0];
+      var rows = Array.prototype.slice.call(tbody.rows);
+      var count = document.querySelector('[data-count-for="' + table.id + '"]');
+      table.querySelectorAll('th[data-sort]').forEach(function (th) {
+        th.tabIndex = 0;
+        function go() {
+          var key = th.dataset.sort, num = th.dataset.type !== 'text';
+          var dir = th.getAttribute('aria-sort') === 'ascending' ? -1 : th.getAttribute('aria-sort') === 'descending' ? 1 : (th.dataset.first === 'desc' ? -1 : 1);
+          table.querySelectorAll('th[data-sort]').forEach(function (o) { o.removeAttribute('aria-sort'); });
+          th.setAttribute('aria-sort', dir === 1 ? 'ascending' : 'descending');
+          rows.sort(function (a, b) {
+            var x = a.dataset[key], y = b.dataset[key];
+            if (num) {
+              var xe = x === '' || x === undefined, ye = y === '' || y === undefined;
+              if (xe || ye) return xe === ye ? 0 : xe ? 1 : -1;  // blanks always last
+              return (parseFloat(x) - parseFloat(y)) * dir;
+            }
+            return String(x).localeCompare(String(y)) * dir;
+          });
+          rows.forEach(function (r) { tbody.appendChild(r); });
+        }
+        th.addEventListener('click', go);
+        th.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+      });
+      var box = document.querySelector('[data-controls-for="' + table.id + '"]');
+      if (!box) return;
+      var sent = false;
+      function apply() {
+        var shown = 0;
+        var q = (box.querySelector('[data-q]') || {}).value || '';
+        q = q.toLowerCase().trim();
+        var sels = box.querySelectorAll('select[data-f]'), mins = box.querySelectorAll('input[data-min]');
+        rows.forEach(function (r) {
+          var ok = !q || (r.dataset.q || '').indexOf(q) !== -1;
+          sels.forEach(function (s) { if (ok && s.value && r.dataset[s.dataset.f] !== s.value) ok = false; });
+          mins.forEach(function (m) { if (ok && m.value && !(parseFloat(r.dataset[m.dataset.min] || '0') >= parseFloat(m.value))) ok = false; });
+          r.hidden = !ok; if (ok) shown++;
+        });
+        if (count) count.textContent = shown.toLocaleString('en-US');
+        if (!sent && window.posthog) { sent = true; posthog.capture('table_filter_used', { table: table.id }); }
+      }
+      box.addEventListener('input', apply);
+      box.addEventListener('change', apply);
+      var params = new URLSearchParams(location.search);
+      box.querySelectorAll('[data-param]').forEach(function (el) { var v = params.get(el.dataset.param); if (v) { el.value = v; } });
+      if (location.search) apply();
+    });
+  })();
+</script>

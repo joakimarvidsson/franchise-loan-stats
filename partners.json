@@ -1,0 +1,4 @@
+{
+  "note": "Only entries with status 'live' and a url are rendered on the site. See src/lib/partners.ts.",
+  "partners": []
+}

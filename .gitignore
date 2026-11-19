@@ -1,0 +1,9 @@
+.cache/
+node_modules/
+site/dist/
+site/.astro/
+data/staging/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store

@@ -1,0 +1,21 @@
+{
+  "name": "franchise-loan-stats-site",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "vitest run",
+    "check:dist": "node scripts/check-dist.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.4.13",
+    "@astrojs/sitemap": "^3.7.6"
+  },
+  "devDependencies": {
+    "vitest": "^5.1.1",
+    "typescript": "^5.9.0"
+  }
+}

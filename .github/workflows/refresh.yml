@@ -1,0 +1,72 @@
+name: Refresh data
+# Deterministic, no AI. Checks the two SBA sources daily; rebuilds and redeploys only when one changed.
+on:
+  schedule:
+    - cron: '40 20 * * *'   # 06:40 Australia/Brisbane, ahead of the 08:00 daily review
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Rebuild even if sources are unchanged'
+        type: boolean
+        default: false
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  issues: write
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    outputs:
+      published: ${{ steps.run.outputs.published }}
+      asof_changed: ${{ steps.commit.outputs.asof_changed }}
+      sha: ${{ steps.commit.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -r pipelines/requirements.txt pytest
+      - name: Remember the current data date
+        id: before
+        run: echo "asof=$(python -c "import json;print(json.load(open('data/published/summary.json'))['asof'])")" >> "$GITHUB_OUTPUT"
+      - name: Discover, download if changed, build, validate, publish
+        id: run
+        env:
+          FLS_CACHE: ${{ runner.temp }}/fls-cache
+        run: python -m pipelines.run ${{ inputs.force && '--force' || '' }}
+      - name: Tests against the new snapshot
+        if: steps.run.outputs.published == 'true'
+        run: python -m pytest tests -q
+      - name: Commit the new snapshot and the run log
+        id: commit
+        run: |
+          git config user.name "franchise-loan-stats-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/published data/history data/changes state/pipeline_runs.jsonl
+          if git diff --cached --quiet; then echo "nothing to commit"; else
+            git commit -m "data: refresh $(date -u +%F) (as of ${{ steps.run.outputs.asof }})"
+            git push
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          if [ "${{ steps.before.outputs.asof }}" != "${{ steps.run.outputs.asof }}" ]; then echo "asof_changed=true" >> "$GITHUB_OUTPUT"; fi
+      - name: Record the failed run and open an issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "franchise-loan-stats-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/pipeline_runs.jsonl && git commit -m "state: failed refresh $(date -u +%F)" && git push || true
+          gh issue create --title "Data refresh failed $(date -u +%F)" --label ops \
+            --body "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}. The previous snapshot is still live. See automation runbook." || true
+  deploy:
+    needs: refresh
+    if: needs.refresh.outputs.published == 'true'
+    uses: ./.github/workflows/deploy.yml
+    with:
+      ref: ${{ needs.refresh.outputs.sha }}
+      indexnow: ${{ needs.refresh.outputs.asof_changed == 'true' && 'all' || 'core' }}

@@ -1,0 +1,60 @@
+---
+import Base from '../../layouts/Base.astro';
+import TableTools from '../../components/TableTools.astro';
+import { brands, summary, asof, seasonedFrom, seasonedTo } from '../../lib/data';
+import { url } from '../../lib/site';
+import { fmtInt, fmtUsd, fmtRate, fmtInterval, fmtDate, fyRange } from '../../lib/format';
+const list = [...brands].sort((a, b) => b.all.disbursed - a.all.disbursed);
+const inds = [...new Set(brands.map((b) => b.industry?.name).filter(Boolean))].sort();
+const win = fyRange(seasonedFrom, seasonedTo);
+---
+<Base title="Franchise brands by SBA loan charge-off rate" description={`Search ${fmtInt(brands.length)} franchise brands and see how their SBA 7(a) loans performed: loans made, share charged off with confidence intervals, typical loan size. Data as of ${fmtDate(asof)}.`} crumbs={[{ name: 'Brands' }]}>
+  <h1>Franchise brands: SBA loan record</h1>
+  <p class="lede">{fmtInt(brands.length)} brands with enough SBA 7(a) lending history to report. {fmtInt(summary.counts.brands_rated)} have at least {summary.thresholds.rated_min} seasoned loans and are ranked. Filter, sort, then open a brand for the detail.</p>
+  <div class="controls" data-controls-for="brands-table">
+    <label>Brand name<input type="search" data-q data-param="q" placeholder="Type to filter" /></label>
+    <label>Industry
+      <select data-f="ind" data-param="industry"><option value="">All industries</option>{inds.map((i) => <option value={i}>{i}</option>)}</select>
+    </label>
+    <label>Sample
+      <select data-f="tier" data-param="tier"><option value="">Any</option><option value="rated">Rated (30+ loans)</option><option value="limited">Limited (10–29)</option><option value="insufficient">Too few seasoned loans</option></select>
+    </label>
+    <label>Min. loans, {win}<input type="number" min="0" step="10" data-min="sd" data-param="min" style="width:7rem" /></label>
+    <label>SBA directory
+      <select data-f="dir" data-param="dir"><option value="">Any</option><option value="y">Listed now</option><option value="n">Not listed</option></select>
+    </label>
+  </div>
+  <p class="small"><span data-count-for="brands-table">{fmtInt(list.length)}</span> brands shown. Click a column heading to sort.</p>
+  <div class="table-wrap">
+    <table id="brands-table" data-table>
+      <thead>
+        <tr>
+          <th data-sort="name" data-type="text">Brand</th>
+          <th data-sort="sd" data-first="desc">Loans, {win}</th>
+          <th data-sort="rate">Charged off</th>
+          <th>95% interval</th>
+          <th data-sort="ad" data-first="desc" aria-sort="descending">All loans on file</th>
+          <th data-sort="ml" data-first="desc">Median recent loan</th>
+          <th class="l">Industry</th>
+        </tr>
+      </thead>
+      <tbody>
+        {list.map((b) => (
+          <tr data-q={b.name.toLowerCase()} data-name={b.name.toLowerCase()} data-ind={b.industry?.name ?? ''} data-tier={b.seasoned.tier}
+              data-sd={b.seasoned.disbursed} data-rate={b.seasoned.rate ? b.seasoned.rate.pct : ''} data-ad={b.all.disbursed}
+              data-ml={b.recent.approved >= 5 && b.recent.median_loan ? b.recent.median_loan : ''} data-dir={b.directory.listed ? 'y' : 'n'}>
+            <td><a href={url(`/brands/${b.slug}/`)}>{b.name}</a>{b.seasoned.tier === 'limited' && <> <span class="tag">small sample</span></>}</td>
+            <td>{fmtInt(b.seasoned.disbursed)}</td>
+            <td>{fmtRate(b.seasoned.rate)}</td>
+            <td class="muted">{fmtInterval(b.seasoned.rate)}</td>
+            <td>{fmtInt(b.all.disbursed)}</td>
+            <td>{b.recent.approved >= 5 ? fmtUsd(b.recent.median_loan) : '—'}</td>
+            <td class="l small">{b.industry?.name ?? '—'}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="small muted">"Charged off" is the share of disbursed loans approved in {win} that the SBA later charged off. Brands with fewer than {summary.thresholds.limited_min} such loans show no rate. <a href={url('/methodology/')}>Methodology</a>.</p>
+  <TableTools />
+</Base>

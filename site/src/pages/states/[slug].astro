@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/Base.astro';
+import RateBars from '../../components/RateBars.astro';
+import PartnerSlot from '../../components/PartnerSlot.astro';
+import { states, asof, franchiseRate, summary } from '../../lib/data';
+import { url } from '../../lib/site';
+import { fmtInt, fmtUsd, fmtRate, fmtInterval, fmtDate, fmtPct, fyRange } from '../../lib/format';
+export function getStaticPaths() { return states.map((s) => ({ params: { slug: s.slug }, props: { s } })); }
+const { s } = Astro.props;
+const win = fyRange(s.window_from_fy, s.window_to_fy);
+const swin = fyRange(s.seasoned.from_fy, s.seasoned.to_fy);
+const desc = `${fmtInt(s.loans)} franchise-coded SBA 7(a) loans were made in ${s.name} in ${win}. See the most-financed franchise brands, the most active SBA lenders and the state's charge-off rate.`;
+---
+<Base title={`SBA franchise loans in ${s.name}: brands and lenders`} description={desc} crumbs={[{ name: 'States', href: '/states/' }, { name: s.name }]}>
+  <h1>SBA franchise loans in {s.name}</h1>
+  <p class="lede">In {win}, lenders made {fmtInt(s.loans)} SBA 7(a) loans to franchise businesses in {s.name}, worth {fmtUsd(s.gross)}, across {fmtInt(s.brands_count)} brands.{s.seasoned.rate && <> Of the {fmtInt(s.seasoned.disbursed)} disbursed loans approved in {swin}, {fmtPct(s.seasoned.rate.pct)} were later charged off.</>}</p>
+  <div class="cards">
+    <div class="card hero"><div class="k">Franchise loans, {win}</div><div class="v">{fmtInt(s.loans)}</div><div class="s">{fmtUsd(s.gross)} approved</div></div>
+    <div class="card"><div class="k">Brands</div><div class="v">{fmtInt(s.brands_count)}</div></div>
+    <div class="card"><div class="k">Median recent loan</div><div class="v">{fmtUsd(s.median_loan_recent)}</div></div>
+    <div class="card"><div class="k">Charged off, {swin}</div><div class="v">{fmtRate(s.seasoned.rate)}</div><div class="s">{s.seasoned.rate ? `95% interval ${fmtInterval(s.seasoned.rate)}` : 'too few loans'}</div></div>
+  </div>
+  {s.seasoned.rate && <RateBars rows={[{ label: `${s.name} franchise loans`, rate: s.seasoned.rate, n: s.seasoned.disbursed, me: true }, { label: 'All franchise-coded loans, U.S.', rate: franchiseRate, n: summary.franchise.seasoned.disbursed }]} />}
+  <PartnerSlot placement="state" />
+  <h2>Most-financed franchise brands in {s.name}</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Brand</th><th>Loans in {s.name}</th><th>National charge-off rate</th><th>95% interval</th></tr></thead>
+    <tbody>{s.brands.map((b: any) => <tr><td><a href={url(`/brands/${b.slug}/`)}>{b.name}</a></td><td>{fmtInt(b.loans)}</td><td>{fmtRate(b.rate)}{b.tier === 'limited' && <> <span class="tag">small sample</span></>}</td><td class="muted">{fmtInterval(b.rate)}</td></tr>)}</tbody>
+  </table></div>
+  <p class="small muted">Charge-off rates in this table are each brand's national figure, not a state figure: state-level samples for a single brand are too small to report.</p>
+  <h2>Most active SBA franchise lenders in {s.name}</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Lender</th><th>Franchise loans</th><th>Total approved</th></tr></thead>
+    <tbody>{s.lenders.map((l: any) => <tr><td>{l.slug ? <a href={url(`/lenders/${l.slug}/`)}>{l.name}</a> : l.name}</td><td>{fmtInt(l.loans)}</td><td>{fmtUsd(l.gross)}</td></tr>)}</tbody>
+  </table></div>
+  <div class="note"><p class="small">Loans are counted by project state. Source: SBA 7(a) FOIA loan data as of {fmtDate(asof)}. <a href={url('/methodology/')}>Methodology</a>.</p></div>
+</Base>

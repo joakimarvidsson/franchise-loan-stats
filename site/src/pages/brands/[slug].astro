@@ -1,0 +1,247 @@
+---
+import Base from '../../layouts/Base.astro';
+import RateBars from '../../components/RateBars.astro';
+import CohortChart from '../../components/CohortChart.astro';
+import PartnerSlot from '../../components/PartnerSlot.astro';
+import { brands, brandBySlug, franchiseRate, summary, asof, stateByCode, activityFrom, manifest } from '../../lib/data';
+import { url } from '../../lib/site';
+import { fmtInt, fmtUsd, fmtUsdFull, fmtPct, fmtRate, fmtInterval, fmtDate, fyRange } from '../../lib/format';
+import { brandSummary, brandTitle, brandDescription, compareRates, comparePhrase, STATE_NAMES } from '../../lib/text';
+
+export function getStaticPaths() {
+  return brands.map((b) => ({ params: { slug: b.slug }, props: { b } }));
+}
+const { b } = Astro.props;
+const s = b.seasoned, a = b.all, r = b.recent;
+const win = fyRange(s.from_fy, s.to_fy);
+const years = b.by_year.filter((y: any) => y.fy >= Math.max(a.first_fy, summary.asof_fy - 24) && y.disbursed > 0);
+const tableYears = b.by_year.filter((y: any) => y.fy >= s.from_fy);
+const peers = b.peers.map((p: string) => brandBySlug.get(p)).filter(Boolean);
+const ind = b.industry;
+const indCmp = ind ? compareRates(s.rate, ind.seasoned_rate) : 'unknown';
+const bars = [
+  { label: b.name, rate: s.rate, n: s.disbursed, me: true },
+  ...(ind?.seasoned_rate ? [{ label: `${ind.name} (all SBA loans)`, rate: ind.seasoned_rate, n: ind.seasoned_disbursed, href: ind.slug ? url(`/industries/${ind.slug}/`) : undefined }] : []),
+  { label: 'All franchise-coded loans', rate: franchiseRate, n: summary.franchise.seasoned.disbursed },
+  { label: 'All SBA 7(a) loans', rate: summary.all_7a.seasoned.rate, n: summary.all_7a.seasoned.disbursed },
+];
+const coYears = b.chargeoffs_by_year.filter((c: any) => c.year >= summary.asof_fy - 10);
+const dir = b.directory;
+const faq = [
+  s.rate && {
+    q: `What is the SBA loan charge-off rate for ${b.name} franchises?`,
+    a: `${fmtPct(s.rate.pct)} of disbursed SBA 7(a) loans approved in ${win} (${fmtInt(s.charged_off)} of ${fmtInt(s.disbursed)}), with a 95% confidence interval of ${fmtInterval(s.rate)}. Data as of ${fmtDate(asof)}.`,
+  },
+  r.median_loan && r.approved >= 10 && {
+    q: `How large is a typical SBA loan for ${b.name}?`,
+    a: `The median SBA 7(a) loan approved in ${fyRange(r.from_fy, r.to_fy)} was ${fmtUsdFull(r.median_loan)}${r.median_rate ? ` at an initial interest rate of ${r.median_rate.toFixed(2)}%` : ''}${r.median_term_months ? ` over ${r.median_term_months} months` : ''}.`,
+  },
+  b.lenders.length > 0 && {
+    q: `Which lenders make SBA loans to ${b.name} franchisees?`,
+    a: `Since FY${activityFrom}, ${fmtInt(b.lender_count)} lenders have made SBA 7(a) loans coded to ${b.name}. The most active were ${b.lenders.slice(0, 3).map((l: any) => l.name).join(', ')}.`,
+  },
+  {
+    q: `Is ${b.name} on the SBA Franchise Directory?`,
+    a: dir.listed
+      ? `Yes. ${b.name} is listed on the SBA Franchise Directory under identifier ${dir.code}${dir.listed_since ? `, effective ${fmtDate(dir.listed_since)}` : ''}.`
+      : `No current SBA Franchise Directory entry matches this brand's loan records. Older brands, renamed systems and brands that stopped franchising commonly fall into this group.`,
+  },
+].filter(Boolean) as { q: string; a: string }[];
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  },
+];
+---
+<Base title={brandTitle(b)} description={brandDescription(b)} crumbs={[{ name: 'Brands', href: '/brands/' }, { name: b.name }]} jsonLd={jsonLd}>
+  <h1>{b.name} franchise: SBA loan record</h1>
+  <p class="lede">{brandSummary(b, franchiseRate)}</p>
+
+  <div class="cards">
+    <div class="card hero">
+      <div class="k">Charge-off rate, {win}</div>
+      <div class="v">{s.rate ? fmtRate(s.rate) : 'Too few loans'}</div>
+      <div class="s">{s.rate ? `${fmtInt(s.charged_off)} of ${fmtInt(s.disbursed)} loans · 95% interval ${fmtInterval(s.rate)}` : `${fmtInt(s.disbursed)} seasoned loans`}</div>
+    </div>
+    {b.rank && (
+      <div class="card">
+        <div class="k">Rank among rated brands</div>
+        <div class="v">{b.rank.position} <span class="small">of {b.rank.of}</span></div>
+        <div class="s">1 = lowest charge-off rate</div>
+      </div>
+    )}
+    <div class="card">
+      <div class="k">All loans on file</div>
+      <div class="v">{fmtInt(a.disbursed)}</div>
+      <div class="s">disbursed FY{a.first_fy}–FY{a.last_fy} · {fmtUsd(a.gross)}</div>
+    </div>
+    <div class="card">
+      <div class="k">Typical recent loan</div>
+      <div class="v">{r.approved >= 5 ? fmtUsd(r.median_loan) : '—'}</div>
+      <div class="s">{r.approved >= 5 ? `median of ${fmtInt(r.approved)} loans, ${fyRange(r.from_fy, r.to_fy)}` : `fewer than 5 loans since FY${r.from_fy}`}</div>
+    </div>
+  </div>
+
+  {s.tier === 'limited' && (
+    <div class="note warn"><strong>Small sample.</strong> Between 10 and 29 seasoned loans. The interval above is wide, and one or two loans would move the rate a lot. This brand is shown but not ranked.</div>
+  )}
+  {s.tier === 'insufficient' && (
+    <div class="note warn"><strong>Not enough seasoned loans for a rate.</strong> Fewer than 10 disbursed loans were approved in {win}. The record below is shown for reference only.</div>
+  )}
+
+  {s.rate && (
+    <>
+      <h2>How {b.name} compares</h2>
+      <RateBars rows={bars} />
+      <p class="prose">
+        {ind?.seasoned_rate && indCmp !== 'unknown' && (
+          <>Measured against every SBA 7(a) loan in <strong>{ind.name}</strong> for the same years, {b.name}'s charge-off rate is <strong>{comparePhrase(indCmp)}</strong> the industry's {fmtPct(ind.seasoned_rate.pct)}. </>
+        )}
+        "Higher" or "lower" is stated only when the two confidence intervals do not overlap. By loan dollars, {s.rate_dollar_pct !== null ? <>{fmtPct(s.rate_dollar_pct)} of the {fmtUsd(s.gross)} disbursed in {win} was charged off ({fmtUsd(s.charged_off_amount)}).</> : 'no dollar rate is available.'}
+      </p>
+    </>
+  )}
+
+  <PartnerSlot placement="brand" />
+
+  {years.length > 1 && (
+    <>
+      <h2>Loans by approval year</h2>
+      <CohortChart years={years} label={`${b.name}: disbursed SBA 7(a) loans by approval fiscal year and outcome`} />
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Approval year</th><th>Approved</th><th>Disbursed</th><th>Paid in full</th><th>Charged off</th><th>Still active</th><th>Charged off %</th></tr></thead>
+          <tbody>
+            {tableYears.map((y: any) => (
+              <tr>
+                <td>FY{y.fy}{y.fy > s.to_fy && <span class="muted small"> (recent)</span>}</td>
+                <td>{fmtInt(y.approved)}</td><td>{fmtInt(y.disbursed)}</td><td>{fmtInt(y.pif)}</td><td>{fmtInt(y.chgoff)}</td><td>{fmtInt(y.active)}</td>
+                <td>{y.disbursed >= 10 ? fmtPct((100 * y.chgoff) / y.disbursed) : '—'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="small muted">Recent years look better than they will end up: most charge-offs happen two to six years after approval. Single-year rates are shown only for years with at least 10 disbursed loans.</p>
+    </>
+  )}
+
+  <h2>Full record, FY{a.first_fy}–FY{a.last_fy}</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Outcome</th><th>Loans</th><th>Share of disbursed</th></tr></thead>
+      <tbody>
+        <tr><td>Paid in full</td><td>{fmtInt(a.paid_in_full)}</td><td>{fmtPct((100 * a.paid_in_full) / a.disbursed)}</td></tr>
+        <tr><td>Charged off</td><td>{fmtInt(a.charged_off)}</td><td>{fmtPct((100 * a.charged_off) / a.disbursed)}</td></tr>
+        <tr><td>Still active (status withheld by SBA)</td><td>{fmtInt(a.active)}</td><td>{fmtPct((100 * a.active) / a.disbursed)}</td></tr>
+        <tr><td><strong>Disbursed</strong></td><td><strong>{fmtInt(a.disbursed)}</strong></td><td>100%</td></tr>
+        <tr><td class="muted">Approved but cancelled</td><td>{fmtInt(a.cancelled)}</td><td>—</td></tr>
+        <tr><td class="muted">Approved, not yet disbursed</td><td>{fmtInt(a.undisbursed)}</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="small">Total charged off over the full record: {fmtUsdFull(a.charged_off_amount)} of {fmtUsdFull(a.gross)} disbursed.</p>
+
+  {coYears.length > 0 && (
+    <>
+      <h3>Charge-offs by calendar year</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Year charged off</th><th>Loans</th><th>Amount</th></tr></thead>
+          <tbody>{coYears.map((c: any) => <tr><td>{c.year}</td><td>{fmtInt(c.loans)}</td><td>{fmtUsdFull(c.amount)}</td></tr>)}</tbody>
+        </table>
+      </div>
+    </>
+  )}
+
+  {r.approved >= 5 && (
+    <>
+      <h2>Recent lending, {fyRange(r.from_fy, r.to_fy)}</h2>
+      <div class="cards">
+        <div class="card"><div class="k">Loans approved</div><div class="v">{fmtInt(r.approved)}</div><div class="s">{fmtUsd(r.gross)} total</div></div>
+        <div class="card"><div class="k">Median loan</div><div class="v">{fmtUsd(r.median_loan)}</div></div>
+        <div class="card"><div class="k">Median initial rate</div><div class="v">{r.median_rate ? r.median_rate.toFixed(2) + '%' : '—'}</div><div class="s">at approval</div></div>
+        <div class="card"><div class="k">Median term</div><div class="v">{r.median_term_months ? `${(r.median_term_months / 12).toFixed(r.median_term_months % 12 ? 1 : 0)} yrs` : '—'}</div></div>
+        {r.new_business_pct !== null && <div class="card"><div class="k">New businesses</div><div class="v">{r.new_business_pct}%</div><div class="s">start-ups or under 2 years</div></div>}
+      </div>
+      <p class="small">
+        Estimate the payment on a loan this size with the <a href={url(`/calculator/?brand=${b.slug}`)} data-ev="calculator_from_brand">loan payment calculator</a>, or <a href={url(`/compare/?b=${b.slug}`)} data-ev="compare_from_brand">compare {b.name} with other brands</a>.
+      </p>
+    </>
+  )}
+
+  {b.lenders.length > 0 && (
+    <>
+      <h2>Lenders that finance {b.name} franchisees</h2>
+      <p class="prose">{fmtInt(b.lender_count)} lenders made SBA 7(a) loans coded to {b.name} since FY{activityFrom}. A lender that already knows a brand has usually reviewed its franchise agreement before.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Lender</th><th>Loans since FY{activityFrom}</th><th>Total approved</th><th>Latest</th></tr></thead>
+          <tbody>
+            {b.lenders.map((l: any) => (
+              <tr><td>{l.slug ? <a href={url(`/lenders/${l.slug}/`)}>{l.name}</a> : l.name}</td><td>{fmtInt(l.loans)}</td><td>{fmtUsd(l.gross)}</td><td>FY{l.last_fy}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+
+  {b.states.length > 0 && (
+    <>
+      <h2>Where the loans are</h2>
+      <ul class="pill-list">
+        {b.states.map((st: any) => (
+          <li>{stateByCode.has(st.state) ? <a href={url(`/states/${stateByCode.get(st.state).slug}/`)}>{STATE_NAMES[st.state] ?? st.state} · {fmtInt(st.loans)}</a> : <a>{STATE_NAMES[st.state] ?? st.state} · {fmtInt(st.loans)}</a>}</li>
+        ))}
+      </ul>
+      <p class="small muted">Loans by project state since FY{activityFrom}.</p>
+    </>
+  )}
+
+  <h2>SBA Franchise Directory status</h2>
+  {dir.listed ? (
+    <div class="note">
+      <p><span class="tag ok">Listed</span> <strong>{dir.name}</strong> · identifier {dir.code}{dir.listed_since && <> · effective {fmtDate(dir.listed_since)}</>}</p>
+      {dir.ftc && <p class="small">Meets the FTC definition of a franchise: {dir.ftc === 'Y' ? 'yes' : dir.ftc === 'N' ? 'no' : dir.ftc}.</p>}
+      {dir.notes && <p class="small">SBA note: {dir.notes}</p>}
+    </div>
+  ) : (
+    <div class="note"><p><span class="tag">Not on the current directory</span> No entry in the SBA Franchise Directory dated {manifest.sources.directory.name.replace(/\.xlsx$/i, '').replace(/_REM\d+$/i, '').replace('Franchise Directory ', '')} matches these loan records. This is common for older, renamed or discontinued systems.</p></div>
+  )}
+
+  {peers.length > 0 && (
+    <>
+      <h2>Other {ind?.name ?? 'similar'} franchises</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Brand</th><th>Loans, {win}</th><th>Charged off</th><th>95% interval</th></tr></thead>
+          <tbody>
+            {peers.map((p: any) => (
+              <tr><td><a href={url(`/brands/${p.slug}/`)}>{p.name}</a></td><td>{fmtInt(p.seasoned.disbursed)}</td><td>{fmtRate(p.seasoned.rate)}</td><td>{fmtInterval(p.seasoned.rate)}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="small"><a href={url(`/compare/?b=${[b.slug, ...peers.slice(0, 3).map((p: any) => p.slug)].join(',')}`)} data-ev="compare_from_brand">Compare these side by side</a></p>
+    </>
+  )}
+
+  <h2>Questions</h2>
+  <div class="prose">
+    {faq.map((f) => (<><h3>{f.q}</h3><p>{f.a}</p></>))}
+  </div>
+
+  <h2>What these numbers do and do not mean</h2>
+  <div class="note">
+    <ul>
+      <li>A charge-off means the SBA wrote off a loan balance. It is not the same as a location closing, and a closed location does not always produce a charge-off.</li>
+      <li>Only loans that lenders coded to this brand in the SBA file are counted. Franchisees who paid cash, borrowed conventionally or whose loan was coded differently are not here.</li>
+      <li>Loan outcomes reflect the borrower, the site, the lender and the economy as well as the brand. Past loans do not predict any future loan.</li>
+      <li>Matching: {b.match === 'legacy' ? 'this brand appears only under older SBA franchise codes' : b.match === 'alias' ? 'older spellings were merged by a reviewed alias' : 'matched to the SBA Franchise Directory'}{b.merged_legacy_codes > 0 && `, with ${b.merged_legacy_codes} older code${b.merged_legacy_codes === 1 ? '' : 's'} merged in`}. Source names: {b.source_names.slice(0, 4).join('; ')}.</li>
+    </ul>
+    <p class="small">Source: SBA 7(a) FOIA loan data as of {fmtDate(asof)}, U.S. Government work. <a href={url('/methodology/')}>Full methodology</a>. Spot an error? <a href={url('/contact/')}>Tell us</a>.</p>
+  </div>
+</Base>

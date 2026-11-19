@@ -1,0 +1,82 @@
+---
+import Base from '../layouts/Base.astro';
+import Search from '../components/Search.astro';
+import { rated, brands, industries, lenders, states, summary, asof, franchiseRate, seasonedFrom, seasonedTo, manifest } from '../lib/data';
+import { SITE, url } from '../lib/site';
+import { fmtInt, fmtUsd, fmtRate, fmtInterval, fmtDate, fmtPct, fyRange } from '../lib/format';
+const win = fyRange(seasonedFrom, seasonedTo);
+const big = rated.filter((b) => b.seasoned.disbursed >= 100);
+const low = big.slice(0, 8), high = [...big].reverse().slice(0, 8);
+const topInd = [...industries].sort((a, b) => b.seasoned.disbursed - a.seasoned.disbursed).slice(0, 18);
+const popular = [...brands].sort((a, b) => b.recent.approved - a.recent.approved).slice(0, 24);
+const newDir = summary.directory_recent.slice(0, 12);
+const f = summary.franchise;
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: new URL(url('/'), Astro.site).href, description: SITE.tagline },
+  {
+    '@context': 'https://schema.org', '@type': 'Dataset', name: 'SBA 7(a) loan outcomes by franchise brand',
+    description: `Charge-off rates, loan counts and lending statistics for ${brands.length} franchise brands, computed from the U.S. Small Business Administration 7(a) FOIA loan file as of ${asof}.`,
+    url: new URL(url('/data/'), Astro.site).href, license: manifest.licence.url, dateModified: asof,
+    isBasedOn: manifest.sources.loans_landing, creator: { '@type': 'Organization', name: SITE.name },
+    distribution: [{ '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: new URL(url('/data/franchise-loan-stats-brands.csv'), Astro.site).href }],
+  },
+];
+---
+<Base title={`${SITE.name}: SBA loan charge-off rates by franchise brand`} description={`See how SBA loans to ${fmtInt(brands.length)} franchise brands actually performed: share charged off with confidence intervals, loans by year, lenders and typical loan size. Free, from public SBA data as of ${fmtDate(asof)}.`} jsonLd={jsonLd}>
+  <h1>How have SBA loans to each franchise brand actually performed?</h1>
+  <p class="lede">Before you sign a franchise agreement, look at what happened to other franchisees' loans. This site turns the SBA's public file of {fmtInt(summary.counts.loans_total)} loans into a plain record for {fmtInt(brands.length)} brands: how many loans were made, and what share was never repaid.</p>
+  <Search autofocus />
+  <p class="small">Try <a href={url('/brands/subway/')}>Subway</a>, <a href={url('/brands/the-ups-store/')}>The UPS Store</a>, <a href={url('/brands/anytime-fitness/')}>Anytime Fitness</a> or <a href={url('/brands/')}>browse all brands</a>.</p>
+
+  <div class="cards">
+    <div class="card hero"><div class="k">Franchise loans charged off, {win}</div><div class="v">{fmtRate(franchiseRate)}</div><div class="s">{fmtInt(f.seasoned.charged_off)} of {fmtInt(f.seasoned.disbursed)} disbursed loans</div></div>
+    <div class="card"><div class="k">Non-franchise loans, same years</div><div class="v">{fmtRate(summary.non_franchise.seasoned.rate)}</div><div class="s">{fmtInt(summary.non_franchise.seasoned.disbursed)} loans</div></div>
+    <div class="card"><div class="k">Brands reported</div><div class="v">{fmtInt(brands.length)}</div><div class="s">{fmtInt(rated.length)} with 30+ seasoned loans</div></div>
+    <div class="card"><div class="k">Data as of</div><div class="v" style="font-size:1.15rem">{fmtDate(asof)}</div><div class="s">SBA publishes quarterly</div></div>
+  </div>
+
+  <div class="cols">
+    <div>
+      <h2>Lowest charge-off rates</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Brand</th><th>Loans</th><th>Rate</th><th>95% interval</th></tr></thead>
+        <tbody>{low.map((b) => <tr><td><a href={url(`/brands/${b.slug}/`)}>{b.name}</a></td><td>{fmtInt(b.seasoned.disbursed)}</td><td>{fmtRate(b.seasoned.rate)}</td><td class="muted">{fmtInterval(b.seasoned.rate)}</td></tr>)}</tbody>
+      </table></div>
+    </div>
+    <div>
+      <h2>Highest charge-off rates</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Brand</th><th>Loans</th><th>Rate</th><th>95% interval</th></tr></thead>
+        <tbody>{high.map((b) => <tr><td><a href={url(`/brands/${b.slug}/`)}>{b.name}</a></td><td>{fmtInt(b.seasoned.disbursed)}</td><td>{fmtRate(b.seasoned.rate)}</td><td class="muted">{fmtInterval(b.seasoned.rate)}</td></tr>)}</tbody>
+      </table></div>
+    </div>
+  </div>
+  <p class="small muted">Brands with at least 100 disbursed SBA 7(a) loans approved in {win}. <a href={url('/rankings/')}>Full rankings</a>.</p>
+
+  <h2>Tools</h2>
+  <div class="cols">
+    <div class="card"><strong><a href={url('/compare/')}>Compare brands side by side</a></strong><p class="small">Put up to four brands next to each other: charge-off rate, interval, loan size, interest rate.</p></div>
+    <div class="card"><strong><a href={url('/calculator/')}>SBA loan payment calculator</a></strong><p class="small">Monthly payment, total interest and debt-service coverage, pre-filled with a brand's typical loan.</p></div>
+    <div class="card"><strong><a href={url('/data/')}>Download the data</a></strong><p class="small">The full brand table as CSV, free to reuse with a link back. Updated when the SBA publishes.</p></div>
+  </div>
+
+  <h2>Most-financed brands right now</h2>
+  <ul class="pill-list">{popular.map((b) => <li><a href={url(`/brands/${b.slug}/`)}>{b.name}</a></li>)}</ul>
+
+  <h2>Charge-off rates by industry</h2>
+  <ul class="pill-list">{topInd.map((i) => <li><a href={url(`/industries/${i.slug}/`)}>{i.name} · {fmtRate(i.seasoned.rate)}</a></li>)}</ul>
+  <p class="small"><a href={url('/industries/')}>All {fmtInt(industries.length)} industries</a> · <a href={url('/lenders/')}>{fmtInt(lenders.length)} franchise lenders</a> · <a href={url('/states/')}>{states.length} states</a></p>
+
+  <h2>How to read this site</h2>
+  <div class="prose">
+    <p><strong>Charge-off rate</strong> is the share of disbursed loans that the SBA later wrote off. We report it for loans approved in {win}: old enough for problems to have surfaced, recent enough to describe the brand as it is now.</p>
+    <p><strong>The interval matters.</strong> A brand with 0 charge-offs in 40 loans and one with 3 in 200 may not really differ. Every rate carries a 95% confidence interval, and we call a brand higher or lower than a benchmark only when the intervals do not overlap.</p>
+    <p><strong>It is one input.</strong> These are loan outcomes for franchisees who borrowed through the SBA. They say nothing about franchisees who did not, and a loan can fail for reasons that have nothing to do with the brand. <a href={url('/methodology/')}>Read the methodology and its limits</a>.</p>
+  </div>
+
+  {newDir.length > 0 && (<>
+    <h2>Newest on the SBA Franchise Directory</h2>
+    <ul class="pill-list">{newDir.map((d: any) => <li>{d.slug ? <a href={url(`/brands/${d.slug}/`)}>{d.name}</a> : <a>{d.name}</a>} </li>)}</ul>
+    <p class="small muted">Brands with the most recent directory start dates. Most have no SBA loan history yet.</p>
+  </>)}
+</Base>

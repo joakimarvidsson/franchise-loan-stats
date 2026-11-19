@@ -1,0 +1,142 @@
+---
+import '../styles/global.css';
+import { SITE, url } from '../lib/site';
+import { asof, summary } from '../lib/data';
+import { fmtDate } from '../lib/format';
+
+interface Props {
+  title: string;
+  description: string;
+  crumbs?: { name: string; href?: string }[];
+  jsonLd?: object[];
+  noindex?: boolean;
+}
+const { title, description, crumbs = [], jsonLd = [], noindex = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
+const nav = [
+  ['Brands', '/brands/'],
+  ['Rankings', '/rankings/'],
+  ['Industries', '/industries/'],
+  ['Lenders', '/lenders/'],
+  ['States', '/states/'],
+  ['Compare', '/compare/'],
+  ['Calculator', '/calculator/'],
+  ['Methodology', '/methodology/'],
+];
+const breadcrumbLd = crumbs.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [{ name: 'Home', href: '/' }, ...crumbs].map((c, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: c.name,
+        item: c.href ? new URL(url(c.href), Astro.site).href : canonical,
+      })),
+    }
+  : null;
+const ld = [...jsonLd, ...(breadcrumbLd ? [breadcrumbLd] : [])];
+const path = Astro.url.pathname;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL(url('/og.png'), Astro.site).href} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href={url('/favicon.svg')} />
+    <link rel="sitemap" href={url('/sitemap-index.xml')} />
+    {ld.map((o) => <script type="application/ld+json" set:html={JSON.stringify(o)} />)}
+    <script is:inline define:vars={{ key: SITE.analytics.key, host: SITE.analytics.host }}>
+      // Cookieless analytics: nothing is stored on the device and Do Not Track is honoured.
+      !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",o="init capture register".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+      posthog.init(key, { api_host: host, persistence: 'memory', person_profiles: 'identified_only', autocapture: false,
+        capture_pageview: true, capture_pageleave: true, disable_session_recording: true, respect_dnt: true });
+      document.addEventListener('click', function (ev) {
+        var a = ev.target && ev.target.closest ? ev.target.closest('a') : null;
+        if (!a || !a.href) return;
+        var ext = a.host && a.host !== location.host;
+        if (a.dataset.ev || ext) {
+          posthog.capture(a.dataset.ev || 'outbound_click', {
+            href: a.href, kind: a.dataset.kind || (ext ? 'external' : 'internal'), label: a.dataset.label || a.textContent.trim().slice(0, 80),
+          });
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site">
+      <div class="wrap">
+        <a class="logo" href={url('/')}>Franchise <span>Loan Stats</span></a>
+        <nav class="main" aria-label="Main">
+          {nav.map(([label, href]) => (
+            <a href={url(href)} aria-current={path.startsWith(url(href)) ? 'page' : undefined}>{label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div class="wrap">
+        {crumbs.length > 0 && (
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href={url('/')}>Home</a>
+            {crumbs.map((c) => (
+              <>
+                {' › '}
+                {c.href ? <a href={url(c.href)}>{c.name}</a> : <span>{c.name}</span>}
+              </>
+            ))}
+          </nav>
+        )}
+        <slot />
+      </div>
+    </main>
+    <footer class="site">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <strong>{SITE.name}</strong>
+            <p>
+              Independent statistics built from the U.S. Small Business Administration's public 7(a) loan file.
+              Data as of {fmtDate(asof)} ({summary.counts.loans_total.toLocaleString('en-US')} loans). Not affiliated with
+              or endorsed by the SBA or any franchisor or lender.
+            </p>
+          </div>
+          <div>
+            <ul>
+              <li><a href={url('/methodology/')}>Methodology and limits</a></li>
+              <li><a href={url('/data/')}>Download the data</a></li>
+              <li><a href={url('/about/')}>About</a></li>
+              <li><a href={url('/contact/')}>Contact and corrections</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href={url('/advertise/')}>Advertise or partner</a></li>
+              <li><a href={url('/disclosure/')}>How this site is funded</a></li>
+              <li><a href={url('/privacy/')}>Privacy</a></li>
+              <li><a href={SITE.repo} data-kind="repo">Source code</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="small">
+          Statistics describe past SBA-guaranteed loans only. They are not a rating of any business, a prediction, or
+          financial, legal or investment advice. Read the franchise disclosure document and talk to an independent
+          franchise attorney and accountant before investing.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

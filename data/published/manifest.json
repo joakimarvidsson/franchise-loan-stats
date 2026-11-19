@@ -1,0 +1,94 @@
+{
+ "asof": "2026-09-30",
+ "built_at": "2026-11-19T08:46:22Z",
+ "counts": {
+  "brand_pages": 1357,
+  "brands_rated": 333,
+  "brands_with_loans": 7005,
+  "directory_brands": 2617,
+  "industry_pages": 347,
+  "lender_pages": 170,
+  "loans_franchise": 157028,
+  "loans_total": 1976761,
+  "state_pages": 51,
+  "unparsed_rows": 0
+ },
+ "fingerprint": {
+  "directory": [
+   "Franchise Directory Nov 10 2026_REM01.xlsx",
+   296650,
+   "486ca-66015f1f219b8"
+  ],
+  "loans": [
+   [
+    "FOIA_7a_FY1991_FY1999_asof_260930.csv",
+    146535485,
+    "8bbf43d-65f10a145ce70"
+   ],
+   [
+    "FOIA_7a_FY2000_FY2009_asof_260930.csv",
+    318696252,
+    "12feeb3c-65f10a7b41f78"
+   ],
+   [
+    "FOIA_7a_FY2010_FY2019_asof_260930.csv",
+    255300948,
+    "f379554-65f10aca77110"
+   ],
+   [
+    "FOIA_7a_FY2020_Present_asof_260930.csv",
+    188484797,
+    "b3c0cbd-65f10b115cf80"
+   ]
+  ]
+ },
+ "licence": {
+  "name": "U.S. Government Works (public domain)",
+  "url": "https://www.usa.gov/publicdomain/label/1.0/"
+ },
+ "sources": {
+  "directory": {
+   "bytes": 296650,
+   "etag": "486ca-66015f1f219b8",
+   "last_modified": "Thu, 12 Nov 2026 15:27:10 GMT",
+   "name": "Franchise Directory Nov 10 2026_REM01.xlsx",
+   "url": "https://legacy.sba.gov/sites/default/files/2026-11/Franchise%20Directory%20Nov%2010%202026_REM01.xlsx"
+  },
+  "directory_landing": "https://www.sba.gov/document/support-sba-franchise-directory",
+  "loans": [
+   {
+    "asof": "2026-09-30",
+    "bytes": 146535485,
+    "etag": "8bbf43d-65f10a145ce70",
+    "last_modified": "Fri, 30 Oct 2026 15:41:30 GMT",
+    "name": "FOIA_7a_FY1991_FY1999_asof_260930.csv",
+    "url": "https://data.sba.gov/sites/default/files/uploaded_resources/FOIA_7a_FY1991_FY1999_asof_260930.csv"
+   },
+   {
+    "asof": "2026-09-30",
+    "bytes": 318696252,
+    "etag": "12feeb3c-65f10a7b41f78",
+    "last_modified": "Fri, 30 Oct 2026 15:43:17 GMT",
+    "name": "FOIA_7a_FY2000_FY2009_asof_260930.csv",
+    "url": "https://data.sba.gov/sites/default/files/uploaded_resources/FOIA_7a_FY2000_FY2009_asof_260930.csv"
+   },
+   {
+    "asof": "2026-09-30",
+    "bytes": 255300948,
+    "etag": "f379554-65f10aca77110",
+    "last_modified": "Fri, 30 Oct 2026 15:44:41 GMT",
+    "name": "FOIA_7a_FY2010_FY2019_asof_260930.csv",
+    "url": "https://data.sba.gov/sites/default/files/uploaded_resources/FOIA_7a_FY2010_FY2019_asof_260930.csv"
+   },
+   {
+    "asof": "2026-09-30",
+    "bytes": 188484797,
+    "etag": "b3c0cbd-65f10b115cf80",
+    "last_modified": "Fri, 30 Oct 2026 15:45:55 GMT",
+    "name": "FOIA_7a_FY2020_Present_asof_260930.csv",
+    "url": "https://data.sba.gov/sites/default/files/uploaded_resources/FOIA_7a_FY2020_Present_asof_260930.csv"
+   }
+  ],
+  "loans_landing": "https://data.sba.gov/dataset/7a-504-foia"
+ }
+}

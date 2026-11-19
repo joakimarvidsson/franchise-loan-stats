@@ -1,0 +1,14 @@
+---
+import { partnersFor } from '../lib/partners';
+import { url } from '../lib/site';
+interface Props { placement: string; }
+const offers = partnersFor(Astro.props.placement);
+---
+{offers.map((p) => (
+  <aside class="partner">
+    <div class="label">{p.relationship === 'sponsor' ? 'Sponsor' : 'Partner link'} · <a href={url('/disclosure/')}>we may earn a fee</a></div>
+    <strong>{p.headline}</strong>
+    <p class="small">{p.body}</p>
+    <a class="btn" href={p.url} rel="sponsored noopener" data-ev="partner_click" data-kind={p.relationship} data-label={p.id}>{p.cta}</a>
+  </aside>
+))}

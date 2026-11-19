@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import TableTools from '../../components/TableTools.astro';
+import { industries, summary, asof, seasonedFrom, seasonedTo } from '../../lib/data';
+import { url } from '../../lib/site';
+import { fmtInt, fmtUsd, fmtRate, fmtInterval, fmtDate, fmtPct, fyRange } from '../../lib/format';
+const list = [...industries].sort((a, b) => b.seasoned.disbursed - a.seasoned.disbursed);
+const win = fyRange(seasonedFrom, seasonedTo);
+---
+<Base title="SBA loan charge-off rates by industry" description={`Charge-off rates for ${fmtInt(industries.length)} industries from every SBA 7(a) loan approved in ${win}: loans made, share charged off, typical loan size and the franchise brands in each. Data as of ${fmtDate(asof)}.`} crumbs={[{ name: 'Industries' }]}>
+  <h1>SBA loan charge-off rates by industry</h1>
+  <p class="lede">Every SBA 7(a) loan, franchise or not, grouped by NAICS industry. Industries need at least {summary.thresholds.industry_page_min} seasoned loans to appear. The rate across all 7(a) loans in {win} was {fmtPct(summary.all_7a.seasoned.rate.pct)}.</p>
+  <div class="controls" data-controls-for="ind-table">
+    <label>Industry<input type="search" data-q placeholder="Type to filter, e.g. restaurants" /></label>
+    <label>Min. loans<input type="number" min="0" step="100" data-min="sd" style="width:7rem" /></label>
+  </div>
+  <p class="small"><span data-count-for="ind-table">{fmtInt(list.length)}</span> industries shown.</p>
+  <div class="table-wrap"><table id="ind-table" data-table>
+    <thead><tr><th data-sort="name" data-type="text">Industry</th><th data-sort="sd" data-first="desc" aria-sort="descending">Loans, {win}</th><th data-sort="rate">Charged off</th><th>95% interval</th><th data-sort="ml" data-first="desc">Median recent loan</th></tr></thead>
+    <tbody>{list.map((i) => (
+      <tr data-q={i.name.toLowerCase()} data-name={i.name.toLowerCase()} data-sd={i.seasoned.disbursed} data-rate={i.seasoned.rate?.pct ?? ''} data-ml={i.recent.median_loan ?? ''}>
+        <td><a href={url(`/industries/${i.slug}/`)}>{i.name}</a></td><td>{fmtInt(i.seasoned.disbursed)}</td><td>{fmtRate(i.seasoned.rate)}</td><td class="muted">{fmtInterval(i.seasoned.rate)}</td><td>{fmtUsd(i.recent.median_loan)}</td>
+      </tr>))}</tbody>
+  </table></div>
+  <TableTools />
+</Base>

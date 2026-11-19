@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import Search from '../components/Search.astro';
+import { url } from '../lib/site';
+---
+<Base title="Page not found" description="That page does not exist. Search for a franchise brand or browse the brand list." noindex>
+  <h1>Page not found</h1>
+  <p class="lede">That address does not match a page. Brand pages can move when the SBA renames a directory entry.</p>
+  <Search />
+  <p><a href={url('/brands/')}>Browse all brands</a> · <a href={url('/')}>Home</a></p>
+</Base>

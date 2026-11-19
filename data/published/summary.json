@@ -1,0 +1,833 @@
+{
+ "all_7a": {
+  "all": {
+   "active": 298239,
+   "approved": 1976761,
+   "cancelled": 245627,
+   "charged_off": 222294,
+   "charged_off_amount": 24175280940,
+   "disbursed": 1709611,
+   "first_fy": 1991,
+   "gross": 526842746842,
+   "last_fy": 2026,
+   "median_loan": 100000,
+   "paid_in_full": 1189078,
+   "rate": {
+    "hi": 13.1,
+    "lo": 13.0,
+    "pct": 13.0
+   },
+   "undisbursed": 21523
+  },
+  "recent": {
+   "approved": 309490,
+   "change_of_ownership_pct": 11,
+   "charged_off": 5165,
+   "disbursed": 247586,
+   "from_fy": 2022,
+   "gross": 136867127218,
+   "median_loan": 175000,
+   "median_rate": 9.75,
+   "median_term_months": 120,
+   "new_business_pct": 34,
+   "to_fy": 2026
+  },
+  "seasoned": {
+   "charged_off": 30776,
+   "charged_off_amount": 4845911394,
+   "disbursed": 475060,
+   "from_fy": 2012,
+   "gross": 205703935243,
+   "rate": {
+    "hi": 6.5,
+    "lo": 6.4,
+    "pct": 6.5
+   },
+   "rate_dollar_pct": 2.4,
+   "tier": "rated",
+   "to_fy": 2021
+  }
+ },
+ "asof": "2026-09-30",
+ "asof_fy": 2026,
+ "counts": {
+  "brand_pages": 1357,
+  "brands_rated": 333,
+  "brands_with_loans": 7005,
+  "directory_brands": 2617,
+  "industry_pages": 347,
+  "lender_pages": 170,
+  "loans_franchise": 157028,
+  "loans_total": 1976761,
+  "state_pages": 51,
+  "unparsed_rows": 0
+ },
+ "directory_recent": [
+  {
+   "code": "S9055",
+   "listed_since": "2026-11-10",
+   "name": "180 Water",
+   "slug": null
+  },
+  {
+   "code": "S9057",
+   "listed_since": "2026-11-10",
+   "name": "Brewed Awakening Cafes",
+   "slug": null
+  },
+  {
+   "code": "S9044",
+   "listed_since": "2026-11-10",
+   "name": "CEFA Early Years School",
+   "slug": null
+  },
+  {
+   "code": "S9040",
+   "listed_since": "2026-11-10",
+   "name": "Chickn Dipn",
+   "slug": null
+  },
+  {
+   "code": "S9045",
+   "listed_since": "2026-11-10",
+   "name": "Cluck Clucks",
+   "slug": null
+  },
+  {
+   "code": "S9054",
+   "listed_since": "2026-11-10",
+   "name": "DOGPerfect",
+   "slug": null
+  },
+  {
+   "code": "S9056",
+   "listed_since": "2026-11-10",
+   "name": "Epic Septic",
+   "slug": null
+  },
+  {
+   "code": "S9049",
+   "listed_since": "2026-11-10",
+   "name": "Ervexia Occupational Health",
+   "slug": null
+  },
+  {
+   "code": "S9052",
+   "listed_since": "2026-11-10",
+   "name": "Fluffy Fluffy Cafe",
+   "slug": null
+  },
+  {
+   "code": "S9042",
+   "listed_since": "2026-11-10",
+   "name": "Grace Integrated",
+   "slug": null
+  },
+  {
+   "code": "S9062",
+   "listed_since": "2026-11-10",
+   "name": "HWQ Realty",
+   "slug": null
+  },
+  {
+   "code": "S9047",
+   "listed_since": "2026-11-10",
+   "name": "Jones' Shakes",
+   "slug": null
+  },
+  {
+   "code": "S9059",
+   "listed_since": "2026-11-10",
+   "name": "Just You Fitness",
+   "slug": null
+  },
+  {
+   "code": "S9043",
+   "listed_since": "2026-11-10",
+   "name": "Karak House Coffee Co",
+   "slug": null
+  },
+  {
+   "code": "S9053",
+   "listed_since": "2026-11-10",
+   "name": "Karie Anne's Frozen Desserts",
+   "slug": null
+  },
+  {
+   "code": "S9063",
+   "listed_since": "2026-11-10",
+   "name": "King of Pops",
+   "slug": null
+  },
+  {
+   "code": "S9061",
+   "listed_since": "2026-11-10",
+   "name": "Lviv Croissants",
+   "slug": null
+  },
+  {
+   "code": "S9051",
+   "listed_since": "2026-11-10",
+   "name": "OCC Apparel",
+   "slug": null
+  },
+  {
+   "code": "S9041",
+   "listed_since": "2026-11-10",
+   "name": "P3 Recovery",
+   "slug": null
+  },
+  {
+   "code": "S9058",
+   "listed_since": "2026-11-10",
+   "name": "Replay Sports Cards",
+   "slug": null
+  },
+  {
+   "code": "S9048",
+   "listed_since": "2026-11-10",
+   "name": "Soccer Buddies",
+   "slug": null
+  },
+  {
+   "code": "S9050",
+   "listed_since": "2026-11-10",
+   "name": "Story Time Chess",
+   "slug": null
+  },
+  {
+   "code": "S9060",
+   "listed_since": "2026-11-10",
+   "name": "True Society",
+   "slug": null
+  },
+  {
+   "code": "S9046",
+   "listed_since": "2026-11-10",
+   "name": "Twisted Egg Shack",
+   "slug": null
+  },
+  {
+   "code": "S9038",
+   "listed_since": "2026-10-28",
+   "name": "Almera Tech Services",
+   "slug": null
+  },
+  {
+   "code": "S9035",
+   "listed_since": "2026-10-28",
+   "name": "Coastal Swing Golf and Bar",
+   "slug": null
+  },
+  {
+   "code": "S9039",
+   "listed_since": "2026-10-28",
+   "name": "Curry Pizza House",
+   "slug": null
+  },
+  {
+   "code": "S9030",
+   "listed_since": "2026-10-28",
+   "name": "Dryvebox",
+   "slug": null
+  },
+  {
+   "code": "S9034",
+   "listed_since": "2026-10-28",
+   "name": "ELEV802 - License Agreement",
+   "slug": null
+  },
+  {
+   "code": "S9036",
+   "listed_since": "2026-10-28",
+   "name": "Jump! Gymnastics",
+   "slug": null
+  },
+  {
+   "code": "S9033",
+   "listed_since": "2026-10-28",
+   "name": "Keik Bakeshop",
+   "slug": null
+  },
+  {
+   "code": "S9032",
+   "listed_since": "2026-10-28",
+   "name": "Red Rock Distributing Company (Phillips 66) Gasoline Distribution Agreement",
+   "slug": null
+  },
+  {
+   "code": "S9037",
+   "listed_since": "2026-10-28",
+   "name": "Volta Soccer Training Center",
+   "slug": null
+  },
+  {
+   "code": "S9031",
+   "listed_since": "2026-10-28",
+   "name": "Von Hanson's Meats",
+   "slug": null
+  },
+  {
+   "code": "S9004",
+   "listed_since": "2026-10-23",
+   "name": "Burly Burger",
+   "slug": null
+  },
+  {
+   "code": "S9026",
+   "listed_since": "2026-10-23",
+   "name": "Caley Insurance",
+   "slug": null
+  },
+  {
+   "code": "S9003",
+   "listed_since": "2026-10-23",
+   "name": "Care Petroleum Inc. (Valero) Complete Contract of Sale(Branded)",
+   "slug": null
+  },
+  {
+   "code": "S8996",
+   "listed_since": "2026-10-23",
+   "name": "Dizzy Bird",
+   "slug": null
+  },
+  {
+   "code": "S9016",
+   "listed_since": "2026-10-23",
+   "name": "Dogs & Cream",
+   "slug": null
+  },
+  {
+   "code": "S8998",
+   "listed_since": "2026-10-23",
+   "name": "Driving Academy",
+   "slug": null
+  },
+  {
+   "code": "S9002",
+   "listed_since": "2026-10-23",
+   "name": "Fit Body Forever",
+   "slug": null
+  },
+  {
+   "code": "S9027",
+   "listed_since": "2026-10-23",
+   "name": "Froggy's Sandwiches",
+   "slug": null
+  },
+  {
+   "code": "S9015",
+   "listed_since": "2026-10-23",
+   "name": "Hey Yogurt",
+   "slug": null
+  },
+  {
+   "code": "S9000",
+   "listed_since": "2026-10-23",
+   "name": "Housebar",
+   "slug": null
+  },
+  {
+   "code": "S9025",
+   "listed_since": "2026-10-23",
+   "name": "Infinite Hitting Clubhouse",
+   "slug": null
+  },
+  {
+   "code": "S9018",
+   "listed_since": "2026-10-23",
+   "name": "King of Fire",
+   "slug": null
+  },
+  {
+   "code": "S8997",
+   "listed_since": "2026-10-23",
+   "name": "Nashville Coop",
+   "slug": null
+  },
+  {
+   "code": "S9006",
+   "listed_since": "2026-10-23",
+   "name": "OHSO Brewery",
+   "slug": null
+  },
+  {
+   "code": "S9005",
+   "listed_since": "2026-10-23",
+   "name": "ONYX Pilates",
+   "slug": null
+  },
+  {
+   "code": "S9023",
+   "listed_since": "2026-10-23",
+   "name": "Pilates Addiction",
+   "slug": null
+  },
+  {
+   "code": "S9022",
+   "listed_since": "2026-10-23",
+   "name": "Preserve Services",
+   "slug": null
+  },
+  {
+   "code": "S9010",
+   "listed_since": "2026-10-23",
+   "name": "Ranger Joe's Pizza",
+   "slug": null
+  },
+  {
+   "code": "S9013",
+   "listed_since": "2026-10-23",
+   "name": "MAX",
+   "slug": null
+  },
+  {
+   "code": "S9014",
+   "listed_since": "2026-10-23",
+   "name": "MAX Integrated Regions",
+   "slug": null
+  },
+  {
+   "code": "S9020",
+   "listed_since": "2026-10-23",
+   "name": "MAX of Southeastern Michigan",
+   "slug": null
+  },
+  {
+   "code": "S9021",
+   "listed_since": "2026-10-23",
+   "name": "MAX Regional Services",
+   "slug": null
+  },
+  {
+   "code": "S9009",
+   "listed_since": "2026-10-23",
+   "name": "Roctaco",
+   "slug": null
+  },
+  {
+   "code": "S9017",
+   "listed_since": "2026-10-23",
+   "name": "Sandri Energy, LLC – (Sunoco) – Fuel Supply Agreement",
+   "slug": null
+  },
+  {
+   "code": "S9024",
+   "listed_since": "2026-10-23",
+   "name": "Sapphira Med Spa",
+   "slug": null
+  },
+  {
+   "code": "S9011",
+   "listed_since": "2026-10-23",
+   "name": "Schoop's Hamburgers",
+   "slug": null
+  }
+ ],
+ "franchise": {
+  "all": {
+   "active": 36469,
+   "approved": 157028,
+   "cancelled": 18152,
+   "charged_off": 15722,
+   "charged_off_amount": 2879616846,
+   "disbursed": 135619,
+   "first_fy": 1991,
+   "gross": 75344434697,
+   "last_fy": 2026,
+   "median_loan": 243400,
+   "paid_in_full": 83428,
+   "rate": {
+    "hi": 11.8,
+    "lo": 11.4,
+    "pct": 11.6
+   },
+   "undisbursed": 3257
+  },
+  "recent": {
+   "approved": 34709,
+   "change_of_ownership_pct": 14,
+   "charged_off": 410,
+   "disbursed": 28532,
+   "from_fy": 2022,
+   "gross": 24596983800,
+   "median_loan": 356000,
+   "median_rate": 9.5,
+   "median_term_months": 120,
+   "new_business_pct": 71,
+   "to_fy": 2026
+  },
+  "seasoned": {
+   "charged_off": 3875,
+   "charged_off_amount": 883735891,
+   "disbursed": 50139,
+   "from_fy": 2012,
+   "gross": 36326583100,
+   "rate": {
+    "hi": 8.0,
+    "lo": 7.5,
+    "pct": 7.7
+   },
+   "rate_dollar_pct": 2.4,
+   "tier": "rated",
+   "to_fy": 2021
+  }
+ },
+ "franchise_by_year": [
+  {
+   "active": 5,
+   "approved": 1107,
+   "chgoff": 130,
+   "disbursed": 960,
+   "fy": 1991,
+   "pif": 825
+  },
+  {
+   "active": 7,
+   "approved": 1297,
+   "chgoff": 107,
+   "disbursed": 1145,
+   "fy": 1992,
+   "pif": 1031
+  },
+  {
+   "active": 7,
+   "approved": 1591,
+   "chgoff": 127,
+   "disbursed": 1363,
+   "fy": 1993,
+   "pif": 1229
+  },
+  {
+   "active": 13,
+   "approved": 2063,
+   "chgoff": 207,
+   "disbursed": 1801,
+   "fy": 1994,
+   "pif": 1581
+  },
+  {
+   "active": 20,
+   "approved": 3207,
+   "chgoff": 462,
+   "disbursed": 2774,
+   "fy": 1995,
+   "pif": 2292
+  },
+  {
+   "active": 20,
+   "approved": 3196,
+   "chgoff": 449,
+   "disbursed": 2770,
+   "fy": 1996,
+   "pif": 2301
+  },
+  {
+   "active": 20,
+   "approved": 3438,
+   "chgoff": 470,
+   "disbursed": 2856,
+   "fy": 1997,
+   "pif": 2366
+  },
+  {
+   "active": 16,
+   "approved": 2705,
+   "chgoff": 414,
+   "disbursed": 2286,
+   "fy": 1998,
+   "pif": 1856
+  },
+  {
+   "active": 14,
+   "approved": 2948,
+   "chgoff": 470,
+   "disbursed": 2510,
+   "fy": 1999,
+   "pif": 2026
+  },
+  {
+   "active": 5,
+   "approved": 3160,
+   "chgoff": 515,
+   "disbursed": 2705,
+   "fy": 2000,
+   "pif": 2185
+  },
+  {
+   "active": 4,
+   "approved": 2999,
+   "chgoff": 496,
+   "disbursed": 2562,
+   "fy": 2001,
+   "pif": 2062
+  },
+  {
+   "active": 5,
+   "approved": 4166,
+   "chgoff": 619,
+   "disbursed": 3651,
+   "fy": 2002,
+   "pif": 3027
+  },
+  {
+   "active": 6,
+   "approved": 5120,
+   "chgoff": 823,
+   "disbursed": 4400,
+   "fy": 2003,
+   "pif": 3571
+  },
+  {
+   "active": 20,
+   "approved": 5458,
+   "chgoff": 975,
+   "disbursed": 4697,
+   "fy": 2004,
+   "pif": 3702
+  },
+  {
+   "active": 27,
+   "approved": 5703,
+   "chgoff": 1242,
+   "disbursed": 4915,
+   "fy": 2005,
+   "pif": 3646
+  },
+  {
+   "active": 29,
+   "approved": 3655,
+   "chgoff": 1111,
+   "disbursed": 3169,
+   "fy": 2006,
+   "pif": 2029
+  },
+  {
+   "active": 52,
+   "approved": 3801,
+   "chgoff": 1235,
+   "disbursed": 3302,
+   "fy": 2007,
+   "pif": 2015
+  },
+  {
+   "active": 35,
+   "approved": 3478,
+   "chgoff": 979,
+   "disbursed": 3026,
+   "fy": 2008,
+   "pif": 2012
+  },
+  {
+   "active": 17,
+   "approved": 2057,
+   "chgoff": 266,
+   "disbursed": 1801,
+   "fy": 2009,
+   "pif": 1518
+  },
+  {
+   "active": 19,
+   "approved": 2339,
+   "chgoff": 174,
+   "disbursed": 2012,
+   "fy": 2010,
+   "pif": 1819
+  },
+  {
+   "active": 36,
+   "approved": 2574,
+   "chgoff": 166,
+   "disbursed": 2243,
+   "fy": 2011,
+   "pif": 2041
+  },
+  {
+   "active": 53,
+   "approved": 2543,
+   "chgoff": 154,
+   "disbursed": 2254,
+   "fy": 2012,
+   "pif": 2047
+  },
+  {
+   "active": 96,
+   "approved": 3217,
+   "chgoff": 191,
+   "disbursed": 2859,
+   "fy": 2013,
+   "pif": 2572
+  },
+  {
+   "active": 134,
+   "approved": 4770,
+   "chgoff": 335,
+   "disbursed": 4237,
+   "fy": 2014,
+   "pif": 3768
+  },
+  {
+   "active": 279,
+   "approved": 6053,
+   "chgoff": 506,
+   "disbursed": 5341,
+   "fy": 2015,
+   "pif": 4556
+  },
+  {
+   "active": 507,
+   "approved": 6005,
+   "chgoff": 536,
+   "disbursed": 5476,
+   "fy": 2016,
+   "pif": 4433
+  },
+  {
+   "active": 1024,
+   "approved": 5972,
+   "chgoff": 569,
+   "disbursed": 5442,
+   "fy": 2017,
+   "pif": 3849
+  },
+  {
+   "active": 1603,
+   "approved": 7017,
+   "chgoff": 630,
+   "disbursed": 6372,
+   "fy": 2018,
+   "pif": 4139
+  },
+  {
+   "active": 2079,
+   "approved": 6846,
+   "chgoff": 457,
+   "disbursed": 6133,
+   "fy": 2019,
+   "pif": 3597
+  },
+  {
+   "active": 2022,
+   "approved": 5757,
+   "chgoff": 253,
+   "disbursed": 4980,
+   "fy": 2020,
+   "pif": 2705
+  },
+  {
+   "active": 3717,
+   "approved": 8077,
+   "chgoff": 244,
+   "disbursed": 7045,
+   "fy": 2021,
+   "pif": 3084
+  },
+  {
+   "active": 3956,
+   "approved": 6564,
+   "chgoff": 199,
+   "disbursed": 5789,
+   "fy": 2022,
+   "pif": 1634
+  },
+  {
+   "active": 5131,
+   "approved": 7365,
+   "chgoff": 173,
+   "disbursed": 6501,
+   "fy": 2023,
+   "pif": 1197
+  },
+  {
+   "active": 4685,
+   "approved": 5908,
+   "chgoff": 33,
+   "disbursed": 5207,
+   "fy": 2024,
+   "pif": 489
+  },
+  {
+   "active": 5858,
+   "approved": 7152,
+   "chgoff": 5,
+   "disbursed": 6069,
+   "fy": 2025,
+   "pif": 206
+  },
+  {
+   "active": 4948,
+   "approved": 7720,
+   "chgoff": 0,
+   "disbursed": 4966,
+   "fy": 2026,
+   "pif": 18
+  }
+ ],
+ "non_franchise": {
+  "all": {
+   "active": 261770,
+   "approved": 1819572,
+   "cancelled": 227449,
+   "charged_off": 206554,
+   "charged_off_amount": 21293417477,
+   "disbursed": 1573857,
+   "first_fy": 1991,
+   "gross": 451458815046,
+   "last_fy": 2026,
+   "median_loan": 100000,
+   "paid_in_full": 1105533,
+   "rate": {
+    "hi": 13.2,
+    "lo": 13.1,
+    "pct": 13.1
+   },
+   "undisbursed": 18266
+  },
+  "recent": {
+   "approved": 274781,
+   "change_of_ownership_pct": 10,
+   "charged_off": 4755,
+   "disbursed": 219054,
+   "from_fy": 2022,
+   "gross": 112270143418,
+   "median_loan": 150000,
+   "median_rate": 10.0,
+   "median_term_months": 120,
+   "new_business_pct": 29,
+   "to_fy": 2026
+  },
+  "seasoned": {
+   "charged_off": 26901,
+   "charged_off_amount": 3962175503,
+   "disbursed": 424921,
+   "from_fy": 2012,
+   "gross": 169377352143,
+   "rate": {
+    "hi": 6.4,
+    "lo": 6.3,
+    "pct": 6.3
+   },
+   "rate_dollar_pct": 2.3,
+   "tier": "rated",
+   "to_fy": 2021
+  }
+ },
+ "thresholds": {
+  "brand_page_min_all_time": 25,
+  "industry_page_min": 200,
+  "lender_page_min": 50,
+  "limited_min": 10,
+  "rated_min": 30
+ },
+ "windows": {
+  "activity_from_fy": 2017,
+  "recent": [
+   2022,
+   2026
+  ],
+  "seasoned": [
+   2012,
+   2021
+  ]
+ }
+}

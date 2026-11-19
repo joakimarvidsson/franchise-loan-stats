@@ -1,0 +1,161 @@
+# Hand-reviewed brand aliases. One row per source spelling or code.
+# source_name: a legacy FranchiseName spelling from the SBA files, OR an SBA Franchise Directory code (S####).
+# target: the brand it belongs to, as an S code or as the brand's directory name. Empty = keep separate.
+# display: optional display-name override for the resulting brand.
+# note: why. Rows are only added when the two names are plainly the same franchise system.
+# Rebrands by the same franchisor are merged and noted. Different systems are never merged.
+source_name,target,display,note
+SUBWAY SANDWICH SHOP,Subway,,legacy spelling
+DUNKIN DONUTS,Dunkin',,brand renamed Dunkin' in 2019
+SUPER 8 MOTEL,S1645,,legacy spelling
+SUPER 8,S1645,,legacy spelling
+S1645,,Super 8,directory entry has a typo ("Wyndhan")
+BASKIN-ROBBINS 31 ICE CREAM,Baskin-Robbins,,legacy spelling
+BEST WESTERN INN,S2125,Best Western,legacy spelling
+S2125,,Best Western,directory entry lists every sub-brand
+SPORTS CLIPS,Sport Clips,,legacy misspelling
+AAMCO TRANSMISSIONS,S0032,AAMCO,legacy spelling
+S0032,,AAMCO,shorter display name
+MEINEKE CAR CARE,S1101,,legacy spelling
+MEINEKE,S1101,,legacy spelling
+SCHLOTZSKY'S SANDWICH SHOP,Schlotzsky's,,legacy spelling
+MAACO AUTO PAINTING CENTER,Maaco,,legacy spelling
+JERSEY MIKE'S,S0901,Jersey Mike's Subs,legacy spelling
+PAPA MURPHY'S TAKE AND BAKE PIZZA,S1274,,legacy spelling
+PAPA MURPHY'S,S1274,,legacy spelling
+BIG O TIRES,S0216,Big O Tires,legacy spelling
+S0216,,Big O Tires,shorter display name
+ECONO LODGE MOTEL,S0566,Econo Lodge,legacy spelling
+ECONO LODGE,S0566,Econo Lodge,legacy spelling
+S0566,,Econo Lodge,shorter display name
+LITTLE CEASARS PIZZA,S1009,,legacy misspelling
+LITTLE CAESAR PIZZA,S1009,,legacy spelling
+"QUALITY INN, QUALITY SUITES HOTEL OR RESORT",S1373,Quality Inn,legacy spelling
+QUALITY INN,S1373,Quality Inn,legacy spelling
+S1373,,Quality Inn,shorter display name
+RAMADA INN,Ramada,,legacy spelling
+WINGSTOP RESTAURANT,Wingstop,,legacy spelling
+TRAVELODGE,S1814,Travelodge,legacy spelling
+S1814,,Travelodge,shorter display name
+TROPICAL SMOOTHIE,Tropical Smoothie Cafe,,legacy spelling
+COMFORT INN,S0410,Comfort Inn,legacy spelling
+"COMFORT, COMFORT INN & SUITES, COMFORT SUITES",S0410,Comfort Inn,legacy spelling
+S0410,,Comfort Inn,shorter display name
+MIDAS MUFFLER SHOP,Midas,,legacy spelling
+SYLVAN LEARNING CENTER,S1658,,legacy spelling
+RITA'S REAL ITALIAN WATER ICE,S1435,Rita's Italian Ice,legacy spelling
+S1435,,Rita's Italian Ice,common consumer name
+ALPHAGRAPHICS PRINTSHOPS OF THE FUTU,AlphaGraphics,,legacy spelling (truncated in source)
+PRIMROSE SCHOOL,S1353,,legacy spelling
+PAPA JOHN'S PIZZA,S1273,,legacy spelling
+SNAP-ON TOOLS,S1593,,legacy spelling
+POST NET,S1338,,legacy spelling
+GODDARD EARLY LEARNING CENTER,S1753,,legacy spelling
+HOME INSTEAD SENIOR CARE,S0811,,legacy spelling
+CULVER'S FROZEN CUSTARD,S0449,,legacy spelling
+PEARLE VISION CENTER,S1286,,legacy spelling
+DENNY'S RESTAURANT,S2351,,legacy spelling
+AUNTIE ANN'S,S0148,,legacy misspelling
+MR. GOODCENTS SUB & PASTA,S0733,,brand renamed Goodcents
+MOE'S SW GRILL,S1120,,legacy abbreviation
+GREAT HARVEST BREAD,S0744,,legacy spelling
+INTERNATIONAL HOUSE OF PANCAKES,S0846,IHOP,legacy spelling
+S0846,,IHOP,shorter display name
+POPEYE'S FAMOUS FRIED CHICKEN,S1334,,legacy spelling
+QUIZNOS SUBS,Quiznos,,legacy spelling
+SIR SPEEDY PRINTING CENTER,S1576,,legacy spelling
+TOGO'S EATERY,S1803,Togo's,legacy spelling
+S1803,,Togo's,shorter display name
+PAKMAIL CENTERS OF AMERICA,S1267,,legacy spelling
+DICKEY'S BARBEQUE,Dickey's Barbecue Pit,,legacy spelling
+HAMPTON INNS,S0781,,legacy spelling
+COUSINS SUBMARINES,S0435,,legacy spelling
+AMERICA'S BEST VALUE INN F/K/A BEST VALUE INN,S0112,,legacy spelling
+BEEF O'BRADY'S,S0203,,legacy spelling
+CERTA PROPAINTERS,S0356,,legacy spelling
+SIGN-A-RAMA,S1570,,legacy spelling
+SIGN A RAMA,S1570,,legacy spelling
+LA QUINTA INN,S0982,La Quinta,legacy spelling
+S0982,,La Quinta,shorter display name
+CARVEL ICE CREAM,S0351,,legacy spelling
+BRUSTER'S,S0263,,legacy spelling
+CHURCH'S FRIED CHICKEN,S0378,,legacy spelling
+CHARLEY'S GRILLED SUBS,S0360,,brand renamed Charleys Philly Steaks
+HAND AND STONE,S0782,,legacy spelling
+SPEEDEE OIL CHANGE & TUNE-UP,S1604,,legacy spelling
+SALAD WORKS,S1520,,legacy spelling
+ROBEKS JUICE,S1438,,legacy spelling
+CULLIGAN SOFT WATER SERVICE,S0448,,legacy spelling
+BEN & JERRY'S ICE CREAM,S0206,,legacy spelling
+PHILLY SOFT PRETZEL FACTORY,S1298,,brand renamed Philly Pretzel Factory
+ECONO LUB N' TUNE,S0567,,legacy spelling
+BAHAMA BUCKS,S0183,,legacy spelling
+MY GYM,S1156,,legacy spelling
+RODEWAY INN,S1444,Rodeway Inn,legacy spelling
+RODEWAY INNS,S1444,Rodeway Inn,legacy spelling
+S1444,,Rodeway Inn,shorter display name
+A & W RESTAURANT,S0029,,legacy spelling
+TACO MAKER,S1680,,legacy spelling
+SKYZONE,S1580,,legacy spelling
+MICROTEL,S1109,,legacy spelling
+ELEMENTS THERAPEUTIC MASSAGE,S0574,,legacy spelling
+DAIRY QUEEN,S0480,Dairy Queen,one consumer brand across DQ agreement types
+DAIRY QUEEN FROZEN TREAT CENTER,S0480,Dairy Queen,one consumer brand across DQ agreement types
+DAIRY QUEEN GRILL AND CHILL/TEXAS DQ,S0480,Dairy Queen,one consumer brand across DQ agreement types
+S0481,S0480,Dairy Queen,DQ Treat is a Dairy Queen agreement type
+S0480,,Dairy Queen,one consumer brand across DQ agreement types
+S0488,,Days Inn,shorter display name
+S2794,,Holiday Inn Express,shorter display name
+S0806,,Holiday Inn,shorter display name
+S0402,,College Hunks Hauling Junk & Moving,shorter display name
+S0901,,Jersey Mike's Subs,shorter display name
+S1088,,Matco Tools,directory entry carries a legacy qualifier
+S1101,,Meineke,shorter display name
+TOGO'S,S1803,,legacy spelling
+RAINBOW ACADEMY,,,kept separate: a childcare brand not Rainbow International
+RENAISSANCE REALTY,,,kept separate: not the Renaissance hotel brand
+CHICO'S (WOMEN'S CLOTHING - RETAIL),,,kept separate: clothing retailer not Chico's Tacos
+ENERGY KITCHEN,,,kept separate: unrelated to the brand named Energy
+ACTION AUTO,,,kept separate: unrelated to Action International
+HOLIDAY,,,kept separate: ambiguous single word
+SHONEY'S INN,,,kept separate: lodging chain distinct from Shoney's Restaurant
+KEY WEST INN,,,kept separate: ambiguous
+CURVES FOR WOMEN,Curves,,legacy spelling
+S2349,S0480,,same brand under another directory entry
+S4121,S0480,,same brand under another directory entry
+S7782,S0480,,same brand under another directory entry
+CICI'S PIZZA/ CICI'S TO GO,S0379,,"same brand, alternate spelling"
+EUROPEAN WAX CENTERS-GALLERIA,S0585,,"same brand, alternate spelling"
+GENERAL NUTRITION CENTERS/GNC,GENERAL NUTRITION CENTER,,"same brand, alternate spelling"
+BATTERIES PLUS BULBS,S0196,,"same brand, alternate spelling"
+WHICH WICH SUPERIOR SANDWICHES,S1917,,"same brand, alternate spelling"
+Urban Air Trampoline Park,S1850,,"same brand, alternate spelling"
+MICROTEL INN AND SUITES,S1109,,"same brand, alternate spelling"
+COLLEGE HUNKS HAULING JUNK/1-800-JUNK-USA,S0402,,"same brand, alternate spelling"
+BEEF 'O' BRADY'S FAMILY SPORTS PUB,S0203,,"same brand, alternate spelling"
+SLEEP INN MOTEL,S1582,,"same brand, alternate spelling"
+COMFORT SUITES,S2785,,"same brand, alternate spelling"
+POSTAL ANNEX+,POSTAL ANNEX PLUS,,"same brand, alternate spelling"
+PROPERTY MANAGEMENT /PMI,S1361,,"same brand, alternate spelling"
+HEALTH MART PHARMACIES,S0795,,"same brand, alternate spelling"
+HUNGRY HOWIE'S,S0834,,"same brand, alternate spelling"
+HUNGRY HOWIE'S PIZZA,S0834,,"same brand, alternate spelling"
+EXPRESS EMPLOYMENT PROFESSIONALS/EXPRESS PERS,S4217,,"same brand, alternate spelling"
+MR. ROOTER,S1144,,"same brand, alternate spelling"
+AUSSIE PET MOBILE VILLA PARK,S0150,,"same brand, alternate spelling"
+BUFFALO WILD WINGS (F/K/A BW-3 (BUFFALO WINGS,S0269,,"same brand, alternate spelling"
+FIVE GUYS FAMOUS BURGERS AND FRIES,S0652,,"same brand, alternate spelling"
+FLEET FEET,S0656,,"same brand, alternate spelling"
+COUNTRY INNS & SUITES,COUNTRY INNS & SUITES BY CARLSON,,"same brand, alternate spelling"
+ROLY POLY ROLLED SANDWICHES,S3048,,"same brand, alternate spelling"
+CHILDRENS LIGHTHOUSE,S0373,,"same brand, alternate spelling"
+CHILDREN'S LIGHTHOUSE,S0373,,"same brand, alternate spelling"
+HONEST-1 AUTO CARE,S0819,,"same brand, alternate spelling"
+INTERIM HEALTHCARE (F/K/A INTERIM SERVICES/ME,S0869,,"same brand, alternate spelling"
+THE BRASS TAP,S1734,,"same brand, alternate spelling"
+PADGETT BUSINESS SERVICE,S1263,,"same brand, alternate spelling"
+WORKOUT ANYTIME 24/7,S1947,,"same brand, alternate spelling"
+RED CARPET INN/RED CARPET INN & SUITES,S1411,,"same brand, alternate spelling"
+S0834,,Hungry Howie's Pizza,shorter display name
+S0269,,Buffalo Wild Wings,shorter display name
+S3194,S0480,,same brand under another directory entry

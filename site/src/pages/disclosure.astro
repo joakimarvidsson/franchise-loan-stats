@@ -1,0 +1,32 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE, url } from '../lib/site';
+import { partnersFor } from '../lib/partners';
+const live = ['brand', 'industry', 'lender', 'state', 'calculator'].flatMap((p) => partnersFor(p));
+const names = [...new Set(live.map((p) => p.name))];
+---
+<Base title="How this site is funded" description="Franchise Loan Stats discloses every commercial relationship. Statistics are computed from public SBA data and cannot be bought or changed by a sponsor." crumbs={[{ name: 'How this site is funded' }]}>
+  <div class="prose">
+    <h1>How this site is funded</h1>
+    <p class="lede">The data is never for sale. Any commercial placement is labelled where it appears and listed here.</p>
+    <h2>Current relationships</h2>
+    {names.length === 0 ? (
+      <p>None. As of this build the site has no sponsors, no affiliate agreements and earns no referral fees. Links to lenders, franchisors and government sources are ordinary links.</p>
+    ) : (
+      <ul>{names.map((n) => <li>{n}</li>)}</ul>
+    )}
+    <h2>What may appear in future</h2>
+    <ul>
+      <li><strong>Sponsor placements</strong>: a labelled box on relevant pages, paid at a flat rate.</li>
+      <li><strong>Partner links</strong>: a labelled link to a service a reader might need, such as financing or franchise legal review, where the site earns a fee if the reader signs up.</li>
+    </ul>
+    <h2>Rules we hold ourselves to</h2>
+    <ul>
+      <li>No sponsor or partner can change, hide or reorder any statistic or ranking.</li>
+      <li>A link is described as a partner link only once an agreement actually exists.</li>
+      <li>Sponsored content is marked "Sponsor" or "Partner link" next to the placement and uses <code>rel="sponsored"</code>.</li>
+      <li>We do not recommend a particular franchise, lender or loan. The site reports what the public record shows.</li>
+    </ul>
+    <p>Questions: <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>. See also <a href={url('/advertise/')}>advertise or partner</a>.</p>
+  </div>
+</Base>

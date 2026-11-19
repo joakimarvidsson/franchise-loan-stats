@@ -1,0 +1,23 @@
+---
+import Base from '../../layouts/Base.astro';
+import TableTools from '../../components/TableTools.astro';
+import { lenders, summary, asof, activityFrom } from '../../lib/data';
+import { url } from '../../lib/site';
+import { fmtInt, fmtUsd, fmtDate } from '../../lib/format';
+const list = [...lenders].sort((a, b) => b.franchise.loans - a.franchise.loans);
+---
+<Base title="SBA lenders most active in franchise lending" description={`The ${fmtInt(lenders.length)} lenders with at least ${summary.thresholds.lender_page_min} SBA 7(a) franchise loans since FY${activityFrom}: loan counts, typical loan size, and which franchise brands each one finances. Data as of ${fmtDate(asof)}.`} crumbs={[{ name: 'Lenders' }]}>
+  <h1>SBA lenders most active in franchise lending</h1>
+  <p class="lede">Lenders with at least {summary.thresholds.lender_page_min} franchise-coded SBA 7(a) loans since FY{activityFrom}. Open a lender to see which brands it has financed.</p>
+  <div class="controls" data-controls-for="lender-table"><label>Lender<input type="search" data-q placeholder="Type to filter" /></label></div>
+  <p class="small"><span data-count-for="lender-table">{fmtInt(list.length)}</span> lenders shown.</p>
+  <div class="table-wrap"><table id="lender-table" data-table>
+    <thead><tr><th data-sort="name" data-type="text">Lender</th><th data-sort="fl" data-first="desc" aria-sort="descending">Franchise loans</th><th data-sort="fg" data-first="desc">Franchise $</th><th data-sort="br" data-first="desc">Brands</th><th data-sort="ml" data-first="desc">Median franchise loan</th><th data-sort="sh" data-first="desc">Franchise share</th></tr></thead>
+    <tbody>{list.map((l) => (
+      <tr data-q={l.name.toLowerCase()} data-name={l.name.toLowerCase()} data-fl={l.franchise.loans} data-fg={l.franchise.gross} data-br={l.franchise.brands} data-ml={l.franchise.median_loan ?? ''} data-sh={l.franchise_share_pct ?? ''}>
+        <td><a href={url(`/lenders/${l.slug}/`)}>{l.name}</a></td><td>{fmtInt(l.franchise.loans)}</td><td>{fmtUsd(l.franchise.gross)}</td><td>{fmtInt(l.franchise.brands)}</td><td>{fmtUsd(l.franchise.median_loan)}</td><td>{l.franchise_share_pct !== null ? l.franchise_share_pct + '%' : '—'}</td>
+      </tr>))}</tbody>
+  </table></div>
+  <p class="small muted">Counts cover approved loans that were not cancelled, FY{activityFrom} to the data date. "Franchise share" is franchise-coded loans as a share of the lender's 7(a) loans in the same period. The SBA file names the lender a loan is currently assigned to, which after a bank merger is the successor.</p>
+  <TableTools />
+</Base>

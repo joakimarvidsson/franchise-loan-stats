@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import { rated, summary, asof, seasonedFrom, seasonedTo, franchiseRate } from '../lib/data';
+import { url } from '../lib/site';
+import { fmtInt, fmtRate, fmtInterval, fmtDate, fmtPct, fyRange } from '../lib/format';
+const win = fyRange(seasonedFrom, seasonedTo);
+const MIN = 100;
+const big = rated.filter((b) => b.seasoned.disbursed >= MIN);
+const low = big.slice(0, 30);
+const high = [...big].reverse().slice(0, 30);
+const cols = (b: any) => ({ name: b.name, slug: b.slug, n: b.seasoned.disbursed, co: b.seasoned.charged_off, r: b.seasoned.rate, ind: b.industry?.name });
+---
+<Base title={`Franchises with the lowest and highest SBA loan charge-off rates (${win})`} description={`Ranked from SBA 7(a) loan data as of ${fmtDate(asof)}: the ${low.length} franchise brands with the lowest and highest share of loans charged off, limited to brands with at least ${MIN} seasoned loans, with confidence intervals.`} crumbs={[{ name: 'Rankings' }]}>
+  <h1>Lowest and highest SBA loan charge-off rates by franchise</h1>
+  <p class="lede">Brands with at least {MIN} disbursed SBA 7(a) loans approved in {win}, ranked by the share later charged off. Across all franchise-coded loans in those years the rate was {fmtPct(franchiseRate.pct)}.</p>
+  <div class="note"><strong>Read the interval, not just the rank.</strong> Two brands whose intervals overlap are not reliably different. The <a href={url('/brands/?tier=rated')}>full table</a> has all {fmtInt(rated.length)} rated brands, including those with 30–99 loans.</div>
+
+  <h2>Lowest charge-off rates</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Brand</th><th>Loans</th><th>Charged off</th><th>Rate</th><th>95% interval</th><th class="l">Industry</th></tr></thead>
+    <tbody>{low.map(cols).map((b) => <tr><td><a href={url(`/brands/${b.slug}/`)}>{b.name}</a></td><td>{fmtInt(b.n)}</td><td>{fmtInt(b.co)}</td><td>{fmtRate(b.r)}</td><td class="muted">{fmtInterval(b.r)}</td><td class="l small">{b.ind}</td></tr>)}</tbody>
+  </table></div>
+
+  <h2>Highest charge-off rates</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Brand</th><th>Loans</th><th>Charged off</th><th>Rate</th><th>95% interval</th><th class="l">Industry</th></tr></thead>
+    <tbody>{high.map(cols).map((b) => <tr><td><a href={url(`/brands/${b.slug}/`)}>{b.name}</a></td><td>{fmtInt(b.n)}</td><td>{fmtInt(b.co)}</td><td>{fmtRate(b.r)}</td><td class="muted">{fmtInterval(b.r)}</td><td class="l small">{b.ind}</td></tr>)}</tbody>
+  </table></div>
+  <p class="small muted">A charge-off is a loan balance the SBA wrote off. It measures loan outcomes for borrowers who used SBA financing, not the health of every location. Some brands on the high list have since been sold, restructured or stopped franchising. <a href={url('/methodology/')}>Methodology and limits</a>.</p>
+</Base>

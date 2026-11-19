@@ -1,0 +1,1358 @@
+brand,slug,sba_directory_code,on_sba_directory,all_time_disbursed_loans,all_time_charged_off_loans,seasoned_fy2012_2021_disbursed_loans,seasoned_fy2012_2021_charged_off_loans,seasoned_charge_off_rate_pct,rate_ci95_low_pct,rate_ci95_high_pct,seasoned_charge_off_rate_by_dollars_pct,sample_tier,recent_5fy_approved_loans,recent_median_loan_usd,recent_median_initial_rate_pct,primary_industry,data_as_of
+1-800-GOT-JUNK?,1-800-got-junk,S0005,yes,35,4,17,0,0.0,0.0,18.4,0.0,limited,2,460000,10.5,All Other Miscellaneous Waste Management Services,2026-09-30
+1-800 Packouts,1-800-packouts,S2022,yes,21,1,4,1,,,,,insufficient,23,287750,10.5,Remediation Services,2026-09-30
+1-800-PLUMBER + AIR,1-800-plumber-air,S3651,yes,28,2,3,1,,,,,insufficient,26,150000,10.12,"Plumbing, Heating, and Air-Conditioning Contractors",2026-09-30
+1-800-Radiator,1-800-radiator,,no,65,15,18,2,11.1,3.1,32.8,0.5,limited,0,,,Motor Vehicle Supplies and New Parts Merchant Wholesalers,2026-09-30
+1-800-STRIPER,1-800-striper,S5236,yes,35,0,0,0,,,,,insufficient,40,239000,10.75,"Highway, Street, and Bridge Construction",2026-09-30
+1-800 Water Damage,1-800-water-damage,S0002,yes,33,3,24,1,4.2,0.7,20.2,3.5,limited,7,280000,9.0,Remediation Services,2026-09-30
+1-Tom-Plumber,1-tom-plumber,S6116,yes,13,1,0,0,,,,,insufficient,18,329300,8.75,"Plumbing, Heating, and Air-Conditioning Contractors",2026-09-30
+100% Chiropractic,100-chiropractic,S3099,yes,31,3,13,2,15.4,4.3,42.2,3.1,limited,24,421000,8.38,Offices of Chiropractors,2026-09-30
+1000 Degrees Pizzeria,1000-degrees-pizzeria,,no,26,16,26,16,61.5,42.5,77.6,49.4,limited,0,,,Limited-Service Restaurants,2026-09-30
+101 Mobility,101-mobility,S0010,yes,24,1,17,1,5.9,1.0,27.0,2.0,limited,10,389000,8.75,All Other Health and Personal Care Stores,2026-09-30
+18/8 Fine Men's Salons,18-8-fine-mens-salons,,no,43,8,43,8,18.6,9.7,32.6,25.6,rated,0,,,Beauty Salons,2026-09-30
+24 Seven Vending,24-seven-vending,,no,30,22,0,0,,,,,insufficient,0,,,Vending Machine Operators,2026-09-30
+360 Painting,360-painting,S2095,yes,106,14,62,12,19.4,11.4,30.9,15.0,rated,46,150000,10.25,Painting and Wall Covering Contractors,2026-09-30
+3Natives Acai Cafe,3natives-acai-cafe,S3342,yes,8,0,0,0,,,,,insufficient,11,283300,10.0,Limited-Service Restaurants,2026-09-30
+4Ever Young,4ever-young,S4147,yes,44,4,1,0,,,,,insufficient,55,450000,10.25,Other Personal Care Services,2026-09-30
+7 BREW,7-brew,S6844,yes,19,0,1,0,,,,,insufficient,27,1450000,8.12,Snack and Nonalcoholic Beverage Bars,2026-09-30
+"7-Eleven, Inc - Individual Store Franchise Agreement",7-eleven-inc-individual-store-franchise-agreement,,no,11,0,0,0,,,,,insufficient,16,125000,10.5,Convenience Retailers,2026-09-30
+911 Restoration,911-restoration,S2471,yes,42,0,17,0,0.0,0.0,18.4,0.0,limited,31,272500,9.38,Residential Remodelers,2026-09-30
+9ROUND,9round,S0024,yes,111,28,106,27,25.5,18.1,34.5,17.4,rated,5,180000,11.0,Fitness and Recreational Sports Centers,2026-09-30
+A&W,a-and-w,S0029,yes,87,13,15,1,6.7,1.2,29.8,0.6,limited,7,845000,7.5,Limited-Service Restaurants,2026-09-30
+A Place At Home,a-place-at-home,S3154,yes,15,1,7,1,,,,,insufficient,11,150000,10.5,Home Health Care Services,2026-09-30
+AAMCO,aamco,S0032,yes,465,119,101,16,15.8,10.0,24.2,9.1,rated,74,434000,9.25,General Automotive Repair,2026-09-30
+abc Seamless,abc-seamless,,no,25,4,9,0,,,,,insufficient,0,,,"Roofing, Siding, and Sheet Metal Contractors",2026-09-30
+Ace Handyman Services,ace-handyman-services,S5226,yes,94,4,38,3,7.9,2.7,20.8,6.0,rated,64,150000,10.12,Residential Remodelers,2026-09-30
+Ace Hardware,ace-hardware,S0067,yes,882,81,381,16,4.2,2.6,6.7,1.4,rated,182,733000,7.9,Hardware Stores,2026-09-30
+Ace Pickleball Club,ace-pickleball-club,S7951,yes,12,0,0,0,,,,,insufficient,16,1312100,9.5,All Other Amusement and Recreation Industries,2026-09-30
+ActionCOACH,actioncoach,,no,16,3,10,3,30.0,10.8,60.3,30.2,limited,6,241200,10.0,Administrative Management and General Management Consulting Services,2026-09-30
+Advanced Maintenance On-Site Vehicle Services,advanced-maintenance-on-site-vehicle-services,,no,13,0,10,0,0.0,0.0,27.8,0.0,limited,3,835000,10.0,General Automotive Repair,2026-09-30
+AdvantaClean,advantaclean,S0073,yes,55,4,50,4,8.0,3.2,18.8,4.1,rated,4,140000,10.5,Remediation Services,2026-09-30
+AIM Mail (Retail Center),aim-mail-retail-center,S0037,yes,43,10,2,0,,,,,insufficient,2,299500,8.12,Private Mail Centers,2026-09-30
+Aire Serv,aire-serv,S0080,yes,115,11,36,8,22.2,11.7,38.1,17.9,rated,81,275000,10.25,"Plumbing, Heating, and Air-Conditioning Contractors",2026-09-30
+Akt,akt,,no,11,2,10,2,20.0,5.7,51.0,16.6,limited,1,850000,9.75,Fitness and Recreational Sports Centers,2026-09-30
+All County Property Management,all-county-property-management,S2669,yes,22,2,8,2,,,,,insufficient,14,150000,10.38,Residential Property Managers,2026-09-30
+All Dry,all-dry,S4592,yes,57,1,10,0,0.0,0.0,27.8,0.0,limited,53,172100,8.25,Remediation Services,2026-09-30
+All Tune Total Care,all-tune-total-care,S0088,yes,285,120,5,1,,,,,insufficient,1,1179000,9.0,General Automotive Repair,2026-09-30
+Allegra,allegra,S0091,yes,32,2,15,2,13.3,3.7,37.9,9.6,limited,18,411800,9.0,Commercial Printing (except Screen and Books),2026-09-30
+Allegra Network,allegra-network,,no,29,4,29,4,13.8,5.5,30.6,8.4,limited,0,,,Commercial Printing (except Screen and Books),2026-09-30
+Alloy Personal Traning,alloy-personal-traning,S4826,yes,85,0,0,0,,,,,insufficient,120,334000,10.25,Fitness and Recreational Sports Centers,2026-09-30
+Alloy Wheel Repair Specialists,alloy-wheel-repair-specialists,S2335,yes,16,1,12,1,8.3,1.5,35.4,0.4,limited,3,597000,11.0,All Other Automotive Repair and Maintenance,2026-09-30
+Allstate Home Inspection and Environmental Te,allstate-home-inspection-and-environmental-te,,no,22,0,8,0,,,,,insufficient,15,311500,10.25,Insurance Agencies and Brokerages,2026-09-30
+Allstate Insurance,allstate-insurance,,no,227,8,198,7,3.5,1.7,7.1,1.2,rated,0,,,Insurance Agencies and Brokerages,2026-09-30
+Alpha Fit Club,alpha-fit-club,S4989,yes,5,0,0,0,,,,,insufficient,11,850000,9.5,Fitness and Recreational Sports Centers,2026-09-30
+AlphaGraphics,alphagraphics,S0094,yes,338,80,86,9,10.5,5.6,18.7,4.3,rated,32,380500,8.65,Commercial Printing (except Screen and Books),2026-09-30
+Alta Mere Window Tinting & Auto,alta-mere-window-tinting-and-auto,,no,61,22,0,0,,,,,insufficient,0,,,Automotive Parts and Accessories Stores,2026-09-30
+Altitude Trampoline Park,altitude-trampoline-park,S0096,yes,52,3,34,3,8.8,3.0,23.0,5.3,rated,20,2519650,9.38,All Other Amusement and Recreation Industries,2026-09-30
+Always Best Care Senior Services,always-best-care-senior-services,,no,11,1,11,1,9.1,1.6,37.7,6.9,limited,0,,,Home Health Care Services,2026-09-30
+Always Best Care Services,always-best-care-services,S0097,yes,34,0,13,0,0.0,0.0,22.8,0.0,limited,28,156000,9.5,Home Health Care Services,2026-09-30
+AM/PM Mini-Mart Agreement - ARCO Fuel - Contract Dealer Gasoline Agreement (Tesoro),am-pm-mini-mart-agreement-arco-fuel-contract-dealer-gasoline-agreement-tesoro,,no,34,0,17,0,0.0,0.0,18.4,0.0,limited,19,2411250,8.75,Gasoline Stations with Convenience Stores,2026-09-30
+Amada Home Care,amada-home-care,,no,12,1,12,1,8.3,1.5,35.4,5.4,limited,0,,,Services for the Elderly and Persons with Disabilities,2026-09-30
+Amada Senior Care,amada-senior-care,,no,36,0,16,0,0.0,0.0,19.4,0.0,limited,22,150000,10.38,Home Health Care Services,2026-09-30
+Amazing Lash Studio,amazing-lash-studio,S0101,yes,181,16,163,16,9.8,6.1,15.3,4.9,rated,22,350000,9.5,Beauty Salons,2026-09-30
+American Deli,american-deli,S0106,yes,54,0,32,0,0.0,0.0,10.7,0.0,rated,28,532000,8.75,Limited-Service Restaurants,2026-09-30
+American Family Care,american-family-care,S0107,yes,105,1,39,0,0.0,0.0,9.0,0.0,rated,89,1260000,8.5,Offices of Physicians (except Mental Health Specialists),2026-09-30
+American Speedy Printing,american-speedy-printing,,no,26,6,0,0,,,,,insufficient,0,,,Quick Printing,2026-09-30
+AMERICA'S BEST INNS & SUITES,americas-best-inns-and-suites,S0042,yes,37,1,29,0,0.0,0.0,11.7,0.0,limited,5,1640000,6.0,Hotels (except Casino Hotels) and Motels,2026-09-30
+Americas Best Value Inn,americas-best-value-inn,S0112,yes,227,10,153,1,0.7,0.1,3.6,0.2,rated,36,1430000,8.25,Hotels (except Casino Hotels) and Motels,2026-09-30
+America's Swimming Pool Co.,americas-swimming-pool-co,S0055,yes,35,3,19,3,15.8,5.5,37.6,6.1,limited,18,150000,9.75,Other Services to Buildings and Dwellings,2026-09-30
+AmericInn by Wyndham,americinn-by-wyndham,S0104,yes,27,2,10,2,20.0,5.7,51.0,8.7,limited,18,2550000,8.75,Hotels (except Casino Hotels) and Motels,2026-09-30
+Ameriprise Financial,ameriprise-financial,,no,446,1,385,1,0.3,0.0,1.5,0.0,rated,26,503000,9.25,Investment Advice,2026-09-30
+Amoco (Gas Station),amoco-gas-station,,no,64,15,0,0,,,,,insufficient,0,,,Gasoline Stations with Convenience Stores,2026-09-30
+Ampm Mini Market- Arco,ampm-mini-market-arco,,no,61,0,61,0,0.0,0.0,5.9,0.0,rated,0,,,Gasoline Stations with Convenience Stores,2026-09-30
+Anchored Tiny Homes,anchored-tiny-homes,,no,7,0,0,0,,,,,insufficient,12,183500,11.25,New Single-Family Housing Construction (except For-Sale Builders),2026-09-30
+Another Broken Egg,another-broken-egg,S0120,yes,18,0,6,0,,,,,insufficient,13,1222050,10.25,Full-Service Restaurants,2026-09-30
+Any LabTest Now,any-labtest-now,S0121,yes,29,0,10,0,0.0,0.0,27.8,0.0,limited,20,190500,10.25,Medical Laboratories,2026-09-30
+Anytime Fitness,anytime-fitness,S0122,yes,1115,100,723,78,10.8,8.7,13.3,7.3,rated,212,438000,9.75,Fitness and Recreational Sports Centers,2026-09-30
+Apex Fun Run,apex-fun-run,,no,24,6,20,6,30.0,14.5,51.9,29.0,limited,4,221500,10.75,All Other Business Support Services,2026-09-30
+Apple Spice,apple-spice,S2648,yes,25,2,21,2,9.5,2.7,28.9,10.8,limited,4,314350,8.5,Caterers,2026-09-30
+Apricot Lane,apricot-lane,S0126,yes,61,8,31,5,16.1,7.1,32.6,8.6,rated,36,181000,9.5,Women's Clothing Stores,2026-09-30
+Aqua-Tots,aqua-tots,,no,25,0,25,0,0.0,0.0,13.3,0.0,limited,0,,,Sports and Recreation Instruction,2026-09-30
+Aqua-Tots Swim Schools,aqua-tots-swim-schools,S0128,yes,30,0,16,0,0.0,0.0,19.4,0.0,limited,16,1473500,8.25,Sports and Recreation Instruction,2026-09-30
+AR Workshop,ar-workshop,S2967,yes,16,2,12,2,16.7,4.7,44.8,11.9,limited,6,112500,10.25,All Other Amusement and Recreation Industries,2026-09-30
+Arby's,arbys,S0130,yes,207,33,39,1,2.6,0.5,13.2,1.1,rated,11,860000,8.75,Limited-Service Restaurants,2026-09-30
+Archadeck Outdoor Living,archadeck-outdoor-living,S0131,yes,19,0,8,0,,,,,insufficient,13,178500,10.5,Residential Remodelers,2026-09-30
+Arco (BP) Contract Dealer Gasoline Agreement,arco-bp-contract-dealer-gasoline-agreement,S2103,yes,16,0,7,0,,,,,insufficient,13,4434000,7.75,Gasoline Stations with Convenience Stores,2026-09-30
+Arco (Gas Station),arco-gas-station,,no,165,5,19,0,0.0,0.0,16.8,0.0,limited,0,,,Gasoline Stations with Convenience Stores,2026-09-30
+Arcpoint,arcpoint,,no,35,5,35,5,14.3,6.3,29.4,13.2,rated,0,,,Medical Laboratories,2026-09-30
+ARCpoint Labs,arcpoint-labs,S0052,yes,27,0,7,0,,,,,insufficient,21,222000,9.25,Medical Laboratories,2026-09-30
+Armstrong McCall,armstrong-mccall,,no,50,7,27,3,11.1,3.9,28.1,2.1,limited,1,1381000,6.5,"Cosmetics, Beauty Supplies, and Perfume Stores",2026-09-30
+Aroma Joe's,aroma-joes,,no,21,0,14,0,0.0,0.0,21.5,0.0,limited,8,532000,8.0,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Arthur Murray Dance Studios,arthur-murray-dance-studios,S0137,yes,30,1,21,1,4.8,0.8,22.7,1.5,limited,11,362500,9.38,Fine Arts Schools,2026-09-30
+Ascend Collection,ascend-collection,S0138,yes,26,1,17,1,5.9,1.0,27.0,6.4,limited,11,3523000,7.75,Hotels (except Casino Hotels) and Motels,2026-09-30
+Assisted Living Locators,assisted-living-locators,S0141,yes,40,5,24,5,20.8,9.2,40.5,14.4,limited,16,150000,10.25,Services for the Elderly and Persons with Disabilities,2026-09-30
+Assisting Hands Home Care,assisting-hands-home-care,S0142,yes,37,3,20,2,10.0,2.8,30.1,1.8,limited,23,200000,9.75,Home Health Care Services,2026-09-30
+Atlanta Bread Company,atlanta-bread-company,,no,111,50,10,4,40.0,16.8,68.7,28.5,limited,0,,,Full-Service Restaurants,2026-09-30
+Atomic Wings,atomic-wings,S4756,yes,8,0,0,0,,,,,insufficient,14,200000,9.62,Limited-Service Restaurants,2026-09-30
+AtWork,atwork,S0026,yes,11,0,1,0,,,,,insufficient,11,200000,10.5,Employment Placement Agencies,2026-09-30
+Auntie Anne's,auntie-annes,S0148,yes,222,14,65,3,4.6,1.6,12.7,3.6,rated,28,456850,9.38,Limited-Service Restaurants,2026-09-30
+Aussie Pet Mobile,aussie-pet-mobile,S0150,yes,97,9,34,6,17.6,8.3,33.5,13.0,rated,52,284700,10.25,Pet Care (except Veterinary) Services,2026-09-30
+B.O.R. Restoration,b-o-r-restoration,S3274,yes,24,2,6,2,,,,,insufficient,22,200000,10.5,Remediation Services,2026-09-30
+Back Yard Burgers,back-yard-burgers,,no,33,12,2,0,,,,,insufficient,1,2740000,5.89,Limited-Service Restaurants,2026-09-30
+Bad Ass Coffee of Hawaii,bad-ass-coffee-of-hawaii,S0182,yes,10,0,1,0,,,,,insufficient,10,577250,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Bahama Buck's Original Shaved Ice Company,bahama-bucks-original-shaved-ice-company,S0183,yes,112,16,78,15,19.2,12.0,29.3,10.8,rated,36,635000,8.25,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Baja Fresh,baja-fresh,S0184,yes,56,11,18,3,16.7,5.8,39.2,6.5,limited,0,,,Limited-Service Restaurants,2026-09-30
+Bar-B-Clean,bar-b-clean,S3357,yes,15,0,1,0,,,,,insufficient,15,143000,10.25,Janitorial Services,2026-09-30
+barre3,barre3,S2428,yes,69,9,58,9,15.5,8.4,26.9,9.6,rated,16,289000,9.75,Fitness and Recreational Sports Centers,2026-09-30
+Basecamp Fitness,basecamp-fitness,S5945,yes,13,1,1,0,,,,,insufficient,15,388000,9.0,Fitness and Recreational Sports Centers,2026-09-30
+Baskin-Robbins,baskin-robbins,S0195,yes,565,80,94,4,4.3,1.7,10.4,2.9,rated,54,290000,9.0,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Bath Tune Up,bath-tune-up,S6950,yes,9,0,0,0,,,,,insufficient,11,150000,10.25,Residential Remodelers,2026-09-30
+Batteries Plus,batteries-plus,S0196,yes,183,20,84,15,17.9,11.1,27.4,5.3,rated,65,350000,8.25,All Other Miscellaneous Store Retailers (except Tobacco Stores),2026-09-30
+Baymont by Wyndham,baymont-by-wyndham,S0197,yes,251,4,173,4,2.3,0.9,5.8,1.4,rated,85,2482000,8.25,Hotels (except Casino Hotels) and Motels,2026-09-30
+bb.q Chicken,bb-q-chicken,S2558,yes,45,0,11,0,0.0,0.0,25.9,0.0,limited,40,325000,9.5,Full-Service Restaurants,2026-09-30
+Beans & Brews Coffee House,beans-and-brews-coffee-house,S0199,yes,14,0,3,0,,,,,insufficient,13,500000,9.0,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Beck Suppliers Inc - Contract of Sale (Branded),beck-suppliers-inc-contract-of-sale-branded,,no,12,0,10,0,0.0,0.0,27.8,0.0,limited,2,1448500,6.62,Gasoline Stations with Convenience Stores,2026-09-30
+Bee Hive Homes,bee-hive-homes,S0202,yes,84,1,70,1,1.4,0.3,7.7,0.3,rated,17,1580250,7.12,Assisted Living Facilities for the Elderly,2026-09-30
+Beef Jerky Outlet Franchise,beef-jerky-outlet-franchise,,no,21,2,21,2,9.5,2.7,28.9,10.6,limited,0,,,All Other Specialty Food Stores,2026-09-30
+Beef 'O' Brady's,beef-o-bradys,S0203,yes,139,61,26,2,7.7,2.1,24.1,6.6,limited,6,680000,7.38,Full-Service Restaurants,2026-09-30
+beem Light Sauna,beem-light-sauna,S7255,yes,44,0,0,0,,,,,insufficient,54,470000,10.25,Other Personal Care Services,2026-09-30
+Bellacino's Pizza,bellacinos-pizza,,no,27,11,5,1,,,,,insufficient,0,,,Full-Service Restaurants,2026-09-30
+Ben & Jerry's,ben-and-jerrys,S0206,yes,96,7,14,0,0.0,0.0,21.5,0.0,limited,18,318500,8.88,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Ben Franklin Store,ben-franklin-store,,no,68,16,3,0,,,,,insufficient,0,,,All Other General Merchandise Stores,2026-09-30
+Benjamin Franklin Plumbing,benjamin-franklin-plumbing,S0207,yes,54,0,14,0,0.0,0.0,21.5,0.0,limited,43,300000,10.25,"Plumbing, Heating, and Air-Conditioning Contractors",2026-09-30
+Benjamin Moore - New Entrepreneur Program Business Agreement,benjamin-moore-new-entrepreneur-program-business-agreement,,no,12,1,10,0,0.0,0.0,27.8,0.0,limited,3,268000,8.37,Paint and Wallpaper Stores,2026-09-30
+Best Choice Roofing,best-choice-roofing,,no,11,1,0,0,,,,,insufficient,15,190000,11.0,Roofing Contractors,2026-09-30
+Best Western,best-western,S2125,yes,702,36,328,5,1.5,0.7,3.5,0.8,rated,145,3370000,8.0,Hotels (except Casino Hotels) and Motels,2026-09-30
+Bevintel (F/K/A Bevinco),bevintel-f-k-a-bevinco,,no,28,2,10,1,10.0,1.8,40.4,5.8,limited,0,,,Other Computer Related Services,2026-09-30
+"BFT, Body Fit Training",bft-body-fit-training,S6886,yes,26,0,0,0,,,,,insufficient,32,625200,10.75,Fitness and Recreational Sports Centers,2026-09-30
+Big Air,big-air,S2503,yes,22,0,8,0,,,,,insufficient,19,2683650,9.5,All Other Amusement and Recreation Industries,2026-09-30
+Big Apple Bagels,big-apple-bagels,,no,83,27,6,1,,,,,insufficient,3,120000,6.75,Limited-Service Restaurants,2026-09-30
+Big Blue Swim School,big-blue-swim-school,S3561,yes,23,0,7,0,,,,,insufficient,22,2528000,8.03,Sports and Recreation Instruction,2026-09-30
+Big Boy,big-boy,,no,45,6,9,0,,,,,insufficient,3,735200,8.5,Full-Service Restaurants,2026-09-30
+Big Chicken,big-chicken,,no,9,0,0,0,,,,,insufficient,11,733000,9.0,Limited-Service Restaurants,2026-09-30
+Big Frog Custom T-Shirts,big-frog-custom-t-shirts,,no,16,2,16,2,12.5,3.5,36.0,7.8,limited,0,,,Other Clothing Stores,2026-09-30
+Big Frog Custom T-Shirts & More,big-frog-custom-t-shirts-and-more,S0215,yes,23,1,13,1,7.7,1.4,33.3,2.3,limited,12,202500,9.5,Commercial Screen Printing,2026-09-30
+Big O Tires,big-o-tires,S0216,yes,363,45,96,3,3.1,1.1,8.8,0.9,rated,35,694000,7.38,Tire Dealers,2026-09-30
+Biggby Coffee,biggby-coffee,S0218,yes,239,3,115,0,0.0,0.0,3.2,0.0,rated,155,345750,9.0,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Bin There...Dump That,bin-there-dump-that,S0219,yes,37,1,20,0,0.0,0.0,16.1,0.0,limited,22,330600,9.0,Solid Waste Collection,2026-09-30
+Bin There Dump That,bin-there-dump-that-legacy-bin-there-dump-th,,no,22,0,22,0,0.0,0.0,14.9,0.0,limited,0,,,Solid Waste Collection,2026-09-30
+Bio-One,bio-one,S2617,yes,80,6,45,6,13.3,6.3,26.2,11.4,rated,39,150000,11.0,Remediation Services,2026-09-30
+Bishops,bishops,S2413,yes,25,3,24,3,12.5,4.3,31.0,7.5,limited,1,50000,12.0,Beauty Salons,2026-09-30
+Bishops Barbershop,bishops-barbershop,,no,12,1,12,1,8.3,1.5,35.4,4.2,limited,0,,,Barber Shops,2026-09-30
+Black Bear Diners,black-bear-diners,,no,17,0,16,0,0.0,0.0,19.4,0.0,limited,0,,,Full-Service Restaurants,2026-09-30
+Black Optix Tint,black-optix-tint,,no,9,0,0,0,,,,,insufficient,11,203500,10.25,"Automotive Body, Paint, and Interior Repair and Maintenance",2026-09-30
+Blaze Pizza,blaze-pizza,S0225,yes,43,0,36,0,0.0,0.0,9.6,0.0,rated,8,825000,7.5,Limited-Service Restaurants,2026-09-30
+Blimpie,blimpie,S0226,yes,528,160,5,2,,,,,insufficient,1,1070000,7.75,Limited-Service Restaurants,2026-09-30
+Blingle!,blingle,S7127,yes,48,1,0,0,,,,,insufficient,60,427000,8.75,Electrical Contractors and Other Wiring Installation Contractors,2026-09-30
+Blo Blow Dry Bar,blo-blow-dry-bar,S0227,yes,57,4,36,4,11.1,4.4,25.3,4.9,rated,28,348950,9.0,Beauty Salons,2026-09-30
+Blockbuster,blockbuster,,no,41,11,0,0,,,,,insufficient,0,,,Video Tape and Disc Rental,2026-09-30
+Bloomin' Blinds,bloomin-blinds,S3192,yes,24,2,5,1,,,,,insufficient,26,170000,10.25,Window Treatment Retailers,2026-09-30
+Blue Kangaroo Packoutz,blue-kangaroo-packoutz,S7460,yes,27,0,0,0,,,,,insufficient,34,296200,10.25,Remediation Services,2026-09-30
+BlueFrog Plumbing + Drain,bluefrog-plumbing-drain,S2673,yes,12,1,5,1,,,,,insufficient,10,222000,9.75,"Plumbing, Heating, and Air-Conditioning Contractors",2026-09-30
+BLUSH Boot Camp,blush-boot-camp,,no,26,4,0,0,,,,,insufficient,27,257400,9.25,Fitness and Recreational Sports Centers,2026-09-30
+Board & Brush Creative Studios,board-and-brush-creative-studios,,no,40,0,27,0,0.0,0.0,12.5,0.0,limited,14,71000,9.5,Fine Arts Schools,2026-09-30
+Body20,body20,S3851,yes,34,0,0,0,,,,,insufficient,42,452000,11.0,Fitness and Recreational Sports Centers,2026-09-30
+Bodybar Pilates,bodybar-pilates,S2006,yes,67,0,5,0,,,,,insufficient,91,500000,9.5,Fitness and Recreational Sports Centers,2026-09-30
+Bojangles,bojangles,,no,26,2,18,1,5.6,1.0,25.8,0.9,limited,0,,,Limited-Service Restaurants,2026-09-30
+Bonchon,bonchon,S0235,yes,42,4,22,4,18.2,7.3,38.5,8.2,limited,31,731000,9.62,Full-Service Restaurants,2026-09-30
+BounceU,bounceu,,no,40,11,11,1,9.1,1.6,37.7,0.7,limited,2,1002500,9.75,All Other Amusement and Recreation Industries,2026-09-30
+Boyett Petroleum - (76 Brand) Branded License Agreement,boyett-petroleum-76-brand-branded-license-agreement,S3022,yes,14,0,4,0,,,,,insufficient,12,2911350,9.12,Gasoline Stations with Convenience Stores,2026-09-30
+Brain Balance,brain-balance,S0247,yes,40,6,37,6,16.2,7.7,31.1,11.0,rated,6,240000,9.25,Educational Support Services,2026-09-30
+Brango Background Checks Software Solutions,brango-background-checks-software-solutions,S7898,yes,9,0,0,0,,,,,insufficient,10,150000,10.75,Investigation Services,2026-09-30
+Breadeaux Pizza,breadeaux-pizza,,no,30,7,2,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Breadsmith,breadsmith,S0248,yes,30,2,7,0,,,,,insufficient,3,150000,9.5,Retail Bakeries,2026-09-30
+Bricks & Minifigs,bricks-and-minifigs,S0251,yes,111,3,12,2,16.7,4.7,44.8,14.9,limited,123,217800,10.25,"Hobby, Toy, and Game Retailers",2026-09-30
+Bright Star Healthcare/Brightstar,bright-star-healthcare-brightstar,,no,51,3,51,3,5.9,2.0,15.9,4.8,rated,0,,,Home Health Care Services,2026-09-30
+BrightStar Care,brightstar-care,S0253,yes,100,0,44,0,0.0,0.0,8.0,0.0,rated,75,250000,9.0,Home Health Care Services,2026-09-30
+Brightway Insurance,brightway-insurance,,no,11,2,11,2,18.2,5.1,47.7,9.4,limited,0,,,Insurance Agencies and Brokerages,2026-09-30
+British Swim School,british-swim-school,S0256,yes,68,3,24,3,12.5,4.3,31.0,8.8,limited,59,150000,10.5,Sports and Recreation Instruction,2026-09-30
+Bruster's Real Ice Cream,brusters-real-ice-cream,S0263,yes,183,17,44,3,6.8,2.3,18.2,2.2,rated,69,620000,9.25,Snack and Nonalcoholic Beverage Bars,2026-09-30
+btone FITNESS,btone-fitness,S3590,yes,14,0,3,0,,,,,insufficient,16,259200,7.5,Fitness and Recreational Sports Centers,2026-09-30
+Bubbakoo's Burritos,bubbakoos-burritos,S3248,yes,22,0,4,0,,,,,insufficient,24,467200,9.25,Limited-Service Restaurants,2026-09-30
+Budget Blinds,budget-blinds,S0266,yes,369,29,184,7,3.8,1.9,7.6,1.7,rated,141,315000,9.0,Window Treatment Stores,2026-09-30
+Budget Inn,budget-inn,,no,30,2,2,0,,,,,insufficient,0,,,Hotels (except Casino Hotels) and Motels,2026-09-30
+Budgetel,budgetel,,no,14,0,11,0,0.0,0.0,25.9,0.0,limited,4,2412500,8.25,Hotels (except Casino Hotels) and Motels,2026-09-30
+Buff City Soap,buff-city-soap,,no,23,2,20,2,10.0,2.8,30.1,6.9,limited,3,260000,9.0,Soap and Other Detergent Manufacturing,2026-09-30
+Buffalo Wild Wings,buffalo-wild-wings,S0269,yes,81,3,10,0,0.0,0.0,27.8,0.0,limited,25,522750,9.25,Limited-Service Restaurants,2026-09-30
+Buffalo Wild Wings GO,buffalo-wild-wings-go,S8406,yes,8,0,0,0,,,,,insufficient,11,540000,8.75,Limited-Service Restaurants,2026-09-30
+Buffalo Wings & Rings,buffalo-wings-and-rings,,no,55,17,17,1,5.9,1.0,27.0,1.1,limited,3,749000,10.25,Full-Service Restaurants,2026-09-30
+Building Kidz School,building-kidz-school,S0271,yes,15,0,7,0,,,,,insufficient,12,613750,9.38,Child Day Care Services,2026-09-30
+Bumble Bee Blinds,bumble-bee-blinds,S7807,yes,33,0,0,0,,,,,insufficient,40,277250,10.75,Window Treatment Retailers,2026-09-30
+Burger 21,burger-21,,no,15,5,15,5,33.3,15.2,58.3,24.5,limited,0,,,Limited-Service Restaurants,2026-09-30
+Burger King,burger-king,S0275,yes,286,17,66,2,3.0,0.8,10.4,2.2,rated,51,402300,7.21,Limited-Service Restaurants,2026-09-30
+BurgerFi,burgerfi,S0276,yes,19,0,15,0,0.0,0.0,20.4,0.0,limited,4,602500,6.0,Limited-Service Restaurants,2026-09-30
+Burgerim,burgerim,,no,102,26,102,26,25.5,18.0,34.7,21.2,rated,0,,,Limited-Service Restaurants,2026-09-30
+Burn Boot Camp Fitness,burn-boot-camp-fitness,S0278,yes,126,1,65,0,0.0,0.0,5.6,0.0,rated,79,300000,9.75,Fitness and Recreational Sports Centers,2026-09-30
+BW-3 (Buffalo Wings and Weck),bw-3-buffalo-wings-and-weck,,no,31,4,0,0,,,,,insufficient,0,,,Full-Service Restaurants,2026-09-30
+Cabinet IQ,cabinet-iq,S7117,yes,21,0,0,0,,,,,insufficient,30,357500,9.75,Residential Remodelers,2026-09-30
+Caffebene,caffebene,,no,14,3,14,3,21.4,7.6,47.6,19.6,limited,0,,,Snack and Nonalcoholic Beverage Bars,2026-09-30
+California Closet Company,california-closet-company,,no,40,7,5,1,,,,,insufficient,0,,,All Other Miscellaneous Store Retailers (except Tobacco Stores),2026-09-30
+California Tortilla,california-tortilla,,no,23,8,12,5,41.7,19.3,68.0,40.0,limited,2,330000,9.88,Limited-Service Restaurants,2026-09-30
+Camille's Sidewalk Cafe,camilles-sidewalk-cafe,,no,39,21,0,0,,,,,insufficient,0,,,Full-Service Restaurants,2026-09-30
+Camp Bow Wow,camp-bow-wow,S0338,yes,200,5,109,2,1.8,0.5,6.4,1.2,rated,48,1025750,7.75,Pet Care (except Veterinary) Services,2026-09-30
+Candleman,candleman,,no,44,21,0,0,,,,,insufficient,0,,,"Gift, Novelty, and Souvenir Stores",2026-09-30
+Candlewood Suites,candlewood-suites,S0340,yes,45,0,28,0,0.0,0.0,12.1,0.0,limited,17,5000000,8.88,Hotels (except Casino Hotels) and Motels,2026-09-30
+Candy Bouquet,candy-bouquet,,no,55,17,1,1,,,,,insufficient,0,,,"Gift, Novelty, and Souvenir Stores",2026-09-30
+Candy Cloud,candy-cloud,S7755,yes,8,0,0,0,,,,,insufficient,14,346000,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Capriotti's Sandwich Shop,capriottis-sandwich-shop,S0343,yes,69,2,26,0,0.0,0.0,12.9,0.0,limited,31,509900,9.75,Limited-Service Restaurants,2026-09-30
+Captain D's,captain-ds,S0344,yes,48,7,18,2,11.1,3.1,32.8,10.4,limited,7,968000,9.4,Limited-Service Restaurants,2026-09-30
+CarePatrol,carepatrol,S3123,yes,40,2,14,1,7.1,1.3,31.5,0.5,limited,29,150000,10.25,Services for the Elderly and Persons with Disabilities,2026-09-30
+"Carpet One Floor & Home®, by CCA Global Partners, Inc. (by Membership Agreement)",carpet-one-floor-and-home-by-cca-global-partners-inc-by-membership-agreement,,no,20,0,11,0,0.0,0.0,25.9,0.0,limited,11,432200,9.5,Floor Covering Stores,2026-09-30
+Carquest,carquest,,no,13,0,10,0,0.0,0.0,27.8,0.0,limited,3,201000,7.75,Automotive Parts and Accessories Stores,2026-09-30
+Carstar,carstar,S2138,yes,40,0,25,0,0.0,0.0,13.3,0.0,limited,20,715600,9.12,"Automotive Body, Paint, and Interior Repair and Maintenance",2026-09-30
+Carstar Automotive,carstar-automotive,,no,33,3,17,0,0.0,0.0,18.4,0.0,limited,0,,,"Automotive Body, Paint, and Interior Repair and Maintenance",2026-09-30
+Cartridge World,cartridge-world,,no,180,39,29,4,13.8,5.5,30.6,10.2,limited,4,122250,9.75,Office Supplies and Stationery Stores,2026-09-30
+Carvel Ice Cream Shoppe,carvel-ice-cream-shoppe,S0351,yes,109,41,7,0,,,,,insufficient,9,378000,9.87,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Cary Oil Company Inc - Complete Contract of Sale (Branded),cary-oil-company-inc-complete-contract-of-sale-branded,,no,24,0,13,0,0.0,0.0,22.8,0.0,limited,11,988000,9.5,Gasoline Stations with Convenience Stores,2026-09-30
+Casa De Corazón,casa-de-corazon,S2492,yes,12,0,2,0,,,,,insufficient,13,741200,9.5,Child Day Care Services,2026-09-30
+CD One Price Cleaners,cd-one-price-cleaners,S0296,yes,22,0,17,0,0.0,0.0,18.4,0.0,limited,4,690000,9.5,Drycleaning and Laundry Services (except Coin-Operated),2026-09-30
+Celebree School,celebree-school,S3936,yes,41,0,5,0,,,,,insufficient,44,2086500,8.75,Child Day Care Services,2026-09-30
+Cellairis,cellairis,,no,11,2,11,2,18.2,5.1,47.7,3.6,limited,0,,,Other Direct Selling Establishments,2026-09-30
+Central Bark Doggy Day Care,central-bark-doggy-day-care,S0355,yes,53,3,29,2,6.9,1.9,22.0,3.0,limited,26,689100,8.7,Pet Care (except Veterinary) Services,2026-09-30
+Century 21,century-21,S2140,yes,118,11,20,0,0.0,0.0,16.1,0.0,limited,1,491500,9.25,Offices of Real Estate Agents and Brokers,2026-09-30
+CertaPro Painters,certapro-painters,S0356,yes,241,30,83,7,8.4,4.1,16.4,2.0,rated,64,337500,9.5,Painting and Wall Covering Contractors,2026-09-30
+Charleys Philly Steaks,charleys-philly-steaks,S0360,yes,147,15,27,0,0.0,0.0,12.5,0.0,limited,67,454300,9.5,Limited-Service Restaurants,2026-09-30
+Cheba Hut,cheba-hut,S0363,yes,22,0,9,0,,,,,insufficient,14,822600,10.0,Limited-Service Restaurants,2026-09-30
+Checkers,checkers,S0364,yes,65,3,57,3,5.3,1.8,14.4,1.3,rated,14,852000,9.5,Limited-Service Restaurants,2026-09-30
+Checkers Drive-In Restaurant,checkers-drive-in-restaurant,,no,38,7,4,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Chem-Dry,chem-dry,S2142,yes,100,27,25,6,24.0,11.5,43.4,17.9,limited,5,179500,8.88,Carpet and Upholstery Cleaning Services,2026-09-30
+Cherry Blow Dry Bar,cherry-blow-dry-bar,,no,10,3,10,3,30.0,10.8,60.3,20.5,limited,0,,,Beauty Salons,2026-09-30
+CherryBerry,cherryberry,S0368,yes,22,7,18,6,33.3,16.3,56.3,24.5,limited,0,,,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Chesapeake Bagel Bakery,chesapeake-bagel-bakery,,no,43,17,0,0,,,,,insufficient,0,,,Full-Service Restaurants,2026-09-30
+Chevron (Gas Station),chevron-gas-station,,no,358,21,148,2,1.4,0.4,4.8,0.7,rated,0,,,Gasoline Stations with Convenience Stores,2026-09-30
+Chevron - Retail Supply Contract,chevron-retail-supply-contract,S2078,yes,99,0,55,0,0.0,0.0,6.5,0.0,rated,61,2859000,8.0,Gasoline Stations with Convenience Stores,2026-09-30
+Chicago Pizza With A Twist,chicago-pizza-with-a-twist,,no,17,1,9,1,,,,,insufficient,11,336000,10.25,Limited-Service Restaurants,2026-09-30
+Chicken Express,chicken-express,,no,63,1,20,0,0.0,0.0,16.1,0.0,limited,2,2602200,5.25,Limited-Service Restaurants,2026-09-30
+Chicken Salad Chick,chicken-salad-chick,S0371,yes,64,5,27,5,18.5,8.2,36.7,10.1,limited,44,951000,8.75,Limited-Service Restaurants,2026-09-30
+Children's Lighthouse Early Learning Schools,childrens-lighthouse-early-learning-schools,S0373,yes,73,0,49,0,0.0,0.0,7.3,0.0,rated,18,5000000,6.55,Child Day Care Services,2026-09-30
+Children's Orchard,childrens-orchard,S0372,yes,46,7,2,0,,,,,insufficient,0,,,Children's and Infants' Clothing Stores,2026-09-30
+Chip/Chip Cookies,chip-chip-cookies,,no,9,1,0,0,,,,,insufficient,10,422600,10.25,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Chiroway,chiroway,,no,14,0,4,0,,,,,insufficient,10,125650,10.25,Offices of Chiropractors,2026-09-30
+Choice Hotels International Inc.,choice-hotels-international-inc,,no,148,18,38,0,0.0,0.0,9.2,0.0,rated,0,,,Hotels (except Casino Hotels) and Motels,2026-09-30
+Christensen Inc. - Product Sales Agreement,christensen-inc-product-sales-agreement,S2237,yes,61,2,31,1,3.2,0.6,16.2,0.9,rated,34,1936000,8.25,Gasoline Stations with Convenience Stores,2026-09-30
+Christian Brothers Automotive,christian-brothers-automotive,S0375,yes,296,0,172,0,0.0,0.0,2.2,0.0,rated,39,449700,4.95,General Automotive Repair,2026-09-30
+Chronic Tacos,chronic-tacos,,no,11,2,10,2,20.0,5.7,51.0,8.7,limited,1,580000,10.5,Limited-Service Restaurants,2026-09-30
+Chrysler,chrysler,,no,35,1,10,0,0.0,0.0,27.8,0.0,limited,0,,,New Car Dealers,2026-09-30
+Chrysler - Sales and Service Agreement,chrysler-sales-and-service-agreement,,no,25,1,11,1,9.1,1.6,37.7,1.0,limited,15,2501000,5.75,New Car Dealers,2026-09-30
+Church's Chicken,churchs-chicken,S0378,yes,115,17,26,1,3.8,0.7,18.9,0.8,limited,9,828700,7.25,Limited-Service Restaurants,2026-09-30
+Cicis Pizza,cicis-pizza,S0379,yes,415,94,34,1,2.9,0.5,14.9,0.8,rated,10,507400,7.62,Limited-Service Restaurants,2026-09-30
+Cinnabon,cinnabon,S0380,yes,52,2,34,2,5.9,1.6,19.1,11.1,rated,20,460000,10.5,Limited-Service Restaurants,2026-09-30
+Cinnaholic,cinnaholic,S0381,yes,55,1,17,0,0.0,0.0,18.4,0.0,limited,42,314500,10.25,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Circle K (C-store Agreement only),circle-k-c-store-agreement-only,S2146,yes,75,3,53,0,0.0,0.0,6.8,0.0,rated,12,822500,9.12,Gasoline Stations with Convenience Stores,2026-09-30
+Circle K Convenience Store & Motor Fuel Franchise (aka Full Franchise),circle-k-convenience-store-and-motor-fuel-franchise-aka-full-franchise,S5521,yes,11,0,2,0,,,,,insufficient,11,3575000,9.0,Gasoline Stations with Convenience Stores,2026-09-30
+"Circle K Stores, Inc. (Multi Brands) Complete Contract of Sale Branded (Branded-Reseller)",circle-k-stores-inc-multi-brands-complete-contract-of-sale-branded-branded-reseller,S2930,yes,24,0,15,0,0.0,0.0,20.4,0.0,limited,13,2155300,8.62,Gasoline Stations with Convenience Stores,2026-09-30
+Citgo Service Station,citgo-service-station,,no,83,8,21,0,0.0,0.0,15.5,0.0,limited,0,,,Gasoline Stations with Convenience Stores,2026-09-30
+City Wide,city-wide,S0384,yes,34,1,17,1,5.9,1.0,27.0,4.4,limited,22,209250,9.38,Janitorial Services,2026-09-30
+CKO Kickboxing,cko-kickboxing,S0313,yes,38,6,35,6,17.1,8.1,32.7,12.3,rated,5,87500,8.62,Fitness and Recreational Sports Centers,2026-09-30
+Clarion Hotel,clarion-hotel,,no,28,1,28,1,3.6,0.6,17.7,0.9,limited,0,,,Hotels (except Casino Hotels) and Motels,2026-09-30
+Clarion Inn by Choice Hotels,clarion-inn-by-choice-hotels,S0385,yes,63,1,31,1,3.2,0.6,16.2,0.5,rated,37,3095500,7.88,Hotels (except Casino Hotels) and Motels,2026-09-30
+Classic Star Group (Distributor) Motor Fuel Supply Agreement,classic-star-group-distributor-motor-fuel-supply-agreement,,no,52,1,43,1,2.3,0.4,12.1,1.2,rated,12,2318000,7.25,Gasoline Stations with Convenience Stores,2026-09-30
+Clean Eatz,clean-eatz,S2089,yes,67,3,28,3,10.7,3.7,27.2,4.8,limited,43,549250,10.25,Limited-Service Restaurants,2026-09-30
+Clean Juice,clean-juice,S0388,yes,75,9,58,8,13.8,7.2,24.9,8.6,rated,20,322950,7.62,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Cleanest Restaurant Group,cleanest-restaurant-group,,no,9,0,0,0,,,,,insufficient,11,139700,9.75,Janitorial Services,2026-09-30
+Clipper Petroleum Supply Agreement,clipper-petroleum-supply-agreement,,no,22,0,18,0,0.0,0.0,17.6,0.0,limited,8,2957250,8.38,Gasoline Stations with Convenience Stores,2026-09-30
+Closet Factory,closet-factory,S0390,yes,70,12,12,0,0.0,0.0,24.2,0.0,limited,17,381500,8.6,Wood Kitchen Cabinet and Countertop Manufacturing,2026-09-30
+Closets by Design,closets-by-design,S0391,yes,49,6,18,3,16.7,5.8,39.2,5.8,limited,15,445000,8.5,Residential Remodelers,2026-09-30
+Clothes Bin,clothes-bin,S0392,yes,20,1,11,1,9.1,1.6,37.7,9.4,limited,9,150000,10.75,Recyclable Material Merchant Wholesalers,2026-09-30
+Clothes Mentor,clothes-mentor,S0393,yes,54,3,39,2,5.1,1.4,16.9,4.2,rated,14,295000,8.0,Used Merchandise Stores,2026-09-30
+Club Pilates,club-pilates,S0395,yes,256,0,202,0,0.0,0.0,1.9,0.0,rated,66,350000,9.75,Fitness and Recreational Sports Centers,2026-09-30
+CMIT Solutions,cmit-solutions,S0316,yes,54,3,32,1,3.1,0.6,15.7,2.7,rated,23,150000,10.25,Other Computer Related Services,2026-09-30
+Coast-To-Coast Store,coast-to-coast-store,,no,112,20,0,0,,,,,insufficient,0,,,Hardware Stores,2026-09-30
+Code Ninjas,code-ninjas,S2157,yes,132,13,109,11,10.1,5.7,17.2,7.7,rated,31,286100,9.75,Computer Training,2026-09-30
+Code Wiz,code-wiz,S4253,yes,9,1,1,0,,,,,insufficient,11,138000,10.25,Computer Training,2026-09-30
+Cold Stone Creamery,cold-stone-creamery,S0400,yes,1094,286,136,1,0.7,0.1,4.0,0.1,rated,154,419200,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+College Hunks Hauling Junk & Moving,college-hunks-hauling-junk-and-moving,S0402,yes,153,18,82,14,17.1,10.5,26.6,13.9,rated,74,200000,10.0,Used Household and Office Goods Moving,2026-09-30
+College Nannies & Tutors,college-nannies-and-tutors,,no,13,1,13,1,7.7,1.4,33.3,8.1,limited,0,,,Educational Support Services,2026-09-30
+Color Me Mine,color-me-mine,S0405,yes,70,7,17,0,0.0,0.0,18.4,0.0,limited,23,301300,9.25,"Hobby, Toy, and Game Retailers",2026-09-30
+Color Tile,color-tile,,no,65,23,0,0,,,,,insufficient,0,,,Floor Covering Stores,2026-09-30
+Color World Housepainting,color-world-housepainting,,no,18,6,12,5,41.7,19.3,68.0,29.0,limited,8,150000,9.62,Painting and Wall Covering Contractors,2026-09-30
+Comet One-Hour Dry Cleaners,comet-one-hour-dry-cleaners,,no,51,6,2,0,,,,,insufficient,0,,,Drycleaning and Laundry Services (except Coin-Operated),2026-09-30
+ComForCare Home Care and At Your Side Home Care,comforcare-home-care-and-at-your-side-home-care,S0408,yes,50,5,19,5,26.3,11.8,48.8,9.8,limited,38,174850,9.88,Home Health Care Services,2026-09-30
+Comforcare Senior Services,comforcare-senior-services,,no,21,1,17,1,5.9,1.0,27.0,2.6,limited,0,,,Home Health Care Services,2026-09-30
+Comfort Inn,comfort-inn,S0410,yes,627,9,316,5,1.6,0.7,3.6,0.7,rated,109,4090100,8.0,Hotels (except Casino Hotels) and Motels,2026-09-30
+Comfort Keepers,comfort-keepers,S0411,yes,123,3,55,2,3.6,1.0,12.3,0.7,rated,50,366000,8.75,Home Health Care Services,2026-09-30
+Comfort Suites by Choice Hotels,comfort-suites-by-choice-hotels,,no,126,3,45,1,2.2,0.4,11.6,1.1,rated,58,4179000,8.25,Hotels (except Casino Hotels) and Motels,2026-09-30
+Complete Nutrition,complete-nutrition,,no,63,16,38,14,36.8,23.4,52.7,39.6,rated,0,,,Food (Health) Supplement Stores,2026-09-30
+Computer Renaissance,computer-renaissance,,no,99,24,0,0,,,,,insufficient,0,,,Computer and Software Stores,2026-09-30
+Concrete Craft,concrete-craft,,no,48,8,41,8,19.5,10.2,34.0,16.4,rated,7,150000,11.25,Poured Concrete Foundation and Structure Contractors,2026-09-30
+Conoco Service Station,conoco-service-station,,no,88,11,24,0,0.0,0.0,13.8,0.0,limited,0,,,Gasoline Stations with Convenience Stores,2026-09-30
+Conserva Irrigation,conserva-irrigation,S2464,yes,44,2,21,1,4.8,0.8,22.7,4.3,limited,25,152000,10.0,Water Supply and Irrigation Systems,2026-09-30
+Contender eSports,contender-esports,,no,8,0,1,0,,,,,insufficient,11,261400,11.25,Amusement Arcades,2026-09-30
+Content Recovery Specialists,content-recovery-specialists,S7393,yes,8,0,0,0,,,,,insufficient,10,120000,10.25,Remediation Services,2026-09-30
+Convenient Food Mart,convenient-food-mart,,no,32,6,1,0,,,,,insufficient,0,,,Convenience Stores,2026-09-30
+Cookie Co.,cookie-co,,no,11,2,0,0,,,,,insufficient,11,288000,9.0,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Cookie Cutters,cookie-cutters,,no,24,3,23,3,13.0,4.5,32.1,11.3,limited,0,,,Beauty Salons,2026-09-30
+Cookie Cutters Haircuts for Kids,cookie-cutters-haircuts-for-kids,,no,28,1,23,1,4.3,0.8,21.0,0.0,limited,6,156500,9.5,Beauty Salons,2026-09-30
+Cookies by Design,cookies-by-design,,no,72,10,2,0,,,,,insufficient,2,188500,11.38,Baked Goods Stores,2026-09-30
+CoolVu,coolvu,,no,16,0,0,0,,,,,insufficient,16,150000,11.0,Window Treatment Retailers,2026-09-30
+CoreLife Eatery,corelife-eatery,,no,15,0,13,0,0.0,0.0,22.8,0.0,limited,2,867900,8.53,Limited-Service Restaurants,2026-09-30
+"Cornwell Quality Tool Company,Inc",cornwell-quality-tool-company-inc,,no,82,29,1,0,,,,,insufficient,0,,,Other Direct Selling Establishments,2026-09-30
+Corporate Cleaning Group,corporate-cleaning-group,S2628,yes,14,2,5,0,,,,,insufficient,10,150000,9.38,Janitorial Services,2026-09-30
+Costa Oil,costa-oil,,no,12,0,0,0,,,,,insufficient,15,250350,10.38,Automotive Oil Change and Lubrication Shops,2026-09-30
+Costa Vida Management,costa-vida-management,,no,17,1,17,1,5.9,1.0,27.0,4.9,limited,0,,,Limited-Service Restaurants,2026-09-30
+Cottman Transmission,cottman-transmission,,no,242,89,2,0,,,,,insufficient,0,,,Automotive Transmission Repair,2026-09-30
+Country Clutter (Bed & Breakfast),country-clutter-bed-and-breakfast,,no,46,23,0,0,,,,,insufficient,0,,,"Gift, Novelty, and Souvenir Stores",2026-09-30
+Country Inn and Suites by Radisson,country-inn-and-suites-by-radisson,S0431,yes,78,2,41,2,4.9,1.3,16.1,0.9,rated,43,4036000,8.5,Hotels (except Casino Hotels) and Motels,2026-09-30
+Country Inns & Suites by Carlson,country-inns-and-suites-by-carlson,,no,87,2,76,2,2.6,0.7,9.1,1.2,rated,0,,,Hotels (except Casino Hotels) and Motels,2026-09-30
+Country Kitchen Restaurant,country-kitchen-restaurant,,no,42,8,4,1,,,,,insufficient,3,491800,8.38,Full-Service Restaurants,2026-09-30
+Courtyard by Marriott,courtyard-by-marriott,S0433,yes,16,0,5,0,,,,,insufficient,12,5000000,8.5,Hotels (except Casino Hotels) and Motels,2026-09-30
+Cousins Subs,cousins-subs,S0435,yes,141,29,38,1,2.6,0.5,13.5,3.5,rated,0,,,Limited-Service Restaurants,2026-09-30
+CPR - Cell Phone Repair,cpr-cell-phone-repair,S2369,yes,30,9,25,9,36.0,20.2,55.5,28.0,limited,5,150000,10.0,Consumer Electronics Repair and Maintenance,2026-09-30
+Crab N Spice,crab-n-spice,S6983,yes,5,0,0,0,,,,,insufficient,10,152750,10.75,Limited-Service Restaurants,2026-09-30
+Crave Cookies,crave-cookies,,no,12,1,0,0,,,,,insufficient,13,307500,10.75,Retail Bakeries,2026-09-30
+Crave Hot Dogs & BBQ,crave-hot-dogs-and-bbq,S3368,yes,32,4,14,3,21.4,7.6,47.6,24.2,limited,21,560000,10.38,Limited-Service Restaurants,2026-09-30
+CRDN,crdn,S0357,yes,18,0,10,0,0.0,0.0,27.8,0.0,limited,10,500000,8.5,Drycleaning and Laundry Services (except Coin-Operated),2026-09-30
+Crestcom,crestcom,S0441,yes,21,4,15,3,20.0,7.0,45.2,17.9,limited,6,150000,9.25,Professional and Management Development Training,2026-09-30
+Crispy Cones,crispy-cones,S7520,yes,16,0,0,0,,,,,insufficient,33,349000,10.0,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Crown Trophy,crown-trophy,,no,46,4,11,0,0.0,0.0,25.9,0.0,limited,3,301500,4.24,All Other Miscellaneous Store Retailers (except Tobacco Stores),2026-09-30
+Crumbl,crumbl,S4360,yes,274,0,80,0,0.0,0.0,4.6,0.0,rated,222,520000,8.75,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Crunch,crunch,S0446,yes,12,0,11,0,0.0,0.0,25.9,0.0,limited,2,4924600,8.25,Fitness and Recreational Sports Centers,2026-09-30
+Crushr,crushr,,no,29,0,2,0,,,,,insufficient,30,295000,10.5,Other Waste Collection,2026-09-30
+Crust Pizza Co,crust-pizza-co,S3533,yes,20,0,2,0,,,,,insufficient,19,932000,9.0,Full-Service Restaurants,2026-09-30
+Culligan,culligan,S0448,yes,105,0,16,0,0.0,0.0,19.4,0.0,limited,7,395000,10.0,Other Direct Selling Establishments,2026-09-30
+Culver's,culvers,S0449,yes,426,7,232,0,0.0,0.0,1.6,0.0,rated,71,405000,7.75,Limited-Service Restaurants,2026-09-30
+Curves for Women,curves-for-women,,no,425,80,10,1,10.0,1.8,40.4,14.7,limited,0,,,Fitness and Recreational Sports Centers,2026-09-30
+Cyber Exchange,cyber-exchange,,no,26,6,0,0,,,,,insufficient,0,,,Computer and Software Stores,2026-09-30
+CycleBar,cyclebar,S0452,yes,123,12,106,10,9.4,5.2,16.5,5.8,rated,21,492200,7.5,Fitness and Recreational Sports Centers,2026-09-30
+D-BAT,d-bat,S0454,yes,125,4,52,4,7.7,3.0,18.2,3.3,rated,82,763550,8.4,Sports and Recreation Instruction,2026-09-30
+D1 Training,d1-training,S2347,yes,137,2,33,1,3.0,0.5,15.3,2.8,rated,129,589000,10.0,Fitness and Recreational Sports Centers,2026-09-30
+Dairy Queen,dairy-queen,S0480,yes,1531,122,389,4,1.0,0.4,2.6,0.4,rated,131,600000,8.4,Limited-Service Restaurants,2026-09-30
+Dale Carnegie,dale-carnegie,,no,16,2,11,2,18.2,5.1,47.7,22.8,limited,5,76800,6.0,Professional and Management Development Training,2026-09-30
+Daylight Donut Shop,daylight-donut-shop,,no,66,13,18,1,5.6,1.0,25.8,2.2,limited,5,209000,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Days Inn,days-inn,S0488,yes,1148,84,443,7,1.6,0.8,3.2,0.9,rated,169,2385700,8.25,Hotels (except Casino Hotels) and Motels,2026-09-30
+Deck the Walls,deck-the-walls,S0489,yes,70,23,0,0,,,,,insufficient,0,,,All Other Miscellaneous Store Retailers (except Tobacco Stores),2026-09-30
+Decorating Den System,decorating-den-system,,no,26,2,1,0,,,,,insufficient,0,,,Interior Design Services,2026-09-30
+Degree Wellness,degree-wellness,S8069,yes,33,0,0,0,,,,,insufficient,48,680900,9.5,Other Personal Care Services,2026-09-30
+Deka Lash,deka-lash,S0492,yes,74,7,54,6,11.1,5.2,22.2,6.7,rated,22,259550,9.75,Beauty Salons,2026-09-30
+Del Taco,del-taco,S0493,yes,53,7,17,0,0.0,0.0,18.4,0.0,limited,10,1225000,9.0,Limited-Service Restaurants,2026-09-30
+Deli Delicious,deli-delicious,S0494,yes,22,3,19,3,15.8,5.5,37.6,2.8,limited,3,900000,9.75,Limited-Service Restaurants,2026-09-30
+Delta Life Fitness,delta-life-fitness,,no,12,4,11,4,36.4,15.2,64.6,27.0,limited,1,408800,6.0,Fitness and Recreational Sports Centers,2026-09-30
+Denny's,dennys,S2351,yes,199,16,57,1,1.8,0.3,9.3,0.8,rated,12,1008000,9.0,Full-Service Restaurants,2026-09-30
+Dental Fix Rx,dental-fix-rx,,no,52,26,52,26,50.0,36.9,63.1,41.6,rated,0,,,Other Electronic and Precision Equipment Repair and Maintenance,2026-09-30
+DetailXPerts,detailxperts,,no,16,7,16,7,43.8,23.1,66.8,37.2,limited,0,,,Car Washes,2026-09-30
+Dickey's Barbecue Pit,dickeys-barbecue-pit,,no,349,92,230,63,27.4,22.0,33.5,19.6,rated,43,400000,6.75,Limited-Service Restaurants,2026-09-30
+Dirty Dough,dirty-dough,,no,43,0,0,0,,,,,insufficient,51,250000,11.0,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Discover Strength,discover-strength,S6610,yes,13,0,1,0,,,,,insufficient,15,482700,9.25,Fitness and Recreational Sports Centers,2026-09-30
+Discovery Point,discovery-point,,no,32,5,3,0,,,,,insufficient,2,325000,11.0,Child Day Care Services,2026-09-30
+Discovery Zone (Children's Gym),discovery-zone-childrens-gym,,no,29,4,0,0,,,,,insufficient,0,,,Fitness and Recreational Sports Centers,2026-09-30
+Do It Best Hardware,do-it-best-hardware,,no,37,7,19,1,5.3,0.9,24.6,1.0,limited,0,,,Hardware Stores,2026-09-30
+Do it Best - Members,do-it-best-members,S2175,yes,55,1,29,1,3.4,0.6,17.2,4.0,limited,28,342250,7.5,Hardware Stores,2026-09-30
+Doctors Express,doctors-express,,no,46,3,35,2,5.7,1.6,18.6,0.7,rated,0,,,Freestanding Ambulatory Surgical and Emergency Centers,2026-09-30
+Dog Haus,dog-haus,S0511,yes,22,0,16,0,0.0,0.0,19.4,0.0,limited,9,859150,9.12,Limited-Service Restaurants,2026-09-30
+Dog Training Elite,dog-training-elite,S3945,yes,15,1,4,1,,,,,insufficient,15,150000,10.5,Pet Care (except Veterinary) Services,2026-09-30
+Dogtopia,dogtopia,S0512,yes,159,6,103,4,3.9,1.5,9.6,2.9,rated,66,1070000,8.5,Pet Care (except Veterinary) Services,2026-09-30
+Dollar Discount Stores,dollar-discount-stores,,no,50,19,0,0,,,,,insufficient,0,,,All Other General Merchandise Stores,2026-09-30
+Domino's Pizza,dominos-pizza,S0513,yes,1028,82,279,5,1.8,0.8,4.1,1.2,rated,176,596500,9.25,Limited-Service Restaurants,2026-09-30
+Donatos Pizza,donatos-pizza,S0514,yes,35,3,16,0,0.0,0.0,19.4,0.0,limited,5,639700,5.99,Limited-Service Restaurants,2026-09-30
+DonutNV,donutnv,S7546,yes,30,2,0,0,,,,,insufficient,40,190500,10.75,Mobile Food Services,2026-09-30
+DoodyCalls,doodycalls,S2745,yes,20,1,4,0,,,,,insufficient,18,150000,10.25,Pet Care (except Veterinary) Services,2026-09-30
+DoubleDave's Pizzaworks,doubledaves-pizzaworks,S0516,yes,43,16,5,0,,,,,insufficient,1,411000,8.25,Full-Service Restaurants,2026-09-30
+Dream Dinners,dream-dinners,,no,71,35,4,1,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+DreamMaker Bath & Kitchen Worldwide,dreammaker-bath-and-kitchen-worldwide,S0522,yes,15,1,7,1,,,,,insufficient,10,366500,9.5,Residential Remodelers,2026-09-30
+DRIPBaR,dripbar,S4676,yes,36,0,3,0,,,,,insufficient,39,230000,10.25,Offices of All Other Miscellaneous Health Practitioners,2026-09-30
+Drybar,drybar,S0524,yes,34,0,11,0,0.0,0.0,25.9,0.0,limited,26,646100,9.25,Beauty Salons,2026-09-30
+Dryer Vent Superheroes,dryer-vent-superheroes,S8186,yes,12,0,0,0,,,,,insufficient,12,150000,10.12,Appliance Repair and Maintenance,2026-09-30
+Dryer Vent Wizard,dryer-vent-wizard,S0525,yes,51,1,14,1,7.1,1.3,31.5,6.9,limited,36,150000,10.25,Appliance Repair and Maintenance,2026-09-30
+Duck Donuts,duck-donuts,S2179,yes,96,10,53,9,17.0,9.2,29.2,8.1,rated,48,522000,10.0,Limited-Service Restaurants,2026-09-30
+Dunkin',dunkin,S0529,yes,1037,76,177,2,1.1,0.3,4.0,1.5,rated,60,734300,9.25,Limited-Service Restaurants,2026-09-30
+Dunkin' Donut,dunkin-donut,S0528,yes,28,0,19,0,0.0,0.0,16.8,0.0,limited,15,560000,8.75,Limited-Service Restaurants,2026-09-30
+Dunkin Donuts/Baskin-Robbins Co-Brand,dunkin-donuts-baskin-robbins-co-brand,,no,42,0,42,0,0.0,0.0,8.4,0.0,rated,0,,,Limited-Service Restaurants,2026-09-30
+Dunn Bros Coffee,dunn-bros-coffee,,no,43,10,1,0,,,,,insufficient,0,,,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Dunn Brothers Coffee,dunn-brothers-coffee,S2180,yes,30,6,26,6,23.1,11.0,42.1,12.4,limited,3,212500,5.75,Limited-Service Restaurants,2026-09-30
+Dutch Bros.,dutch-bros,S0531,yes,91,0,69,0,0.0,0.0,5.3,0.0,rated,5,350000,7.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Earthwise Pet,earthwise-pet,S0560,yes,44,3,20,3,15.0,5.2,36.0,8.5,limited,25,618000,9.75,Pet and Pet Supplies Stores,2026-09-30
+East of Chicago Pizza,east-of-chicago-pizza,S0562,yes,63,12,7,3,,,,,insufficient,7,75000,10.75,Full-Service Restaurants,2026-09-30
+Eat the Frog Fitness,eat-the-frog-fitness,,no,19,5,14,3,21.4,7.6,47.6,12.7,limited,6,615000,6.25,Fitness and Recreational Sports Centers,2026-09-30
+ecomaids,ecomaids,S0565,yes,21,3,15,3,20.0,7.0,45.2,11.8,limited,6,150000,8.25,Janitorial Services,2026-09-30
+Econo Lodge,econo-lodge,S0566,yes,589,31,252,2,0.8,0.2,2.8,0.3,rated,74,1639600,8.25,Hotels (except Casino Hotels) and Motels,2026-09-30
+Econo Lube N' Tune & Brakes,econo-lube-n-tune-and-brakes,S0567,yes,73,26,4,1,,,,,insufficient,0,,,General Automotive Repair,2026-09-30
+Ed Staubs & Sons Petroleum (Multi-brands) Retail Product Sales Agreement,ed-staubs-and-sons-petroleum-multi-brands-retail-product-sales-agreement,S2520,yes,30,0,13,0,0.0,0.0,22.8,0.0,limited,23,2410650,8.38,Gasoline Stations with Convenience Stores,2026-09-30
+Edible Arrangements,edible-arrangements,S0568,yes,436,53,196,26,13.3,9.2,18.7,7.7,rated,51,290000,8.75,All Other Specialty Food Stores,2026-09-30
+EggBred,eggbred,S6664,yes,6,0,0,0,,,,,insufficient,13,447500,9.5,Limited-Service Restaurants,2026-09-30
+Eggs Up Grill,eggs-up-grill,S0570,yes,65,0,24,0,0.0,0.0,13.8,0.0,limited,50,967200,9.75,Full-Service Restaurants,2026-09-30
+Einstein Bros. Bagels,einstein-bros-bagels,S0571,yes,14,2,12,2,16.7,4.7,44.8,5.1,limited,2,217500,8.25,Limited-Service Restaurants,2026-09-30
+El Pollo Loco,el-pollo-loco,S0573,yes,45,1,16,0,0.0,0.0,19.4,0.0,limited,8,1882550,8.62,Limited-Service Restaurants,2026-09-30
+Elements Massage,elements-massage,S0574,yes,130,4,101,2,2.0,0.5,6.9,1.4,rated,31,350250,10.25,Other Personal Care Services,2026-09-30
+ELLIANOS COFFEE COMPANY,ellianos-coffee-company,S0543,yes,27,0,5,0,,,,,insufficient,31,987650,8.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Ellie Mental Health,ellie-mental-health,S6796,yes,103,3,0,0,,,,,insufficient,126,222500,10.0,Offices of Mental Health Practitioners (except Physicians),2026-09-30
+Embroide Me.Com,embroide-me-com,,no,45,15,2,0,,,,,insufficient,0,,,All Other Miscellaneous Store Retailers (except Tobacco Stores),2026-09-30
+Embroidme,embroidme,,no,35,15,35,15,42.9,28.0,59.1,36.1,rated,0,,,Commercial Screen Printing,2026-09-30
+Empire Petroleum Partners - Petroleum Products Supply Agreement,empire-petroleum-partners-petroleum-products-supply-agreement,,no,28,0,23,0,0.0,0.0,14.3,0.0,limited,7,1870000,9.5,Gasoline Stations with Convenience Stores,2026-09-30
+Enviro-Master Services,enviro-master-services,S0581,yes,52,2,41,2,4.9,1.3,16.1,5.9,rated,13,242450,9.5,Janitorial Services,2026-09-30
+Erbert & Gerbert's Subs & Clubs,erbert-and-gerberts-subs-and-clubs,,no,43,7,21,3,14.3,5.0,34.6,12.2,limited,0,,,Limited-Service Restaurants,2026-09-30
+Escapology,escapology,S2763,yes,35,0,13,0,0.0,0.0,22.8,0.0,limited,35,965250,9.0,All Other Amusement and Recreation Industries,2026-09-30
+Essential Speech and ABA Therapy,essential-speech-and-aba-therapy,S7663,yes,9,0,0,0,,,,,insufficient,10,271800,11.12,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",2026-09-30
+European Wax Center,european-wax-center,S0585,yes,365,8,321,7,2.2,1.1,4.4,1.3,rated,21,500000,6.25,Other Personal Care Services,2026-09-30
+everbowl,everbowl,S4942,yes,29,1,1,0,,,,,insufficient,35,249000,9.75,Limited-Service Restaurants,2026-09-30
+Everline Coatings and Services,everline-coatings-and-services,S7069,yes,87,1,0,0,,,,,insufficient,97,258000,10.0,All Other Specialty Trade Contractors,2026-09-30
+Executive Tans,executive-tans,,no,46,32,0,0,,,,,insufficient,0,,,Other Personal Care Services,2026-09-30
+Expedia CruiseShipCenters,expedia-cruiseshipcenters,,no,15,5,14,5,35.7,16.3,61.2,27.0,limited,1,30000,14.0,Travel Agencies,2026-09-30
+Experimax (formerly Experimac),experimax-formerly-experimac,,no,79,49,79,49,62.0,51.0,71.9,50.4,rated,0,,,Computer and Office Machine Repair and Maintenance,2026-09-30
+Express Employment Professional,express-employment-professional,S4217,yes,102,2,62,0,0.0,0.0,5.8,0.0,rated,45,250000,9.47,Employment Placement Agencies,2026-09-30
+Express Oil Change,express-oil-change,,no,21,0,17,0,0.0,0.0,18.4,0.0,limited,0,,,Automotive Oil Change and Lubrication Shops,2026-09-30
+Express Personnel Services,express-personnel-services,,no,34,3,5,0,,,,,insufficient,0,,,Temporary Help Services,2026-09-30
+Extended Stay America Suites,extended-stay-america-suites,S5432,yes,20,0,0,0,,,,,insufficient,21,3770000,9.0,Hotels (except Casino Hotels) and Motels,2026-09-30
+Extreme Pizza,extreme-pizza,S0594,yes,20,1,10,0,0.0,0.0,27.8,0.0,limited,1,905500,9.0,Limited-Service Restaurants,2026-09-30
+Exxon-Mobil Oil Corporation - PMPA Franchise Agreement (Global Companies LLC Assignment ),exxon-mobil-oil-corporation-pmpa-franchise-agreement-global-companies-llc-assignment,,no,11,0,4,0,,,,,insufficient,10,258500,8.5,Gasoline Stations with Convenience Stores,2026-09-30
+F45 Training,f45-training,S0596,yes,245,20,176,17,9.7,6.1,14.9,6.2,rated,81,322500,9.5,Fitness and Recreational Sports Centers,2026-09-30
+Face Foundrie,face-foundrie,S6061,yes,21,0,1,0,,,,,insufficient,27,369000,9.5,Beauty Salons,2026-09-30
+Fairfield by Marriott,fairfield-by-marriott,S0620,yes,57,0,16,0,0.0,0.0,19.4,0.0,limited,44,4930000,8.0,Hotels (except Casino Hotels) and Motels,2026-09-30
+Fairfield Inn/Inn & Suites,fairfield-inn-inn-and-suites,,no,29,0,24,0,0.0,0.0,13.8,0.0,limited,0,,,Hotels (except Casino Hotels) and Motels,2026-09-30
+Famous Dave's,famous-daves,S0621,yes,13,1,6,1,,,,,insufficient,10,260800,9.25,Full-Service Restaurants,2026-09-30
+Fantastic Sams,fantastic-sams,S0624,yes,458,97,104,29,27.9,20.2,37.2,21.0,rated,10,216000,9.0,Beauty Salons,2026-09-30
+Farmer Boys,farmer-boys,S0626,yes,20,1,18,1,5.6,1.0,25.8,3.1,limited,3,245550,8.5,Limited-Service Restaurants,2026-09-30
+Farmer Boys-Brea,farmer-boys-brea,,no,28,0,2,0,,,,,insufficient,0,,,Full-Service Restaurants,2026-09-30
+Farmers Insurance,farmers-insurance,,no,14,0,10,0,0.0,0.0,27.8,0.0,limited,0,,,Insurance Agencies and Brokerages,2026-09-30
+Farmers Insurance Agent Appointment Agreement,farmers-insurance-agent-appointment-agreement,,no,61,5,35,3,8.6,3.0,22.4,8.3,rated,30,281500,8.56,Insurance Agencies and Brokerages,2026-09-30
+Farrell's eXtreme Bodyshaping,farrells-extreme-bodyshaping,,no,27,4,24,3,12.5,4.3,31.0,16.5,limited,4,150000,11.25,Fitness and Recreational Sports Centers,2026-09-30
+Fast Frame,fast-frame,,no,89,24,0,0,,,,,insufficient,0,,,All Other Home Furnishings Stores,2026-09-30
+Fastest Labs,fastest-labs,S2184,yes,32,1,13,1,7.7,1.4,33.3,9.7,limited,24,150000,9.5,Medical Laboratories,2026-09-30
+FASTSIGNS,fastsigns,S0602,yes,443,36,202,12,5.9,3.4,10.1,2.4,rated,117,314000,9.25,Sign Manufacturing,2026-09-30
+Fatburger,fatburger,S2185,yes,34,3,12,1,8.3,1.5,35.4,10.1,limited,11,617000,10.0,Limited-Service Restaurants,2026-09-30
+Fazoli's,fazolis,S0632,yes,35,3,16,2,12.5,3.5,36.0,1.5,limited,2,3525450,9.88,Limited-Service Restaurants,2026-09-30
+Fedex,fedex,,no,27,2,19,2,10.5,2.9,31.4,12.7,limited,0,,,Couriers and Express Delivery Services,2026-09-30
+Fedex Ground,fedex-ground,,no,208,16,208,16,7.7,4.8,12.1,7.7,rated,0,,,"General Freight Trucking, Local",2026-09-30
+Fibrenew,fibrenew,S0635,yes,50,3,30,3,10.0,3.5,25.6,9.1,rated,22,150000,10.25,"Automotive Body, Paint, and Interior Repair and Maintenance",2026-09-30
+Figaro's Italian Pizza,figaros-italian-pizza,,no,40,19,0,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+FiiZ Drinks,fiiz-drinks,S3266,yes,22,0,9,0,,,,,insufficient,21,309000,8.62,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Filta Environmental Kitchen Solutions,filta-environmental-kitchen-solutions,S0638,yes,31,2,20,2,10.0,2.8,30.1,8.5,limited,15,264000,9.75,All Other Miscellaneous Waste Management Services,2026-09-30
+Filta Environmental Kitchen Solutions/Filtafr,filta-environmental-kitchen-solutions-filtafr,,no,16,2,16,2,12.5,3.5,36.0,8.1,limited,0,,,All Other Miscellaneous Waste Management Services,2026-09-30
+Firehouse Subs,firehouse-subs,S0639,yes,646,56,430,33,7.7,5.5,10.6,5.2,rated,114,456100,9.12,Limited-Service Restaurants,2026-09-30
+Firenza,firenza,,no,10,4,10,4,40.0,16.8,68.7,22.9,limited,0,,,Limited-Service Restaurants,2026-09-30
+First Watch,first-watch,S0643,yes,10,0,10,0,0.0,0.0,27.8,0.0,limited,0,,,Full-Service Restaurants,2026-09-30
+FirstLight HomeCare,firstlight-homecare,S0644,yes,63,3,35,3,8.6,3.0,22.4,8.1,rated,45,165000,9.99,Home Health Care Services,2026-09-30
+Fish Window Cleaning Services,fish-window-cleaning-services,S0645,yes,92,11,47,7,14.9,7.4,27.7,7.1,rated,24,150000,10.25,Janitorial Services,2026-09-30
+Fit Body Boot Camp,fit-body-boot-camp,S2958,yes,89,7,27,5,18.5,8.2,36.7,21.5,limited,69,215000,10.25,Fitness and Recreational Sports Centers,2026-09-30
+Fitness 1440,fitness-1440,S0649,yes,15,1,13,1,7.7,1.4,33.3,3.7,limited,3,500000,9.5,Fitness and Recreational Sports Centers,2026-09-30
+Fitness Machine Technicians FMT,fitness-machine-technicians-fmt,S2994,yes,21,0,11,0,0.0,0.0,25.9,0.0,limited,11,150000,10.75,Other Personal and Household Goods Repair and Maintenance,2026-09-30
+Fitness Together,fitness-together,S0650,yes,123,32,51,7,13.7,6.8,25.7,14.9,rated,7,126000,7.25,Fitness and Recreational Sports Centers,2026-09-30
+Five Guys,five-guys,S0652,yes,89,2,42,0,0.0,0.0,8.4,0.0,rated,5,649100,7.5,Limited-Service Restaurants,2026-09-30
+Five Star Bath Solutions,five-star-bath-solutions,S0653,yes,65,3,7,3,,,,,insufficient,68,243000,10.25,Residential Remodelers,2026-09-30
+Five Star Painting,five-star-painting,S0654,yes,72,11,55,11,20.0,11.6,32.4,15.8,rated,19,150000,10.5,Painting and Wall Covering Contractors,2026-09-30
+Fix Auto,fix-auto,S2190,yes,17,0,11,0,0.0,0.0,25.9,0.0,limited,10,2441500,7.62,"Automotive Body, Paint, and Interior Repair and Maintenance",2026-09-30
+Fleet Feet Sports,fleet-feet-sports,S0656,yes,89,6,46,4,8.7,3.4,20.3,1.9,rated,29,225000,9.25,Shoe Stores,2026-09-30
+Flip Flop Shops,flip-flop-shops,S0657,yes,24,10,18,10,55.6,33.7,75.4,43.0,limited,8,160000,10.75,Shoe Stores,2026-09-30
+Floor Coverings International,floor-coverings-international,S0659,yes,148,12,62,12,19.4,11.4,30.9,15.1,rated,99,226000,10.25,Flooring Contractors,2026-09-30
+Floorcoverings International,floorcoverings-international,,no,23,5,23,5,21.7,9.7,41.9,20.5,limited,0,,,Floor Covering Stores,2026-09-30
+Flowerama,flowerama,S0660,yes,94,21,2,0,,,,,insufficient,7,350000,8.25,Florists,2026-09-30
+Floyd's 99 Barbershop,floyds-99-barbershop,S0661,yes,12,0,3,0,,,,,insufficient,11,500000,9.25,Barber Shops,2026-09-30
+Foot Solutions,foot-solutions,S0663,yes,79,25,7,2,,,,,insufficient,0,,,Shoe Stores,2026-09-30
+Footprint Floors,footprint-floors,S3750,yes,21,0,10,0,0.0,0.0,27.8,0.0,limited,12,150000,11.25,Flooring Contractors,2026-09-30
+Ford Motor Company Dealer Sales and Service Agreement,ford-motor-company-dealer-sales-and-service-agreement,,no,22,0,15,0,0.0,0.0,20.4,0.0,limited,8,2000000,10.0,New Car Dealers,2026-09-30
+Ford Motor (Dealers),ford-motor-dealers,,no,43,1,9,0,,,,,insufficient,0,,,New Car Dealers,2026-09-30
+Foster Freeze,foster-freeze,,no,28,4,2,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Fox's Pizza Den,foxs-pizza-den,S0666,yes,154,33,23,2,8.7,2.4,26.8,6.0,limited,15,258000,10.0,Limited-Service Restaurants,2026-09-30
+Foxtail Coffee Co,foxtail-coffee-co,S4645,yes,18,0,1,0,,,,,insufficient,20,652000,9.25,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Fred Astaire Dance Studios,fred-astaire-dance-studios,S0668,yes,33,2,18,0,0.0,0.0,17.6,0.0,limited,22,170000,10.0,Fine Arts Schools,2026-09-30
+Freddy's Frozen Custard,freddys-frozen-custard,,no,13,0,13,0,0.0,0.0,22.8,0.0,limited,0,,,Limited-Service Restaurants,2026-09-30
+Freddy's Frozen Custard & Steakburgers,freddys-frozen-custard-and-steakburgers,S0669,yes,16,0,6,0,,,,,insufficient,13,1363650,8.62,Limited-Service Restaurants,2026-09-30
+Freedom Boat Club,freedom-boat-club,,no,24,0,22,0,0.0,0.0,14.9,0.0,limited,2,856000,9.5,Marinas,2026-09-30
+FreeForm Chiropractic,freeform-chiropractic,S7219,yes,7,0,0,0,,,,,insufficient,10,458100,9.5,Offices of Chiropractors,2026-09-30
+Frenchies Modern Nail Care,frenchies-modern-nail-care,S2026,yes,30,6,23,5,21.7,9.7,41.9,20.8,limited,8,192250,10.25,Nail Salons,2026-09-30
+Fresh Coat,fresh-coat,S0672,yes,29,2,12,2,16.7,4.7,44.8,1.3,limited,20,150000,9.75,Painting and Wall Covering Contractors,2026-09-30
+Freshii,freshii,,no,40,12,39,12,30.8,18.6,46.4,22.2,rated,1,350000,6.25,Limited-Service Restaurants,2026-09-30
+Friendly's,friendlys,S0677,yes,34,2,17,1,5.9,1.0,27.0,2.0,limited,0,,,Full-Service Restaurants,2026-09-30
+Frullati Cafe & Bakery,frullati-cafe-and-bakery,S0681,yes,35,9,0,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Frutta Bowls,frutta-bowls,S2430,yes,18,2,12,2,16.7,4.7,44.8,14.3,limited,8,345000,10.25,Limited-Service Restaurants,2026-09-30
+FS8,fs8,S8160,yes,10,0,0,0,,,,,insufficient,12,634400,9.75,Fitness and Recreational Sports Centers,2026-09-30
+Fuddruckers,fuddruckers,,no,47,13,9,2,,,,,insufficient,2,250000,8.75,Full-Service Restaurants,2026-09-30
+Fully Promoted a,fully-promoted-a,S0577,yes,20,4,13,4,30.8,12.7,57.6,15.0,limited,10,268000,10.25,Other Services Related to Advertising,2026-09-30
+FunBox,funbox,S7437,yes,14,0,0,0,,,,,insufficient,17,451550,10.0,Amusement and Theme Parks,2026-09-30
+Fuzzy's Taco Shop,fuzzys-taco-shop,,no,41,5,32,5,15.6,6.9,31.8,15.9,rated,8,650000,8.75,Limited-Service Restaurants,2026-09-30
+FYZICAL Therapy & Balance Centers,fyzical-therapy-and-balance-centers,S0616,yes,98,2,22,0,0.0,0.0,14.9,0.0,limited,100,246000,9.25,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",2026-09-30
+Gameday Men's Health,gameday-mens-health,S7952,yes,117,0,0,0,,,,,insufficient,146,256000,11.0,Offices of All Other Miscellaneous Health Practitioners,2026-09-30
+Gandolfo's New York Delicatessen,gandolfos-new-york-delicatessen,,no,27,8,6,2,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Garage Force,garage-force,S3824,yes,40,3,13,2,15.4,4.3,42.2,12.6,limited,28,150000,9.75,Flooring Contractors,2026-09-30
+Garage Living,garage-living,S2027,yes,18,1,10,1,10.0,1.8,40.4,10.9,limited,14,250000,9.5,Flooring Contractors,2026-09-30
+Gatsby Glass,gatsby-glass,S7442,yes,43,3,0,0,,,,,insufficient,47,348400,10.5,Glass and Glazing Contractors,2026-09-30
+Gatti's Pizza,gattis-pizza,S0717,yes,36,8,5,0,,,,,insufficient,5,1575000,10.0,Full-Service Restaurants,2026-09-30
+Geeks on Call,geeks-on-call,,no,25,5,0,0,,,,,insufficient,0,,,Other Computer Related Services,2026-09-30
+General Nutrition Center,general-nutrition-center,,no,189,23,42,2,4.8,1.3,15.8,3.8,rated,0,,,Food (Health) Supplement Stores,2026-09-30
+Generator Supercenter,generator-supercenter,S2477,yes,28,1,10,1,10.0,1.8,40.4,2.6,limited,18,491000,9.5,"Electrical Apparatus and Equipment, Wiring Supplies, and Related Equipment Merchant Wholesalers",2026-09-30
+Gigi's Cupcakes,gigis-cupcakes,,no,34,7,32,7,21.9,11.0,38.8,18.0,rated,1,315000,6.0,Retail Bakeries,2026-09-30
+Glass Doctor,glass-doctor,S0722,yes,103,22,38,13,34.2,21.2,50.1,21.5,rated,36,207000,9.88,Automotive Glass Replacement Shops,2026-09-30
+GLO TANNING,glo-tanning,S6013,yes,39,0,2,0,,,,,insufficient,48,893000,10.0,Other Personal Care Services,2026-09-30
+Gloria Jean's Coffee Bean,gloria-jeans-coffee-bean,,no,73,12,2,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Go Mini's Moving and Portable Storage,go-minis-moving-and-portable-storage,S0724,yes,14,0,13,0,0.0,0.0,22.8,0.0,limited,1,4465000,4.95,Lessors of Miniwarehouses and Self-Storage Units,2026-09-30
+Godfather's Pizza,godfathers-pizza,S2196,yes,52,9,10,0,0.0,0.0,27.8,0.0,limited,2,2440000,9.0,Full-Service Restaurants,2026-09-30
+goGlow,goglow,S8067,yes,9,0,0,0,,,,,insufficient,12,412250,9.25,Other Personal Care Services,2026-09-30
+Goin' Postal,goin-postal,S0725,yes,28,7,5,1,,,,,insufficient,2,87500,10.7,Private Mail Centers,2026-09-30
+Gold Star Chili,gold-star-chili,,no,32,5,14,1,7.1,1.3,31.5,1.7,limited,4,617250,8.25,Full-Service Restaurants,2026-09-30
+Golden Chick,golden-chick,S0728,yes,48,2,28,2,7.1,2.0,22.6,1.2,limited,17,687000,9.0,Limited-Service Restaurants,2026-09-30
+Golden Corral,golden-corral,S0729,yes,189,19,80,4,5.0,2.0,12.2,4.1,rated,21,1802900,8.62,Full-Service Restaurants,2026-09-30
+Golden Fried Chicken/Golden Chick,golden-fried-chicken-golden-chick,,no,19,2,19,2,10.5,2.9,31.4,12.1,limited,0,,,Limited-Service Restaurants,2026-09-30
+Goldfish Swim School,goldfish-swim-school,S0731,yes,107,0,84,0,0.0,0.0,4.4,0.0,rated,24,2171000,8.0,Sports and Recreation Instruction,2026-09-30
+Gold's Gym,golds-gym,S0727,yes,171,26,37,1,2.7,0.5,13.8,0.2,rated,3,1725000,10.0,Fitness and Recreational Sports Centers,2026-09-30
+Golf Envy,golf-envy,S8130,yes,9,0,0,0,,,,,insufficient,11,640200,9.5,All Other Amusement and Recreation Industries,2026-09-30
+Golf Etc.,golf-etc,,no,135,72,5,1,,,,,insufficient,0,,,Sporting Goods Stores,2026-09-30
+Golf U.S.A. (Retail Golf Equip.),golf-u-s-a-retail-golf-equip,,no,107,49,0,0,,,,,insufficient,0,,,Sporting Goods Stores,2026-09-30
+"Gong Cha (only for NJ, NY, MA & TX)",gong-cha-only-for-nj-ny-ma-and-tx,,no,14,0,3,0,,,,,insufficient,12,262600,9.75,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Goodcents,goodcents,S0733,yes,163,34,11,0,0.0,0.0,25.9,0.0,limited,7,339200,8.5,Limited-Service Restaurants,2026-09-30
+Goodyear Tire,goodyear-tire,,no,57,11,7,3,,,,,insufficient,0,,,General Automotive Repair,2026-09-30
+Goosehead Insurance,goosehead-insurance,S0734,yes,61,2,22,2,9.1,2.5,27.8,2.9,limited,44,175000,10.24,Insurance Agencies and Brokerages,2026-09-30
+Gotcha Covered,gotcha-covered,S0735,yes,58,7,23,4,17.4,7.0,37.1,14.0,limited,25,150000,10.75,Window Treatment Retailers,2026-09-30
+"GPM Empire, LLC (Multi Brands) Petroleum Products Supply Agreement and Security Agreement",gpm-empire-llc-multi-brands-petroleum-products-supply-agreement-and-security-agreement,S6409,yes,18,3,4,0,,,,,insufficient,17,760050,9.0,Gasoline Stations with Convenience Stores,2026-09-30
+"Gracie Barra Brazilian Jiu Jitsu/Gracie Barra Franchising Systems, Inc. - franchise agreement",gracie-barra-brazilian-jiu-jitsu-gracie-barra-franchising-systems-inc-franchise-agreement,,no,11,0,2,0,,,,,insufficient,10,150000,10.0,Sports and Recreation Instruction,2026-09-30
+Grain and Berry Cafe,grain-and-berry-cafe,S3049,yes,22,0,1,0,,,,,insufficient,29,450500,10.25,Limited-Service Restaurants,2026-09-30
+Grand Master Samane's Pro Martial Arts,grand-master-samanes-pro-martial-arts,,no,26,6,14,4,28.6,11.7,54.6,16.4,limited,0,,,Sports and Recreation Instruction,2026-09-30
+Grandy's,grandys,,no,37,9,8,0,,,,,insufficient,0,,,Full-Service Restaurants,2026-09-30
+Granite Transformations (rebranding as Trend,granite-transformations-rebranding-as-trend,,no,12,2,10,2,20.0,5.7,51.0,16.3,limited,3,150000,11.25,Residential Remodelers,2026-09-30
+Graze Craze,graze-craze,,no,9,0,0,0,,,,,insufficient,11,129000,10.75,Caterers,2026-09-30
+Grease Monkey,grease-monkey,S0741,yes,172,15,60,0,0.0,0.0,6.0,0.0,rated,39,765000,8.5,Automotive Oil Change and Lubrication Shops,2026-09-30
+Greasebusters,greasebusters,,no,10,2,10,2,20.0,5.7,51.0,16.3,limited,0,,,Janitorial Services,2026-09-30
+Great American Cookies,great-american-cookies,S0742,yes,92,3,39,0,0.0,0.0,9.0,0.0,rated,26,316500,9.75,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Great Clips,great-clips,S0743,yes,550,26,230,6,2.6,1.2,5.6,1.7,rated,30,575000,8.22,Beauty Salons,2026-09-30
+Great Frame (The),great-frame-the,,no,42,10,0,0,,,,,insufficient,0,,,All Other Home Furnishings Stores,2026-09-30
+Great Harvest,great-harvest,S0744,yes,175,20,60,10,16.7,9.3,28.0,6.9,rated,21,320500,9.43,Baked Goods Stores,2026-09-30
+Great Steak and Potato Company (The),great-steak-and-potato-company-the,,no,48,13,1,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Great Wraps Grill,great-wraps-grill,S0747,yes,32,10,7,1,,,,,insufficient,1,520000,6.0,Limited-Service Restaurants,2026-09-30
+Griswold Home Care,griswold-home-care,S2426,yes,12,0,2,0,,,,,insufficient,12,150000,10.75,Services for the Elderly and Persons with Disabilities,2026-09-30
+Groovy Hues,groovy-hues,S7576,yes,35,2,0,0,,,,,insufficient,44,261500,10.5,Painting and Wall Covering Contractors,2026-09-30
+"Grow Biz International, Inc.",grow-biz-international-inc,,no,64,13,0,0,,,,,insufficient,0,,,Sporting Goods Stores,2026-09-30
+Growler USA Microbrew Pub,growler-usa-microbrew-pub,,no,17,2,17,2,11.8,3.3,34.3,12.5,limited,0,,,Drinking Places (Alcoholic Beverages),2026-09-30
+Gymboree,gymboree,,no,77,16,4,1,,,,,insufficient,0,,,Child Day Care Services,2026-09-30
+Gymboree Play & Music,gymboree-play-and-music,,no,18,2,17,2,11.8,3.3,34.3,3.7,limited,1,349000,9.5,Fine Arts Schools,2026-09-30
+Gymguyz,gymguyz,,no,36,12,17,9,52.9,31.0,73.8,41.2,limited,19,150000,10.75,Fitness and Recreational Sports Centers,2026-09-30
+H & R Block,h-and-r-block,,no,98,3,43,0,0.0,0.0,8.2,0.0,rated,0,,,Tax Preparation Services,2026-09-30
+H&R Block - Franchise License Agreement,h-and-r-block-franchise-license-agreement,,no,29,0,21,0,0.0,0.0,15.5,0.0,limited,10,224000,9.0,Tax Preparation Services,2026-09-30
+H.U.M.A.N.,h-u-m-a-n,,no,12,0,12,0,0.0,0.0,24.2,0.0,limited,0,,,Vending Machine Operators,2026-09-30
+Haagen-Dazs,haagen-dazs,S0776,yes,54,7,16,1,6.2,1.1,28.3,1.1,limited,8,334000,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Hallmark Card Shop,hallmark-card-shop,,no,67,5,1,0,,,,,insufficient,0,,,"Gift, Novelty, and Souvenir Stores",2026-09-30
+Hallmark Homecare,hallmark-homecare,S7857,yes,14,1,0,0,,,,,insufficient,14,135000,10.25,Home Health Care Services,2026-09-30
+Hammer & Nails Grooming For Guys,hammer-and-nails-grooming-for-guys,S2489,yes,51,1,9,1,,,,,insufficient,52,570000,10.0,Barber Shops,2026-09-30
+Hampton Inn & Suites by Hilton,hampton-inn-and-suites-by-hilton,S5593,yes,21,0,5,0,,,,,insufficient,18,5000000,7.75,Hotels (except Casino Hotels) and Motels,2026-09-30
+Hampton Inn by Hilton,hampton-inn-by-hilton,S0781,yes,163,4,67,1,1.5,0.3,8.0,0.3,rated,33,5000000,8.0,Hotels (except Casino Hotels) and Motels,2026-09-30
+Hand and Stone Massage and Facial Spa,hand-and-stone-massage-and-facial-spa,S0782,yes,204,4,167,4,2.4,0.9,6.0,1.3,rated,48,699000,9.25,Other Personal Care Services,2026-09-30
+Handel's Homemade Ice Cream,handels-homemade-ice-cream,S2814,yes,30,0,17,0,0.0,0.0,18.4,0.0,limited,14,526900,9.75,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Handyman Connection,handyman-connection,S0784,yes,42,7,12,5,41.7,19.3,68.0,27.5,limited,18,142300,9.88,Residential Remodelers,2026-09-30
+Handyman Matters,handyman-matters,,no,25,10,18,8,44.4,24.6,66.3,34.7,limited,0,,,Residential Remodelers,2026-09-30
+Hangry Joe's Hot Chicken,hangry-joes-hot-chicken,S7165,yes,11,0,0,0,,,,,insufficient,13,337500,10.25,Limited-Service Restaurants,2026-09-30
+Happy Cat Hotel & Spa,happy-cat-hotel-and-spa,S5931,yes,11,0,0,0,,,,,insufficient,16,75000,10.25,Pet Care (except Veterinary) Services,2026-09-30
+Happy's Pizza,happys-pizza,S0788,yes,11,4,10,4,40.0,16.8,68.7,26.9,limited,1,1410000,5.75,Limited-Service Restaurants,2026-09-30
+Hardee's,hardees,,no,51,17,6,1,,,,,insufficient,3,1370000,10.25,Limited-Service Restaurants,2026-09-30
+Hardware Hank,hardware-hank,,no,76,4,21,0,0.0,0.0,15.5,0.0,limited,2,1540000,8.62,Hardware Stores,2026-09-30
+Harley Davidson,harley-davidson,,no,25,1,14,1,7.1,1.3,31.5,6.9,limited,0,,,"Motorcycle, ATV, and All Other Motor Vehicle Dealers",2026-09-30
+Harley Davidson - Motor Cycle Dealer Contract,harley-davidson-motor-cycle-dealer-contract,,no,16,1,12,1,8.3,1.5,35.4,6.4,limited,6,1376250,8.38,"Motorcycle, ATV, and All Other Motor Vehicle Dealers",2026-09-30
+Hawaii Fluid Art,hawaii-fluid-art,,no,14,2,0,0,,,,,insufficient,17,181000,10.75,Fine Arts Schools,2026-09-30
+Hawthorn,hawthorn,S0793,yes,25,0,21,0,0.0,0.0,15.5,0.0,limited,7,4250000,8.12,Hotels (except Casino Hotels) and Motels,2026-09-30
+Health Mart Pharmacy,health-mart-pharmacy,,no,109,8,98,7,7.1,3.5,14.0,1.9,rated,13,175000,9.75,Pharmacies and Drug Stores,2026-09-30
+HealthSource Chiropractic,healthsource-chiropractic,S0796,yes,107,8,72,5,6.9,3.0,15.2,5.4,rated,31,290000,10.5,Offices of Chiropractors,2026-09-30
+Hear Again America,hear-again-america,S7893,yes,9,0,0,0,,,,,insufficient,18,250000,9.5,All Other Health and Personal Care Retailers,2026-09-30
+Heavenly Hams,heavenly-hams,,no,53,10,0,0,,,,,insufficient,0,,,Full-Service Restaurants,2026-09-30
+Heights Wellness Retreat,heights-wellness-retreat,S8128,yes,6,0,0,0,,,,,insufficient,11,862200,9.0,Other Personal Care Services,2026-09-30
+Hello Garage,hello-garage,S5872,yes,16,2,4,0,,,,,insufficient,16,61000,8.25,All Other Specialty Trade Contractors,2026-09-30
+"Hello Sugar, Brazilian Wax and Sugar Salon",hello-sugar-brazilian-wax-and-sugar-salon,S6607,yes,22,0,0,0,,,,,insufficient,26,325000,9.5,Beauty Salons,2026-09-30
+Heroes Lawn Care,heroes-lawn-care,S7534,yes,40,0,0,0,,,,,insufficient,44,370500,10.12,Landscaping Services,2026-09-30
+Heyday,heyday,,no,8,0,0,0,,,,,insufficient,14,953050,10.5,Beauty Salons,2026-09-30
+HobbyTown,hobbytown,S0804,yes,151,19,21,3,14.3,5.0,34.6,14.7,limited,13,257900,6.76,"Hobby, Toy, and Game Stores",2026-09-30
+Hogi Yogi,hogi-yogi,,no,25,5,0,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Holiday Inn,holiday-inn,S0806,yes,182,12,96,3,3.1,1.1,8.8,2.8,rated,12,4997500,8.25,Hotels (except Casino Hotels) and Motels,2026-09-30
+Holiday Inn Express,holiday-inn-express,S2794,yes,258,4,77,0,0.0,0.0,4.8,0.0,rated,86,4996850,7.75,Hotels (except Casino Hotels) and Motels,2026-09-30
+Hollywood Tans,hollywood-tans,,no,136,32,0,0,,,,,insufficient,0,,,Other Personal Care Services,2026-09-30
+Home Care Assistance 1-866-4-LiveIn,home-care-assistance-1-866-4-livein,,no,14,1,14,1,7.1,1.3,31.5,2.6,limited,0,,,Home Health Care Services,2026-09-30
+Home Clean Heroes,home-clean-heroes,S3593,yes,12,1,1,1,,,,,insufficient,12,150000,11.25,Janitorial Services,2026-09-30
+Home Helpers Home Care,home-helpers-home-care,S0810,yes,80,2,40,1,2.5,0.4,12.9,0.4,rated,33,295750,9.75,Home Health Care Services,2026-09-30
+Home Instead,home-instead,S0811,yes,397,6,237,3,1.3,0.4,3.7,0.6,rated,125,377000,8.25,Home Health Care Services,2026-09-30
+HomeSmart International,homesmart-international,,no,14,0,11,0,0.0,0.0,25.9,0.0,limited,4,460750,5.97,Offices of Real Estate Agents and Brokers,2026-09-30
+HomeSmiles,homesmiles,S6285,yes,30,0,0,0,,,,,insufficient,32,150000,10.62,Other Personal and Household Goods Repair and Maintenance,2026-09-30
+HomeTeam Inspection Service,hometeam-inspection-service,S0814,yes,40,8,25,5,20.0,8.9,39.1,13.5,limited,8,110000,9.25,Building Inspection Services,2026-09-30
+HomeTowne Studios by Red Roof,hometowne-studios-by-red-roof,S6329,yes,15,0,5,0,,,,,insufficient,12,4854400,8.12,Hotels (except Casino Hotels) and Motels,2026-09-30
+Homewatch CareGivers,homewatch-caregivers,S0817,yes,75,9,29,4,13.8,5.5,30.6,5.9,limited,40,150000,10.25,Home Health Care Services,2026-09-30
+HomeWell Care Services,homewell-care-services,S0815,yes,39,3,12,3,25.0,8.9,53.2,11.5,limited,31,150000,10.25,Home Health Care Services,2026-09-30
+Honest1 Auto Care (aka Honest - 1 Auto Care),honest1-auto-care-aka-honest-1-auto-care,S0819,yes,68,8,60,8,13.3,6.9,24.2,6.6,rated,4,265750,10.25,General Automotive Repair,2026-09-30
+Honey Dew Donuts,honey-dew-donuts,,no,77,10,26,2,7.7,2.1,24.1,6.1,limited,1,112500,8.5,Limited-Service Restaurants,2026-09-30
+Honor Yoga,honor-yoga,,no,10,2,10,2,20.0,5.7,51.0,15.6,limited,0,,,All Other Miscellaneous Schools and Instruction,2026-09-30
+Hoodz,hoodz,S0773,yes,25,1,14,1,7.1,1.3,31.5,7.5,limited,12,325000,9.75,Janitorial Services,2026-09-30
+Hot Head Burritos,hot-head-burritos,S0822,yes,16,1,14,1,7.1,1.3,31.5,4.2,limited,2,375000,10.5,Limited-Service Restaurants,2026-09-30
+Hotworx,hotworx,S2031,yes,463,2,131,0,0.0,0.0,2.8,0.0,rated,401,425000,9.75,Fitness and Recreational Sports Centers,2026-09-30
+Hounds Town USA,hounds-town-usa,S2698,yes,69,0,13,0,0.0,0.0,22.8,0.0,limited,67,670950,10.0,Pet Care (except Veterinary) Services,2026-09-30
+House Doctors,house-doctors,S0827,yes,55,2,20,2,10.0,2.8,30.1,11.3,limited,38,150000,10.25,Residential Remodelers,2026-09-30
+HouseMaster,housemaster,S0829,yes,29,4,8,2,,,,,insufficient,22,150000,10.25,Building Inspection Services,2026-09-30
+Houston TX Hot Chicken,houston-tx-hot-chicken,S7108,yes,10,0,0,0,,,,,insufficient,12,532000,8.65,Limited-Service Restaurants,2026-09-30
+Howard Johnson,howard-johnson,S0830,yes,226,23,60,0,0.0,0.0,6.0,0.0,rated,6,3371250,7.25,Hotels (except Casino Hotels) and Motels,2026-09-30
+HTeaO,hteao,S3365,yes,47,0,11,0,0.0,0.0,25.9,0.0,limited,60,784500,8.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Huddle House,huddle-house,S0833,yes,79,18,27,5,18.5,8.2,36.7,11.2,limited,2,2133450,5.25,Full-Service Restaurants,2026-09-30
+Huey Magoo's Chicken Tenders,huey-magoos-chicken-tenders,S2442,yes,14,0,1,0,,,,,insufficient,14,842000,8.5,Limited-Service Restaurants,2026-09-30
+Hummus Republic,hummus-republic,S3216,yes,59,0,3,0,,,,,insufficient,74,350000,10.0,Limited-Service Restaurants,2026-09-30
+Hungry Howie's Pizza,hungry-howies-pizza,S0834,yes,103,15,43,4,9.3,3.7,21.6,4.5,rated,20,429200,9.25,Limited-Service Restaurants,2026-09-30
+Huntington Learning Center,huntington-learning-center,S0835,yes,225,66,34,1,2.9,0.5,14.9,1.6,rated,29,242500,10.25,Exam Preparation and Tutoring,2026-09-30
+Hurts Donut Company,hurts-donut-company,S0837,yes,15,6,15,6,40.0,19.8,64.3,19.5,limited,0,,,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Hwy 55 Burgers Shakes & Fries,hwy-55-burgers-shakes-and-fries,,no,15,7,14,7,50.0,26.8,73.2,38.9,limited,1,122500,9.75,Limited-Service Restaurants,2026-09-30
+Hydrate IV Bar,hydrate-iv-bar,S6984,yes,8,0,0,0,,,,,insufficient,11,295000,10.0,All Other Outpatient Care Centers,2026-09-30
+Hyper Kidz,hyper-kidz,S4192,yes,8,0,1,0,,,,,insufficient,10,1407900,10.12,All Other Amusement and Recreation Industries,2026-09-30
+I Can'T Believe It's Yogurt,i-cant-believe-its-yogurt,,no,26,8,0,0,,,,,insufficient,0,,,All Other Specialty Food Stores,2026-09-30
+I Heart Mac & Cheese,i-heart-mac-and-cheese,,no,25,5,11,3,27.3,9.7,56.6,15.4,limited,20,446100,10.38,Limited-Service Restaurants,2026-09-30
+I Love Juice Bar,i-love-juice-bar,,no,14,2,14,2,14.3,4.0,39.9,2.3,limited,0,,,Snack and Nonalcoholic Beverage Bars,2026-09-30
+i9 Sports,i9-sports,S2011,yes,19,0,16,0,0.0,0.0,19.4,0.0,limited,3,217300,11.0,Fitness and Recreational Sports Centers,2026-09-30
+iCode,icode,S2012,yes,32,2,6,0,,,,,insufficient,30,268200,9.87,All Other Miscellaneous Schools and Instruction,2026-09-30
+iCRYO Franchise System LLC,icryo-franchise-system-llc,,no,38,0,9,0,,,,,insufficient,32,850000,10.0,Other Personal Care Services,2026-09-30
+iFoam,ifoam,S6700,yes,57,5,0,0,,,,,insufficient,62,639350,10.5,Drywall and Insulation Contractors,2026-09-30
+Iga Food Stores,iga-food-stores,,no,38,6,5,1,,,,,insufficient,0,,,Supermarkets and Other Grocery (except Convenience) Stores,2026-09-30
+IHOP,ihop,S0846,yes,165,11,55,0,0.0,0.0,6.5,0.0,rated,10,1177500,8.73,Full-Service Restaurants,2026-09-30
+iLoveKickboxing.com,ilovekickboxing-com,,no,111,31,109,31,28.4,20.8,37.5,22.3,rated,2,147500,11.88,Fitness and Recreational Sports Centers,2026-09-30
+IM=X Pilates and Fitness,im-x-pilates-and-fitness,S0848,yes,11,0,2,0,,,,,insufficient,17,222000,10.25,Fitness and Recreational Sports Centers,2026-09-30
+Image Sun,image-sun,,no,32,22,1,0,,,,,insufficient,0,,,Other Personal Care Services,2026-09-30
+Image360,image360,S0861,yes,36,3,11,3,27.3,9.7,56.6,7.7,limited,29,343000,10.0,Sign Manufacturing,2026-09-30
+Imo's Pizza,imos-pizza,S3305,yes,34,5,11,1,9.1,1.6,37.7,3.7,limited,6,415000,11.25,Limited-Service Restaurants,2026-09-30
+Instant Imprints,instant-imprints,,no,48,22,4,1,,,,,insufficient,1,150000,6.0,Commercial Screen Printing,2026-09-30
+Insty-Prints,insty-prints,S0867,yes,39,4,8,0,,,,,insufficient,0,,,Quick Printing,2026-09-30
+Interim HealthCare,interim-healthcare,,no,60,6,33,6,18.2,8.6,34.4,8.4,rated,20,313300,9.5,Home Health Care Services,2026-09-30
+Interstate All Battery Center,interstate-all-battery-center,,no,35,2,28,2,7.1,2.0,22.6,0.7,limited,2,1923500,8.12,Motor Vehicle Supplies and New Parts Merchant Wholesalers,2026-09-30
+InXpress,inxpress,,no,21,2,17,2,11.8,3.3,34.3,3.8,limited,4,180000,7.25,Freight Transportation Arrangement,2026-09-30
+ISI Elite Training,isi-elite-training,S4270,yes,36,2,5,0,,,,,insufficient,42,367400,10.5,Fitness and Recreational Sports Centers,2026-09-30
+Island Fin Poke,island-fin-poke,S3523,yes,14,0,6,0,,,,,insufficient,12,173250,10.38,Limited-Service Restaurants,2026-09-30
+iSmash,ismash,S8047,yes,17,0,0,0,,,,,insufficient,27,486500,9.5,All Other Amusement and Recreation Industries,2026-09-30
+iTrip,itrip,S2493,yes,31,4,16,3,18.8,6.6,43.0,11.3,limited,17,150000,9.5,Residential Property Managers,2026-09-30
+It's A Grind,its-a-grind,,no,56,16,3,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+It's Boba Time,its-boba-time,,no,48,0,21,0,0.0,0.0,15.5,0.0,limited,32,429000,9.0,Snack and Nonalcoholic Beverage Bars,2026-09-30
+IV Nutrition,iv-nutrition,S3381,yes,18,0,2,0,,,,,insufficient,24,331000,9.25,Other Personal Care Services,2026-09-30
+Ivybrook Academy,ivybrook-academy,S2840,yes,38,1,11,0,0.0,0.0,25.9,0.0,limited,39,632550,9.62,Child Day Care Services,2026-09-30
+Jack in the Box,jack-in-the-box,S0892,yes,51,0,2,0,,,,,insufficient,3,2500000,8.25,Limited-Service Restaurants,2026-09-30
+"Jackson Food Stores, Inc. (Exxon Mobil / Chevron / Texaco / 76 / Mobil / Tesoro-Shell) Retail Sales Agreement",jackson-food-stores-inc-exxon-mobil-chevron-texaco-76-mobil-tesoro-shell-retail-sales-agreement,,no,48,0,27,0,0.0,0.0,12.5,0.0,limited,23,2019500,7.75,Gasoline Stations with Convenience Stores,2026-09-30
+Jackson Hewitt Tax Service,jackson-hewitt-tax-service,S0894,yes,167,7,59,1,1.7,0.3,9.0,0.1,rated,17,870000,8.5,Tax Preparation Services,2026-09-30
+Jake's Wayback Burgers,jakes-wayback-burgers,,no,55,11,54,11,20.4,11.8,32.9,11.9,rated,0,,,Limited-Service Restaurants,2026-09-30
+Jamba,jamba,S0897,yes,78,5,41,2,4.9,1.3,16.1,4.0,rated,19,677750,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Jani-King (Janitor's Service),jani-king-janitors-service,,no,57,9,4,0,,,,,insufficient,0,,,Janitorial Services,2026-09-30
+JDog Junk Removal & Hauling,jdog-junk-removal-and-hauling,S2683,yes,43,8,16,3,18.8,6.6,43.0,14.0,limited,28,150000,9.0,Other Waste Collection,2026-09-30
+Jeff's Bagel Run,jeffs-bagel-run,S8349,yes,8,0,0,0,,,,,insufficient,11,720000,9.0,Limited-Service Restaurants,2026-09-30
+Jeremiah's Italian Ice,jeremiahs-italian-ice,S4492,yes,83,0,26,0,0.0,0.0,12.9,0.0,limited,73,406000,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Jerry's Sub Shop,jerrys-sub-shop,,no,34,11,0,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Jersey Mike's Subs,jersey-mikes-subs,S0901,yes,604,18,321,5,1.6,0.7,3.6,1.2,rated,161,500000,8.88,Limited-Service Restaurants,2026-09-30
+Jet's Pizza,jets-pizza,S0902,yes,154,4,92,4,4.3,1.7,10.7,3.2,rated,34,350000,9.25,Limited-Service Restaurants,2026-09-30
+JETSET Pilates,jetset-pilates,S7502,yes,47,0,0,0,,,,,insufficient,64,755000,9.25,Fitness and Recreational Sports Centers,2026-09-30
+Jiffy Lube,jiffy-lube,S0904,yes,103,5,42,0,0.0,0.0,8.4,0.0,rated,9,802000,8.0,Automotive Oil Change and Lubrication Shops,2026-09-30
+Jimmy John's,jimmy-johns,S0906,yes,933,47,601,39,6.5,4.8,8.7,3.9,rated,99,500000,9.0,Limited-Service Restaurants,2026-09-30
+Jinya Ramen Bar,jinya-ramen-bar,,no,21,0,13,0,0.0,0.0,22.8,0.0,limited,9,910300,8.6,Full-Service Restaurants,2026-09-30
+Johnny Rockets,johnny-rockets,S0908,yes,39,14,12,3,25.0,8.9,53.2,16.0,limited,0,,,Limited-Service Restaurants,2026-09-30
+"Johnny's Pizza, Johnny Brusco's Pizza",johnnys-pizza-johnny-bruscos-pizza,S0909,yes,20,0,8,0,,,,,insufficient,13,418000,10.0,Full-Service Restaurants,2026-09-30
+Jon Smith Subs,jon-smith-subs,,no,20,7,16,6,37.5,18.5,61.4,16.9,limited,4,456000,8.38,Limited-Service Restaurants,2026-09-30
+"Jones Petroleum Company, Inc. - Petroleum Product Supply Agreement",jones-petroleum-company-inc-petroleum-product-supply-agreement,S3442,yes,19,0,11,0,0.0,0.0,25.9,0.0,limited,8,1164000,8.25,Gasoline Stations with Convenience Stores,2026-09-30
+Joshua Tree,joshua-tree,S7003,yes,11,0,0,0,,,,,insufficient,11,492000,9.5,Landscaping Services,2026-09-30
+Juice It Up,juice-it-up,,no,85,21,18,0,0.0,0.0,17.6,0.0,limited,17,350000,10.25,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Juici Patties,juici-patties,S7459,yes,11,0,0,0,,,,,insufficient,20,565300,10.0,Limited-Service Restaurants,2026-09-30
+Junk King,junk-king,S0919,yes,72,2,37,2,5.4,1.5,17.7,4.7,rated,37,284900,9.75,Other Waste Collection,2026-09-30
+Junk Shot,junk-shot,S5355,yes,15,1,1,1,,,,,insufficient,17,183000,9.0,Solid Waste Collection,2026-09-30
+Just Love Coffee Cafe,just-love-coffee-cafe,S2849,yes,32,1,10,0,0.0,0.0,27.8,0.0,limited,29,460250,10.12,Limited-Service Restaurants,2026-09-30
+K9 Resorts Luxury Pet Hotel,k9-resorts-luxury-pet-hotel,S0923,yes,34,1,13,1,7.7,1.4,33.3,2.3,limited,30,2160000,8.75,Pet Care (except Veterinary) Services,2026-09-30
+Kabloom,kabloom,,no,52,17,0,0,,,,,insufficient,0,,,Florists,2026-09-30
+Kale Me Crazy,kale-me-crazy,,no,11,1,10,1,10.0,1.8,40.4,10.5,limited,1,589000,11.25,Limited-Service Restaurants,2026-09-30
+Kampgrounds of America,kampgrounds-of-america,,no,27,0,18,0,0.0,0.0,17.6,0.0,limited,10,840000,7.5,RV (Recreational Vehicle) Parks and Campgrounds,2026-09-30
+Keke's or Keke's Breakfast Cafe,kekes-or-kekes-breakfast-cafe,S2207,yes,8,0,3,0,,,,,insufficient,10,1025000,8.18,Full-Service Restaurants,2026-09-30
+Keller Williams Market Center License Agreement,keller-williams-market-center-license-agreement,S2855,yes,16,0,14,0,0.0,0.0,21.5,0.0,limited,3,250000,11.75,Offices of Real Estate Agents and Brokers,2026-09-30
+Kentucky Fried Chicken,kentucky-fried-chicken,S0930,yes,151,17,19,0,0.0,0.0,16.8,0.0,limited,7,653000,6.5,Limited-Service Restaurants,2026-09-30
+Keva Juice,keva-juice,,no,30,7,0,0,,,,,insufficient,0,,,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Keyrenter Property Managment,keyrenter-property-managment,S0940,yes,32,1,9,1,,,,,insufficient,24,150000,9.5,Residential Property Managers,2026-09-30
+KFC,kfc,,no,27,2,26,1,3.8,0.7,18.9,3.4,limited,0,,,Limited-Service Restaurants,2026-09-30
+Kid to Kid,kid-to-kid,S0942,yes,102,13,37,4,10.8,4.3,24.7,9.3,rated,26,453900,9.25,Children's and Infants' Clothing Stores,2026-09-30
+Kidcreate Studio,kidcreate-studio,S2367,yes,12,0,5,0,,,,,insufficient,10,303500,9.0,Fine Arts Schools,2026-09-30
+Kiddie Academy,kiddie-academy,S0943,yes,405,17,239,7,2.9,1.4,5.9,0.6,rated,131,787800,8.25,Child Day Care Services,2026-09-30
+Kidokinetics,kidokinetics,,no,11,0,0,0,,,,,insufficient,13,150000,11.25,Fitness and Recreational Sports Centers,2026-09-30
+Kids 'R' Kids,kids-r-kids,S0944,yes,218,11,82,0,0.0,0.0,4.5,0.0,rated,15,872500,9.25,Child Day Care Services,2026-09-30
+KidStrong,kidstrong,S5785,yes,30,0,1,0,,,,,insufficient,40,504700,9.75,Fitness and Recreational Sports Centers,2026-09-30
+KIDSUNITED,kidsunited,S8074,yes,24,0,0,0,,,,,insufficient,35,320000,9.5,Sports and Recreation Instruction,2026-09-30
+Kidville,kidville,,no,13,2,13,2,15.4,4.3,42.2,11.5,limited,0,,,All Other Amusement and Recreation Industries,2026-09-30
+Killer Burger,killer-burger,S2706,yes,16,0,3,0,,,,,insufficient,14,520000,9.75,Limited-Service Restaurants,2026-09-30
+Kilwin's,kilwins,,no,16,0,16,0,0.0,0.0,19.4,0.0,limited,0,,,Confectionery and Nut Stores,2026-09-30
+Kilwins Chocolates and Ice Cream Store,kilwins-chocolates-and-ice-cream-store,S0950,yes,94,5,28,1,3.6,0.6,17.7,1.0,limited,62,579000,9.5,Confectionery and Nut Stores,2026-09-30
+Kitchen Guard Services,kitchen-guard-services,S8071,yes,15,0,0,0,,,,,insufficient,19,305400,9.75,Janitorial Services,2026-09-30
+Kitchen Tune Up,kitchen-tune-up,S2368,yes,68,11,28,5,17.9,7.9,35.6,12.3,limited,34,150000,10.25,Residential Remodelers,2026-09-30
+Knights Inn,knights-inn,S0952,yes,155,16,72,2,2.8,0.8,9.6,0.3,rated,6,3100000,8.5,Hotels (except Casino Hotels) and Motels,2026-09-30
+KOA Kampgrounds(Kampgrounds of America),koa-kampgrounds-kampgrounds-of-america,,no,69,1,20,0,0.0,0.0,16.1,0.0,limited,0,,,RV (Recreational Vehicle) Parks and Campgrounds,2026-09-30
+Koala Insulation,koala-insulation,S4823,yes,88,7,34,3,8.8,3.0,23.0,5.0,rated,56,270000,9.75,Drywall and Insulation Contractors,2026-09-30
+Kona Ice,kona-ice,S0957,yes,38,0,21,0,0.0,0.0,15.5,0.0,limited,28,235000,9.25,Mobile Food Services,2026-09-30
+Krak Boba,krak-boba,,no,7,0,0,0,,,,,insufficient,11,193750,10.75,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Kumon,kumon,S0962,yes,78,4,52,4,7.7,3.0,18.2,5.1,rated,31,172000,9.0,Exam Preparation and Tutoring,2026-09-30
+Kung Fu Tea,kung-fu-tea,,no,20,0,9,0,,,,,insufficient,14,251000,8.25,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Kwik Kar Oil & Lube,kwik-kar-oil-and-lube,,no,37,3,9,0,,,,,insufficient,0,,,Automotive Oil Change and Lubrication Shops,2026-09-30
+Kwik Kopy Printing,kwik-kopy-printing,S0963,yes,51,13,3,0,,,,,insufficient,2,387750,8.72,Other Business Service Centers (including Copy Shops),2026-09-30
+L&L HAWAIIAN BARBEQUE,l-and-l-hawaiian-barbeque,S0964,yes,17,0,8,0,,,,,insufficient,12,276000,9.5,Limited-Service Restaurants,2026-09-30
+La Quinta,la-quinta,S0982,yes,308,5,203,4,2.0,0.8,5.0,0.7,rated,90,4367500,7.75,Hotels (except Casino Hotels) and Motels,2026-09-30
+Lady of America,lady-of-america,,no,41,16,0,0,,,,,insufficient,0,,,Fitness and Recreational Sports Centers,2026-09-30
+Lapels,lapels,S0985,yes,26,5,9,3,,,,,insufficient,7,258400,10.25,Drycleaning and Laundry Services (except Coin-Operated),2026-09-30
+Lapels Dry Cleaning,lapels-dry-cleaning,,no,12,3,12,3,25.0,8.9,53.2,13.8,limited,0,,,Drycleaning and Laundry Services (except Coin-Operated),2026-09-30
+Larry's Giant Subs,larrys-giant-subs,,no,41,10,2,0,,,,,insufficient,1,2300000,10.0,Limited-Service Restaurants,2026-09-30
+Lash and Company,lash-and-company,,no,14,2,3,0,,,,,insufficient,15,77500,10.0,Beauty Salons,2026-09-30
+Launch Family Entertainment,launch-family-entertainment,S0988,yes,29,2,16,2,12.5,3.5,36.0,9.8,limited,18,3890000,9.5,All Other Amusement and Recreation Industries,2026-09-30
+Launch Trampoline Park,launch-trampoline-park,,no,16,2,16,2,12.5,3.5,36.0,8.4,limited,0,,,All Other Amusement and Recreation Industries,2026-09-30
+LaundroLab,laundrolab,S6145,yes,13,0,0,0,,,,,insufficient,16,1099050,9.88,Coin-Operated Laundries and Drycleaners,2026-09-30
+Lawn Doctor,lawn-doctor,S0989,yes,103,8,47,2,4.3,1.2,14.2,1.5,rated,20,150000,10.25,Landscaping Services,2026-09-30
+Lawn Pride,lawn-pride,S7878,yes,12,0,0,0,,,,,insufficient,14,250000,11.25,Landscaping Services,2026-09-30
+Le Macaron French Pastries,le-macaron-french-pastries,S0990,yes,14,3,7,2,,,,,insufficient,10,350000,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Lean Kitchen,lean-kitchen,S4089,yes,13,0,2,0,,,,,insufficient,14,299000,10.25,Limited-Service Restaurants,2026-09-30
+Learning Express,learning-express,S0991,yes,77,16,6,0,,,,,insufficient,5,322000,6.5,"Hobby, Toy, and Game Stores",2026-09-30
+Ledo Pizza,ledo-pizza,,no,29,6,7,4,,,,,insufficient,3,515500,9.5,Full-Service Restaurants,2026-09-30
+Lee Myles Automotive Transmissions,lee-myles-automotive-transmissions,,no,26,5,2,0,,,,,insufficient,0,,,General Automotive Repair,2026-09-30
+LemonShark Poke,lemonshark-poke,,no,11,3,11,3,27.3,9.7,56.6,28.5,limited,0,,,Limited-Service Restaurants,2026-09-30
+Lenny's Sub Shops,lennys-sub-shops,,no,13,5,13,5,38.5,17.7,64.5,19.9,limited,0,,,Limited-Service Restaurants,2026-09-30
+Liberty Tax Service,liberty-tax-service,S1005,yes,264,27,118,12,10.2,5.9,16.9,11.2,rated,17,460850,9.25,Tax Preparation Services,2026-09-30
+Lifetime Green Coatings,lifetime-green-coatings,,no,25,1,0,0,,,,,insufficient,30,205250,10.88,Flooring Contractors,2026-09-30
+Lightbridge Academy,lightbridge-academy,S1006,yes,49,0,20,0,0.0,0.0,16.1,0.0,limited,41,1175000,8.05,Child Day Care Services,2026-09-30
+LIME Painting,lime-painting,,no,26,2,6,2,,,,,insufficient,22,150000,9.75,Painting and Wall Covering Contractors,2026-09-30
+LINE-X,line-x,S0974,yes,171,19,57,6,10.5,4.9,21.1,7.5,rated,16,510000,7.75,Automotive Parts and Accessories Stores,2026-09-30
+Liquivida Lounge,liquivida-lounge,,no,11,0,2,0,,,,,insufficient,12,500000,10.0,Other Personal Care Services,2026-09-30
+Little Caesars,little-caesars,S1009,yes,643,35,351,22,6.3,4.2,9.3,3.4,rated,89,500000,9.0,Limited-Service Restaurants,2026-09-30
+Little Professor Book Center,little-professor-book-center,,no,29,5,0,0,,,,,insufficient,0,,,Book Stores,2026-09-30
+LIVE Hydration Spa,live-hydration-spa,S6426,yes,13,0,2,0,,,,,insufficient,14,217500,10.0,Other Personal Care Services,2026-09-30
+Lizard Thicket,lizard-thicket,,no,17,1,15,1,6.7,1.2,29.8,27.3,limited,2,242650,6.0,Women's Clothing Stores,2026-09-30
+Long John Silver's,long-john-silvers,,no,46,12,6,0,,,,,insufficient,2,1750000,6.25,Limited-Service Restaurants,2026-09-30
+Lords & Ladies,lords-and-ladies,,no,15,0,14,0,0.0,0.0,21.5,0.0,limited,1,200000,6.25,Beauty Salons,2026-09-30
+Luv 2 Play,luv-2-play,,no,15,1,14,1,7.1,1.3,31.5,2.9,limited,3,812600,11.25,All Other Amusement and Recreation Industries,2026-09-30
+Maaco,maaco,S1063,yes,418,76,60,7,11.7,5.8,22.2,7.5,rated,38,630000,9.5,"Automotive Body, Paint, and Interior Repair and Maintenance",2026-09-30
+Maaco Auto Painting & Bodyworks/Maaco Collisi,maaco-auto-painting-and-bodyworks-maaco-collisi,,no,60,3,57,2,3.5,1.0,11.9,1.3,rated,0,,,"Automotive Body, Paint, and Interior Repair and Maintenance",2026-09-30
+Mac Tools,mac-tools,S1064,yes,75,14,11,0,0.0,0.0,25.9,0.0,limited,8,50000,9.75,Other Direct Selling Establishments,2026-09-30
+Mad Science,mad-science,,no,38,5,4,0,,,,,insufficient,0,,,Educational Support Services,2026-09-30
+Madabolic,madabolic,S3871,yes,18,1,4,0,,,,,insufficient,19,400950,10.25,Fitness and Recreational Sports Centers,2026-09-30
+Made In the Shade,made-in-the-shade,S3426,yes,19,0,8,0,,,,,insufficient,12,150000,10.25,Window Treatment Retailers,2026-09-30
+Maggiemoo's (Ice Cream),maggiemoos-ice-cream,,no,92,32,0,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Magnolia Soap and Bath,magnolia-soap-and-bath,S6651,yes,19,0,0,0,,,,,insufficient,24,264000,10.75,"Cosmetics, Beauty Supplies, and Perfume Retailers",2026-09-30
+Magnuson Hotels,magnuson-hotels,,no,23,0,21,0,0.0,0.0,15.5,0.0,limited,2,3318000,7.38,Hotels (except Casino Hotels) and Motels,2026-09-30
+Maid Brigade,maid-brigade,S1068,yes,44,6,8,0,,,,,insufficient,12,154150,9.88,Janitorial Services,2026-09-30
+Maid Right,maid-right,S3568,yes,17,3,6,2,,,,,insufficient,13,150000,9.75,Janitorial Services,2026-09-30
+Maid-Rite,maid-rite,,no,37,14,5,4,,,,,insufficient,1,150000,11.25,Full-Service Restaurants,2026-09-30
+MaidPro,maidpro,S1070,yes,51,3,27,3,11.1,3.9,28.1,8.7,limited,17,128500,9.75,Janitorial Services,2026-09-30
+Mail Boxes Etc. USA,mail-boxes-etc-usa,,no,1129,135,10,1,10.0,1.8,40.4,6.9,limited,0,,,Office Supplies and Stationery Stores,2026-09-30
+Mailboxes & Parcel Depot,mailboxes-and-parcel-depot,,no,35,4,0,0,,,,,insufficient,0,,,Private Mail Centers,2026-09-30
+Mainstream Boutique,mainstream-boutique,S1072,yes,21,6,19,6,31.6,15.4,54.0,15.9,limited,3,152350,12.0,Women's Clothing Stores,2026-09-30
+Manhattan Bagel,manhattan-bagel,S1075,yes,119,20,13,0,0.0,0.0,22.8,0.0,limited,2,325000,10.25,Limited-Service Restaurants,2026-09-30
+Marathon Oil Company,marathon-oil-company,,no,30,4,17,1,5.9,1.0,27.0,1.9,limited,0,,,Gasoline Stations with Convenience Stores,2026-09-30
+Marble Slab Creamery,marble-slab-creamery,S1078,yes,224,63,14,1,7.1,1.3,31.5,5.3,limited,8,350000,10.56,Limited-Service Restaurants,2026-09-30
+Marco's Pizza,marcos-pizza,S1079,yes,465,26,337,19,5.6,3.6,8.6,4.2,rated,111,442000,8.75,Limited-Service Restaurants,2026-09-30
+Martinizing Cleaners,martinizing-cleaners,S1081,yes,26,5,23,5,21.7,9.7,41.9,9.8,limited,4,289000,10.75,Drycleaning and Laundry Services (except Coin-Operated),2026-09-30
+Martinizing Dry Cleaning,martinizing-dry-cleaning,,no,38,6,16,2,12.5,3.5,36.0,12.8,limited,1,150000,11.5,Drycleaning and Laundry Services (except Coin-Operated),2026-09-30
+Mary Kay Cosmetics,mary-kay-cosmetics,,no,59,24,0,0,,,,,insufficient,0,,,,2026-09-30
+Mason's Famous Lobster Rolls,masons-famous-lobster-rolls,S3894,yes,11,0,1,0,,,,,insufficient,12,130000,11.25,Limited-Service Restaurants,2026-09-30
+Massage Envy,massage-envy,S1083,yes,521,41,297,30,10.1,7.2,14.1,6.6,rated,17,810000,9.5,Other Personal Care Services,2026-09-30
+Massage Heights,massage-heights,S1085,yes,106,19,72,16,22.2,14.2,33.1,15.7,rated,22,500000,9.75,Other Personal Care Services,2026-09-30
+Massage LuXe,massage-luxe,S1086,yes,67,3,43,3,7.0,2.4,18.6,3.7,rated,32,631400,10.0,Other Personal Care Services,2026-09-30
+Matco Tools,matco-tools,,no,675,226,21,6,28.6,13.8,50.0,18.6,limited,15,145600,10.0,Other Direct Selling Establishments,2026-09-30
+"Mathnasium and Mathnasium, The Math Learning Center",mathnasium-and-mathnasium-the-math-learning-center,S1089,yes,63,2,24,2,8.3,2.3,25.8,4.6,limited,44,135000,10.24,Exam Preparation and Tutoring,2026-09-30
+Mathnasium Learning Centers,mathnasium-learning-centers,,no,27,0,27,0,0.0,0.0,12.5,0.0,limited,0,,,Exam Preparation and Tutoring,2026-09-30
+Maui Wowi,maui-wowi,S1092,yes,42,15,5,1,,,,,insufficient,0,,,Snack and Nonalcoholic Beverage Bars,2026-09-30
+MAX Muscle,max-muscle,,no,52,17,10,2,20.0,5.7,51.0,15.9,limited,0,,,Food (Health) Supplement Stores,2026-09-30
+Maximized Living,maximized-living,,no,17,1,16,1,6.2,1.1,28.3,3.1,limited,2,270000,6.25,Offices of Chiropractors,2026-09-30
+MaxStrength Fitness,maxstrength-fitness,S7969,yes,8,0,0,0,,,,,insufficient,11,349900,9.75,Fitness and Recreational Sports Centers,2026-09-30
+Mayweather Boxing & Fitness,mayweather-boxing-and-fitness,S3537,yes,31,4,18,3,16.7,5.8,39.2,7.5,limited,15,464000,9.0,Fitness and Recreational Sports Centers,2026-09-30
+McAlister's Deli,mcalisters-deli,S1095,yes,46,2,30,2,6.7,1.8,21.3,4.2,rated,19,1231000,8.65,Limited-Service Restaurants,2026-09-30
+McDonalds,mcdonalds,,no,35,4,3,0,,,,,insufficient,9,2700000,6.9,Limited-Service Restaurants,2026-09-30
+Medi-Weightloss,medi-weightloss,S2374,yes,46,3,23,3,13.0,4.5,32.1,4.4,limited,37,236850,9.88,Diet and Weight Reducing Centers,2026-09-30
+Medicap Pharmacy,medicap-pharmacy,,no,109,5,11,0,0.0,0.0,25.9,0.0,limited,1,673000,9.25,Pharmacies and Drug Stores,2026-09-30
+Meineke,meineke,S1101,yes,582,133,177,33,18.6,13.6,25.0,8.1,rated,56,463000,9.0,General Automotive Repair,2026-09-30
+Mellow Mushroom,mellow-mushroom,S1102,yes,144,19,79,11,13.9,8.0,23.2,8.0,rated,6,537500,8.25,Full-Service Restaurants,2026-09-30
+Melty Way,melty-way,S7645,yes,8,0,0,0,,,,,insufficient,10,161000,11.0,Limited-Service Restaurants,2026-09-30
+Menchie's,menchies,S1103,yes,236,33,188,25,13.3,9.2,18.9,9.1,rated,42,253500,10.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Merle Norman Cosmetics,merle-norman-cosmetics,,no,158,31,19,2,10.5,2.9,31.4,5.2,limited,0,,,"Cosmetics, Beauty Supplies, and Perfume Stores",2026-09-30
+Merlin's Muffler,merlins-muffler,,no,65,8,0,0,,,,,insufficient,0,,,Automotive Exhaust System Repair,2026-09-30
+Merry Maids,merry-maids,S1106,yes,117,3,51,2,3.9,1.1,13.2,1.2,rated,31,526500,8.0,Janitorial Services,2026-09-30
+Metal Supermarkets,metal-supermarkets,S1107,yes,69,6,35,5,14.3,6.3,29.4,4.4,rated,29,333900,9.5,Metal Service Centers and Other Metal Merchant Wholesalers,2026-09-30
+MetroPCS (Texas) - Exclusive Dealer Agreement,metropcs-texas-exclusive-dealer-agreement,,no,11,1,11,1,9.1,1.6,37.7,1.5,limited,0,,,Electronics Stores,2026-09-30
+Mgm Liquor,mgm-liquor,,no,29,6,13,3,23.1,8.2,50.3,15.1,limited,0,,,"Beer, Wine, and Liquor Stores",2026-09-30
+MI-BOX Mobile Storage & Moving (Dealership Equipment & License Agreement),mi-box-mobile-storage-and-moving-dealership-equipment-and-license-agreement,,no,17,1,13,0,0.0,0.0,22.8,0.0,limited,4,1035000,5.12,Lessors of Miniwarehouses and Self-Storage Units,2026-09-30
+Miami Subs (Formerly Mr Submarine),miami-subs-formerly-mr-submarine,,no,39,12,4,1,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Microtel Inn & Suites by Wyndham,microtel-inn-and-suites-by-wyndham,S1109,yes,173,14,99,0,0.0,0.0,3.7,0.0,rated,27,2525000,8.0,Hotels (except Casino Hotels) and Motels,2026-09-30
+Midas,midas,S1110,yes,352,40,104,6,5.8,2.7,12.0,3.5,rated,43,370000,7.88,General Automotive Repair,2026-09-30
+Midas/SpeeDee Oil Change & Auto Service,midas-speedee-oil-change-and-auto-service,,no,17,0,13,0,0.0,0.0,22.8,0.0,limited,4,772500,8.97,General Automotive Repair,2026-09-30
+MidiCi,midici,,no,29,6,29,6,20.7,9.8,38.4,11.6,limited,0,,,Limited-Service Restaurants,2026-09-30
+Mighty Dog Roofing,mighty-dog-roofing,S6115,yes,121,4,12,1,8.3,1.5,35.4,1.6,limited,127,300000,10.25,Roofing Contractors,2026-09-30
+MilkShake Factory,milkshake-factory,S8170,yes,8,0,0,0,,,,,insufficient,10,700000,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Minuteman Press,minuteman-press,S1117,yes,472,94,103,14,13.6,8.3,21.5,5.8,rated,67,392000,9.75,Commercial Printing (except Screen and Books),2026-09-30
+Miracle-Ear,miracle-ear,S1118,yes,40,3,13,0,0.0,0.0,22.8,0.0,limited,2,75750,10.62,All Other Health and Personal Care Stores,2026-09-30
+Miracle Method Surface Refinishing,miracle-method-surface-refinishing,S2218,yes,24,2,16,2,12.5,3.5,36.0,4.0,limited,8,366700,8.62,Other Building Finishing Contractors,2026-09-30
+Mister Sparky Electric,mister-sparky-electric,S1119,yes,26,0,0,0,,,,,insufficient,31,232500,10.25,Electrical Contractors and Other Wiring Installation Contractors,2026-09-30
+Mobil Oil (Stations),mobil-oil-stations,,no,174,13,30,3,10.0,3.5,25.6,3.1,rated,0,,,Gasoline Stations with Convenience Stores,2026-09-30
+Mobility City,mobility-city,S3119,yes,21,2,7,1,,,,,insufficient,16,287000,10.25,All Other Health and Personal Care Stores,2026-09-30
+Mobility Plus,mobility-plus,S4390,yes,43,4,18,3,16.7,5.8,39.2,13.8,limited,33,139600,10.38,All Other Health and Personal Care Retailers,2026-09-30
+Modern Acupuncture,modern-acupuncture,,no,22,4,21,3,14.3,5.0,34.6,7.7,limited,2,240000,6.75,Offices of Chiropractors,2026-09-30
+Moe's Southwest Grill,moes-southwest-grill,S1120,yes,217,24,79,7,8.9,4.4,17.2,4.7,rated,19,395000,9.5,Limited-Service Restaurants,2026-09-30
+Molly Maid,molly-maid,S1121,yes,177,13,51,2,3.9,1.1,13.2,1.4,rated,48,250000,9.75,Janitorial Services,2026-09-30
+Molly's Cupcakes,mollys-cupcakes,,no,15,3,13,3,23.1,8.2,50.3,16.5,limited,3,208500,8.25,Baked Goods Stores,2026-09-30
+Money Mailer,money-mailer,,no,50,7,19,2,10.5,2.9,31.4,5.6,limited,1,40000,13.25,Direct Mail Advertising,2026-09-30
+Monkey Joe's,monkey-joes,,no,20,5,10,2,20.0,5.7,51.0,17.8,limited,0,,,All Other Amusement and Recreation Industries,2026-09-30
+Monster Mini Golf,monster-mini-golf,,no,26,5,8,3,,,,,insufficient,12,1240200,8.95,All Other Amusement and Recreation Industries,2026-09-30
+Monster Tree Service,monster-tree-service,S1128,yes,90,6,69,6,8.7,4.0,17.7,3.1,rated,27,450000,8.75,Landscaping Services,2026-09-30
+Montessori Kids Universe,montessori-kids-universe,S1129,yes,33,1,21,1,4.8,0.8,22.7,0.7,limited,16,724000,9.62,Child Day Care Services,2026-09-30
+MOOYAH,mooyah,S1050,yes,29,1,18,1,5.6,1.0,25.8,4.1,limited,12,577200,10.12,Limited-Service Restaurants,2026-09-30
+Mooyah Burgers & Fries,mooyah-burgers-and-fries,,no,17,6,17,6,35.3,17.3,58.7,29.3,limited,0,,,Limited-Service Restaurants,2026-09-30
+Mosquito Authority,mosquito-authority,S2376,yes,39,1,24,1,4.2,0.7,20.2,6.3,limited,20,150000,10.25,Exterminating and Pest Control Services,2026-09-30
+Mosquito Hunters,mosquito-hunters,S2076,yes,27,2,17,1,5.9,1.0,27.0,7.3,limited,11,128000,10.25,Exterminating and Pest Control Services,2026-09-30
+Mosquito Joe,mosquito-joe,S1131,yes,96,6,55,6,10.9,5.1,21.8,5.7,rated,48,150000,9.75,Exterminating and Pest Control Services,2026-09-30
+Mosquito Shield,mosquito-shield,S4573,yes,52,1,25,1,4.0,0.7,19.5,2.4,limited,33,150000,9.05,Exterminating and Pest Control Services,2026-09-30
+Mosquito Squad,mosquito-squad,S1132,yes,38,1,21,1,4.8,0.8,22.7,1.7,limited,21,250000,10.25,Exterminating and Pest Control Services,2026-09-30
+Motel 6,motel-6,S1133,yes,478,8,319,5,1.6,0.7,3.6,0.3,rated,122,2569000,7.75,Hotels (except Casino Hotels) and Motels,2026-09-30
+Moto Photo,moto-photo,,no,33,11,0,0,,,,,insufficient,0,,,"Photography Studios, Portrait",2026-09-30
+Mountain Mike's Pizza,mountain-mikes-pizza,S1134,yes,145,12,48,1,2.1,0.4,10.9,0.6,rated,55,750000,9.5,Limited-Service Restaurants,2026-09-30
+Mr. Appliance,mr-appliance,S1137,yes,143,28,90,25,27.8,19.6,37.8,21.3,rated,59,150000,10.0,Appliance Repair and Maintenance,2026-09-30
+Mr. Electric,mr-electric,S1138,yes,141,11,49,4,8.2,3.2,19.2,6.1,rated,75,243250,10.5,Electrical Contractors and Other Wiring Installation Contractors,2026-09-30
+Mr. Handyman,mr-handyman,S1139,yes,156,17,67,10,14.9,8.3,25.3,10.3,rated,65,150000,10.25,Residential Remodelers,2026-09-30
+Mr. Hero,mr-hero,,no,42,5,16,0,0.0,0.0,19.4,0.0,limited,0,,,Limited-Service Restaurants,2026-09-30
+Mr. Jim's Pizza,mr-jims-pizza,,no,33,10,2,0,,,,,insufficient,2,142000,7.88,Limited-Service Restaurants,2026-09-30
+Mr. Rooter Plumbing,mr-rooter-plumbing,S1144,yes,100,9,30,3,10.0,3.5,25.6,3.7,rated,40,350000,10.0,"Plumbing, Heating, and Air-Conditioning Contractors",2026-09-30
+Mr. Transmission,mr-transmission,S1146,yes,47,17,8,2,,,,,insufficient,16,884500,9.75,General Automotive Repair,2026-09-30
+MRI / Management Recruiters International,mri-management-recruiters-international,S1074,yes,78,10,5,0,,,,,insufficient,1,150000,12.5,Employment Placement Agencies,2026-09-30
+Mrs. Field's Cookies,mrs-fields-cookies,,no,92,13,11,1,9.1,1.6,37.7,4.5,limited,0,,,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Murphy's Deli,murphys-deli,,no,44,11,9,1,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Muscle Maker Grill,muscle-maker-grill,,no,15,3,14,3,21.4,7.6,47.6,20.8,limited,1,252000,10.5,Limited-Service Restaurants,2026-09-30
+Music Go Round,music-go-round,S1154,yes,51,10,16,0,0.0,0.0,19.4,0.0,limited,7,414500,8.5,Musical Instrument and Supplies Stores,2026-09-30
+My Eye Lab,my-eye-lab,,no,27,2,20,2,10.0,2.8,30.1,8.4,limited,7,510300,9.5,Optical Goods Stores,2026-09-30
+My Favorite Muffin,my-favorite-muffin,,no,32,8,3,0,,,,,insufficient,3,424000,6.0,Limited-Service Restaurants,2026-09-30
+My Gym Children's Fitness Center,my-gym-childrens-fitness-center,S1156,yes,79,28,12,2,16.7,4.7,44.8,7.6,limited,8,209200,9.75,Fitness and Recreational Sports Centers,2026-09-30
+N-Hance,n-hance,S2220,yes,19,7,11,5,45.5,21.3,72.0,31.0,limited,9,167500,10.5,Wood Preservation,2026-09-30
+Napa Auto Parts,napa-auto-parts,,no,170,15,44,2,4.5,1.3,15.1,2.0,rated,0,,,Automotive Parts and Accessories Stores,2026-09-30
+Napa AutoCare Program Membership Agreement,napa-autocare-program-membership-agreement,,no,46,1,23,1,4.3,0.8,21.0,2.6,limited,24,631000,6.5,General Automotive Repair,2026-09-30
+Naturals2Go,naturals2go,S1182,yes,297,10,85,10,11.8,6.5,20.3,8.4,rated,223,150000,10.25,Vending Machine Operators,2026-09-30
+Nature's Pet/Earthwise Pet Supply,natures-pet-earthwise-pet-supply,,no,13,2,13,2,15.4,4.3,42.2,5.5,limited,0,,,Pet and Pet Supplies Stores,2026-09-30
+Nature's Pet Market/Earthwise Pet Supply,natures-pet-market-earthwise-pet-supply,,no,16,3,10,3,30.0,10.8,60.3,7.4,limited,6,55000,9.62,Pet and Pet Supplies Stores,2026-09-30
+Nature's Table Cafe,natures-table-cafe,S1184,yes,26,7,6,0,,,,,insufficient,1,347400,10.0,Limited-Service Restaurants,2026-09-30
+Nautical Bowls,nautical-bowls,S6213,yes,64,5,3,0,,,,,insufficient,76,306000,10.25,Limited-Service Restaurants,2026-09-30
+Nekter Juice Bar,nekter-juice-bar,S1187,yes,63,4,34,4,11.8,4.7,26.6,5.0,rated,38,316500,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+NerdsToGo,nerdstogo,S2223,yes,30,5,17,2,11.8,3.3,34.3,8.0,limited,14,146000,10.5,Other Computer Related Services,2026-09-30
+Nestle Toll House Cafe by Chip,nestle-toll-house-cafe-by-chip,,no,22,4,20,4,20.0,8.1,41.6,13.9,limited,2,137500,9.22,Snack and Nonalcoholic Beverage Bars,2026-09-30
+New Creations,new-creations,S4451,yes,9,0,0,0,,,,,insufficient,12,150000,9.75,All Other Specialty Trade Contractors,2026-09-30
+New Horizon Computer Learning Center,new-horizon-computer-learning-center,,no,33,11,1,0,,,,,insufficient,0,,,Computer Training,2026-09-30
+Newk's Express Cafe Restaurant,newks-express-cafe-restaurant,,no,10,2,10,2,20.0,5.7,51.0,14.1,limited,0,,,Limited-Service Restaurants,2026-09-30
+Next Day Access,next-day-access,S2421,yes,19,2,2,1,,,,,insufficient,22,222000,10.0,Home Health Equipment Rental,2026-09-30
+Next Level Petroleum (Mulstiple Brands) - Petroleum Product Supply Agreement,next-level-petroleum-mulstiple-brands-petroleum-product-supply-agreement,,no,21,0,18,0,0.0,0.0,17.6,0.0,limited,3,600000,9.75,Gasoline Stations with Convenience Stores,2026-09-30
+Nick-N-Willy's Pizza,nick-n-willys-pizza,,no,37,19,0,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Nick the Greek,nick-the-greek,S4760,yes,11,0,1,0,,,,,insufficient,10,593250,9.12,Limited-Service Restaurants,2026-09-30
+Noble Roman Pizza,noble-roman-pizza,,no,26,20,2,1,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Norwalk Furniture Idea,norwalk-furniture-idea,,no,30,9,0,0,,,,,insufficient,0,,,Furniture Stores,2026-09-30
+Nothing Bundt Cakes,nothing-bundt-cakes,S1195,yes,291,0,185,0,0.0,0.0,2.0,0.0,rated,120,626500,8.5,Retail Bakeries,2026-09-30
+Nurse Next Door,nurse-next-door,S1198,yes,53,13,20,2,10.0,2.8,30.1,7.1,limited,34,170000,12.25,Home Health Care Services,2026-09-30
+Oasis Senior Advisors,oasis-senior-advisors,S1212,yes,26,2,14,2,14.3,4.0,39.9,4.9,limited,16,150000,10.0,Services for the Elderly and Persons with Disabilities,2026-09-30
+Obee's Soup Salad Subs,obees-soup-salad-subs,,no,39,22,0,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Office Evolution,office-evolution,,no,45,3,34,3,8.8,3.0,23.0,4.2,rated,12,525000,10.25,Office Administrative Services,2026-09-30
+Office Pride Commercial Cleaning Services,office-pride-commercial-cleaning-services,,no,28,0,18,0,0.0,0.0,17.6,0.0,limited,13,112500,9.62,Janitorial Services,2026-09-30
+Once Upon A Child,once-upon-a-child,S1218,yes,237,6,100,3,3.0,1.0,8.5,2.0,rated,71,350000,9.75,Children's and Infants' Clothing Stores,2026-09-30
+One Hour Air Conditioning & Heating,one-hour-air-conditioning-and-heating,,no,32,1,7,0,,,,,insufficient,26,200000,10.0,"Plumbing, Heating, and Air-Conditioning Contractors",2026-09-30
+One-Hour Martinizing,one-hour-martinizing,,no,51,6,0,0,,,,,insufficient,0,,,Drycleaning and Laundry Services (except Coin-Operated),2026-09-30
+One-Hour Moto Photo,one-hour-moto-photo,,no,27,5,0,0,,,,,insufficient,0,,,One-Hour Photofinishing,2026-09-30
+Orange Julius,orange-julius,,no,28,3,3,0,,,,,insufficient,0,,,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Orange Leaf Frozen Yogurt,orange-leaf-frozen-yogurt,S1223,yes,96,30,85,30,35.3,26.0,45.9,22.9,rated,4,480250,10.38,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Orange Theory Fitness,orange-theory-fitness,S1224,yes,419,5,373,5,1.3,0.6,3.1,0.7,rated,53,785700,8.24,Fitness and Recreational Sports Centers,2026-09-30
+Original Pancake House (The),original-pancake-house-the,,no,45,6,13,0,0.0,0.0,22.8,0.0,limited,0,,,Full-Service Restaurants,2026-09-30
+OsteoStrong,osteostrong,S1227,yes,57,2,36,2,5.6,1.5,18.1,2.0,rated,24,311600,9.38,Fitness and Recreational Sports Centers,2026-09-30
+Outdoor Lighting Perspectives,outdoor-lighting-perspectives,S1229,yes,37,9,17,3,17.6,6.2,41.0,7.4,limited,14,250000,9.75,Electrical Contractors and Other Wiring Installation Contractors,2026-09-30
+Oxi Fresh Carpet Cleaning,oxi-fresh-carpet-cleaning,S1232,yes,62,7,42,7,16.7,8.3,30.6,9.7,rated,19,150000,11.25,Carpet and Upholstery Cleaning Services,2026-09-30
+OYO - Marketing and Operational Consulting Agreement,oyo-marketing-and-operational-consulting-agreement,,no,28,0,12,0,0.0,0.0,24.2,0.0,limited,16,1342500,9.12,Hotels (except Casino Hotels) and Motels,2026-09-30
+P J's Coffee and Tea Cafe,p-js-coffee-and-tea-cafe,,no,25,7,0,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+P.volve,p-volve,,no,12,0,0,0,,,,,insufficient,16,612050,10.12,Fitness and Recreational Sports Centers,2026-09-30
+Paciugo,paciugo,S2227,yes,12,6,11,6,54.5,28.0,78.7,34.7,limited,1,438500,9.75,Snack and Nonalcoholic Beverage Bars,2026-09-30
+PacWest Energy (Shell) Retail Sales Agreement,pacwest-energy-shell-retail-sales-agreement,,no,24,0,15,0,0.0,0.0,20.4,0.0,limited,10,3236000,8.25,Gasoline Stations with Convenience Stores,2026-09-30
+Padgett Business Services,padgett-business-services,,no,56,4,21,0,0.0,0.0,15.5,0.0,limited,7,424950,8.75,Other Accounting Services,2026-09-30
+Paint Nail Bar,paint-nail-bar,,no,22,1,12,1,8.3,1.5,35.4,7.3,limited,10,354000,8.75,Nail Salons,2026-09-30
+Painter Bros,painter-bros,S7347,yes,21,0,0,0,,,,,insufficient,25,225500,10.5,Painting and Wall Covering Contractors,2026-09-30
+Painter1,painter1,S4395,yes,13,1,4,1,,,,,insufficient,10,145000,10.25,Painting and Wall Covering Contractors,2026-09-30
+Painting With A Twist,painting-with-a-twist,S1265,yes,58,5,48,5,10.4,4.5,22.2,7.6,rated,12,188000,11.0,Fine Arts Schools,2026-09-30
+Pak Mail (Retail Center),pak-mail-retail-center,S1267,yes,129,27,16,2,12.5,3.5,36.0,16.3,limited,6,180000,8.38,Private Mail Centers,2026-09-30
+Panchero's Mexican Grill,pancheros-mexican-grill,S1271,yes,25,5,8,0,,,,,insufficient,1,744000,6.95,Limited-Service Restaurants,2026-09-30
+Papa John's,papa-johns,S1273,yes,272,43,126,14,11.1,6.7,17.8,8.6,rated,35,380000,9.75,Limited-Service Restaurants,2026-09-30
+Papa Murphy's Take 'N' Bake Pizza,papa-murphys-take-n-bake-pizza,S1274,yes,489,30,187,13,7.0,4.1,11.5,3.9,rated,36,405000,8.5,Limited-Service Restaurants,2026-09-30
+Parcel Plus (Retail Center),parcel-plus-retail-center,S1278,yes,29,7,1,0,,,,,insufficient,2,250000,7.25,Other Business Service Centers (including Copy Shops),2026-09-30
+"Parent Petroleum, Inc. (Multi-Brands) Retail Dealer Fuel Purchase Contract",parent-petroleum-inc-multi-brands-retail-dealer-fuel-purchase-contract,S6763,yes,9,0,0,0,,,,,insufficient,12,1875000,8.75,Gasoline Stations with Convenience Stores,2026-09-30
+"Parent Petroleum, Inc. (Unbranded) Retail Dealer Fuel Purchase Bontract",parent-petroleum-inc-unbranded-retail-dealer-fuel-purchase-bontract,S2654,yes,19,0,15,0,0.0,0.0,20.4,0.0,limited,4,1707850,6.75,Gasoline Stations with Convenience Stores,2026-09-30
+Paris Baguette,paris-baguette,S1279,yes,116,0,23,0,0.0,0.0,14.3,0.0,limited,122,1344000,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Parlor Doughnuts,parlor-doughnuts,S6954,yes,22,0,0,0,,,,,insufficient,24,506850,9.88,Limited-Service Restaurants,2026-09-30
+Party City (Party Paper Goods),party-city-party-paper-goods,,no,33,2,2,0,,,,,insufficient,0,,,"Gift, Novelty, and Souvenir Stores",2026-09-30
+Partyland (Retail Party Goods),partyland-retail-party-goods,,no,47,22,0,0,,,,,insufficient,0,,,"Gift, Novelty, and Souvenir Stores",2026-09-30
+PatchMaster,patchmaster,,no,18,0,0,0,,,,,insufficient,20,150000,10.25,Drywall and Insulation Contractors,2026-09-30
+Patrice & Associates,patrice-and-associates,S1282,yes,99,14,62,13,21.0,12.7,32.6,17.1,rated,37,150000,10.25,Employment Placement Agencies,2026-09-30
+Paul Davis Restoration,paul-davis-restoration,S1285,yes,157,6,62,4,6.5,2.5,15.4,1.9,rated,83,500000,9.0,Remediation Services,2026-09-30
+Paul W. Davis Systems,paul-w-davis-systems,,no,49,5,1,0,,,,,insufficient,0,,,Single Family Housing Construction,2026-09-30
+Pause Studio,pause-studio,S7737,yes,15,0,0,0,,,,,insufficient,19,1336700,9.5,Other Personal Care Services,2026-09-30
+PayMore Stores,paymore-stores,S6898,yes,16,0,0,0,,,,,insufficient,19,219150,10.88,Electronics and Appliance Retailers,2026-09-30
+Pearle Vision,pearle-vision,S1286,yes,243,14,100,0,0.0,0.0,3.7,0.0,rated,20,586800,9.5,Offices of Optometrists,2026-09-30
+"Penn Station, Inc.",penn-station-inc,,no,50,1,18,0,0.0,0.0,17.6,0.0,limited,0,,,Limited-Service Restaurants,2026-09-30
+Perkins Restaurants,perkins-restaurants,,no,29,2,1,0,,,,,insufficient,0,,,Full-Service Restaurants,2026-09-30
+Perspire Sauna Studio,perspire-sauna-studio,S3000,yes,65,1,14,0,0.0,0.0,21.5,0.0,limited,67,496750,9.75,Other Personal Care Services,2026-09-30
+Pet Depot,pet-depot,,no,12,1,11,1,9.1,1.6,37.7,0.2,limited,1,260000,5.0,Pet and Pet Supplies Stores,2026-09-30
+Pet Evolution,pet-evolution,S6636,yes,15,0,0,0,,,,,insufficient,18,718400,10.25,Pet and Pet Supplies Retailers,2026-09-30
+Pet Supplies Plus,pet-supplies-plus,S1293,yes,198,6,107,4,3.7,1.5,9.2,1.9,rated,108,945000,9.25,Pet and Pet Supplies Stores,2026-09-30
+Petland,petland,,no,169,73,15,1,6.7,1.2,29.8,0.7,limited,0,,,Pet and Pet Supplies Stores,2026-09-30
+Petland/Safari Stan's,petland-safari-stans,,no,43,0,23,0,0.0,0.0,14.3,0.0,limited,21,817850,10.5,Pet and Pet Supplies Stores,2026-09-30
+PetroCard Inc. (Branded Dealer) Sales Contract,petrocard-inc-branded-dealer-sales-contract,,no,14,0,10,0,0.0,0.0,27.8,0.0,limited,5,2463000,8.38,Gasoline Stations with Convenience Stores,2026-09-30
+Phillips 66,phillips-66,,no,49,5,26,1,3.8,0.7,18.9,0.1,limited,0,,,Gasoline Stations with Convenience Stores,2026-09-30
+Phillips 66 Branded Reseller Agreement,phillips-66-branded-reseller-agreement,,no,50,0,26,0,0.0,0.0,12.9,0.0,limited,27,3137500,8.75,Gasoline Stations with Convenience Stores,2026-09-30
+Philly Connection,philly-connection,,no,86,33,0,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Philly Pretzel Factory,philly-pretzel-factory,S1298,yes,123,23,53,3,5.7,1.9,15.4,2.6,rated,21,325000,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Pickerman's,pickermans,,no,33,13,0,0,,,,,insufficient,1,787000,9.25,Full-Service Restaurants,2026-09-30
+PickUp USA,pickup-usa,S1299,yes,25,2,4,1,,,,,insufficient,26,533850,10.12,Fitness and Recreational Sports Centers,2026-09-30
+Pie Five,pie-five,,no,21,9,18,9,50.0,29.0,71.0,25.5,limited,3,328000,9.25,Limited-Service Restaurants,2026-09-30
+Pieology,pieology,,no,23,0,22,0,0.0,0.0,14.9,0.0,limited,1,460000,6.75,Full-Service Restaurants,2026-09-30
+Piggly Wiggly,piggly-wiggly,S2783,yes,53,6,23,2,8.7,2.4,26.8,2.9,limited,11,645000,7.12,Supermarkets and Other Grocery (except Convenience) Stores,2026-09-30
+Pigtails & Crewcuts,pigtails-and-crewcuts,S1304,yes,26,1,11,1,9.1,1.6,37.7,5.6,limited,16,204000,9.5,Beauty Salons,2026-09-30
+Pillar To Post,pillar-to-post,S1305,yes,41,5,14,2,14.3,4.0,39.9,10.0,limited,11,105900,10.25,Building Inspection Services,2026-09-30
+Pinch A Penny,pinch-a-penny,,no,37,4,2,0,,,,,insufficient,1,150000,13.25,All Other Miscellaneous Store Retailers (except Tobacco Stores),2026-09-30
+Pink Zebra Moving,pink-zebra-moving,S7396,yes,15,0,0,0,,,,,insufficient,16,206800,10.25,Used Household and Office Goods Moving,2026-09-30
+Pinkberry,pinkberry,S1307,yes,19,0,13,0,0.0,0.0,22.8,0.0,limited,4,681800,10.75,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Pinnacle Montessori,pinnacle-montessori,S1308,yes,18,0,11,0,0.0,0.0,25.9,0.0,limited,9,270000,9.5,Child Day Care Services,2026-09-30
+Pinot's Palette,pinots-palette,S1309,yes,38,7,35,7,20.0,10.0,35.9,22.2,rated,5,243000,9.0,Fine Arts Schools,2026-09-30
+Pirtek,pirtek,S1310,yes,133,10,31,0,0.0,0.0,11.0,0.0,rated,86,452250,9.75,Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance,2026-09-30
+Pita Pit,pita-pit,,no,140,42,83,17,20.5,13.2,30.4,13.3,rated,3,56400,6.75,Limited-Service Restaurants,2026-09-30
+Pizza Factory,pizza-factory,S1312,yes,40,9,8,1,,,,,insufficient,7,276000,9.0,Full-Service Restaurants,2026-09-30
+Pizza Hut,pizza-hut,S1313,yes,29,3,13,2,15.4,4.3,42.2,9.2,limited,2,2622500,7.88,Limited-Service Restaurants,2026-09-30
+Pizza Inn,pizza-inn,,no,71,17,6,1,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Pizza Ranch,pizza-ranch,S1317,yes,132,9,40,1,2.5,0.4,12.9,2.5,rated,17,683100,8.62,Limited-Service Restaurants,2026-09-30
+PJ's Coffee of New Orleans,pjs-coffee-of-new-orleans,S1245,yes,57,0,20,0,0.0,0.0,16.1,0.0,limited,45,541000,9.88,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Planet Beach,planet-beach,,no,279,150,15,3,20.0,7.0,45.2,5.1,limited,1,4200000,11.0,Other Personal Care Services,2026-09-30
+Planet Fitness,planet-fitness,S1323,yes,126,0,90,0,0.0,0.0,4.1,0.0,rated,2,1155650,6.15,Fitness and Recreational Sports Centers,2026-09-30
+Planet Smoothie,planet-smoothie,S1324,yes,101,21,30,1,3.3,0.6,16.7,1.3,rated,16,403000,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Planet Sub,planet-sub,,no,25,4,12,2,16.7,4.7,44.8,18.7,limited,0,,,Limited-Service Restaurants,2026-09-30
+Plato's Closet,platos-closet,S1327,yes,189,3,85,1,1.2,0.2,6.4,0.1,rated,42,500000,8.62,Used Merchandise Stores,2026-09-30
+Play It Again Sports,play-it-again-sports,S1328,yes,389,48,67,5,7.5,3.2,16.3,7.4,rated,71,322400,9.27,Sporting Goods Stores,2026-09-30
+Play N Trade,play-n-trade,,no,50,31,1,0,,,,,insufficient,0,,,"Hobby, Toy, and Game Stores",2026-09-30
+Play Street Museum,play-street-museum,S2070,yes,19,0,8,0,,,,,insufficient,13,593000,9.01,Museums,2026-09-30
+Playa Bowls,playa-bowls,S2320,yes,62,0,5,0,,,,,insufficient,68,436000,10.0,Limited-Service Restaurants,2026-09-30
+PM Mini-Mart Agreement - ARCO Fuel - Contract Dealer Gasoline Agreement (BP West Coast Products),pm-mini-mart-agreement-arco-fuel-contract-dealer-gasoline-agreement-bp-west-coast-products,S2096,yes,65,0,33,0,0.0,0.0,10.4,0.0,rated,40,2362350,9.0,Gasoline Stations with Convenience Stores,2026-09-30
+PMI,pmi,S8126,yes,18,0,0,0,,,,,insufficient,22,150000,9.75,Residential Property Managers,2026-09-30
+POKEMOTO,pokemoto,S4984,yes,13,0,0,0,,,,,insufficient,14,202750,9.75,Full-Service Restaurants,2026-09-30
+Pokeworks,pokeworks,S2480,yes,20,2,17,2,11.8,3.3,34.3,6.4,limited,3,485000,10.25,Limited-Service Restaurants,2026-09-30
+Polaris - Dealer Agreement,polaris-dealer-agreement,,no,14,0,10,0,0.0,0.0,27.8,0.0,limited,4,3487500,8.5,"Motorcycle, ATV, and All Other Motor Vehicle Dealers",2026-09-30
+Ponderosa Steak House,ponderosa-steak-house,,no,30,7,1,0,,,,,insufficient,0,,,Full-Service Restaurants,2026-09-30
+Poolwerx,poolwerx,S2046,yes,21,0,5,0,,,,,insufficient,16,150000,9.88,Other Services to Buildings and Dwellings,2026-09-30
+Pop-A-Lock,pop-a-lock,S1333,yes,29,6,14,3,21.4,7.6,47.6,5.0,limited,2,1235150,9.32,Locksmiths,2026-09-30
+Popeyes Louisiana Kitchen,popeyes-louisiana-kitchen,S1334,yes,178,13,70,0,0.0,0.0,5.2,0.0,rated,17,1000000,7.75,Limited-Service Restaurants,2026-09-30
+Port of Subs,port-of-subs,S1335,yes,67,8,7,0,,,,,insufficient,15,484400,8.71,Limited-Service Restaurants,2026-09-30
+Postal Annex Plus,postal-annex-plus,,no,121,30,20,3,15.0,5.2,36.0,9.9,limited,0,,,Private Mail Centers,2026-09-30
+Postal Connections of America,postal-connections-of-america,,no,37,7,4,0,,,,,insufficient,0,,,Private Mail Centers,2026-09-30
+Postal Instant Press,postal-instant-press,,no,26,3,0,0,,,,,insufficient,0,,,Quick Printing,2026-09-30
+PostalAnnex+ (Retail Center),postalannex-retail-center,S1340,yes,46,0,17,0,0.0,0.0,18.4,0.0,limited,34,205000,10.13,Private Mail Centers,2026-09-30
+PostNet,postnet,S1338,yes,234,43,27,5,18.5,8.2,36.7,6.8,limited,22,210000,8.5,Private Mail Centers,2026-09-30
+Potbelly Sandwich Shop,potbelly-sandwich-shop,S1342,yes,15,0,1,0,,,,,insufficient,20,848000,9.25,Limited-Service Restaurants,2026-09-30
+Potbelly Sandwich Works,potbelly-sandwich-works,,no,14,0,14,0,0.0,0.0,21.5,0.0,limited,0,,,Limited-Service Restaurants,2026-09-30
+Powerhouse Gyms,powerhouse-gyms,,no,29,5,5,0,,,,,insufficient,0,,,Fitness and Recreational Sports Centers,2026-09-30
+PRECISION GARAGE DOOR SERVICE,precision-garage-door-service,S1344,yes,17,0,3,0,,,,,insufficient,16,316400,10.38,Finish Carpentry Contractors,2026-09-30
+Precision Tune Auto Care,precision-tune-auto-care,,no,140,30,14,3,21.4,7.6,47.6,13.9,limited,8,274750,9.5,General Automotive Repair,2026-09-30
+Premier Martial Arts Studio,premier-martial-arts-studio,S3479,yes,79,7,33,5,15.2,6.7,30.9,8.8,rated,52,251500,6.5,Sports and Recreation Instruction,2026-09-30
+"Premier Petroleum, Inc - Petroleum Supply Agreement",premier-petroleum-inc-petroleum-supply-agreement,,no,22,0,16,0,0.0,0.0,19.4,0.0,limited,9,2160000,8.75,Gasoline Stations with Convenience Stores,2026-09-30
+Premier Rental-Purchase,premier-rental-purchase,,no,82,31,22,8,36.4,19.7,57.0,25.0,limited,12,425000,9.75,Consumer Electronics and Appliances Rental,2026-09-30
+Pretzel Time,pretzel-time,,no,26,4,0,0,,,,,insufficient,0,,,Full-Service Restaurants,2026-09-30
+Pretzelmaker,pretzelmaker,,no,30,3,7,0,,,,,insufficient,0,,,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Prime IV Hydration & Wellness,prime-iv-hydration-and-wellness,S5188,yes,56,0,0,0,,,,,insufficient,68,300000,10.05,Other Personal Care Services,2026-09-30
+PrimoHoagies,primohoagies,S1352,yes,61,6,24,3,12.5,4.3,31.0,9.4,limited,33,350000,10.5,Limited-Service Restaurants,2026-09-30
+Primrose Schools,primrose-schools,S1353,yes,580,8,282,1,0.4,0.1,2.0,0.2,rated,128,976900,7.5,Child Day Care Services,2026-09-30
+Pro Golf,pro-golf,,no,44,24,0,0,,,,,insufficient,0,,,Sporting Goods Stores,2026-09-30
+Pro Image,pro-image,,no,33,8,8,0,,,,,insufficient,0,,,Sporting Goods Stores,2026-09-30
+Pro-Lift Garage Doors,pro-lift-garage-doors,S2240,yes,56,10,25,6,24.0,11.5,43.4,19.5,limited,37,150000,11.0,Finish Carpentry Contractors,2026-09-30
+Project Lean Nation,project-lean-nation,S7567,yes,11,0,0,0,,,,,insufficient,19,236000,9.5,All Other Specialty Food Retailers,2026-09-30
+Property Management Inc.,property-management-inc,,no,114,8,39,5,12.8,5.6,26.7,7.2,rated,89,150000,10.25,Residential Property Managers,2026-09-30
+Prose,prose,,no,18,0,14,0,0.0,0.0,21.5,0.0,limited,4,175000,6.0,Nail Salons,2026-09-30
+Puddle Pool Services,puddle-pool-services,S7902,yes,17,0,0,0,,,,,insufficient,20,201000,9.75,Other Services to Buildings and Dwellings,2026-09-30
+Pulp Juice and Smoothie Bar,pulp-juice-and-smoothie-bar,S2690,yes,61,0,35,0,0.0,0.0,9.9,0.0,rated,26,171950,10.25,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Pump It Up,pump-it-up,,no,98,15,21,1,4.8,0.8,22.7,1.4,limited,3,281700,8.01,All Other Amusement and Recreation Industries,2026-09-30
+Pur Life Medical,pur-life-medical,,no,10,1,0,0,,,,,insufficient,11,528700,10.75,Offices of All Other Miscellaneous Health Practitioners,2026-09-30
+Pure Barre,pure-barre,S2756,yes,172,4,121,4,3.3,1.3,8.2,4.2,rated,66,275800,9.5,Fitness and Recreational Sports Centers,2026-09-30
+Pure Green,pure-green,S6030,yes,44,0,0,0,,,,,insufficient,63,450500,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+"Pure Sweat Suana Studio, Pure Sweat & Float Studio",pure-sweat-suana-studio-pure-sweat-and-float-studio,S7070,yes,8,0,0,0,,,,,insufficient,10,350000,10.5,Other Personal Care Services,2026-09-30
+PuroClean,puroclean,S1367,yes,150,12,81,10,12.3,6.8,21.3,6.0,rated,77,225000,10.0,Remediation Services,2026-09-30
+Putt Putt Golf Course,putt-putt-golf-course,,no,29,9,0,0,,,,,insufficient,0,,,Amusement and Theme Parks,2026-09-30
+QC Kinetix,qc-kinetix,S5795,yes,18,1,4,0,,,,,insufficient,19,300000,7.5,All Other Outpatient Care Centers,2026-09-30
+Qdoba Mexican Grill,qdoba-mexican-grill,,no,35,3,13,1,7.7,1.4,33.3,7.7,limited,0,,,Limited-Service Restaurants,2026-09-30
+Qdoba Restaurant Corporation,qdoba-restaurant-corporation,S1370,yes,12,0,2,0,,,,,insufficient,11,955000,7.23,Limited-Service Restaurants,2026-09-30
+Quality Inn,quality-inn,S1373,yes,847,25,559,9,1.6,0.8,3.0,1.1,rated,223,2980800,8.5,Hotels (except Casino Hotels) and Motels,2026-09-30
+Quiznos,quiznos,,no,2327,659,16,1,6.2,1.1,28.3,2.9,limited,3,230000,10.0,Limited-Service Restaurants,2026-09-30
+Radiant Waxing,radiant-waxing,S7573,yes,11,0,0,0,,,,,insufficient,11,436000,10.25,Other Personal Care Services,2026-09-30
+Radio Shack,radio-shack,,no,166,31,5,3,,,,,insufficient,0,,,"""Radio, Television, and Other Electronics Stores""",2026-09-30
+Rainbow Academy,rainbow-academy,,no,11,0,11,0,0.0,0.0,25.9,0.0,limited,0,,,Child Day Care Services,2026-09-30
+Rainbow International Restoration & Cleaning,rainbow-international-restoration-and-cleaning,,no,39,7,39,7,17.9,9.0,32.7,16.6,rated,0,,,Residential Remodelers,2026-09-30
+Rainbow Restoration,rainbow-restoration,S1395,yes,118,17,74,15,20.3,12.7,30.8,15.7,rated,49,300000,10.38,Remediation Services,2026-09-30
+Rally's,rallys,S1398,yes,19,2,17,2,11.8,3.3,34.3,2.4,limited,3,2587500,7.62,Limited-Service Restaurants,2026-09-30
+Ramada,ramada,S1400,yes,354,37,90,1,1.1,0.2,6.0,1.1,rated,23,2432750,8.38,Hotels (except Casino Hotels) and Motels,2026-09-30
+Rapid Fired Pizza,rapid-fired-pizza,,no,16,2,16,2,12.5,3.5,36.0,8.1,limited,0,,,Limited-Service Restaurants,2026-09-30
+Re-Bath,re-bath,S1403,yes,23,2,16,2,12.5,3.5,36.0,6.1,limited,9,349500,9.25,Residential Remodelers,2026-09-30
+Re/Max Realty,re-max-realty,,no,111,17,46,2,4.3,1.2,14.5,0.6,rated,0,,,Offices of Real Estate Agents and Brokers,2026-09-30
+Real Deals on Home Decor,real-deals-on-home-decor,S1405,yes,20,1,17,1,5.9,1.0,27.0,2.6,limited,3,200000,10.0,All Other Home Furnishings Stores,2026-09-30
+Real Property Management,real-property-management,S1407,yes,103,4,44,3,6.8,2.3,18.2,3.2,rated,65,150000,9.88,Residential Property Managers,2026-09-30
+RealClean Aircraft Detailing,realclean-aircraft-detailing,S8169,yes,26,0,0,0,,,,,insufficient,31,318000,9.75,Other Support Activities for Air Transportation,2026-09-30
+Rebounderz,rebounderz,,no,10,0,10,0,0.0,0.0,27.8,0.0,limited,0,,,All Other Amusement and Recreation Industries,2026-09-30
+Red Brick Pizza,red-brick-pizza,,no,52,22,1,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Red Carpet Inn,red-carpet-inn,S1411,yes,54,3,21,2,9.5,2.7,28.9,2.3,limited,4,1425000,8.88,Hotels (except Casino Hotels) and Motels,2026-09-30
+Red Lion Hotels,red-lion-hotels,S1412,yes,40,2,34,2,5.9,1.6,19.1,2.9,rated,7,2662000,8.5,Hotels (except Casino Hotels) and Motels,2026-09-30
+Red Mango,red-mango,S1413,yes,29,5,19,4,21.1,8.5,43.3,11.8,limited,0,,,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Red Roof Inn,red-roof-inn,S1414,yes,376,3,265,1,0.4,0.1,2.1,0.1,rated,97,2595000,8.0,Hotels (except Casino Hotels) and Motels,2026-09-30
+Red Wing Shoes,red-wing-shoes,,no,18,1,17,1,5.9,1.0,27.0,3.9,limited,0,,,Shoe Stores,2026-09-30
+redbox+,redbox,S3562,yes,89,0,64,0,0.0,0.0,5.7,0.0,rated,25,800000,8.5,Other Waste Collection,2026-09-30
+Redline Athletics,redline-athletics,S1416,yes,58,9,31,9,29.0,16.1,46.6,24.8,rated,32,350000,9.38,Fitness and Recreational Sports Centers,2026-09-30
+Reis & Irvy's,reis-and-irvys,,no,29,3,29,3,10.3,3.6,26.4,2.5,limited,0,,,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Relax The Back,relax-the-back,,no,50,10,10,0,0.0,0.0,27.8,0.0,limited,1,1222300,9.0,All Other Health and Personal Care Stores,2026-09-30
+Remax,remax,,no,57,5,5,0,,,,,insufficient,0,,,Offices of Real Estate Agents and Brokers,2026-09-30
+Renew Medic,renew-medic,S8072,yes,7,0,0,0,,,,,insufficient,11,464850,9.09,Residential Remodelers,2026-09-30
+Rent-A-Wreck,rent-a-wreck,S1422,yes,27,1,3,0,,,,,insufficient,2,458250,9.62,Passenger Car Rental,2026-09-30
+RestoPros,restopros,S6918,yes,61,0,0,0,,,,,insufficient,77,200600,10.25,Remediation Services,2026-09-30
+Restoration 1,restoration-1,S1426,yes,86,6,49,4,8.2,3.2,19.2,4.0,rated,44,200000,10.14,Remediation Services,2026-09-30
+Restoration1,restoration1,,no,22,0,21,0,0.0,0.0,15.5,0.0,limited,1,150000,13.25,Residential Remodelers,2026-09-30
+Restore Hyper Wellness,restore-hyper-wellness,S2085,yes,89,2,53,1,1.9,0.3,9.9,0.7,rated,46,837400,7.5,Other Personal Care Services,2026-09-30
+Retro Fitness,retro-fitness,,no,74,6,55,5,9.1,3.9,19.6,6.5,rated,0,,,Fitness and Recreational Sports Centers,2026-09-30
+Retrofitness,retrofitness,S1427,yes,30,0,23,0,0.0,0.0,14.3,0.0,limited,7,935000,9.0,Fitness and Recreational Sports Centers,2026-09-30
+Right at Home,right-at-home,S1431,yes,158,3,103,3,2.9,1.0,8.2,4.7,rated,54,300000,9.31,Home Health Care Services,2026-09-30
+Rita's Italian Ice,ritas-italian-ice,S1435,yes,352,37,95,8,8.4,4.3,15.7,5.5,rated,79,329500,10.0,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Ritter's Frozen Custard,ritters-frozen-custard,S1436,yes,45,10,8,0,,,,,insufficient,5,490000,8.25,Snack and Nonalcoholic Beverage Bars,2026-09-30
+RNR Tire Express,rnr-tire-express,S1423,yes,13,0,6,0,,,,,insufficient,13,362500,9.25,Tire Dealers,2026-09-30
+Robeks,robeks,S1438,yes,100,21,17,1,5.9,1.0,27.0,3.7,limited,23,350000,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+RockBox Fitness,rockbox-fitness,S2944,yes,25,3,10,1,10.0,1.8,40.4,1.1,limited,23,413000,8.75,Fitness and Recreational Sports Centers,2026-09-30
+Rocket Fizz Soda Pop and Candy Shop,rocket-fizz-soda-pop-and-candy-shop,S2263,yes,19,2,14,2,14.3,4.0,39.9,10.5,limited,8,171800,9.12,Confectionery and Nut Stores,2026-09-30
+Rockin' Jump,rockin-jump,,no,21,2,21,2,9.5,2.7,28.9,5.0,limited,0,,,All Other Amusement and Recreation Industries,2026-09-30
+Rocky Mountain Chocolate Factory,rocky-mountain-chocolate-factory,S1442,yes,155,29,20,3,15.0,5.2,36.0,6.0,limited,16,396300,9.25,Confectionery and Nut Stores,2026-09-30
+Rocky Rococo Pan Style Pizza,rocky-rococo-pan-style-pizza,,no,19,1,11,1,9.1,1.6,37.7,0.8,limited,0,,,Limited-Service Restaurants,2026-09-30
+Rodeway Inn,rodeway-inn,S1444,yes,274,6,157,1,0.6,0.1,3.5,0.3,rated,56,1852000,8.0,Hotels (except Casino Hotels) and Motels,2026-09-30
+Rolling Suds,rolling-suds,S7875,yes,25,0,0,0,,,,,insufficient,36,328000,9.75,Other Services to Buildings and Dwellings,2026-09-30
+Roly Poly,roly-poly,,no,76,27,5,3,,,,,insufficient,1,150000,9.0,Limited-Service Restaurants,2026-09-30
+Romeo's Pizza,romeos-pizza,,no,14,1,6,0,,,,,insufficient,10,297500,9.5,Limited-Service Restaurants,2026-09-30
+Roosters Men's Grooming Center,roosters-mens-grooming-center,S2755,yes,21,1,10,0,0.0,0.0,27.8,0.0,limited,4,259400,9.05,Barber Shops,2026-09-30
+Rosati's Pizza,rosatis-pizza,S1450,yes,115,14,68,9,13.2,7.1,23.3,7.4,rated,24,478000,9.0,Limited-Service Restaurants,2026-09-30
+Roto-Rooter,roto-rooter,,no,49,2,10,0,0.0,0.0,27.8,0.0,limited,4,972000,7.25,"Plumbing, Heating, and Air-Conditioning Contractors",2026-09-30
+Round Table Pizza,round-table-pizza,S1452,yes,111,8,37,2,5.4,1.5,17.7,2.3,rated,25,506000,9.5,Limited-Service Restaurants,2026-09-30
+Row House,row-house,S3037,yes,48,5,42,5,11.9,5.2,25.0,7.1,rated,6,304750,8.5,Fitness and Recreational Sports Centers,2026-09-30
+Rumble Boxing,rumble-boxing,S6736,yes,36,3,0,0,,,,,insufficient,42,590000,9.75,Fitness and Recreational Sports Centers,2026-09-30
+Rush Bowls,rush-bowls,S2422,yes,29,1,8,0,,,,,insufficient,32,212200,10.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Rush Cycle,rush-cycle,,no,14,8,12,8,66.7,39.1,86.2,61.3,limited,2,321000,7.0,Fitness and Recreational Sports Centers,2026-09-30
+RX2Live,rx2live,,no,13,2,13,2,15.4,4.3,42.2,8.6,limited,0,,,Computer Systems Design Services,2026-09-30
+"S.A.S. Petroleum, Inc. (Marathon) Retail Sales Agreement",s-a-s-petroleum-inc-marathon-retail-sales-agreement,,no,14,0,4,0,,,,,insufficient,10,1690000,8.62,Gasoline Stations with Convenience Stores,2026-09-30
+SafeSplash Swim School,safesplash-swim-school,S1518,yes,36,0,22,0,0.0,0.0,14.9,0.0,limited,17,1370500,8.25,Sports and Recreation Instruction,2026-09-30
+Saladworks,saladworks,S1520,yes,129,33,41,6,14.6,6.9,28.4,12.1,rated,22,535800,9.5,Limited-Service Restaurants,2026-09-30
+Salata,salata,,no,16,1,15,1,6.7,1.2,29.8,0.5,limited,1,819000,6.75,Limited-Service Restaurants,2026-09-30
+Salon Professional Academy,salon-professional-academy,,no,14,1,14,1,7.1,1.3,31.5,6.9,limited,0,,,Cosmetology and Barber Schools,2026-09-30
+Salons by Jc,salons-by-jc,,no,20,1,20,1,5.0,0.9,23.6,2.6,limited,0,,,Beauty Salons,2026-09-30
+Sam the Concrete Man,sam-the-concrete-man,S4549,yes,110,6,19,1,5.3,0.9,24.6,4.6,limited,99,150000,10.25,Poured Concrete Foundation and Structure Contractors,2026-09-30
+Sandbox VR,sandbox-vr,S3045,yes,12,0,1,0,,,,,insufficient,14,1400000,9.75,All Other Amusement and Recreation Industries,2026-09-30
+Sanford Rose Associates,sanford-rose-associates,S5199,yes,15,1,1,0,,,,,insufficient,13,150000,10.25,Employment Placement Agencies,2026-09-30
+Sarpino's Pizzeria,sarpinos-pizzeria,,no,29,1,15,1,6.7,1.2,29.8,9.0,limited,0,,,Limited-Service Restaurants,2026-09-30
+Save - a - Lot,save-a-lot,,no,39,6,22,4,18.2,7.3,38.5,12.1,limited,0,,,Supermarkets and Other Grocery (except Convenience) Stores,2026-09-30
+Scenthound,scenthound,S3419,yes,89,0,5,0,,,,,insufficient,112,386500,9.75,Pet Care (except Veterinary) Services,2026-09-30
+Schlotzsky's,schlotzskys,S1529,yes,435,85,48,4,8.3,3.3,19.6,6.7,rated,13,675000,9.5,Limited-Service Restaurants,2026-09-30
+School of Rock,school-of-rock,S1530,yes,110,0,54,0,0.0,0.0,6.6,0.0,rated,65,500000,9.5,Fine Arts Schools,2026-09-30
+Schooley Mitchell,schooley-mitchell,S1531,yes,57,9,31,9,29.0,16.1,46.6,22.3,rated,28,150000,10.5,Other Management Consulting Services,2026-09-30
+Scissors & Scotch,scissors-and-scotch,,no,19,0,5,0,,,,,insufficient,14,532500,7.69,Barber Shops,2026-09-30
+Scooter's Coffee,scooters-coffee,S1533,yes,245,1,52,0,0.0,0.0,6.9,0.0,rated,238,1190100,8.75,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Scooter's Coffeehouse,scooters-coffeehouse,,no,24,2,11,0,0.0,0.0,25.9,0.0,limited,0,,,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Scottish Inns,scottish-inns,S1535,yes,60,7,22,1,4.5,0.8,21.8,1.2,limited,8,1260000,8.5,Hotels (except Casino Hotels) and Motels,2026-09-30
+Scout & Molly's,scout-and-mollys,S1536,yes,21,4,21,4,19.0,7.7,40.0,9.5,limited,0,,,Women's Clothing Stores,2026-09-30
+Screenmobile,screenmobile,S1537,yes,41,3,22,1,4.5,0.8,21.8,3.0,limited,18,187000,9.75,Other Building Material Dealers,2026-09-30
+SealMaster,sealmaster,,no,35,3,18,1,5.6,1.0,25.8,3.3,limited,1,1112500,10.0,Asphalt Paving Mixture and Block Manufacturing,2026-09-30
+Sears Authorized Hometown Stores (F/K/A Sears,sears-authorized-hometown-stores-f-k-a-sears,,no,17,4,16,4,25.0,10.2,49.5,9.5,limited,0,,,Household Appliance Stores,2026-09-30
+Sears Catalog Store,sears-catalog-store,,no,119,15,0,0,,,,,insufficient,0,,,Household Appliance Stores,2026-09-30
+Security 101,security-101,,no,10,1,10,1,10.0,1.8,40.4,6.3,limited,0,,,Security Systems Services (except Locksmiths),2026-09-30
+"SEI Fuel Services, Inc (Multiple Brands) Motor Fuel Supply & Security Agreement",sei-fuel-services-inc-multiple-brands-motor-fuel-supply-and-security-agreement,S2436,yes,56,0,34,0,0.0,0.0,10.2,0.0,rated,28,1900000,7.75,Gasoline Stations with Convenience Stores,2026-09-30
+Senior Care Authority,senior-care-authority,S1546,yes,35,3,19,3,15.8,5.5,37.6,9.5,limited,17,150000,9.75,Services for the Elderly and Persons with Disabilities,2026-09-30
+Senior Helpers,senior-helpers,S1547,yes,156,5,76,5,6.6,2.8,14.5,2.3,rated,90,190000,10.24,Home Health Care Services,2026-09-30
+Seniors Helping Seniors,seniors-helping-seniors,S3973,yes,46,4,10,2,20.0,5.7,51.0,18.4,limited,39,150000,10.0,Services for the Elderly and Persons with Disabilities,2026-09-30
+Serotonin,serotonin,,no,9,0,0,0,,,,,insufficient,11,1332300,10.5,Other Personal Care Services,2026-09-30
+Service Team Of Professionals,service-team-of-professionals,,no,24,6,14,3,21.4,7.6,47.6,14.7,limited,6,266000,10.25,Remediation Services,2026-09-30
+ServiceMaster,servicemaster,,no,290,21,86,4,4.7,1.8,11.4,0.9,rated,59,460000,9.38,Janitorial Services,2026-09-30
+ServiceMaster Clean,servicemaster-clean,S8808,yes,74,0,73,0,0.0,0.0,5.0,0.0,rated,4,313650,8.5,Janitorial Services,2026-09-30
+Servpro,servpro,S1555,yes,714,40,328,14,4.3,2.6,7.0,2.9,rated,138,500000,8.5,Residential Remodelers,2026-09-30
+Set the Stage,set-the-stage,S6807,yes,24,0,0,0,,,,,insufficient,26,257000,10.38,Interior Design Services,2026-09-30
+Seva Beauty,seva-beauty,,no,32,3,32,3,9.4,3.2,24.2,5.6,rated,0,,,Beauty Salons,2026-09-30
+Shane's Rib Shack,shanes-rib-shack,,no,34,8,14,2,14.3,4.0,39.9,11.7,limited,2,712000,11.25,Full-Service Restaurants,2026-09-30
+Sharetea,sharetea,S2658,yes,31,1,17,1,5.9,1.0,27.0,3.5,limited,17,384650,9.75,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Sharkey's Cuts for Kids,sharkeys-cuts-for-kids,S1559,yes,64,2,22,1,4.5,0.8,21.8,3.2,limited,57,232000,10.25,Beauty Salons,2026-09-30
+ShelfGenie,shelfgenie,S1562,yes,23,2,14,2,14.3,4.0,39.9,5.9,limited,9,462000,10.0,Finish Carpentry Contractors,2026-09-30
+Shell Service Station,shell-service-station,,no,278,16,107,1,0.9,0.2,5.1,0.2,rated,0,,,Gasoline Stations with Convenience Stores,2026-09-30
+Shine,shine,S2890,yes,20,0,8,0,,,,,insufficient,14,165000,10.75,Janitorial Services,2026-09-30
+Shipley Do-Nut,shipley-do-nut,S2538,yes,28,0,8,0,,,,,insufficient,22,696100,8.75,Limited-Service Restaurants,2026-09-30
+Shoot 360,shoot-360,S4795,yes,21,0,1,0,,,,,insufficient,25,576000,10.0,Fitness and Recreational Sports Centers,2026-09-30
+Shred415,shred415,,no,13,3,13,3,23.1,8.2,50.3,15.5,limited,0,,,Fitness and Recreational Sports Centers,2026-09-30
+Shrunk 3D,shrunk-3d,,no,9,0,0,0,,,,,insufficient,13,174300,11.25,Commercial Printing (except Screen and Books),2026-09-30
+Signal 88 Security,signal-88-security,,no,16,4,16,4,25.0,10.2,49.5,20.2,limited,0,,,Security Guards and Patrol Services,2026-09-30
+Signarama,signarama,S1570,yes,242,57,109,31,28.4,20.8,37.5,23.4,rated,37,395100,10.25,Sign Manufacturing,2026-09-30
+Signs by Tomorrow,signs-by-tomorrow,S1572,yes,91,8,20,3,15.0,5.2,36.0,10.3,limited,5,265000,8.5,Sign Manufacturing,2026-09-30
+Signs Now,signs-now,,no,68,7,16,2,12.5,3.5,36.0,5.8,limited,0,,,Sign Manufacturing,2026-09-30
+Signworld,signworld,,no,10,2,10,2,20.0,5.7,51.0,5.8,limited,0,,,Sign Manufacturing,2026-09-30
+SIGNworld - Purchse Contract,signworld-purchse-contract,S1477,yes,29,4,13,2,15.4,4.3,42.2,15.8,limited,20,200000,10.25,Sign Manufacturing,2026-09-30
+Simple Simon's Pizza,simple-simons-pizza,S1574,yes,93,14,29,0,0.0,0.0,11.7,0.0,limited,38,250250,8.38,Limited-Service Restaurants,2026-09-30
+Sinclair Service Station,sinclair-service-station,,no,16,0,11,0,0.0,0.0,25.9,0.0,limited,0,,,Gasoline Stations with Convenience Stores,2026-09-30
+Sir Speedy,sir-speedy,S1576,yes,153,24,30,0,0.0,0.0,11.4,0.0,rated,12,446750,8.38,Commercial Printing (except Screen and Books),2026-09-30
+Sizzler Family Steakhouse,sizzler-family-steakhouse,,no,32,11,0,0,,,,,insufficient,0,,,Full-Service Restaurants,2026-09-30
+Sky Zone,sky-zone,S1580,yes,136,13,99,13,13.1,7.8,21.2,6.5,rated,45,3376000,9.5,All Other Amusement and Recreation Industries,2026-09-30
+Sleep Inn by Choice Hotels,sleep-inn-by-choice-hotels,S1582,yes,138,2,62,0,0.0,0.0,5.8,0.0,rated,49,3652000,8.12,Hotels (except Casino Hotels) and Motels,2026-09-30
+Sleep Inn/Sleep Inn & Suites,sleep-inn-sleep-inn-and-suites,,no,59,2,59,2,3.4,0.9,11.5,1.0,rated,0,,,Hotels (except Casino Hotels) and Motels,2026-09-30
+Slick City,slick-city,S8101,yes,8,0,0,0,,,,,insufficient,10,3002550,9.0,All Other Amusement and Recreation Industries,2026-09-30
+Smallcakes,smallcakes,,no,13,3,13,3,23.1,8.2,50.3,31.5,limited,0,,,Baked Goods Stores,2026-09-30
+Smallcakes Cupcakery,smallcakes-cupcakery,S2490,yes,29,1,19,1,5.3,0.9,24.6,0.8,limited,12,147000,9.5,Retail Bakeries,2026-09-30
+SmartMarket Solutions - Purchase Agreement,smartmarket-solutions-purchase-agreement,S8909,yes,19,0,0,0,,,,,insufficient,25,150000,9.75,Vending Machine Operators,2026-09-30
+Smartstyle,smartstyle,S2274,yes,67,2,65,2,3.1,0.8,10.5,1.7,rated,2,150000,8.4,Beauty Salons,2026-09-30
+Smash My Trash,smash-my-trash,S3588,yes,103,1,79,0,0.0,0.0,4.6,0.0,rated,28,297000,6.25,Solid Waste Collection,2026-09-30
+Smoothie Factory,smoothie-factory,S1590,yes,38,15,2,0,,,,,insufficient,0,,,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Smoothie King,smoothie-king,S1591,yes,630,59,276,9,3.3,1.7,6.1,2.2,rated,123,452600,9.25,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Snap Fitness,snap-fitness,S1592,yes,270,26,141,13,9.2,5.5,15.1,6.8,rated,29,180000,9.5,Fitness and Recreational Sports Centers,2026-09-30
+Snap-On,snap-on,S1593,yes,256,26,54,8,14.8,7.7,26.6,10.6,rated,43,150000,9.75,Other Direct Selling Establishments,2026-09-30
+Snappy Tomato Pizza,snappy-tomato-pizza,,no,27,5,5,0,,,,,insufficient,1,326500,7.5,Full-Service Restaurants,2026-09-30
+Soccer Shots,soccer-shots,S2275,yes,16,0,4,0,,,,,insufficient,17,250000,9.75,Sports and Recreation Instruction,2026-09-30
+Soccer Stars,soccer-stars,S7707,yes,14,0,0,0,,,,,insufficient,15,150000,11.0,Sports and Recreation Instruction,2026-09-30
+Sola Salon Studios,sola-salon-studios,,no,13,0,13,0,0.0,0.0,22.8,0.0,limited,0,,,Beauty Salons,2026-09-30
+Soldierfit,soldierfit,,no,11,4,10,4,40.0,16.8,68.7,28.1,limited,1,350000,10.5,Fitness and Recreational Sports Centers,2026-09-30
+Sonesta ES Suites,sonesta-es-suites,S7151,yes,9,0,0,0,,,,,insufficient,10,5000000,8.75,Hotels (except Casino Hotels) and Motels,2026-09-30
+Sonic,sonic,S1598,yes,110,9,30,0,0.0,0.0,11.4,0.0,rated,15,1912500,7.75,Limited-Service Restaurants,2026-09-30
+Sonic Drive-In,sonic-drive-in,,no,35,2,35,2,5.7,1.6,18.6,2.3,rated,0,,,Limited-Service Restaurants,2026-09-30
+Sourdough & Co,sourdough-and-co,S6202,yes,16,0,1,0,,,,,insufficient,22,350000,9.5,Limited-Service Restaurants,2026-09-30
+Southern Steer Butcher,southern-steer-butcher,S6341,yes,11,0,1,0,,,,,insufficient,14,483000,10.0,Meat Retailers,2026-09-30
+Spa810,spa810,,no,10,3,10,3,30.0,10.8,60.3,23.9,limited,0,,,Other Personal Care Services,2026-09-30
+Spark by Hilton,spark-by-hilton,S7770,yes,22,0,0,0,,,,,insufficient,26,3556700,8.5,Hotels (except Casino Hotels) and Motels,2026-09-30
+Spavia,spavia,S1603,yes,48,2,38,2,5.3,1.5,17.3,2.0,rated,16,586650,9.62,Other Personal Care Services,2026-09-30
+SpeeDee Oil Change & Auto Service,speedee-oil-change-and-auto-service,S1604,yes,91,17,18,0,0.0,0.0,17.6,0.0,limited,6,577500,8.5,Automotive Oil Change and Lubrication Shops,2026-09-30
+SpeedPro Imaging,speedpro-imaging,S1605,yes,70,10,42,9,21.4,11.7,35.9,13.0,rated,28,298600,9.5,Commercial Printing (except Screen and Books),2026-09-30
+Speedy Sign-O-Rama,speedy-sign-o-rama,,no,50,13,0,0,,,,,insufficient,0,,,Display Advertising,2026-09-30
+Spenga,spenga,S1606,yes,55,8,45,8,17.8,9.3,31.3,13.4,rated,11,773500,7.25,Fitness and Recreational Sports Centers,2026-09-30
+Spitz - Home of the Doner Kebab,spitz-home-of-the-doner-kebab,S1607,yes,13,2,3,0,,,,,insufficient,14,491250,8.88,Limited-Service Restaurants,2026-09-30
+Sport Clips,sport-clips,S2521,yes,874,47,496,29,5.8,4.1,8.3,3.2,rated,50,309250,9.5,Barber Shops,2026-09-30
+Spray-Net,spray-net,S2684,yes,39,5,10,4,40.0,16.8,68.7,29.0,limited,33,159500,9.75,Painting and Wall Covering Contractors,2026-09-30
+Square Cow Moovers,square-cow-moovers,S7555,yes,10,0,0,0,,,,,insufficient,10,325000,9.75,Used Household and Office Goods Moving,2026-09-30
+Squeegee Squad,squeegee-squad,,no,32,2,4,2,,,,,insufficient,32,150000,10.25,Janitorial Services,2026-09-30
+Squeeze,squeeze,,no,19,1,0,0,,,,,insufficient,27,531100,11.0,Other Personal Care Services,2026-09-30
+Stand Strong Fencing,stand-strong-fencing,S8174,yes,11,0,0,0,,,,,insufficient,13,244000,9.5,All Other Specialty Trade Contractors,2026-09-30
+Starting Strength,starting-strength,S3422,yes,11,2,1,0,,,,,insufficient,12,349000,10.0,Fitness and Recreational Sports Centers,2026-09-30
+State Farm Insurance,state-farm-insurance,,no,63,2,51,2,3.9,1.1,13.2,1.5,rated,1,459000,9.0,Insurance Agencies and Brokerages,2026-09-30
+Steak Escape Sandwich Grill,steak-escape-sandwich-grill,,no,41,14,4,1,,,,,insufficient,1,50000,13.25,Limited-Service Restaurants,2026-09-30
+Steak N Shake,steak-n-shake,,no,38,5,22,4,18.2,7.3,38.5,10.1,limited,0,,,Full-Service Restaurants,2026-09-30
+Steak n Shake By Biglari,steak-n-shake-by-biglari,S1623,yes,12,0,10,0,0.0,0.0,27.8,0.0,limited,3,1347000,8.88,Limited-Service Restaurants,2026-09-30
+Steak-Out,steak-out,,no,30,10,0,0,,,,,insufficient,0,,,Full-Service Restaurants,2026-09-30
+Storm Guard,storm-guard,S1629,yes,26,4,19,4,21.1,8.5,43.3,16.1,limited,8,200000,7.29,Residential Remodelers,2026-09-30
+Stretch Lab,stretch-lab,S3245,yes,125,4,39,0,0.0,0.0,9.0,0.0,rated,102,276000,8.45,Fitness and Recreational Sports Centers,2026-09-30
+Stretch Zone,stretch-zone,S4627,yes,32,0,7,0,,,,,insufficient,32,190400,10.25,Fitness and Recreational Sports Centers,2026-09-30
+StretchMed,stretchmed,S5767,yes,12,0,1,0,,,,,insufficient,11,187500,9.5,Fitness and Recreational Sports Centers,2026-09-30
+Strickland Brothers 10 Minute Oil Change,strickland-brothers-10-minute-oil-change,,no,34,0,7,0,,,,,insufficient,32,325000,8.0,Automotive Oil Change and Lubrication Shops,2026-09-30
+Studio 6,studio-6,S1633,yes,49,1,32,1,3.1,0.6,15.7,2.3,rated,21,3592000,8.0,Hotels (except Casino Hotels) and Motels,2026-09-30
+Studio Pilates International,studio-pilates-international,S4412,yes,18,0,0,0,,,,,insufficient,25,426600,9.75,Fitness and Recreational Sports Centers,2026-09-30
+Style Encore,style-encore,S1635,yes,26,1,25,1,4.0,0.7,19.5,4.5,limited,1,208000,6.25,Used Merchandise Stores,2026-09-30
+Sub Zero Ice Cream,sub-zero-ice-cream,,no,16,9,15,9,60.0,35.7,80.2,31.1,limited,0,,,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Submarina Sandwiches,submarina-sandwiches,,no,45,16,0,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Suburban Studios ES,suburban-studios-es,S1638,yes,29,0,8,0,,,,,insufficient,22,3162000,8.5,Hotels (except Casino Hotels) and Motels,2026-09-30
+Subway,subway,S1639,yes,5151,329,1115,83,7.4,6.0,9.1,4.5,rated,244,240000,9.25,Limited-Service Restaurants,2026-09-30
+Success On The Spectrum,success-on-the-spectrum,S4209,yes,66,0,6,0,,,,,insufficient,81,402500,10.12,Offices of Mental Health Practitioners (except Physicians),2026-09-30
+Sugar Llamas - License Agreement,sugar-llamas-license-agreement,,no,9,0,0,0,,,,,insufficient,14,285300,9.45,Limited-Service Restaurants,2026-09-30
+Sugaring NYC,sugaring-nyc,S3665,yes,32,0,0,0,,,,,insufficient,35,224900,10.25,Other Personal Care Services,2026-09-30
+Summer Moon Coffee Shop,summer-moon-coffee-shop,S5740,yes,19,0,4,0,,,,,insufficient,15,619000,8.25,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Sun Pacific Energy Inc - Shell Branded Supply Agreement,sun-pacific-energy-inc-shell-branded-supply-agreement,,no,15,0,10,0,0.0,0.0,27.8,0.0,limited,5,2091000,6.75,Gasoline Stations with Convenience Stores,2026-09-30
+"Sunoco, LLC (Various Brands) Fuel Supply Agreement",sunoco-llc-various-brands-fuel-supply-agreement,S2631,yes,75,1,47,1,2.1,0.4,11.1,0.8,rated,36,1550000,8.5,Gasoline Stations with Convenience Stores,2026-09-30
+Sunoco Service Station,sunoco-service-station,,no,102,13,12,1,8.3,1.5,35.4,1.1,limited,0,,,Gasoline Stations with Convenience Stores,2026-09-30
+Super 8,super-8,S1645,yes,1104,67,425,6,1.4,0.6,3.0,0.7,rated,186,2036000,8.25,Hotels (except Casino Hotels) and Motels,2026-09-30
+Supercuts,supercuts,S1648,yes,261,9,231,9,3.9,2.1,7.2,1.3,rated,14,250000,9.5,Beauty Salons,2026-09-30
+Superior Fence & Rail,superior-fence-and-rail,S2285,yes,50,0,11,0,0.0,0.0,25.9,0.0,limited,46,271000,9.62,All Other Specialty Trade Contractors,2026-09-30
+Surcheros Fresh Grill,surcheros-fresh-grill,S2951,yes,16,1,11,1,9.1,1.6,37.7,3.1,limited,5,1226400,8.0,Full-Service Restaurants,2026-09-30
+SureStay - SureStay Studio,surestay-surestay-studio,S2322,yes,60,1,30,1,3.3,0.6,16.7,2.3,rated,32,2741750,8.0,Hotels (except Casino Hotels) and Motels,2026-09-30
+Surf City Squeeze,surf-city-squeeze,S1651,yes,25,3,1,0,,,,,insufficient,0,,,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Surface Experts,surface-experts,S3888,yes,39,1,14,1,7.1,1.3,31.5,6.8,limited,32,150000,10.0,Other Building Finishing Contractors,2026-09-30
+Sweat440,sweat440,S4524,yes,12,0,0,0,,,,,insufficient,16,500000,9.5,Fitness and Recreational Sports Centers,2026-09-30
+sweetFrog,sweetfrog,S2019,yes,15,2,11,2,18.2,5.1,47.7,6.1,limited,5,350000,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Sweetwaters Coffee & Tea,sweetwaters-coffee-and-tea,,no,15,1,14,1,7.1,1.3,31.5,1.2,limited,1,220000,10.25,Snack and Nonalcoholic Beverage Bars,2026-09-30
+"SWTHZ, SweatHouz",swthz-sweathouz,S7708,yes,42,0,0,0,,,,,insufficient,55,678400,10.24,Other Personal Care Services,2026-09-30
+Sylvan Learning Centers,sylvan-learning-centers,S1658,yes,305,61,50,3,6.0,2.1,16.2,6.0,rated,54,223000,10.25,Exam Preparation and Tutoring,2026-09-30
+SYNERGY HomeCare,synergy-homecare,S1516,yes,80,4,40,4,10.0,4.0,23.1,4.6,rated,45,150000,10.0,Home Health Care Services,2026-09-30
+System4,system4,S1659,yes,32,0,22,0,0.0,0.0,14.9,0.0,limited,13,479600,8.03,Janitorial Services,2026-09-30
+T-Shirts Plus,t-shirts-plus,,no,36,8,0,0,,,,,insufficient,0,,,Family Clothing Stores,2026-09-30
+Taco Bell,taco-bell,S1704,yes,91,4,18,0,0.0,0.0,17.6,0.0,limited,5,970400,8.75,Limited-Service Restaurants,2026-09-30
+Taco Casa,taco-casa,S3418,yes,26,0,12,0,0.0,0.0,24.2,0.0,limited,2,1537950,7.12,Limited-Service Restaurants,2026-09-30
+Taco Del Mar,taco-del-mar,,no,85,35,9,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Taco John's,taco-johns,S1706,yes,80,14,8,0,,,,,insufficient,9,452000,9.25,Limited-Service Restaurants,2026-09-30
+Taco Time,taco-time,,no,49,16,3,1,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Tailored Living,tailored-living,,no,37,6,27,5,18.5,8.2,36.7,19.4,limited,11,325000,6.12,Finish Carpentry Contractors,2026-09-30
+Take 5 Oil Change,take-5-oil-change,S3083,yes,19,0,5,0,,,,,insufficient,14,1015500,8.5,Automotive Oil Change and Lubrication Shops,2026-09-30
+Tanworld,tanworld,,no,25,1,2,0,,,,,insufficient,0,,,Other Personal Care Services,2026-09-30
+Tapville Social,tapville-social,,no,8,0,0,0,,,,,insufficient,10,234800,10.25,Drinking Places (Alcoholic Beverages),2026-09-30
+Taste Buds Kitchen,taste-buds-kitchen,S2481,yes,11,0,3,0,,,,,insufficient,10,437000,8.48,All Other Miscellaneous Schools and Instruction,2026-09-30
+Taylor Rental Center,taylor-rental-center,,no,45,3,8,0,,,,,insufficient,0,,,General Rental Centers,2026-09-30
+TCBY,tcby,,no,217,47,32,2,6.2,1.7,20.1,6.2,rated,1,150000,10.0,Snack and Nonalcoholic Beverage Bars,2026-09-30
+TeamLogic IT,teamlogic-it,S1720,yes,63,3,40,3,7.5,2.6,19.9,2.3,rated,27,150000,9.5,Computer Facilities Management Services,2026-09-30
+Teaspoon,teaspoon,S3659,yes,19,1,0,0,,,,,insufficient,23,329000,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Tee Box,tee-box,S8148,yes,12,0,0,0,,,,,insufficient,18,801000,9.38,All Other Amusement and Recreation Industries,2026-09-30
+TemperaturePro,temperaturepro,S1722,yes,33,6,22,6,27.3,13.2,48.2,21.4,limited,13,348250,10.12,"Plumbing, Heating, and Air-Conditioning Contractors",2026-09-30
+Tempory Wall Systems,tempory-wall-systems,S7622,yes,28,0,0,0,,,,,insufficient,36,264100,11.0,Other Building Finishing Contractors,2026-09-30
+Teriyaki Madness,teriyaki-madness,S1724,yes,122,9,44,9,20.5,11.2,34.5,10.6,rated,102,596000,10.0,Limited-Service Restaurants,2026-09-30
+Texaco Service Station,texaco-service-station,,no,144,15,19,0,0.0,0.0,16.8,0.0,limited,0,,,Gasoline Stations with Convenience Stores,2026-09-30
+"Texas Petroleum Group, LLC - TPG Petroleum Supply Agreement (Shell",texas-petroleum-group-llc-tpg-petroleum-supply-agreement-shell,S8473,yes,131,10,40,1,2.5,0.4,12.9,1.2,rated,1,1570000,7.75,Gasoline Stations with Convenience Stores,2026-09-30
+Thai Express,thai-express,S1725,yes,10,4,10,4,40.0,16.8,68.7,30.3,limited,0,,,Limited-Service Restaurants,2026-09-30
+That 1 Painter,that-1-painter,S6748,yes,37,0,0,0,,,,,insufficient,45,169000,11.0,Painting and Wall Covering Contractors,2026-09-30
+The Alternative Board/TAB,the-alternative-board-tab,,no,13,3,10,3,30.0,10.8,60.3,24.6,limited,1,95000,10.5,Administrative Management and General Management Consulting Services,2026-09-30
+The Athlete's Foot,the-athletes-foot,,no,69,21,7,0,,,,,insufficient,0,,,Shoe Stores,2026-09-30
+The Back Nine,the-back-nine,S7791,yes,136,0,0,0,,,,,insufficient,192,363000,9.5,All Other Amusement and Recreation Industries,2026-09-30
+The Bar Method,the-bar-method,S1729,yes,51,7,44,7,15.9,7.9,29.4,12.8,rated,11,350000,9.5,Fitness and Recreational Sports Centers,2026-09-30
+The Barre Code (formerly Barre Bee Fit),the-barre-code-formerly-barre-bee-fit,,no,25,5,25,5,20.0,8.9,39.1,16.9,limited,0,,,Fitness and Recreational Sports Centers,2026-09-30
+The Brass Tap Craft Beer Bar,the-brass-tap-craft-beer-bar,S1734,yes,59,2,43,2,4.7,1.3,15.5,3.4,rated,19,953700,10.25,Drinking Places (Alcoholic Beverages),2026-09-30
+The Brothers that just do Gutters,the-brothers-that-just-do-gutters,S2841,yes,73,3,11,2,18.2,5.1,47.7,2.4,limited,71,201800,9.0,Siding Contractors,2026-09-30
+The Camp Transformation Center,the-camp-transformation-center,S2559,yes,28,6,13,4,30.8,12.7,57.6,30.3,limited,21,195000,11.0,Fitness and Recreational Sports Centers,2026-09-30
+The Casual Pint,the-casual-pint,S1736,yes,12,1,12,1,8.3,1.5,35.4,4.0,limited,0,,,Drinking Places (Alcoholic Beverages),2026-09-30
+The Cleaning Authority,the-cleaning-authority,S1737,yes,105,9,50,6,12.0,5.6,23.8,7.1,rated,26,190000,9.88,Janitorial Services,2026-09-30
+The Coffee Beanery,the-coffee-beanery,,no,60,14,1,0,,,,,insufficient,1,301000,10.75,Snack and Nonalcoholic Beverage Bars,2026-09-30
+The Dailey Method,the-dailey-method,,no,12,1,11,1,9.1,1.6,37.7,7.1,limited,0,,,Fitness and Recreational Sports Centers,2026-09-30
+The Designery,the-designery,S7820,yes,12,0,0,0,,,,,insufficient,20,345000,9.75,Residential Remodelers,2026-09-30
+The Dog Stop,the-dog-stop,S1741,yes,37,4,13,4,30.8,12.7,57.6,22.3,limited,27,980200,10.75,Pet Care (except Veterinary) Services,2026-09-30
+The Dog Wizard,the-dog-wizard,,no,8,0,0,0,,,,,insufficient,10,162600,11.0,Pet Care (except Veterinary) Services,2026-09-30
+The Egg & I,the-egg-and-i,,no,30,2,16,2,12.5,3.5,36.0,4.2,limited,0,,,Full-Service Restaurants,2026-09-30
+The Entrepreneur's Source,the-entrepreneurs-source,S1743,yes,40,6,27,6,22.2,10.6,40.8,18.9,limited,10,150000,7.62,Professional and Management Development Training,2026-09-30
+The Exercise Coach,the-exercise-coach,S1744,yes,90,4,52,2,3.8,1.1,13.0,1.9,rated,48,221000,9.75,Fitness and Recreational Sports Centers,2026-09-30
+The Extreme Pita,the-extreme-pita,S1745,yes,32,15,10,3,30.0,10.8,60.3,27.9,limited,1,50000,10.5,Limited-Service Restaurants,2026-09-30
+The Flame Broiler The Rice Bowl King,the-flame-broiler-the-rice-bowl-king,S1747,yes,40,3,33,3,9.1,3.1,23.6,3.4,rated,5,50000,10.5,Limited-Service Restaurants,2026-09-30
+The Flying Biscuit,the-flying-biscuit,S1749,yes,15,0,6,0,,,,,insufficient,10,982800,9.38,Full-Service Restaurants,2026-09-30
+The Flying Locksmiths,the-flying-locksmiths,S1750,yes,47,2,39,2,5.1,1.4,16.9,3.9,rated,10,211500,9.25,Locksmiths,2026-09-30
+The Fresh Monkee,the-fresh-monkee,S7677,yes,15,0,0,0,,,,,insufficient,23,211000,9.75,Snack and Nonalcoholic Beverage Bars,2026-09-30
+The Glass Guru,the-glass-guru,S1752,yes,26,2,18,2,11.1,3.1,32.8,3.7,limited,13,205250,9.5,Glass and Glazing Contractors,2026-09-30
+The Goddard School,the-goddard-school,S1753,yes,724,16,386,5,1.3,0.6,3.0,0.2,rated,187,1324000,7.25,Child Day Care Services,2026-09-30
+The Great Frame Up,the-great-frame-up,S1755,yes,29,5,5,0,,,,,insufficient,1,203000,8.0,All Other Home Furnishings Stores,2026-09-30
+The Great Greek Mediterranean Grill,the-great-greek-mediterranean-grill,S2554,yes,38,1,15,1,6.7,1.2,29.8,3.7,limited,30,690000,10.25,Limited-Service Restaurants,2026-09-30
+The Grounds Guys,the-grounds-guys,S1758,yes,243,42,144,41,28.5,21.7,36.3,20.9,rated,105,150000,10.25,Landscaping Services,2026-09-30
+The Grout Medic,the-grout-medic,S3737,yes,16,0,2,0,,,,,insufficient,15,150000,10.25,Flooring Contractors,2026-09-30
+The Halal Guys,the-halal-guys,S1761,yes,21,0,15,0,0.0,0.0,20.4,0.0,limited,6,761250,10.12,Limited-Service Restaurants,2026-09-30
+The Honey Baked Ham Co,the-honey-baked-ham-co,S2198,yes,16,0,8,0,,,,,insufficient,10,274000,11.0,Limited-Service Restaurants,2026-09-30
+The Honeybaked Ham Co. and Cafe,the-honeybaked-ham-co-and-cafe,,no,16,0,16,0,0.0,0.0,19.4,0.0,limited,0,,,Limited-Service Restaurants,2026-09-30
+The Human Bean,the-human-bean,S1763,yes,38,7,18,4,22.2,9.0,45.2,5.9,limited,24,880750,10.0,Snack and Nonalcoholic Beverage Bars,2026-09-30
+The Joint Chiropractic,the-joint-chiropractic,S1764,yes,133,5,67,4,6.0,2.3,14.4,3.1,rated,76,270000,9.5,Offices of Chiropractors,2026-09-30
+The Joint...The Chiropractic Place,the-joint-the-chiropractic-place,,no,41,0,41,0,0.0,0.0,8.6,0.0,rated,0,,,Offices of Chiropractors,2026-09-30
+The Junkluggers,the-junkluggers,S1765,yes,57,5,32,5,15.6,6.9,31.8,14.8,rated,29,153300,9.0,Other Waste Collection,2026-09-30
+The Lash Lounge,the-lash-lounge,S1766,yes,101,7,68,7,10.3,5.1,19.8,5.4,rated,35,377000,10.5,Beauty Salons,2026-09-30
+The Learning Experience,the-learning-experience,S1767,yes,324,12,171,8,4.7,2.4,9.0,2.1,rated,155,500000,9.75,Child Day Care Services,2026-09-30
+The Little Gym,the-little-gym,S1770,yes,262,25,40,2,5.0,1.4,16.5,6.5,rated,115,450350,9.75,Fitness and Recreational Sports Centers,2026-09-30
+The Maids,the-maids,S1771,yes,111,17,33,0,0.0,0.0,10.4,0.0,rated,28,150000,10.25,Janitorial Services,2026-09-30
+The Max Challenge,the-max-challenge,,no,13,3,11,3,27.3,9.7,56.6,24.5,limited,2,65100,10.4,Fitness and Recreational Sports Centers,2026-09-30
+The Medicine Shoppe,the-medicine-shoppe,,no,148,9,51,0,0.0,0.0,7.0,0.0,rated,10,335000,8.12,Pharmacies and Drug Stores,2026-09-30
+The Melting Pot,the-melting-pot,S1774,yes,101,24,22,2,9.1,2.5,27.8,11.5,limited,8,1714000,10.0,Full-Service Restaurants,2026-09-30
+The New York Butcher Shoppe,the-new-york-butcher-shoppe,S3961,yes,16,0,4,0,,,,,insufficient,20,552600,9.0,Meat Retailers,2026-09-30
+The Now Massage,the-now-massage,S4680,yes,51,0,14,0,0.0,0.0,21.5,0.0,limited,41,615000,9.5,Other Personal Care Services,2026-09-30
+The Peach Cobbler Factory,the-peach-cobbler-factory,S7698,yes,33,0,0,0,,,,,insufficient,46,240000,10.0,Limited-Service Restaurants,2026-09-30
+The Picklr,the-picklr,S8007,yes,10,0,0,0,,,,,insufficient,14,1469000,9.62,Fitness and Recreational Sports Centers,2026-09-30
+The Pizza Press,the-pizza-press,,no,12,2,12,2,16.7,4.7,44.8,10.5,limited,0,,,Limited-Service Restaurants,2026-09-30
+The Simple Greek,the-simple-greek,,no,16,2,16,2,12.5,3.5,36.0,7.6,limited,0,,,Limited-Service Restaurants,2026-09-30
+The Spectrum Kid's Gyms,the-spectrum-kids-gyms,S1910,yes,45,2,10,1,10.0,1.8,40.4,12.3,limited,46,315000,9.75,Fitness and Recreational Sports Centers,2026-09-30
+The Spice & Tea Exchange,the-spice-and-tea-exchange,,no,37,1,25,1,4.0,0.7,19.5,4.9,limited,15,233000,9.38,All Other Specialty Food Stores,2026-09-30
+"The Taco Maker, Taco Maker Mexican Grill",the-taco-maker-taco-maker-mexican-grill,S1680,yes,71,18,14,1,7.1,1.3,31.5,6.1,limited,3,310000,6.0,Limited-Service Restaurants,2026-09-30
+The Toasted Yolk Cafe,the-toasted-yolk-cafe,S2401,yes,32,1,14,0,0.0,0.0,21.5,0.0,limited,31,1223200,9.0,Full-Service Restaurants,2026-09-30
+THE TOX,the-tox,S8273,yes,12,0,0,0,,,,,insufficient,19,348500,9.5,Offices of All Other Miscellaneous Health Practitioners,2026-09-30
+The Tutoring Center,the-tutoring-center,,no,19,2,8,0,,,,,insufficient,10,144900,9.55,Exam Preparation and Tutoring,2026-09-30
+The UPS Store,the-ups-store,S1788,yes,1959,83,672,2,0.3,0.1,1.1,0.2,rated,869,347500,9.0,Private Mail Centers,2026-09-30
+The Vital Stretch,the-vital-stretch,S7803,yes,9,0,0,0,,,,,insufficient,14,250250,9.62,Fitness and Recreational Sports Centers,2026-09-30
+The Yard Gym,the-yard-gym,S8261,yes,10,0,0,0,,,,,insufficient,24,526050,9.5,Fitness and Recreational Sports Centers,2026-09-30
+The Yard Milkshake Bar,the-yard-milkshake-bar,,no,15,0,4,0,,,,,insufficient,14,371800,9.75,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Three Dog Bakery,three-dog-bakery,,no,16,1,14,1,7.1,1.3,31.5,4.6,limited,2,332500,6.25,Pet and Pet Supplies Stores,2026-09-30
+Thrifty Rent-A-Car,thrifty-rent-a-car,,no,28,6,0,0,,,,,insufficient,0,,,Passenger Car Rental,2026-09-30
+Tide Cleaners,tide-cleaners,S1794,yes,12,0,6,0,,,,,insufficient,10,667700,8.5,Drycleaning and Laundry Services (except Coin-Operated),2026-09-30
+Tifa Chocolate & Gelato,tifa-chocolate-and-gelato,S2548,yes,16,0,3,0,,,,,insufficient,23,400000,10.25,Limited-Service Restaurants,2026-09-30
+Tim Hortons,tim-hortons,S1797,yes,26,0,21,0,0.0,0.0,15.5,0.0,limited,9,1850000,9.5,Limited-Service Restaurants,2026-09-30
+Tint World,tint-world,S1799,yes,82,3,28,1,3.6,0.6,17.7,1.0,limited,57,419750,10.25,Automotive Glass Replacement Shops,2026-09-30
+Tire Pros,tire-pros,S2560,yes,22,1,18,1,5.6,1.0,25.8,4.3,limited,9,1090650,6.0,Tire Dealers,2026-09-30
+Tires Plus,tires-plus,,no,29,1,3,1,,,,,insufficient,0,,,Tire Dealers,2026-09-30
+Title Boxing Club,title-boxing-club,S1802,yes,87,14,80,14,17.5,10.7,27.3,17.5,rated,8,430000,9.5,Fitness and Recreational Sports Centers,2026-09-30
+Toast City Kitchen,toast-city-kitchen,,no,11,2,11,2,18.2,5.1,47.7,11.1,limited,0,,,Full-Service Restaurants,2026-09-30
+Toastique,toastique,S5981,yes,33,1,1,0,,,,,insufficient,49,494200,10.0,Limited-Service Restaurants,2026-09-30
+Togo's,togos,S1803,yes,149,22,36,5,13.9,6.1,28.7,4.2,rated,7,440000,9.38,Limited-Service Restaurants,2026-09-30
+Tom and Chee,tom-and-chee,,no,20,9,20,9,45.0,25.8,65.8,31.8,limited,0,,,Limited-Service Restaurants,2026-09-30
+Tommy's Express Car Wash,tommys-express-car-wash,S2297,yes,22,0,17,0,0.0,0.0,18.4,0.0,limited,7,2700000,9.25,Car Washes,2026-09-30
+Top Rail Fence,top-rail-fence,S7810,yes,23,0,0,0,,,,,insufficient,29,208500,10.75,All Other Specialty Trade Contractors,2026-09-30
+Toppers Pizza,toppers-pizza,S1807,yes,79,0,48,0,0.0,0.0,7.4,0.0,rated,10,483000,9.5,Limited-Service Restaurants,2026-09-30
+Tous Les Jours,tous-les-jours,S1811,yes,76,1,17,1,5.9,1.0,27.0,1.0,limited,69,823000,9.1,Retail Bakeries,2026-09-30
+Transworld Business Advisors,transworld-business-advisors,S1813,yes,17,0,11,0,0.0,0.0,25.9,0.0,limited,8,68500,9.25,"All Other Professional, Scientific, and Technical Services",2026-09-30
+Travelodge,travelodge,S1814,yes,326,22,112,3,2.7,0.9,7.6,2.4,rated,25,2400000,8.5,Hotels (except Casino Hotels) and Motels,2026-09-30
+Tropical Smoothie Cafe,tropical-smoothie-cafe,S1815,yes,588,42,302,6,2.0,0.9,4.3,0.9,rated,188,500000,9.25,Limited-Service Restaurants,2026-09-30
+TruBlue Home Service Ally,trublue-home-service-ally,S3071,yes,14,0,4,0,,,,,insufficient,15,130000,10.25,Residential Remodelers,2026-09-30
+True Rest Spa,true-rest-spa,S2298,yes,20,2,18,2,11.1,3.1,32.8,14.1,limited,5,454000,6.75,Other Personal Care Services,2026-09-30
+True Value Company LLC - Member Agreement,true-value-company-llc-member-agreement,,no,50,0,30,0,0.0,0.0,11.4,0.0,rated,23,425000,9.75,Hardware Stores,2026-09-30
+True Value Hardware,true-value-hardware,,no,232,36,55,4,7.3,2.9,17.3,4.5,rated,0,,,Hardware Stores,2026-09-30
+Tuffy Muffler Center,tuffy-muffler-center,,no,37,10,0,0,,,,,insufficient,0,,,General Automotive Repair,2026-09-30
+Tuffy Tire & Auto Service,tuffy-tire-and-auto-service,S2711,yes,30,1,18,1,5.6,1.0,25.8,0.3,limited,14,847800,7.5,General Automotive Repair,2026-09-30
+Tune Up,tune-up,S2487,yes,39,8,35,8,22.9,12.1,39.0,18.7,rated,5,297850,9.25,Beauty Salons,2026-09-30
+Tunex,tunex,,no,27,1,3,0,,,,,insufficient,0,,,General Automotive Repair,2026-09-30
+Turbo Tint,turbo-tint,S6027,yes,16,0,1,0,,,,,insufficient,17,300000,10.75,Automotive Glass Replacement Shops,2026-09-30
+Tutor Doctor,tutor-doctor,S1820,yes,78,23,72,21,29.2,19.9,40.5,25.1,rated,4,87500,11.07,Exam Preparation and Tutoring,2026-09-30
+Tutor Time,tutor-time,,no,78,12,1,0,,,,,insufficient,0,,,Child Day Care Services,2026-09-30
+Tutu School,tutu-school,S3008,yes,7,0,0,0,,,,,insufficient,11,150000,9.75,Fine Arts Schools,2026-09-30
+"TWFG Insurance Services, Inc. - Branch Office Agreement",twfg-insurance-services-inc-branch-office-agreement,S2739,yes,17,0,6,0,,,,,insufficient,11,285800,9.24,Insurance Agencies and Brokerages,2026-09-30
+Two Maids & a Mop,two-maids-and-a-mop,S2403,yes,69,2,19,1,5.3,0.9,24.6,2.5,limited,53,150000,10.25,Janitorial Services,2026-09-30
+Two Men and a Truck,two-men-and-a-truck,S1822,yes,139,6,65,1,1.5,0.3,8.2,0.3,rated,47,406000,9.15,Used Household and Office Goods Moving,2026-09-30
+U.S. Lawns,u-s-lawns,S1825,yes,68,7,35,5,14.3,6.3,29.4,5.3,rated,24,150000,10.0,Landscaping Services,2026-09-30
+U.S. Oil (BP) Retailer Supply Agreement,u-s-oil-bp-retailer-supply-agreement,,no,12,0,10,0,0.0,0.0,27.8,0.0,limited,2,1372500,9.0,Gasoline Stations with Convenience Stores,2026-09-30
+U.S. Oil (Mobil) Retailer Supply Agreement,u-s-oil-mobil-retailer-supply-agreement,,no,21,1,16,1,6.2,1.1,28.3,0.0,limited,5,1200000,10.0,Gasoline Stations with Convenience Stores,2026-09-30
+Ubreakifix,ubreakifix,,no,51,0,42,0,0.0,0.0,8.4,0.0,rated,10,139050,9.0,Consumer Electronics Repair and Maintenance,2026-09-30
+UFC Gym,ufc-gym,S1829,yes,25,8,24,8,33.3,18.0,53.3,30.4,limited,1,3881000,10.25,Fitness and Recreational Sports Centers,2026-09-30
+Uncle Maddio's Pizza Joint,uncle-maddios-pizza-joint,,no,23,6,22,6,27.3,13.2,48.2,21.8,limited,0,,,Limited-Service Restaurants,2026-09-30
+Uniglobe Travel International,uniglobe-travel-international,,no,25,8,0,0,,,,,insufficient,0,,,Travel Agencies,2026-09-30
+Union 76 Oil,union-76-oil,,no,52,3,14,0,0.0,0.0,21.5,0.0,limited,0,,,Gasoline Stations with Convenience Stores,2026-09-30
+Unishippers,unishippers,,no,32,0,6,0,,,,,insufficient,12,150000,9.75,"Process, Physical Distribution, and Logistics Consulting Services",2026-09-30
+United Check Cashing,united-check-cashing,,no,36,10,2,0,,,,,insufficient,2,175000,10.75,All Other Personal Services,2026-09-30
+United Defense Tactical,united-defense-tactical,S7903,yes,16,0,0,0,,,,,insufficient,25,350000,10.0,All Other Amusement and Recreation Industries,2026-09-30
+United Water Restoration Group,united-water-restoration-group,S2603,yes,31,1,9,1,,,,,insufficient,26,246850,10.5,Remediation Services,2026-09-30
+Units,units,,no,70,0,36,0,0.0,0.0,9.6,0.0,rated,34,1331900,7.9,Lessors of Miniwarehouses and Self-Storage Units,2026-09-30
+Uptown Cheapskate,uptown-cheapskate,S1849,yes,112,3,56,3,5.4,1.8,14.6,1.9,rated,59,598000,8.25,Used Merchandise Retailers,2026-09-30
+Urban Air Adventure Park,urban-air-adventure-park,S1850,yes,180,3,114,3,2.6,0.9,7.5,0.6,rated,84,4030000,9.0,All Other Amusement and Recreation Industries,2026-09-30
+Urban Bricks,urban-bricks,,no,14,2,14,2,14.3,4.0,39.9,9.9,limited,0,,,Limited-Service Restaurants,2026-09-30
+US Global Fuels Ltd - Supplier of a Major Brand Fuel Supply Agreement,us-global-fuels-ltd-supplier-of-a-major-brand-fuel-supply-agreement,,no,11,0,10,0,0.0,0.0,27.8,0.0,limited,1,1460000,6.0,Gasoline Stations with Convenience Stores,2026-09-30
+USA Insulation,usa-insulation,S1838,yes,40,3,17,2,11.8,3.3,34.3,6.7,limited,26,252500,9.0,Drywall and Insulation Contractors,2026-09-30
+USA Ninja Challenge,usa-ninja-challenge,S2483,yes,26,1,8,1,,,,,insufficient,23,318000,9.62,Fitness and Recreational Sports Centers,2026-09-30
+Val Pak,val-pak,,no,29,8,5,3,,,,,insufficient,0,,,Direct Mail Advertising,2026-09-30
+Valero,valero,,no,59,2,40,0,0.0,0.0,8.8,0.0,rated,0,,,Gasoline Stations with Convenience Stores,2026-09-30
+Valero Marketing and Supply Company (VMSC) - Branded Marketing Supply Agreement (Multi-Brand),valero-marketing-and-supply-company-vmsc-branded-marketing-supply-agreement-multi-brand,,no,17,0,14,0,0.0,0.0,21.5,0.0,limited,4,696000,10.0,Gasoline Stations with Convenience Stores,2026-09-30
+Valhallan,valhallan,,no,9,0,0,0,,,,,insufficient,11,150000,10.75,All Other Amusement and Recreation Industries,2026-09-30
+"Valley Pacific Petroleum Services, Inc. – Contract of Sale – Branded Chevron Fuel and Lubricant Products and Related Services",valley-pacific-petroleum-services-inc-contract-of-sale-branded-chevron-fuel-and-lubricant-products-and-related-services,S2646,yes,19,0,9,0,,,,,insufficient,10,2006500,7.62,Gasoline Stations with Convenience Stores,2026-09-30
+Valvoline Instant Oil Change,valvoline-instant-oil-change,,no,54,3,16,0,0.0,0.0,19.4,0.0,limited,0,,,Automotive Oil Change and Lubrication Shops,2026-09-30
+Venture X,venture-x,,no,28,0,17,0,0.0,0.0,18.4,0.0,limited,11,1000000,10.25,Lessors of Nonresidential Buildings (except Miniwarehouses),2026-09-30
+Verlo Mattress,verlo-mattress,,no,9,0,0,0,,,,,insufficient,12,620000,11.0,Furniture Retailers,2026-09-30
+Victory Lane Quick Oil Change,victory-lane-quick-oil-change,S1866,yes,32,4,18,3,16.7,5.8,39.2,9.3,limited,9,1268000,8.25,Automotive Oil Change and Lubrication Shops,2026-09-30
+VIO Med Spa,vio-med-spa,S3671,yes,24,0,5,0,,,,,insufficient,24,906000,9.25,Other Personal Care Services,2026-09-30
+Vision Source,vision-source,S2420,yes,31,1,23,1,4.3,0.8,21.0,2.0,limited,9,931050,8.5,Offices of Optometrists,2026-09-30
+Visiting Angels,visiting-angels,S1870,yes,142,2,68,2,2.9,0.8,10.1,0.1,rated,66,350000,8.75,Home Health Care Services,2026-09-30
+Vital Care,vital-care,S2453,yes,59,0,9,0,,,,,insufficient,59,1050000,9.5,Pharmacies and Drug Retailers,2026-09-30
+Vitality Bowls,vitality-bowls,S1871,yes,40,4,27,4,14.8,5.9,32.5,5.9,limited,15,347500,10.0,Limited-Service Restaurants,2026-09-30
+Vocelli Pizza,vocelli-pizza,S1873,yes,15,1,12,1,8.3,1.5,35.4,1.2,limited,4,150000,11.25,Limited-Service Restaurants,2026-09-30
+Voda Cleaning & Restoration,voda-cleaning-and-restoration,S8001,yes,59,1,0,0,,,,,insufficient,69,253500,10.25,Carpet and Upholstery Cleaning Services,2026-09-30
+Vom Fass,vom-fass,,no,12,5,12,5,41.7,19.3,68.0,22.1,limited,0,,,All Other Specialty Food Stores,2026-09-30
+Voodoo Brewery,voodoo-brewery,,no,29,1,0,0,,,,,insufficient,37,574500,10.25,Full-Service Restaurants,2026-09-30
+"W. Douglass Distributing, Ltd. - Complete Contract of Sale (Branded",w-douglass-distributing-ltd-complete-contract-of-sale-branded,,no,11,0,10,0,0.0,0.0,27.8,0.0,limited,1,429000,6.75,Gasoline Stations with Convenience Stores,2026-09-30
+WaBa Grill,waba-grill,S1899,yes,14,0,11,0,0.0,0.0,25.9,0.0,limited,4,375500,8.88,Limited-Service Restaurants,2026-09-30
+Waba Grill Teriyaki House,waba-grill-teriyaki-house,,no,25,0,25,0,0.0,0.0,13.3,0.0,limited,0,,,Limited-Service Restaurants,2026-09-30
+Wallaby Windows,wallaby-windows,S7672,yes,9,1,0,0,,,,,insufficient,11,219300,11.25,Glass and Glazing Contractors,2026-09-30
+WaterStation,waterstation,,no,138,3,132,3,2.3,0.8,6.5,0.5,rated,6,468350,6.0,Vending Machine Operators,2026-09-30
+WaveMAX Laundry,wavemax-laundry,S2407,yes,29,0,12,0,0.0,0.0,24.2,0.0,limited,18,763000,8.75,Coin-Operated Laundries and Drycleaners,2026-09-30
+Waxing the City,waxing-the-city,S1905,yes,108,8,51,6,11.8,5.5,23.4,7.2,rated,72,435400,10.0,Other Personal Care Services,2026-09-30
+Wayback Burgers,wayback-burgers,S1906,yes,44,6,17,5,29.4,13.3,53.1,19.1,limited,33,441150,10.5,Limited-Service Restaurants,2026-09-30
+We Rock The Spectrum Kid's Gym For All K,we-rock-the-spectrum-kids-gym-for-all-k,,no,20,5,16,3,18.8,6.6,43.0,18.0,limited,0,,,Fitness and Recreational Sports Centers,2026-09-30
+Weed Man,weed-man,S1911,yes,14,0,10,0,0.0,0.0,27.8,0.0,limited,4,115750,5.25,Landscaping Services,2026-09-30
+Wendy's,wendys,S1914,yes,102,1,32,0,0.0,0.0,10.7,0.0,rated,15,673000,9.25,Limited-Service Restaurants,2026-09-30
+West Coast Sourdough Deli,west-coast-sourdough-deli,,no,8,0,0,0,,,,,insufficient,10,343100,10.25,Limited-Service Restaurants,2026-09-30
+Western Sizzlin Steak House,western-sizzlin-steak-house,,no,31,6,3,0,,,,,insufficient,0,,,Full-Service Restaurants,2026-09-30
+Wetzel's Pretzel,wetzels-pretzel,,no,51,14,2,0,,,,,insufficient,0,,,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Wetzel's Pretzels,wetzels-pretzels,S1916,yes,92,2,49,2,4.1,1.1,13.7,2.2,rated,50,461650,9.5,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Which Wich,which-wich,S1917,yes,182,34,150,30,20.0,14.4,27.1,12.8,rated,3,300000,10.25,Limited-Service Restaurants,2026-09-30
+Whit's Frozen Custard,whits-frozen-custard,S1919,yes,26,0,13,0,0.0,0.0,22.8,0.0,limited,18,289000,9.5,Limited-Service Restaurants,2026-09-30
+Wicks 'N' Sticks,wicks-n-sticks,,no,59,19,0,0,,,,,insufficient,0,,,"Gift, Novelty, and Souvenir Stores",2026-09-30
+Wienerschnitzel,wienerschnitzel,S1922,yes,84,17,14,1,7.1,1.3,31.5,3.5,limited,7,786000,9.25,Limited-Service Restaurants,2026-09-30
+Wienerschnitzel / Der Wienerschnitzel,wienerschnitzel-der-wienerschnitzel,,no,13,0,12,0,0.0,0.0,24.2,0.0,limited,0,,,Limited-Service Restaurants,2026-09-30
+Wild Birds Unlimited,wild-birds-unlimited,S1925,yes,152,4,53,1,1.9,0.3,9.9,0.5,rated,38,327500,9.0,Pet and Pet Supplies Stores,2026-09-30
+"Wilson Oil, Inc. (Multi-Brand) Contract of Sale (Branded) Dealer Operating Agreement",wilson-oil-inc-multi-brand-contract-of-sale-branded-dealer-operating-agreement,S3307,yes,32,0,15,0,0.0,0.0,20.4,0.0,limited,20,2999500,7.5,Gasoline Stations with Convenience Stores,2026-09-30
+WIN Home Inspection,win-home-inspection,S1885,yes,16,1,13,1,7.7,1.4,33.3,8.1,limited,4,100000,10.25,Building Inspection Services,2026-09-30
+Window Genie,window-genie,S1931,yes,119,37,81,33,40.7,30.7,51.6,30.4,rated,38,150000,10.25,Janitorial Services,2026-09-30
+Window Hero,window-hero,S4509,yes,11,0,1,0,,,,,insufficient,15,150000,10.0,Other Services to Buildings and Dwellings,2026-09-30
+Window World,window-world,S2308,yes,29,0,14,0,0.0,0.0,21.5,0.0,limited,15,679000,7.25,Finish Carpentry Contractors,2026-09-30
+Wine & design,wine-and-design,S1932,yes,12,2,10,2,20.0,5.7,51.0,14.5,limited,2,129500,8.25,Fine Arts Schools,2026-09-30
+Winestyles Tasting Station,winestyles-tasting-station,S2309,yes,35,11,4,0,,,,,insufficient,4,285000,7.75,"Beer, Wine, and Liquor Stores",2026-09-30
+Wing Snob,wing-snob,S3682,yes,24,0,1,0,,,,,insufficient,26,360000,10.25,Limited-Service Restaurants,2026-09-30
+Wing Zone,wing-zone,,no,70,28,13,2,15.4,4.3,42.2,5.7,limited,8,621500,8.0,Limited-Service Restaurants,2026-09-30
+Wingate by Wyndham,wingate-by-wyndham,S1938,yes,40,1,17,1,5.9,1.0,27.0,2.1,limited,25,4800000,8.25,Hotels (except Casino Hotels) and Motels,2026-09-30
+Wingate Inns/Wingate Inns & Suites,wingate-inns-wingate-inns-and-suites,,no,12,0,12,0,0.0,0.0,24.2,0.0,limited,0,,,Hotels (except Casino Hotels) and Motels,2026-09-30
+Wings Etc.,wings-etc,,no,33,4,19,4,21.1,8.5,43.3,13.5,limited,0,,,Full-Service Restaurants,2026-09-30
+Wings Etc. Grill & Pub and Wings Etc. 2Go,wings-etc-grill-and-pub-and-wings-etc-2go,S1939,yes,20,1,18,1,5.6,1.0,25.8,2.6,limited,2,974000,9.12,Full-Service Restaurants,2026-09-30
+Wings to Go,wings-to-go,,no,44,18,0,0,,,,,insufficient,0,,,Limited-Service Restaurants,2026-09-30
+Wingstop,wingstop,,no,428,32,168,0,0.0,0.0,2.2,0.0,rated,15,570000,8.04,Limited-Service Restaurants,2026-09-30
+Wireless Toyz,wireless-toyz,,no,32,21,0,0,,,,,insufficient,0,,,"""Radio, Television, and Other Electronics Stores""",2026-09-30
+Wireless Zone,wireless-zone,S1941,yes,35,11,30,11,36.7,21.9,54.5,22.2,rated,3,495000,8.25,Electronics Stores,2026-09-30
+WNB Factory,wnb-factory,S3615,yes,17,1,4,0,,,,,insufficient,19,417500,8.75,Limited-Service Restaurants,2026-09-30
+Woodcraft,woodcraft,S1945,yes,80,9,26,0,0.0,0.0,12.9,0.0,limited,3,350000,8.5,Hardware Stores,2026-09-30
+Woodhouse Day Spa,woodhouse-day-spa,S1789,yes,55,0,42,0,0.0,0.0,8.4,0.0,rated,14,1996500,9.38,Other Personal Care Services,2026-09-30
+Woof Gang Bakery and Grooming,woof-gang-bakery-and-grooming,S1946,yes,105,0,15,0,0.0,0.0,20.4,0.0,limited,124,309000,10.0,Pet Care (except Veterinary) Services,2026-09-30
+Woofie's,woofies,S3803,yes,22,0,0,0,,,,,insufficient,28,195650,10.12,Pet Care (except Veterinary) Services,2026-09-30
+Workout Anytime,workout-anytime,S1947,yes,56,3,37,3,8.1,2.8,21.3,4.2,rated,21,753700,9.87,Fitness and Recreational Sports Centers,2026-09-30
+"World Fuel Services, Inc. Fuel Supply Agreement",world-fuel-services-inc-fuel-supply-agreement,S6892,yes,9,0,0,0,,,,,insufficient,15,2010800,8.38,Gasoline Stations with Convenience Stores,2026-09-30
+"World Fuel Services, Inc Wholesale Supply Agreement",world-fuel-services-inc-wholesale-supply-agreement,,no,42,0,27,0,0.0,0.0,12.5,0.0,limited,21,1398650,8.38,Gasoline Stations with Convenience Stores,2026-09-30
+World Fuel Services Inc. - Wholesale Supply Agreement,world-fuel-services-inc-wholesale-supply-agreement-s3105,S3105,yes,37,0,22,0,0.0,0.0,14.9,0.0,limited,18,1360000,8.0,Gasoline Stations with Convenience Stores,2026-09-30
+World Gym,world-gym,S1948,yes,64,15,8,0,,,,,insufficient,3,196000,10.75,Fitness and Recreational Sports Centers,2026-09-30
+World of Beer,world-of-beer,,no,26,4,26,4,15.4,6.2,33.5,4.9,limited,1,,,Drinking Places (Alcoholic Beverages),2026-09-30
+World of Sourdough,world-of-sourdough,,no,11,1,0,0,,,,,insufficient,11,305000,11.25,Limited-Service Restaurants,2026-09-30
+Wow 1 Day Painting,wow-1-day-painting,S1951,yes,16,1,11,1,9.1,1.6,37.7,12.3,limited,6,65000,11.0,Painting and Wall Covering Contractors,2026-09-30
+Wow Cafe and Wingery,wow-cafe-and-wingery,,no,30,15,1,1,,,,,insufficient,0,,,Full-Service Restaurants,2026-09-30
+Wrap City,wrap-city,,no,14,0,4,0,,,,,insufficient,10,143000,7.5,Limited-Service Restaurants,2026-09-30
+WSI,wsi,S1898,yes,14,0,8,0,,,,,insufficient,10,150000,10.25,Marketing Consulting Services,2026-09-30
+Wyndham Garden,wyndham-garden,S2509,yes,9,0,1,0,,,,,insufficient,10,5000000,7.75,Hotels (except Casino Hotels) and Motels,2026-09-30
+Wyndham Hotels & Resorts,wyndham-hotels-and-resorts,,no,12,0,12,0,0.0,0.0,24.2,0.0,limited,0,,,Hotels (except Casino Hotels) and Motels,2026-09-30
+X-Golf,x-golf,S1953,yes,136,2,63,1,1.6,0.3,8.5,0.2,rated,95,929000,10.0,All Other Amusement and Recreation Industries,2026-09-30
+Yoga Six,yoga-six,S3834,yes,47,2,28,2,7.1,2.0,22.6,4.7,limited,23,568000,9.0,Fitness and Recreational Sports Centers,2026-09-30
+YogaSix,yogasix,,no,79,5,36,3,8.3,2.9,21.8,5.4,rated,46,482600,10.0,Fitness and Recreational Sports Centers,2026-09-30
+Yogen Fruz,yogen-fruz,,no,18,2,13,1,7.7,1.4,33.3,7.0,limited,0,,,Limited-Service Restaurants,2026-09-30
+Yogi Bear's Jellystone Park Camp-Resorts,yogi-bears-jellystone-park-camp-resorts,,no,14,0,14,0,0.0,0.0,21.5,0.0,limited,0,,,RV (Recreational Vehicle) Parks and Campgrounds,2026-09-30
+Yogurtland,yogurtland,S1972,yes,70,5,62,5,8.1,3.5,17.5,6.9,rated,6,618000,7.95,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Your Pie,your-pie,,no,39,4,34,4,11.8,4.7,26.6,5.8,rated,6,605850,9.75,Limited-Service Restaurants,2026-09-30
+Youthland Academy,youthland-academy,,no,16,1,12,0,0.0,0.0,24.2,0.0,limited,0,,,Child Day Care Services,2026-09-30
+You've Got MAIDS,youve-got-maids,,no,14,1,11,1,9.1,1.6,37.7,6.2,limited,3,92000,5.5,Janitorial Services,2026-09-30
+Zaxby's,zaxbys,S1986,yes,177,10,78,2,2.6,0.7,8.9,0.5,rated,44,1481400,8.25,Limited-Service Restaurants,2026-09-30
+Zeppe's Pizzeria,zeppes-pizzeria,,no,35,1,1,0,,,,,insufficient,3,134000,6.0,Full-Service Restaurants,2026-09-30
+Ziebart Corporation,ziebart-corporation,S1989,yes,25,2,16,2,12.5,3.5,36.0,5.3,limited,11,377500,9.5,Automotive Parts and Accessories Stores,2026-09-30
+Ziggi's Coffee,ziggis-coffee,S1990,yes,54,0,14,0,0.0,0.0,21.5,0.0,limited,47,754300,8.75,Snack and Nonalcoholic Beverage Bars,2026-09-30
+Zippy Shell,zippy-shell,,no,28,2,28,2,7.1,2.0,22.6,3.2,limited,0,,,Lessors of Miniwarehouses and Self-Storage Units,2026-09-30
+Zivel,zivel,,no,10,0,0,0,,,,,insufficient,11,240000,10.75,Other Personal Care Services,2026-09-30
+Zoom Drain,zoom-drain,S4045,yes,35,1,0,0,,,,,insufficient,42,292000,10.75,"Plumbing, Heating, and Air-Conditioning Contractors",2026-09-30
+Zoom Room,zoom-room,S1994,yes,47,4,7,2,,,,,insufficient,45,299000,9.0,Pet Care (except Veterinary) Services,2026-09-30
+Zoomin Groomin,zoomin-groomin,S6564,yes,15,0,0,0,,,,,insufficient,16,132850,10.5,Pet Care (except Veterinary) Services,2026-09-30
+Zoup!,zoup,S1997,yes,87,15,71,15,21.1,13.2,32.0,13.1,rated,5,403000,11.0,Limited-Service Restaurants,2026-09-30

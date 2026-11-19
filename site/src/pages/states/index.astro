@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import TableTools from '../../components/TableTools.astro';
+import { states, asof, activityFrom, seasonedFrom, seasonedTo } from '../../lib/data';
+import { url } from '../../lib/site';
+import { fmtInt, fmtUsd, fmtRate, fmtDate, fyRange } from '../../lib/format';
+const list = [...states].sort((a, b) => b.loans - a.loans);
+---
+<Base title="SBA franchise loans by state" description={`Franchise-coded SBA 7(a) lending in ${states.length} states: loan counts since FY${activityFrom}, charge-off rates, the most-financed franchise brands and the most active lenders. Data as of ${fmtDate(asof)}.`} crumbs={[{ name: 'States' }]}>
+  <h1>SBA franchise loans by state</h1>
+  <p class="lede">Where franchise-coded SBA 7(a) loans were made since FY{activityFrom}, with each state's most-financed brands and most active lenders.</p>
+  <div class="table-wrap"><table id="state-table" data-table>
+    <thead><tr><th data-sort="name" data-type="text">State</th><th data-sort="loans" data-first="desc" aria-sort="descending">Franchise loans</th><th data-sort="gross" data-first="desc">Total approved</th><th data-sort="brands" data-first="desc">Brands</th><th data-sort="rate">Charged off, {fyRange(seasonedFrom, seasonedTo)}</th></tr></thead>
+    <tbody>{list.map((s) => <tr data-name={s.name.toLowerCase()} data-loans={s.loans} data-gross={s.gross} data-brands={s.brands_count} data-rate={s.seasoned.rate?.pct ?? ''}><td><a href={url(`/states/${s.slug}/`)}>{s.name}</a></td><td>{fmtInt(s.loans)}</td><td>{fmtUsd(s.gross)}</td><td>{fmtInt(s.brands_count)}</td><td>{fmtRate(s.seasoned.rate)}</td></tr>)}</tbody>
+  </table></div>
+  <TableTools />
+</Base>

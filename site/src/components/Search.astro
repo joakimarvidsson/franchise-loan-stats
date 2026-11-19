@@ -1,0 +1,52 @@
+---
+import { url } from '../lib/site';
+interface Props { placeholder?: string; autofocus?: boolean; }
+const { placeholder = 'Search a franchise brand, e.g. Subway', autofocus = false } = Astro.props;
+---
+<div class="search" data-search data-index={url('/data/brands-index.json')} data-base={url('/brands/')}>
+  <label class="skip" for="brand-search">Search franchise brands</label>
+  <input id="brand-search" type="search" placeholder={placeholder} autocomplete="off" autofocus={autofocus} aria-controls="brand-search-results" />
+  <div id="brand-search-results" class="search-results" role="listbox" hidden></div>
+</div>
+<script is:inline>
+  (function () {
+    var box = document.querySelector('[data-search]');
+    if (!box) return;
+    var input = box.querySelector('input'), out = box.querySelector('.search-results');
+    var rows = null, loading = false, sel = -1, sent = false;
+    function norm(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim(); }
+    function load(cb) {
+      if (rows) return cb();
+      if (loading) return;
+      loading = true;
+      fetch(box.dataset.index).then(function (r) { return r.json(); }).then(function (d) {
+        rows = d.map(function (b) { b.q = norm(b.n); return b; }); cb();
+      });
+    }
+    function render() {
+      var q = norm(input.value);
+      if (q.length < 2) { out.hidden = true; out.innerHTML = ''; return; }
+      var hits = rows.filter(function (b) { return b.q.indexOf(q) !== -1; })
+        .sort(function (a, b) { return (b.q.indexOf(q) === 0) - (a.q.indexOf(q) === 0) || b.ad - a.ad; }).slice(0, 12);
+      sel = -1;
+      out.innerHTML = hits.length ? hits.map(function (b) {
+        var meta = b.r && b.t === 'rated' ? b.r.pct.toFixed(1) + '% charged off' : b.ad.toLocaleString('en-US') + ' loans';
+        return '<a role="option" href="' + box.dataset.base + b.s + '/"><span>' + b.n.replace(/</g, '&lt;') + '</span><span class="meta">' + meta + '</span></a>';
+      }).join('') : '<a href="' + box.dataset.base + '"><span>No brand matches. Browse all brands</span></a>';
+      out.hidden = false;
+      if (!sent && window.posthog) { sent = true; posthog.capture('brand_search_used'); }
+    }
+    input.addEventListener('focus', function () { load(function () {}); });
+    input.addEventListener('input', function () { load(render); });
+    input.addEventListener('keydown', function (e) {
+      var links = out.querySelectorAll('a');
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        sel = (sel + (e.key === 'ArrowDown' ? 1 : -1) + links.length) % links.length;
+        links.forEach(function (a, i) { a.classList.toggle('on', i === sel); });
+      } else if (e.key === 'Enter' && links.length) { location.href = links[Math.max(sel, 0)].href; }
+      else if (e.key === 'Escape') { out.hidden = true; }
+    });
+    document.addEventListener('click', function (e) { if (!box.contains(e.target)) out.hidden = true; });
+  })();
+</script>

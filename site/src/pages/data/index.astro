@@ -1,0 +1,43 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE, url } from '../../lib/site';
+import { brands, manifest, asof, changes, summary } from '../../lib/data';
+import { fmtInt, fmtDate } from '../../lib/format';
+const loans = manifest.sources.loans;
+---
+<Base title="Download the data" description={`Free CSV of SBA 7(a) loan outcomes for ${fmtInt(brands.length)} franchise brands: loan counts, charge-off rates with confidence intervals, typical loan size. Public-domain source data as of ${fmtDate(asof)}.`} crumbs={[{ name: 'Data' }]}>
+  <div class="prose">
+    <h1>Download the data</h1>
+    <p class="lede">The full brand table, free to reuse.</p>
+    <p><a class="btn" href={url('/data/franchise-loan-stats-brands.csv')} data-ev="csv_download" download>Download brands CSV ({fmtInt(brands.length)} brands)</a></p>
+    <h2>Terms</h2>
+    <p>The underlying SBA files are U.S. Government works in the public domain. Our derived table is released under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: use it for any purpose, including commercially, with credit and a link to <strong>Franchise Loan Stats</strong> ({new URL(url('/'), Astro.site).href}).</p>
+    <h2>Columns</h2>
+    <ul>
+      <li><code>brand</code>, <code>slug</code>, <code>sba_directory_code</code>, <code>on_sba_directory</code></li>
+      <li><code>all_time_disbursed_loans</code>, <code>all_time_charged_off_loans</code></li>
+      <li><code>seasoned_…_disbursed_loans</code>, <code>seasoned_…_charged_off_loans</code>: loans approved in FY{summary.windows.seasoned[0]}–FY{summary.windows.seasoned[1]}</li>
+      <li><code>seasoned_charge_off_rate_pct</code>, <code>rate_ci95_low_pct</code>, <code>rate_ci95_high_pct</code>: blank below {summary.thresholds.limited_min} loans</li>
+      <li><code>seasoned_charge_off_rate_by_dollars_pct</code>, <code>sample_tier</code> (rated, limited, insufficient)</li>
+      <li><code>recent_5fy_approved_loans</code>, <code>recent_median_loan_usd</code>, <code>recent_median_initial_rate_pct</code>, <code>primary_industry</code>, <code>data_as_of</code></li>
+    </ul>
+    <p>Definitions are on the <a href={url('/methodology/')}>methodology page</a>. The code that produces the file is in the <a href={SITE.repo}>public repository</a>.</p>
+    <h2>Current release</h2>
+    <ul>
+      <li>SBA data date: {fmtDate(asof)}. Built {fmtDate(manifest.built_at)}.</li>
+      {loans.map((f: any) => <li>{f.url ? <a href={f.url}>{f.name}</a> : f.name} ({fmtInt(Math.round(f.bytes / 1e6))} MB)</li>)}
+      <li>{manifest.sources.directory.url ? <a href={manifest.sources.directory.url}>{manifest.sources.directory.name}</a> : manifest.sources.directory.name}</li>
+    </ul>
+    {changes && changes.from && (
+      <>
+        <h2>Changes since {fmtDate(changes.from)}</h2>
+        <p>{fmtInt(changes.new_brands.length)} brands added; {fmtInt(changes.newly_rated.length)} newly rated; new charge-offs recorded for {fmtInt(changes.new_chargeoffs.length)} brands.</p>
+        {changes.new_chargeoffs.length > 0 && (
+          <ul>{changes.new_chargeoffs.slice(0, 25).map((c: any) => <li><a href={url(`/brands/${c.slug}/`)}>{c.name}</a>: +{c.added} (total {fmtInt(c.total)})</li>)}</ul>
+        )}
+      </>
+    )}
+    <h2>Citing</h2>
+    <p>Franchise Loan Stats, "SBA 7(a) loan outcomes by franchise brand", data as of {fmtDate(asof)}, computed from U.S. Small Business Administration 7(a) FOIA loan data.</p>
+  </div>
+</Base>
