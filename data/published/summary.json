@@ -54,7 +54,7 @@
   "brand_pages": 1357,
   "brands_rated": 333,
   "brands_with_loans": 7005,
-  "directory_brands": 2617,
+  "directory_brands": 2657,
   "industry_pages": 347,
   "lender_pages": 170,
   "loans_franchise": 157028,
@@ -63,6 +63,138 @@
   "unparsed_rows": 0
  },
  "directory_recent": [
+  {
+   "code": "S9080",
+   "listed_since": "2026-11-18",
+   "name": "Cedar Pest Control",
+   "slug": null
+  },
+  {
+   "code": "S9070",
+   "listed_since": "2026-11-18",
+   "name": "Dooley's Petroleum, Inc - Petroleum Product Unbranded Supply Agreement",
+   "slug": null
+  },
+  {
+   "code": "S9076",
+   "listed_since": "2026-11-18",
+   "name": "Exclusively Cabinets by Cabinetek",
+   "slug": null
+  },
+  {
+   "code": "S9087",
+   "listed_since": "2026-11-18",
+   "name": "Joe the Home Pro - License Agreement",
+   "slug": null
+  },
+  {
+   "code": "S9079",
+   "listed_since": "2026-11-18",
+   "name": "LandJet",
+   "slug": null
+  },
+  {
+   "code": "S9075",
+   "listed_since": "2026-11-18",
+   "name": "Liqua-Roof",
+   "slug": null
+  },
+  {
+   "code": "S9077",
+   "listed_since": "2026-11-18",
+   "name": "Moto Morini Motorcycles- Dealer Agreement",
+   "slug": null
+  },
+  {
+   "code": "S9068",
+   "listed_since": "2026-11-18",
+   "name": "Palm Berries",
+   "slug": null
+  },
+  {
+   "code": "S9081",
+   "listed_since": "2026-11-18",
+   "name": "Petite Pups",
+   "slug": null
+  },
+  {
+   "code": "S9073",
+   "listed_since": "2026-11-18",
+   "name": "Prince St. Pizza",
+   "slug": null
+  },
+  {
+   "code": "S9069",
+   "listed_since": "2026-11-18",
+   "name": "Puppy Dreams - License Agreement",
+   "slug": null
+  },
+  {
+   "code": "S9074",
+   "listed_since": "2026-11-18",
+   "name": "PWRBLD",
+   "slug": null
+  },
+  {
+   "code": "S9071",
+   "listed_since": "2026-11-18",
+   "name": "Rogers Petroleum, Inc. (Exxon) Complete Contract of Sale (Branded)",
+   "slug": null
+  },
+  {
+   "code": "S9078",
+   "listed_since": "2026-11-18",
+   "name": "Royal Enfield North America Limited - Dealer Agreement",
+   "slug": null
+  },
+  {
+   "code": "S9082",
+   "listed_since": "2026-11-18",
+   "name": "Smooth Transitions",
+   "slug": null
+  },
+  {
+   "code": "S9072",
+   "listed_since": "2026-11-18",
+   "name": "Spherion",
+   "slug": null
+  },
+  {
+   "code": "S9083",
+   "listed_since": "2026-11-18",
+   "name": "Sunrise Shack",
+   "slug": null
+  },
+  {
+   "code": "S9067",
+   "listed_since": "2026-11-18",
+   "name": "Tommy Pollina Lanscape Co.",
+   "slug": null
+  },
+  {
+   "code": "S9085",
+   "listed_since": "2026-11-18",
+   "name": "Triangle Fuel Inc. (Multi-Brand) Wholesale Supply Agreement",
+   "slug": null
+  },
+  {
+   "code": "S9066",
+   "listed_since": "2026-11-18",
+   "name": "Waggles",
+   "slug": null
+  },
+  {
+   "code": "S9084",
+   "listed_since": "2026-11-18",
+   "name": "Walk Thru Plans",
+   "slug": null
+  },
+  {
+   "code": "S9086",
+   "listed_since": "2026-11-18",
+   "name": "Woofbeach",
+   "slug": null
+  },
   {
    "code": "S9055",
    "listed_since": "2026-11-10",
@@ -289,138 +421,6 @@
    "code": "S8996",
    "listed_since": "2026-10-23",
    "name": "Dizzy Bird",
-   "slug": null
-  },
-  {
-   "code": "S9016",
-   "listed_since": "2026-10-23",
-   "name": "Dogs & Cream",
-   "slug": null
-  },
-  {
-   "code": "S8998",
-   "listed_since": "2026-10-23",
-   "name": "Driving Academy",
-   "slug": null
-  },
-  {
-   "code": "S9002",
-   "listed_since": "2026-10-23",
-   "name": "Fit Body Forever",
-   "slug": null
-  },
-  {
-   "code": "S9027",
-   "listed_since": "2026-10-23",
-   "name": "Froggy's Sandwiches",
-   "slug": null
-  },
-  {
-   "code": "S9015",
-   "listed_since": "2026-10-23",
-   "name": "Hey Yogurt",
-   "slug": null
-  },
-  {
-   "code": "S9000",
-   "listed_since": "2026-10-23",
-   "name": "Housebar",
-   "slug": null
-  },
-  {
-   "code": "S9025",
-   "listed_since": "2026-10-23",
-   "name": "Infinite Hitting Clubhouse",
-   "slug": null
-  },
-  {
-   "code": "S9018",
-   "listed_since": "2026-10-23",
-   "name": "King of Fire",
-   "slug": null
-  },
-  {
-   "code": "S8997",
-   "listed_since": "2026-10-23",
-   "name": "Nashville Coop",
-   "slug": null
-  },
-  {
-   "code": "S9006",
-   "listed_since": "2026-10-23",
-   "name": "OHSO Brewery",
-   "slug": null
-  },
-  {
-   "code": "S9005",
-   "listed_since": "2026-10-23",
-   "name": "ONYX Pilates",
-   "slug": null
-  },
-  {
-   "code": "S9023",
-   "listed_since": "2026-10-23",
-   "name": "Pilates Addiction",
-   "slug": null
-  },
-  {
-   "code": "S9022",
-   "listed_since": "2026-10-23",
-   "name": "Preserve Services",
-   "slug": null
-  },
-  {
-   "code": "S9010",
-   "listed_since": "2026-10-23",
-   "name": "Ranger Joe's Pizza",
-   "slug": null
-  },
-  {
-   "code": "S9013",
-   "listed_since": "2026-10-23",
-   "name": "MAX",
-   "slug": null
-  },
-  {
-   "code": "S9014",
-   "listed_since": "2026-10-23",
-   "name": "MAX Integrated Regions",
-   "slug": null
-  },
-  {
-   "code": "S9020",
-   "listed_since": "2026-10-23",
-   "name": "MAX of Southeastern Michigan",
-   "slug": null
-  },
-  {
-   "code": "S9021",
-   "listed_since": "2026-10-23",
-   "name": "MAX Regional Services",
-   "slug": null
-  },
-  {
-   "code": "S9009",
-   "listed_since": "2026-10-23",
-   "name": "Roctaco",
-   "slug": null
-  },
-  {
-   "code": "S9017",
-   "listed_since": "2026-10-23",
-   "name": "Sandri Energy, LLC – (Sunoco) – Fuel Supply Agreement",
-   "slug": null
-  },
-  {
-   "code": "S9024",
-   "listed_since": "2026-10-23",
-   "name": "Sapphira Med Spa",
-   "slug": null
-  },
-  {
-   "code": "S9011",
-   "listed_since": "2026-10-23",
-   "name": "Schoop's Hamburgers",
    "slug": null
   }
  ],

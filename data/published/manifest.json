@@ -1,11 +1,11 @@
 {
  "asof": "2026-09-30",
- "built_at": "2026-11-19T08:46:22Z",
+ "built_at": "2026-11-19T21:43:10Z",
  "counts": {
   "brand_pages": 1357,
   "brands_rated": 333,
   "brands_with_loans": 7005,
-  "directory_brands": 2617,
+  "directory_brands": 2657,
   "industry_pages": 347,
   "lender_pages": 170,
   "loans_franchise": 157028,
@@ -15,9 +15,9 @@
  },
  "fingerprint": {
   "directory": [
-   "Franchise Directory Nov 10 2026_REM01.xlsx",
-   296650,
-   "486ca-66015f1f219b8"
+   "Franchise Directory Nov 17 2026_REM01.xlsx",
+   299870,
+   "4935e-660a21705f9e0"
   ],
   "loans": [
    [
@@ -48,11 +48,11 @@
  },
  "sources": {
   "directory": {
-   "bytes": 296650,
-   "etag": "486ca-66015f1f219b8",
-   "last_modified": "Thu, 12 Nov 2026 15:27:10 GMT",
-   "name": "Franchise Directory Nov 10 2026_REM01.xlsx",
-   "url": "https://legacy.sba.gov/sites/default/files/2026-11/Franchise%20Directory%20Nov%2010%202026_REM01.xlsx"
+   "bytes": 299870,
+   "etag": "4935e-660a21705f9e0",
+   "last_modified": "Thu, 19 Nov 2026 14:39:07 GMT",
+   "name": "Franchise Directory Nov 17 2026_REM01.xlsx",
+   "url": "https://legacy.sba.gov/sites/default/files/2026-11/Franchise%20Directory%20Nov%2017%202026_REM01.xlsx"
   },
   "directory_landing": "https://www.sba.gov/document/support-sba-franchise-directory",
   "loans": [
