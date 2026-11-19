@@ -1,1 +1,2 @@
 {"allow_shift": false, "asof": "2026-09-30", "at": "2026-11-19T08:46:03Z", "changed": false, "counts": {"brand_pages": 1357, "brands_rated": 333, "brands_with_loans": 7005, "directory_brands": 2617, "industry_pages": 347, "lender_pages": 170, "loans_franchise": 157028, "loans_total": 1976761, "state_pages": 51, "unparsed_rows": 0}, "mode": "refresh", "new_brands": 0, "new_chargeoffs": 0, "result": "published", "seconds": 19.7}
+{"asof": "2026-09-30", "at": "2026-11-19T08:49:49Z", "changed": false, "mode": "refresh", "result": "unchanged", "seconds": 1.6}
