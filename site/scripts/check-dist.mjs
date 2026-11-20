@@ -25,9 +25,17 @@ const exists = (href) => {
 const titles = new Map();
 const descs = new Map();
 let links = 0;
+let redirects = 0;
 for (const p of pages) {
   const html = fs.readFileSync(p, 'utf-8');
   const rel = path.relative(dist, p);
+  // Redirect stubs (retired brand slugs) carry no content; check only that their target exists.
+  const refresh = html.match(/<meta http-equiv="refresh" content="\d+;url=([^"]+)"/i);
+  if (refresh) {
+    redirects++;
+    if (exists(refresh[1]) !== true) errors.push(`${rel}: redirect to missing page ${refresh[1]}`);
+    continue;
+  }
   const title = (html.match(/<title>([^<]*)<\/title>/) || [])[1];
   const desc = (html.match(/<meta name="description" content="([^"]*)"/) || [])[1];
   const canon = (html.match(/<link rel="canonical" href="([^"]*)"/) || [])[1];
@@ -58,11 +66,11 @@ for (const [d, ps] of descs) if (ps.length > 1) errors.push(`duplicate descripti
 for (const f of ['sitemap-index.xml', 'robots.txt', 'data/brands-index.json', 'data/franchise-loan-stats-brands.csv', 'favicon.svg', 'og.png', '404.html']) {
   if (!fs.existsSync(path.join(dist, f))) errors.push(`missing ${f}`);
 }
-if (pages.length < 1500) errors.push(`only ${pages.length} pages built`);
+if (pages.length - redirects < 1500) errors.push(`only ${pages.length - redirects} content pages built`);
 
 if (errors.length) {
   console.error(`check-dist: ${errors.length} problem(s)`);
   for (const e of errors.slice(0, 60)) console.error(' - ' + e);
   process.exit(1);
 }
-console.log(`check-dist: ok — ${pages.length} pages, ${links} internal links verified`);
+console.log(`check-dist: ok — ${pages.length - redirects} pages, ${redirects} redirects, ${links} internal links verified`);

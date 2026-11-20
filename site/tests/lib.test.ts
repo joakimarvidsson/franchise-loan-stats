@@ -81,3 +81,27 @@ describe('claims are only as strong as the data', () => {
     expect(brandDescription(b)).not.toContain('%');
   });
 });
+
+import { rateChartSvg } from '../src/lib/chart';
+describe('embeddable chart', () => {
+  const rows = [
+    { label: 'Brand <A> & "B"', rate: { pct: 12.5, lo: 8, hi: 18 }, n: 40, me: true },
+    { label: 'No rate', rate: null, n: 3 },
+    { label: 'Benchmark', rate: { pct: 6, lo: 5.5, hi: 6.5 }, n: 1000, note: 'whole industry' },
+  ];
+  const { svg, height } = rateChartSvg({ title: 'Test chart', rows, source: 'Source: example' });
+  it('skips rows without a rate and sizes to the rows shown', () => {
+    expect(svg).not.toContain('No rate');
+    expect(height).toBe(48 + 2 * 36 + 46);
+  });
+  it('escapes labels and prints each rate', () => {
+    expect(svg).toContain('Brand &lt;A&gt; &amp; &quot;B&quot;');
+    expect(svg).toContain('12.5%');
+    expect(svg).toContain('6.0%');
+    expect(svg).toContain('1,000 loans · whole industry');
+  });
+  it('is a standalone SVG document', () => {
+    expect(svg.startsWith('<svg xmlns="http://www.w3.org/2000/svg"')).toBe(true);
+    expect(svg).not.toMatch(/undefined|NaN/);
+  });
+});

@@ -6,6 +6,8 @@ import PartnerSlot from '../../components/PartnerSlot.astro';
 import { brands, brandBySlug, franchiseRate, summary, asof, stateByCode, activityFrom, manifest } from '../../lib/data';
 import { url } from '../../lib/site';
 import { fmtInt, fmtUsd, fmtUsdFull, fmtPct, fmtRate, fmtInterval, fmtDate, fyRange } from '../../lib/format';
+import { brandChart } from '../../lib/brandChart';
+import { SITE } from '../../lib/site';
 import { brandSummary, brandTitle, brandDescription, compareRates, comparePhrase, STATE_NAMES } from '../../lib/text';
 
 export function getStaticPaths() {
@@ -47,6 +49,13 @@ const faq = [
       : `No current SBA Franchise Directory entry matches this brand's loan records. Older brands, renamed systems and brands that stopped franchising commonly fall into this group.`,
   },
 ].filter(Boolean) as { q: string; a: string }[];
+const pageUrl = new URL(url(`/brands/${b.slug}/`), Astro.site).href;
+const citation = `${SITE.name}. "${b.name} franchise: SBA loan record." SBA 7(a) data as of ${fmtDate(asof)}. ${pageUrl}`;
+const chart = s.rate ? brandChart(b, new URL(Astro.site!).host) : null;
+const chartUrl = new URL(url(`/charts/${b.slug}.svg`), Astro.site).href;
+const embed = chart
+  ? `<a href="${pageUrl}"><img src="${chartUrl}" width="${chart.width}" height="${chart.height}" style="max-width:100%;height:auto" alt="${b.name.replace(/"/g, '&quot;')}: SBA loan charge-off rate compared with its industry and all franchise loans"></a><br><small>Source: <a href="${pageUrl}">${SITE.name}</a> (CC BY 4.0)</small>`
+  : '';
 const jsonLd = [
   {
     '@context': 'https://schema.org',
@@ -233,6 +242,35 @@ const jsonLd = [
   <div class="prose">
     {faq.map((f) => (<><h3>{f.q}</h3><p>{f.a}</p></>))}
   </div>
+
+  <h2>Cite or embed</h2>
+  <div class="cite">
+    <label for="cite-text">Citation</label>
+    <textarea id="cite-text" readonly rows="3">{citation}</textarea>
+    <button type="button" class="btn small" data-copy="cite-text" data-copy-ev="cite_copy">Copy citation</button>
+    {chart && (
+      <>
+        <label for="embed-code">Embed this chart on your site (free, with a link back)</label>
+        <img class="chart-preview" src={url(`/charts/${b.slug}.svg`)} width={chart.width} height={chart.height} loading="lazy" alt={`${b.name}: SBA loan charge-off rate compared with its industry and all franchise loans`} />
+        <textarea id="embed-code" readonly rows="4">{embed}</textarea>
+        <button type="button" class="btn small" data-copy="embed-code" data-copy-ev="embed_copy">Copy embed code</button>
+      </>
+    )}
+    <p class="small muted">Figures and chart are free to reuse under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> with credit and a link. The full table is on the <a href={url('/data/')}>data page</a>.</p>
+  </div>
+  <script is:inline>
+    document.addEventListener('click', function (ev) {
+      var btn = ev.target && ev.target.closest ? ev.target.closest('[data-copy]') : null;
+      if (!btn) return;
+      var el = document.getElementById(btn.getAttribute('data-copy'));
+      if (!el) return;
+      el.select();
+      var done = function () { var t = btn.textContent; btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = t; }, 1500); };
+      if (navigator.clipboard) navigator.clipboard.writeText(el.value).then(done, function () { document.execCommand('copy'); done(); });
+      else { document.execCommand('copy'); done(); }
+      if (window.posthog) window.posthog.capture(btn.getAttribute('data-copy-ev'));
+    });
+  </script>
 
   <h2>What these numbers do and do not mean</h2>
   <div class="note">
