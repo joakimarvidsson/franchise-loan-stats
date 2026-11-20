@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/Base.astro';
+import { summary, seasonedFrom, seasonedTo } from '../../lib/data';
+import { SITE, url } from '../../lib/site';
+import { fmtInt, fmtPct, fmtRate, fmtUsd, fyRange } from '../../lib/format';
+const f = summary.franchise.seasoned, n = summary.non_franchise.seasoned, t = summary.thresholds;
+const a = summary.all_7a.all;
+---
+<Base title="What an SBA charge-off rate means for a franchise buyer" description="What a charge-off is on an SBA 7(a) loan, how a brand's charge-off rate is calculated, why it is not a failure rate, and how to read it alongside confidence intervals before buying a franchise." crumbs={[{ name: 'Guides' }, { name: 'SBA charge-off rates' }]}>
+  <div class="prose">
+    <h1>What an SBA charge-off rate means for a franchise buyer</h1>
+    <p class="lede">Most franchise buyers who finance with an SBA 7(a) loan never see how loans to their brand turned out. This page explains what the SBA's records can and cannot say, and how to read the rates on this site.</p>
+
+    <h2>What a charge-off is</h2>
+    <p>A lender charges off an SBA 7(a) loan when it concludes the balance will not be repaid in full. The SBA's loan file marks the loan <em>CHGOFF</em> and records the amount written off. It is a statement about the loan, not about the business: a franchise can close without a charge-off (for example when the loan is sold with the location), and a loan can be charged off while the location carries on under a new owner.</p>
+
+    <h2>How the rate is calculated</h2>
+    <p>The charge-off rate is charged-off loans divided by disbursed loans. Across all {fmtInt(a.disbursed)} disbursed 7(a) loans since FY{a.first_fy}, {fmtInt(a.charged_off)} were charged off, {fmtRate(a.rate)}. For brand comparisons the site uses a <strong>seasoned cohort</strong>, loans approved in {fyRange(seasonedFrom, seasonedTo)}, because a loan approved in the last few years has not had time to reach a charge-off. Including recent loans would flatter every brand.</p>
+
+    <h2>Two ways to count</h2>
+    <p>By number of loans, {fmtInt(f.charged_off)} of {fmtInt(f.disbursed)} seasoned franchise loans were charged off ({fmtRate(f.rate)}, 95% interval {fmtPct(f.rate.lo)} to {fmtPct(f.rate.hi)}). By dollars, the charged-off amount was {fmtUsd(f.charged_off_amount)} of {fmtUsd(f.gross)} disbursed, {fmtPct(f.rate_dollar_pct)}. The dollar figure is much lower because many loans are partly repaid, and collateral recovered, before a charge-off. For comparison, seasoned loans to businesses with no franchise name in the file show {fmtRate(n.rate)} by number and {fmtPct(n.rate_dollar_pct)} by dollars. Not every franchisee is identifiable in the file, so treat that comparison as indicative, not as a measure of franchising against independent business.</p>
+
+    <h2>Why a brand's rate comes with an interval</h2>
+    <p>A brand with few loans can show a very high or very low rate by chance. Each rate on this site carries a 95% confidence interval: the range that the true rate plausibly sits in given the number of loans. A brand with 40 loans and no charge-offs still has an interval reaching about 9%. Brands need at least {t.rated_min} seasoned disbursed loans to be ranked; with {t.limited_min} to {t.rated_min - 1} the rate is shown with a warning, and below {t.limited_min} no rate is shown. Two brands are described as different only when their intervals do not overlap.</p>
+
+    <h2>What to do with it</h2>
+    <ul>
+      <li>Look at the number of loans first, then the rate, then the interval. A wide interval means the record says little.</li>
+      <li>Check that the brand matches what you are buying. Franchisors are sold, renamed and restructured, and a ten-year record can describe an earlier owner or earlier terms.</li>
+      <li>Use the rate as one question to put to the franchisor and to current franchisees, next to Item 19 and Item 20 of the Franchise Disclosure Document. It is not a verdict on any brand.</li>
+      <li>Ask your lender and an attorney who knows franchise law. Nothing on this site is financial or legal advice.</li>
+    </ul>
+
+    <h2>Where to go next</h2>
+    <p><a href={url('/brands/')}>Search brands</a>, see the <a href={url('/rankings/')}>rankings</a> of brands with enough loans, estimate a payment with the <a href={url('/calculator/')}>loan calculator</a>, or read the full <a href={url('/methodology/')}>methodology and limits</a>. The underlying <a href={url('/data/')}>data is free to download</a> and the <a href={SITE.repo}>code is open</a>. This site is independent and is not affiliated with or endorsed by the SBA.</p>
+  </div>
+</Base>

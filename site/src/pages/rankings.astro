@@ -26,5 +26,5 @@ const cols = (b: any) => ({ name: b.name, slug: b.slug, n: b.seasoned.disbursed,
     <thead><tr><th>Brand</th><th>Loans</th><th>Charged off</th><th>Rate</th><th>95% interval</th><th class="l">Industry</th></tr></thead>
     <tbody>{high.map(cols).map((b) => <tr><td><a href={url(`/brands/${b.slug}/`)}>{b.name}</a></td><td>{fmtInt(b.n)}</td><td>{fmtInt(b.co)}</td><td>{fmtRate(b.r)}</td><td class="muted">{fmtInterval(b.r)}</td><td class="l small">{b.ind}</td></tr>)}</tbody>
   </table></div>
-  <p class="small muted">A charge-off is a loan balance the SBA wrote off. It measures loan outcomes for borrowers who used SBA financing, not the health of every location. Some brands on the high list have since been sold, restructured or stopped franchising. <a href={url('/methodology/')}>Methodology and limits</a>.</p>
+  <p class="small muted">A charge-off is a loan balance the SBA wrote off. It measures loan outcomes for borrowers who used SBA financing, not the health of every location. Some brands on the high list have since been sold, restructured or stopped franchising. <a href={url('/guides/sba-charge-off-rate/')}>How to read a charge-off rate</a>. <a href={url('/methodology/')}>Methodology and limits</a>.</p>
 </Base>
