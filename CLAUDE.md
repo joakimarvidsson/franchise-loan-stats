@@ -1,6 +1,6 @@
 # Franchise Loan Stats — engineering guide
 
-Public site: https://joakimarvidsson.github.io/franchise-loan-stats/
+Public site: https://franchiseloanstats.com/ (GitHub Pages with a custom domain; DNS at Cloudflare, DNS-only records)
 This repository is public. Business strategy, partner contacts, financials and the task queue live in the
 private control repository `joakimarvidsson/freehold`. Never commit anything from there to this repo.
 
@@ -60,13 +60,14 @@ node scripts/smoke.mjs                       # checks production serves this che
 
 - Python 3.12, type hints, no pandas in the pipeline (DuckDB SQL plus plain Python).
 - Astro pages: one `<h1>`, unique title and description, breadcrumbs via the `crumbs` prop, internal links
-  through `url()` from `src/lib/site.ts` (the site is served under a base path until it has its own domain).
+  through `url()` from `src/lib/site.ts` (keeps links correct if the site is ever served under a base path).
 - `npm run check:dist` must pass: it fails on duplicate titles or descriptions, broken internal links,
   missing canonicals, rendered `undefined`/`NaN`, or fewer than 1,500 pages.
 - Work on a branch and open a pull request for anything beyond data refreshes and alias rows; CI must be
   green before merging. Commit messages: `data:`, `site:`, `pipeline:`, `ops:`, `docs:` prefixes.
-- Moving to a custom domain: set `SITE_URL` and `BASE_PATH=/` in the deploy workflow and update
-  `scripts/smoke.mjs`'s default. Nothing else hard-codes the address.
+- The address is the default in `site/astro.config.mjs`, `site/scripts/check-dist.mjs` (base path) and
+  `scripts/smoke.mjs`; `SITE_URL` and `BASE_PATH` override the first two. The custom domain itself is a
+  GitHub Pages repository setting, and DNS is at Cloudflare (apex A/AAAA and `www` CNAME, DNS-only).
 
 ## When something breaks
 

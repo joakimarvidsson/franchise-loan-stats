@@ -1,9 +1,9 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
-// Moving to a custom domain is two variables: SITE_URL=https://example.com BASE_PATH=/
-const site = process.env.SITE_URL || 'https://joakimarvidsson.github.io';
-const base = process.env.BASE_PATH ?? '/franchise-loan-stats';
+// The address lives here, in scripts/check-dist.mjs (base path) and in scripts/smoke.mjs. SITE_URL and BASE_PATH override it.
+const site = process.env.SITE_URL || 'https://franchiseloanstats.com';
+const base = process.env.BASE_PATH ?? '/';
 
 export default defineConfig({
   site,
