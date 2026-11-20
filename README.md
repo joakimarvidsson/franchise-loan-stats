@@ -1,6 +1,6 @@
 # Franchise Loan Stats
 
-**https://joakimarvidsson.github.io/franchise-loan-stats/**
+**https://franchiseloanstats.com/**
 
 How SBA 7(a) loans to each franchise brand have actually performed: loans made, share charged off with
 95% confidence intervals, outcomes by approval year, the lenders that finance each brand, and typical loan
@@ -20,7 +20,7 @@ This project is independent and is not affiliated with or endorsed by the U.S. S
 2. `site/` (Astro) renders about 1,900 static pages from that output.
 3. GitHub Actions tests, builds, deploys to GitHub Pages, smoke-tests production and notifies search engines.
 
-Method, definitions and limits: https://joakimarvidsson.github.io/franchise-loan-stats/methodology/
+Method, definitions and limits: https://franchiseloanstats.com/methodology/
 
 ## Run it yourself
 

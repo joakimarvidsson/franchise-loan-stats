@@ -2,7 +2,7 @@
 // Verifies the live site serves the build that is in this checkout (same data date and brand count).
 import fs from 'node:fs';
 
-const base = (process.argv[2] || process.env.SITE_BASE_URL || 'https://joakimarvidsson.github.io/franchise-loan-stats').replace(/\/$/, '');
+const base = (process.argv[2] || process.env.SITE_BASE_URL || 'https://franchiseloanstats.com').replace(/\/$/, '');
 const summary = JSON.parse(fs.readFileSync(new URL('../data/published/summary.json', import.meta.url)));
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const [y, m, d] = summary.asof.split('-').map(Number);
@@ -10,7 +10,7 @@ const asofText = `${months[m - 1]} ${d}, ${y}`;
 const expectBrands = summary.counts.brand_pages;
 
 const checks = [
-  ['/', (t) => t.includes('Franchise Loan Stats') && t.includes(asofText)],
+  ['/', (t) => t.includes('Franchise Loan Stats') && t.includes(asofText) && t.includes(`rel="canonical" href="${base}/"`)],
   ['/brands/', (t) => t.includes('brands-table')],
   ['/brands/subway/', (t) => /Subway franchise/.test(t) && t.includes('95% interval')],
   ['/rankings/', (t) => t.includes('Lowest charge-off rates')],
