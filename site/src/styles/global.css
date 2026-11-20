@@ -123,3 +123,10 @@ footer.site li { margin: .2rem 0; }
   th, td { padding: .45rem .5rem; }
 }
 @media print { header.site, footer.site, .controls, .search { display: none; } }
+
+/* Cite or embed block on brand pages */
+.cite { max-width: 46rem; }
+.cite label { display: block; font-weight: 600; margin: 1rem 0 .35rem; }
+.cite textarea { width: 100%; box-sizing: border-box; font: .85rem/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; padding: .5rem; border: 1px solid var(--line); border-radius: 4px; resize: vertical; background: var(--bg-2); color: var(--ink); }
+.cite .btn.small { margin-top: .35rem; font-size: .85rem; padding: .3rem .7rem; cursor: pointer; }
+.cite .chart-preview { display: block; max-width: 100%; height: auto; border: 1px solid var(--line); margin-bottom: .5rem; }

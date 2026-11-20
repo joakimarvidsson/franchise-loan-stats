@@ -4,8 +4,33 @@ import { SITE, url } from '../../lib/site';
 import { brands, manifest, asof, changes, summary } from '../../lib/data';
 import { fmtInt, fmtDate } from '../../lib/format';
 const loans = manifest.sources.loans;
+const firstFy = Math.min(...loans.map((f: any) => Number((String(f.name).match(/FY(\d{4})/) || [])[1])).filter((n: number) => n > 0));
+const home = new URL(url('/'), Astro.site).href;
+const pageUrl = new URL(url('/data/'), Astro.site).href;
+const datasetLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'SBA 7(a) loan outcomes by franchise brand',
+  description: `Loan counts, charge-off rates with 95% confidence intervals, typical loan size and initial interest rate for SBA 7(a) loans to ${brands.length} US franchise brands, computed from public-domain U.S. Small Business Administration 7(a) FOIA loan data and the SBA Franchise Directory. Charge-off rates cover loans approved in FY${summary.windows.seasoned[0]} to FY${summary.windows.seasoned[1]}.`,
+  url: pageUrl,
+  sameAs: SITE.repo,
+  license: 'https://creativecommons.org/licenses/by/4.0/',
+  isAccessibleForFree: true,
+  creator: { '@type': 'Organization', name: SITE.name, url: home },
+  publisher: { '@type': 'Organization', name: SITE.name, url: home },
+  isBasedOn: [...loans.map((f: any) => f.url).filter(Boolean), manifest.sources.directory.url].filter(Boolean),
+  keywords: ['SBA 7(a)', 'franchise', 'small business loans', 'charge-off rate', 'loan performance', 'SBA Franchise Directory'],
+  temporalCoverage: `${firstFy - 1}-10-01/${asof}`,
+  spatialCoverage: { '@type': 'Place', name: 'United States' },
+  dateModified: String(manifest.built_at).slice(0, 10),
+  version: asof,
+  variableMeasured: ['disbursed loans', 'charged-off loans', 'charge-off rate', '95% confidence interval', 'median loan amount', 'median initial interest rate'],
+  distribution: [
+    { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: new URL(url('/data/franchise-loan-stats-brands.csv'), Astro.site).href },
+  ],
+};
 ---
-<Base title="Download the data" description={`Free CSV of SBA 7(a) loan outcomes for ${fmtInt(brands.length)} franchise brands: loan counts, charge-off rates with confidence intervals, typical loan size. Public-domain source data as of ${fmtDate(asof)}.`} crumbs={[{ name: 'Data' }]}>
+<Base title="Download the data" description={`Free CSV of SBA 7(a) loan outcomes for ${fmtInt(brands.length)} franchise brands: loan counts, charge-off rates with confidence intervals, typical loan size. Public-domain source data as of ${fmtDate(asof)}.`} crumbs={[{ name: 'Data' }]} jsonLd={[datasetLd]}>
   <div class="prose">
     <h1>Download the data</h1>
     <p class="lede">The full brand table, free to reuse.</p>

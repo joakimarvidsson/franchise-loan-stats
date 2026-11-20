@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { RETIRED_BRAND_SLUGS } from './src/lib/redirects.ts';
 
 // The address lives here, in scripts/check-dist.mjs (base path) and in scripts/smoke.mjs. SITE_URL and BASE_PATH override it.
 const site = process.env.SITE_URL || 'https://franchiseloanstats.com';
@@ -10,5 +11,7 @@ export default defineConfig({
   base,
   trailingSlash: 'always',
   build: { format: 'directory' },
+  // Brand pages retired by a reviewed merge: static redirect stubs to the brand they joined.
+  redirects: Object.fromEntries(RETIRED_BRAND_SLUGS.map((r) => [`/brands/${r.from}/`, `/brands/${r.to}/`])),
   integrations: [sitemap()],
 });
