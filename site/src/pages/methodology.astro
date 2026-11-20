@@ -10,6 +10,8 @@ const c = summary.counts, t = summary.thresholds;
     <h1>Methodology and limits</h1>
     <p class="lede">Every figure on this site is computed by <a href={SITE.repo}>open-source code</a> from two public SBA files. This page says exactly how, and where the numbers stop being reliable.</p>
 
+    <p class="small muted">New to this? Start with <a href={url('/guides/sba-charge-off-rate/')}>what an SBA charge-off rate means for a franchise buyer</a>.</p>
+
     <h2>Sources</h2>
     <ul>
       <li><strong><a href={manifest.sources.loans_landing}>SBA 7(a) &amp; 504 FOIA loan data</a></strong>, the 7(a) files. One row per loan approved since fiscal year 1991, with the lender, amount, approval date, industry, franchise code and name, and current status. The SBA updates it quarterly. This build uses the files dated {fmtDate(asof)}: {fmtInt(c.loans_total)} loans, of which {fmtInt(c.loans_franchise)} carry a franchise name.</li>
