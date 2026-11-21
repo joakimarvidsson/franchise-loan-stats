@@ -1,0 +1,42 @@
+---
+import Base from '../../layouts/Base.astro';
+import { summary } from '../../lib/data';
+import { url } from '../../lib/site';
+const t = summary.thresholds;
+---
+<Base title="Reading Item 19 and Item 20 next to SBA loan records" description="What Items 19 and 20 of a Franchise Disclosure Document cover, what they leave out, and how to use them together with a brand's SBA 7(a) charge-off record before you buy a franchise." crumbs={[{ name: 'Guides' }, { name: 'Item 19 and Item 20' }]}>
+  <div class="prose">
+    <h1>Reading Item 19 and Item 20 next to SBA loan records</h1>
+    <p class="lede">A Franchise Disclosure Document (FDD) is the franchisor's own account of its system. SBA loan records are a separate, outside record of how financed loans turned out. Each answers questions the other cannot. This page explains what to look for in two FDD items and how they fit with the figures on this site.</p>
+
+    <h2>Item 19: financial performance representations</h2>
+    <p>Item 19 is where a franchisor may state what outlets earn. The key word is <em>may</em>: under the FTC Franchise Rule a franchisor is not required to make any financial performance representation, and many do not. When it does, the figures must have a reasonable basis and the franchisor must be able to back them up. Questions worth asking of any Item 19:</p>
+    <ul>
+      <li>Which outlets are included, all of them or a subset such as those open a full year? A subset can leave out the weakest locations.</li>
+      <li>Is the figure revenue, or what the owner keeps after costs? Revenue says little about what an owner earns.</li>
+      <li>What period does it cover, and does it include company-owned outlets, which may operate differently from franchised ones?</li>
+      <li>If there is no Item 19, how will you form a view of likely earnings? Ask current franchisees directly.</li>
+    </ul>
+
+    <h2>Item 20: outlets and franchisee information</h2>
+    <p>Item 20 reports how many outlets the system has had over recent years, how many were opened, transferred, terminated, not renewed, reacquired by the franchisor, or closed for other reasons. It also lists contact details for current franchisees and for those who left the system in the last year. Two uses stand out:</p>
+    <ul>
+      <li><strong>Turnover.</strong> Compare the count of outlets leaving the system with the count at the start of the year. Transfers and closures over several years show how stable the system has been.</li>
+      <li><strong>Calling people.</strong> The franchisee lists are there so you can speak to owners, including those who left. That conversation is often more informative than any table.</li>
+    </ul>
+
+    <h2>Where SBA loan records fit</h2>
+    <p>The SBA's 7(a) file is independent of the franchisor. It covers only loans that were made under the SBA programme, so it does not describe franchisees who paid in cash or used other lenders, and a loan being charged off is not the same as an outlet closing. Used together, the sources can prompt useful questions:</p>
+    <ul>
+      <li>If Item 20 shows many closures and transfers, check whether the brand has enough SBA loans to have a charge-off rate on this site at all. Brands need at least {t.rated_min} seasoned disbursed loans to be ranked and at least {t.limited_min} to show a rate.</li>
+      <li>If a brand's charge-off rate looks high or low, look at the width of its confidence interval before drawing a conclusion, then ask the franchisor what Item 20 shows for the same years.</li>
+      <li>If the two sources seem to point in different directions, that is a question for the franchisor and for current and former franchisees, not a conclusion to draw from either source alone.</li>
+    </ul>
+
+    <h2>What neither source tells you</h2>
+    <p>Neither shows how any individual owner is doing, whether a particular territory will work, or what the franchisor will do in future. Brand names change, and a record may describe an earlier owner or earlier terms. Use both as inputs to due diligence, alongside Item 3 (litigation), Item 21 (the franchisor's financial statements), your accountant and a franchise attorney. Nothing on this site is financial or legal advice.</p>
+
+    <h2>Where to go next</h2>
+    <p>Read <a href={url('/guides/sba-charge-off-rate/')}>what an SBA charge-off rate means</a>, <a href={url('/brands/')}>search a brand</a>, see <a href={url('/rankings/')}>the rankings</a>, or read the <a href={url('/methodology/')}>methodology and limits</a>. This site is independent and is not affiliated with or endorsed by the SBA.</p>
+  </div>
+</Base>
