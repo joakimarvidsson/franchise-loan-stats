@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import { summary, seasonedFrom, seasonedTo } from '../../lib/data';
+import { url } from '../../lib/site';
+const t = summary.thresholds;
+---
+<Base title="How to compare two franchise brands using SBA loan records" description="A step-by-step way to compare two franchise brands' SBA 7(a) charge-off records: matching cohorts, checking sample size, reading confidence intervals, and knowing when a difference means something." crumbs={[{ name: 'Guides' }, { name: 'Comparing two brands' }]}>
+  <div class="prose">
+    <h1>How to compare two franchise brands using SBA loan records</h1>
+    <p class="lede">Two brands can show different charge-off rates and still not be meaningfully different. This page sets out a short routine for comparing them fairly, and for knowing when to stop and ask a question instead of drawing a conclusion.</p>
+
+    <h2>1. Compare like with like</h2>
+    <p>Use the same cohort for both brands. The headline rates on this site use the seasoned cohort: loans approved in fiscal years {seasonedFrom} to {seasonedTo}, old enough to have had time to go wrong. Do not set one brand's seasoned rate beside another brand's recent loans; younger loans have had less time to fail and will usually look better.</p>
+    <p>Compare brands that finance similar things. A restaurant that needs a build-out and a home-services brand run from a van have different capital needs and different risks. The <a href={url('/industries/')}>industry pages</a> show a benchmark for each industry.</p>
+
+    <h2>2. Check how many loans sit behind each rate</h2>
+    <p>A rate from a handful of loans moves a lot when one loan changes status. This site shows a rate only for brands with at least {t.limited_min} seasoned disbursed loans, ranks only brands with at least {t.rated_min}, and marks the ones in between as limited. If either brand is limited, treat the comparison as a prompt for questions, not as evidence.</p>
+
+    <h2>3. Look at the confidence intervals, not just the percentages</h2>
+    <p>Each rate comes with a range showing how much it could shift through chance alone. When the ranges for two brands overlap, the data do not show that one is better or worse than the other, even if the central numbers differ. This site only describes one brand as above or below another when the intervals do not overlap.</p>
+
+    <h2>4. Think about who borrows</h2>
+    <p>SBA loans are not a random sample of franchisees. A brand whose owners mostly borrow from one or two lenders, or mostly buy existing outlets rather than start new ones, can look different for reasons unrelated to the brand. Each brand page lists its main lenders; the <a href={url('/lenders/')}>lender pages</a> show how lenders differ.</p>
+
+    <h2>5. Turn the difference into questions</h2>
+    <p>If a gap survives steps 1 to 3, it is a reason to ask more, not a verdict. Ask the franchisor what it sees. Ask current and former franchisees, whose contact details are in Item 20 of the Franchise Disclosure Document (see the <a href={url('/guides/franchise-disclosure-item-19-20/')}>guide to Items 19 and 20</a>). Ask a lender what it looks for. A charge-off is a loan outcome, not a statement about a business or its owners.</p>
+
+    <h2>Try it</h2>
+    <p>The <a href={url('/compare/')}>compare tool</a> puts brands side by side using exactly the same cohort and intervals. To read what a rate means first, see <a href={url('/guides/sba-charge-off-rate/')}>what an SBA charge-off rate is</a>. Limits of the data are in the <a href={url('/methodology/')}>methodology</a>. This site is independent and is not affiliated with or endorsed by the SBA, and nothing here is financial or legal advice.</p>
+  </div>
+</Base>
