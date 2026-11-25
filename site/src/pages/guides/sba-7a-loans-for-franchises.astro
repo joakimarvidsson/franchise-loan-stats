@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import { summary, recentFrom, recentTo } from '../../lib/data';
+import { SITE, url } from '../../lib/site';
+import { fmtInt, fmtPct, fmtUsd, fyRange } from '../../lib/format';
+const f = summary.franchise.recent, n = summary.non_franchise.recent;
+---
+<Base title="How SBA 7(a) loans work for franchise buyers" description="What the SBA 7(a) loan programme is, what recent franchise loans looked like (size, rate, term), and what to ask a lender before financing a franchise purchase." crumbs={[{ name: 'Guides', href: '/guides/' }, { name: 'SBA 7(a) loans for franchises' }]}>
+  <div class="prose">
+    <h1>How SBA 7(a) loans work for franchise buyers</h1>
+    <p class="lede">The SBA 7(a) programme is the most common route for financing a franchise with a government-backed loan. This page explains the basics and shows what recent franchise loans in the public SBA file looked like.</p>
+
+    <h2>What a 7(a) loan is</h2>
+    <p>A 7(a) loan is made by a bank or other approved lender, not by the SBA. The SBA guarantees part of the balance, which lowers the lender's loss if the borrower cannot repay and makes lenders more willing to lend to new or thinly capitalised businesses. The borrower still owes the full debt and normally pledges collateral and a personal guarantee. The programme has rules on eligible uses, maximum loan size and interest-rate caps that change over time; check the SBA's current terms and ask the lender.</p>
+
+    <h2>What recent franchise loans looked like</h2>
+    <p>Among loans approved in {fyRange(recentFrom, recentTo)}, the public file shows {fmtInt(f.approved)} approved loans to franchise brands, with a median loan of {fmtUsd(f.median_loan)}, a median interest rate of {fmtPct(f.median_rate)} and a median term of {f.median_term_months} months. About {f.new_business_pct}% went to new businesses and {f.change_of_ownership_pct}% financed a change of ownership. For loans with no franchise name in the file, the median loan was {fmtUsd(n.median_loan)}, the median rate {fmtPct(n.median_rate)}, and {n.new_business_pct}% went to new businesses. These are descriptions of approved loans, not offers; your own terms depend on the lender, your credit and the deal.</p>
+    <p>Loans in this window are too recent for charge-offs to be a fair measure, so the site's brand comparisons use an older, <a href={url('/guides/sba-charge-off-rate/')}>seasoned cohort</a>.</p>
+
+    <h2>Questions to ask a lender</h2>
+    <ul>
+      <li>Is the franchise on the SBA's franchise directory, and has the lender financed this brand before? Each brand page lists the lenders in the file for that brand.</li>
+      <li>What collateral and personal guarantee will be required, and what happens to them if the business closes?</li>
+      <li>Is the rate fixed or variable, what are the fees, and is there a prepayment penalty?</li>
+      <li>How much working capital is included beyond the franchise fee and build-out?</li>
+    </ul>
+
+    <h2>Where to look next</h2>
+    <p>Browse <a href={url('/lenders/')}>lenders</a> and the <a href={url('/states/')}>state pages</a>, estimate a payment with the <a href={url('/calculator/')}>loan calculator</a>, and read the <a href={url('/methodology/')}>methodology</a>. Lender and brand pages describe public records and are not recommendations. Nothing here is financial or legal advice. The <a href={SITE.repo}>code is open</a>. This site is independent and is not affiliated with or endorsed by the SBA.</p>
+  </div>
+</Base>
