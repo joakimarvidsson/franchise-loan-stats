@@ -36,10 +36,10 @@
         var shown = 0;
         var q = (box.querySelector('[data-q]') || {}).value || '';
         q = q.toLowerCase().trim();
-        var sels = box.querySelectorAll('select[data-f]'), mins = box.querySelectorAll('input[data-min]');
+        var sels = box.querySelectorAll('select[data-f], select[data-has]'), mins = box.querySelectorAll('input[data-min]');
         rows.forEach(function (r) {
           var ok = !q || (r.dataset.q || '').indexOf(q) !== -1;
-          sels.forEach(function (s) { if (ok && s.value && r.dataset[s.dataset.f] !== s.value) ok = false; });
+          sels.forEach(function (s) { if (!ok || !s.value) return; if (s.dataset.has) { if ((r.dataset[s.dataset.has] || '').indexOf('|' + s.value + '|') === -1) ok = false; } else if (r.dataset[s.dataset.f] !== s.value) ok = false; });
           mins.forEach(function (m) { if (ok && m.value && !(parseFloat(r.dataset[m.dataset.min] || '0') >= parseFloat(m.value))) ok = false; });
           r.hidden = !ok; if (ok) shown++;
         });
