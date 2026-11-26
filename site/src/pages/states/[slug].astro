@@ -33,5 +33,6 @@ const desc = `${fmtInt(s.loans)} franchise-coded SBA 7(a) loans were made in ${s
     <thead><tr><th>Lender</th><th>Franchise loans</th><th>Total approved</th></tr></thead>
     <tbody>{s.lenders.map((l: any) => <tr><td>{l.slug ? <a href={url(`/lenders/${l.slug}/`)}>{l.name}</a> : l.name}</td><td>{fmtInt(l.loans)}</td><td>{fmtUsd(l.gross)}</td></tr>)}</tbody>
   </table></div>
+  <p class="small"><a href={url(`/lenders/?state=${s.code}`)}>See every lender whose top states include {s.name}</a>, with loan counts and typical loan size.</p>
   <div class="note"><p class="small">Loans are counted by project state. Source: SBA 7(a) FOIA loan data as of {fmtDate(asof)}. <a href={url('/methodology/')}>Methodology</a>.</p></div>
 </Base>
