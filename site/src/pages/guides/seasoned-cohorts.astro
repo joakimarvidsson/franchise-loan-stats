@@ -1,0 +1,49 @@
+---
+import Base from '../../layouts/Base.astro';
+import { summary, seasonedFrom, seasonedTo, recentFrom, recentTo } from '../../lib/data';
+import { url } from '../../lib/site';
+import { fmtInt, fmtPct, fyRange } from '../../lib/format';
+const years = (summary.franchise_by_year as any[]).filter((y) => y.fy >= seasonedFrom - 2 && y.disbursed > 0);
+const rows = years.map((y) => ({ ...y, pct: (100 * y.chgoff) / y.disbursed, openPct: (100 * y.active) / y.disbursed }));
+const by = (fy: number) => rows.find((r) => r.fy === fy);
+const first = by(seasonedFrom)!, last = by(seasonedTo)!, newest = rows[rows.length - 1], yr = by(recentFrom)!;
+const peak = rows.filter((r) => r.fy >= seasonedFrom && r.fy <= seasonedTo).reduce((a, b) => (b.pct > a.pct ? b : a));
+---
+<Base title="Why seasoned cohorts matter when reading franchise loan records" description="Why recent SBA franchise loans look safer than they are, how charge-offs build up year by year after approval, and how this site's seasoned cohort avoids that bias." crumbs={[{ name: 'Guides', href: '/guides/' }, { name: 'Seasoned cohorts' }]}>
+  <div class="prose">
+    <h1>Why seasoned cohorts matter when reading franchise loan records</h1>
+    <p class="lede">A loan approved last year cannot yet show how loans like it end. This guide shows why, using the SBA's own records, and explains why this site's headline rates use only older loans.</p>
+
+    <h2>Charge-offs arrive late</h2>
+    <p>An SBA 7(a) loan typically runs for years, and a lender usually charges off a loan only after a period of missed payments and collection effort. A loan approved in FY{newest.fy} had {fmtInt(newest.chgoff)} charge-offs recorded among {fmtInt(newest.disbursed)} disbursed franchise loans so far. That does not mean those loans will end well; it means most of them are still open: {fmtInt(newest.active)} are active and {fmtInt(newest.pif)} are paid in full.</p>
+
+    <h2>The same table, year by year</h2>
+    <p>Each row is one fiscal year of approvals for franchise loans. The last column is charge-offs so far divided by loans disbursed, as of the data date. Older years are close to final; recent years are not.</p>
+    <div class="table-wrap">
+      <table>
+        <caption>SBA 7(a) franchise loans by approval year, status at the data date</caption>
+        <thead><tr><th scope="col">Approval FY</th><th scope="col" class="num">Disbursed</th><th scope="col" class="num">Charged off</th><th scope="col" class="num">Paid in full</th><th scope="col" class="num">Still active</th><th scope="col" class="num">Charged off so far</th></tr></thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr><th scope="row">{r.fy}{r.fy >= seasonedFrom && r.fy <= seasonedTo ? ' *' : ''}</th><td class="num">{fmtInt(r.disbursed)}</td><td class="num">{fmtInt(r.chgoff)}</td><td class="num">{fmtInt(r.pif)}</td><td class="num">{fmtInt(r.active)}</td><td class="num">{fmtPct(r.pct)}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p>* Years in the seasoned cohort, {fyRange(seasonedFrom, seasonedTo)}.</p>
+
+    <h2>What the table shows</h2>
+    <p>Within the seasoned years the share charged off so far ranges up to {fmtPct(peak.pct)} (FY{peak.fy}). In FY{yr.fy}, the first year of the recent window, it is {fmtPct(yr.pct)}, and in FY{newest.fy} it is {fmtPct(newest.pct)}. Those lower figures mostly reflect time rather than quality: of FY{yr.fy} loans, {fmtPct(yr.openPct)} are still active, and in FY{newest.fy} {fmtPct(newest.openPct)} are. Comparing a brand's recent loans with another brand's older loans would therefore flatter the brand with the newer record.</p>
+    <p>Two further effects blur the picture. Economic conditions differ by year, so a cohort that started just before a downturn can look worse than one that started just after. And in 2020 and 2021 the SBA made some loan payments on borrowers' behalf under the CARES Act, which probably delayed some charge-offs. The <a href={url('/methodology/')}>methodology</a> describes these limits.</p>
+
+    <h2>How this site handles it</h2>
+    <ul>
+      <li>Headline and brand charge-off rates use loans approved in {fyRange(seasonedFrom, seasonedTo)}: old enough to have had time to show an outcome.</li>
+      <li>Recent loans ({fyRange(recentFrom, recentTo)}) are shown separately as activity, such as how many were approved and their median size, and never as a rate.</li>
+      <li>Every rate carries a confidence interval, and brands are compared only on the same cohort.</li>
+    </ul>
+
+    <h2>What to do with it</h2>
+    <p>When someone quotes a charge-off or default figure for a franchise, ask which approval years it covers and how many loans are in it. A figure that includes recent loans will look better than the final result is likely to be. To read a rate once you have it, see <a href={url('/guides/sba-charge-off-rate/')}>what an SBA charge-off rate means</a>; to set two brands side by side fairly, see <a href={url('/guides/compare-two-franchise-brands/')}>comparing two franchise brands</a>. The figures above are in the <a href={url('/data/')}>free data download</a>. This site is independent and is not affiliated with or endorsed by the SBA, and nothing here is financial or legal advice.</p>
+  </div>
+</Base>
