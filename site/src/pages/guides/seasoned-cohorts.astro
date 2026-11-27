@@ -9,7 +9,7 @@ const by = (fy: number) => rows.find((r) => r.fy === fy);
 const first = by(seasonedFrom)!, last = by(seasonedTo)!, newest = rows[rows.length - 1], yr = by(recentFrom)!;
 const peak = rows.filter((r) => r.fy >= seasonedFrom && r.fy <= seasonedTo).reduce((a, b) => (b.pct > a.pct ? b : a));
 ---
-<Base title="Why seasoned cohorts matter when reading franchise loan records" description="Why recent SBA franchise loans look safer than they are, how charge-offs build up year by year after approval, and how this site's seasoned cohort avoids that bias." crumbs={[{ name: 'Guides', href: '/guides/' }, { name: 'Seasoned cohorts' }]}>
+<Base title="Why seasoned cohorts matter when reading franchise loan records" description="Why recent SBA franchise loans look better than their final record is likely to be, how charge-offs build up year by year after approval, and how this site's seasoned cohort avoids that bias." crumbs={[{ name: 'Guides', href: '/guides/' }, { name: 'Seasoned cohorts' }]}>
   <div class="prose">
     <h1>Why seasoned cohorts matter when reading franchise loan records</h1>
     <p class="lede">A loan approved last year cannot yet show how loans like it end. This guide shows why, using the SBA's own records, and explains why this site's headline rates use only older loans.</p>
